@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "D:/OneDrive/MattZamora/MakeFPGA_DiamondProject"  
