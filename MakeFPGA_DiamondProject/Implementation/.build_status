@@ -24,7 +24,7 @@
             <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1501298086"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1501298062"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1505523034"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
