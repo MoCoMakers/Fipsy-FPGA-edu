@@ -1,11 +1,11 @@
-BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.1.119
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command: bitgen -g RamCfg:Reset -path D:/OneDrive/MattZamora/MakeFPGA_DiamondProject -w -jedec -gui -msgset D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/promote.xml MakeFPGA_Implementation.ncd MakeFPGA_Implementation.prf 
+Command: bitgen -g RamCfg:Reset -path D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject -w -jedec -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/promote.xml MakeFPGA_Implementation.ncd MakeFPGA_Implementation.prf 
 
 Loading design for application Bitgen from file MakeFPGA_Implementation.ncd.
 Design name: MakeFPGA_Top

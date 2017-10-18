@@ -6,7 +6,7 @@ Performance Grade:      4
 PACKAGE:          QFN32
 Package Status:                     Final          Version 1.41
 
-Fri Jul 28 23:14:43 2017
+Sun Oct 15 23:32:38 2017
 
 Pinout by Port Name:
 +-----------+----------+--------------+------+-----------+-----------+--------------------------------------+
@@ -143,11 +143,11 @@ LOCATE  COMP  "PIN9"  SITE  "13";
 
 
 
-PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Jul 28 23:14:43 2017
+Sun Oct 15 23:32:38 2017
 

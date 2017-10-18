@@ -1,16 +1,16 @@
 
 synthesis -f "MakeFPGA_Implementation_lattice.synproj"
-synthesis:  version Diamond (64-bit) 3.9.0.99.2
+synthesis:  version Diamond (64-bit) 3.9.1.119
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Jul 28 23:14:34 2017
+Sun Oct 15 23:32:33 2017
 
 
-Command Line:  synthesis -f MakeFPGA_Implementation_lattice.synproj -gui -msgset D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/promote.xml 
+Command Line:  synthesis -f MakeFPGA_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -64,12 +64,12 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/OneDrive/MattZamora/MakeFPGA_DiamondProject (searchpath added)
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject (searchpath added)
 -p D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Implementation (searchpath added)
--p D:/OneDrive/MattZamora/MakeFPGA_DiamondProject (searchpath added)
-Verilog design file = D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Source/MakeFPGA_Top.v
-Verilog design file = D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Source/AppModules/FreqDiv20Bit.v
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Implementation (searchpath added)
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject (searchpath added)
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Source/MakeFPGA_Top.v
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Source/AppModules/FreqDiv20Bit.v
 NGD file = MakeFPGA_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -80,17 +80,18 @@ Technology check ok...
 Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/onedrive/mattzamora/makefpga_diamondproject/source/makefpga_top.v. VERI-1482
-Analyzing Verilog file d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/makefpga_top.v. VERI-1482
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v. VERI-1482
 Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): MakeFPGA_Top
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/onedrive/mattzamora/makefpga_diamondproject/source/makefpga_top.v(45): " arg1="MakeFPGA_Top" arg2="d:/onedrive/mattzamora/makefpga_diamondproject/source/makefpga_top.v" arg3="45"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/makefpga_top.v(45): " arg1="MakeFPGA_Top" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/makefpga_top.v" arg3="45"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH" arg2="D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(20): " arg1="FreqDiv20Bit" arg2="d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v" arg3="20"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(55): " arg1="32" arg2="20" arg3="d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v" arg4="55"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(20): " arg1="FreqDiv20Bit" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v" arg3="20"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(55): " arg1="32" arg2="20" arg3="d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v" arg4="55"  />
 Last elaborated design is MakeFPGA_Top()
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
 Package Status:                     Final          Version 1.41.
 Top-level module name = MakeFPGA_Top.
@@ -180,14 +181,14 @@ clk0 [get_nets PIN11_c]                 |    1.000 MHz|  181.028 MHz|    12
 All constraints were met.
 
 
-Peak Memory Usage: 48.852  MB
+Peak Memory Usage: 49.164  MB
 
 --------------------------------------------------------------
 Elapsed CPU time for LSE flow : 0.297  secs
 --------------------------------------------------------------
 
-map -a "MachXO2" -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial   "MakeFPGA_Implementation.ngd" -o "MakeFPGA_Implementation_map.ncd" -pr "MakeFPGA_Implementation.prf" -mp "MakeFPGA_Implementation.mrp" -lpf "D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Implementation/MakeFPGA_Implementation.lpf" -lpf "D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/MakeFPGA.lpf" -c 0            
-map:  version Diamond (64-bit) 3.9.0.99.2
+map -a "MachXO2" -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial   "MakeFPGA_Implementation.ngd" -o "MakeFPGA_Implementation_map.ncd" -pr "MakeFPGA_Implementation.prf" -mp "MakeFPGA_Implementation.mrp" -lpf "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Implementation/MakeFPGA_Implementation.lpf" -lpf "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/MakeFPGA.lpf" -c 0            
+map:  version Diamond (64-bit) 3.9.1.119
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -290,10 +291,10 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "MakeFPGA_Implementation_map.ncd"
-Fri Jul 28 23:14:38 2017
+Sun Oct 15 23:32:34 2017
 
-PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF MakeFPGA_Implementation_map.ncd MakeFPGA_Implementation.dir/5_1.ncd MakeFPGA_Implementation.prf
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF MakeFPGA_Implementation_map.ncd MakeFPGA_Implementation.dir/5_1.ncd MakeFPGA_Implementation.prf
 Preference file: MakeFPGA_Implementation.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
@@ -345,12 +346,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 Starting Placer Phase 1.
 ..................
 Placer score = 1571.
-Finished Placer Phase 1.  REAL time: 5 secs 
+Finished Placer Phase 1.  REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  1571
-Finished Placer Phase 2.  REAL time: 5 secs 
+Finished Placer Phase 2.  REAL time: 4 secs 
 
 
 ------------------ Clock Report ------------------
@@ -396,7 +397,7 @@ Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 5 secs 
 
-Start NBR router at 23:14:43 07/28/17
+Start NBR router at 23:32:39 10/15/17
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -411,9 +412,9 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 23:14:43 07/28/17
+Start NBR special constraint process at 23:32:39 10/15/17
 
-Start NBR section for initial routing at 23:14:43 07/28/17
+Start NBR section for initial routing at 23:32:39 10/15/17
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 5 secs 
@@ -421,19 +422,19 @@ Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time:
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 23:14:43 07/28/17
+Start NBR section for normal routing at 23:32:39 10/15/17
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 5 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 23:14:43 07/28/17
+Start NBR section for setup/hold timing optimization with effort level 3 at 23:32:39 10/15/17
 
-Start NBR section for re-routing at 23:14:43 07/28/17
+Start NBR section for re-routing at 23:32:39 10/15/17
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 5 secs 
 
-Start NBR section for post-routing at 23:14:43 07/28/17
+Start NBR section for post-routing at 23:32:39 10/15/17
 
 End NBR router with 0 unrouted connection
 
@@ -484,7 +485,7 @@ Exiting mpartrce with exit code 0
 bitgen -f "MakeFPGA_Implementation.t2b" -w "MakeFPGA_Implementation.ncd" -jedec "MakeFPGA_Implementation.prf"
 
 
-BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.1.119
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.

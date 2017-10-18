@@ -1,14 +1,14 @@
-synthesis:  version Diamond (64-bit) 3.9.0.99.2
+synthesis:  version Diamond (64-bit) 3.9.1.119
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Jul 28 23:14:34 2017
+Sun Oct 15 23:32:33 2017
 
 
-Command Line:  synthesis -f MakeFPGA_Implementation_lattice.synproj -gui -msgset D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/promote.xml 
+Command Line:  synthesis -f MakeFPGA_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -61,12 +61,12 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/OneDrive/MattZamora/MakeFPGA_DiamondProject (searchpath added)
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject (searchpath added)
 -p D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Implementation (searchpath added)
--p D:/OneDrive/MattZamora/MakeFPGA_DiamondProject (searchpath added)
-Verilog design file = D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Source/MakeFPGA_Top.v
-Verilog design file = D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Source/AppModules/FreqDiv20Bit.v
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Implementation (searchpath added)
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject (searchpath added)
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Source/MakeFPGA_Top.v
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Source/AppModules/FreqDiv20Bit.v
 NGD file = MakeFPGA_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -77,14 +77,14 @@ Technology check ok...
 Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/onedrive/mattzamora/makefpga_diamondproject/source/makefpga_top.v. VERI-1482
-Analyzing Verilog file d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/makefpga_top.v. VERI-1482
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v. VERI-1482
 Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): MakeFPGA_Top
-INFO - synthesis: d:/onedrive/mattzamora/makefpga_diamondproject/source/makefpga_top.v(45): compiling module MakeFPGA_Top. VERI-1018
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/makefpga_top.v(45): compiling module MakeFPGA_Top. VERI-1018
 INFO - synthesis: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH. VERI-1018
-INFO - synthesis: d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
-WARNING - synthesis: d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
@@ -168,7 +168,7 @@ clk0 [get_nets PIN11_c]                 |    1.000 MHz|  181.028 MHz|    12
 All constraints were met.
 
 
-Peak Memory Usage: 48.852  MB
+Peak Memory Usage: 49.164  MB
 
 --------------------------------------------------------------
 Elapsed CPU time for LSE flow : 0.297  secs

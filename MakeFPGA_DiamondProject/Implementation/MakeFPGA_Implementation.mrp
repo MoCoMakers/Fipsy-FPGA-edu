@@ -7,15 +7,17 @@ Design Information
 
 Command line:   map -a MachXO2 -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial
      MakeFPGA_Implementation.ngd -o MakeFPGA_Implementation_map.ncd -pr
-     MakeFPGA_Implementation.prf -mp MakeFPGA_Implementation.mrp -lpf D:/OneDriv
-     e/MattZamora/MakeFPGA_DiamondProject/Implementation/MakeFPGA_Implementation
-     .lpf -lpf D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/MakeFPGA.lpf -c 0
-     -gui -msgset D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/promote.xml 
+     MakeFPGA_Implementation.prf -mp MakeFPGA_Implementation.mrp -lpf D:/Program
+     s/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProjec
+     t/Implementation/MakeFPGA_Implementation.lpf -lpf D:/Programs/Hubic/Maker/B
+     usiness/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/MakeFPGA.lpf
+     -c 0 -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpg
+     a-edu/MakeFPGA_DiamondProject/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
-Mapped on:  07/28/17  23:14:35
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
+Mapped on:  10/15/17  23:32:33
 
 Design Summary
 --------------
@@ -58,18 +60,18 @@ Design Summary
      Net PIN10_c: 11 loads, 11 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net PIN10_c: 11 loads
-     Net PIN20_c_19: 3 loads
 
                                     Page 1
 
 
 
 
-Design:  MakeFPGA_Top                                  Date:  07/28/17  23:14:35
+Design:  MakeFPGA_Top                                  Date:  10/15/17  23:32:33
 
 Design Summary (cont)
 ---------------------
+     Net PIN10_c: 11 loads
+     Net PIN20_c_19: 3 loads
      Net FreqDiv20Bit_inst/n105: 1 loads
      Net FreqDiv20Bit_inst/n2: 1 loads
      Net FreqDiv20Bit_inst/n20: 1 loads
@@ -125,14 +127,13 @@ IO (PIO) Attributes
 | PIN10               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
-
-
                                     Page 2
 
 
 
 
-Design:  MakeFPGA_Top                                  Date:  07/28/17  23:14:35
+Design:  MakeFPGA_Top                                  Date:  10/15/17  23:32:33
+
 
 Removed logic
 -------------
@@ -178,7 +179,6 @@ Run Time and Memory Usage
    Total REAL Time: 0 secs  
    Peak Memory Usage: 30 MB
         
-
 
 
 

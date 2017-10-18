@@ -12,9 +12,9 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/onedrive/mattzamora/makefpga_diamondproject/source/makefpga_top.v(45): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/makefpga_top.v(45): </Dynamic>
             <Dynamic>MakeFPGA_Top</Dynamic>
-            <Navigation>d:/onedrive/mattzamora/makefpga_diamondproject/source/makefpga_top.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/makefpga_top.v</Navigation>
             <Navigation>45</Navigation>
         </Message>
         <Message>
@@ -28,18 +28,18 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(20): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(20): </Dynamic>
             <Dynamic>FreqDiv20Bit</Dynamic>
-            <Navigation>d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v</Navigation>
             <Navigation>20</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(55): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v(55): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>20</Dynamic>
-            <Navigation>d:/onedrive/mattzamora/makefpga_diamondproject/source/appmodules/freqdiv20bit.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/makefpga_diamondproject/source/appmodules/freqdiv20bit.v</Navigation>
             <Navigation>55</Navigation>
         </Message>
         <Message>

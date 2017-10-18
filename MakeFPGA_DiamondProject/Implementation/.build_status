@@ -6,37 +6,37 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="2" update_time="1497052692"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1501298086"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1508124761"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1501298076">
-            <Task name="Map" build_result="2" update_result="0" update_time="1501298076"/>
+        <Milestone name="Map" build_result="2" build_time="1508124754">
+            <Task name="Map" build_result="2" update_result="0" update_time="1508124754"/>
             <Task name="MapTrace" build_result="0" update_result="2" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1501298083">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1501298083"/>
+        <Milestone name="PAR" build_result="2" build_time="1508124759">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1508124759"/>
             <Task name="PARTrace" build_result="0" update_result="2" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1501298074">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1501298074"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1501298086"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1508124753">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1508124753"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1508124761"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1505523034"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1508124747"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/MakeFPGA_Implementation_map.vdb" last_build_time="1501298076" last_build_size="32891"/>
-        <Report name="MakeFPGA_Implementation.bgn" last_build_time="1501298086" last_build_size="4053"/>
+        <Report name=".vdbs/MakeFPGA_Implementation_map.vdb" last_build_time="1508124754" last_build_size="34691"/>
+        <Report name="MakeFPGA_Implementation.bgn" last_build_time="1508124761" last_build_size="4132"/>
         <Report name="MakeFPGA_Implementation.bit" last_build_time="1497052692" last_build_size="2121"/>
-        <Report name="MakeFPGA_Implementation.jed" last_build_time="1501298086" last_build_size="75938"/>
-        <Report name="MakeFPGA_Implementation.lsedata" last_build_time="1501298074" last_build_size="23173"/>
-        <Report name="MakeFPGA_Implementation.ncd" last_build_time="1501298083" last_build_size="32990"/>
-        <Report name="MakeFPGA_Implementation.ngd" last_build_time="1501298074" last_build_size="29207"/>
-        <Report name="MakeFPGA_Implementation_map.ncd" last_build_time="1501298076" last_build_size="24724"/>
+        <Report name="MakeFPGA_Implementation.jed" last_build_time="1508124761" last_build_size="75937"/>
+        <Report name="MakeFPGA_Implementation.lsedata" last_build_time="1508124753" last_build_size="23173"/>
+        <Report name="MakeFPGA_Implementation.ncd" last_build_time="1508124759" last_build_size="32990"/>
+        <Report name="MakeFPGA_Implementation.ngd" last_build_time="1508124753" last_build_size="29206"/>
+        <Report name="MakeFPGA_Implementation_map.ncd" last_build_time="1508124754" last_build_size="24724"/>
     </Strategy>
 </BuildStatus>

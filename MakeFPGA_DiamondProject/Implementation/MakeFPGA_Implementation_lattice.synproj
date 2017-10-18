@@ -30,13 +30,13 @@
 
 
 -lpf 1
--p "D:/OneDrive/MattZamora/MakeFPGA_DiamondProject"
--ver "D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Source/MakeFPGA_Top.v"
-"D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Source/AppModules/FreqDiv20Bit.v"
+-p "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject"
+-ver "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Source/MakeFPGA_Top.v"
+"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Source/AppModules/FreqDiv20Bit.v"
 -top MakeFPGA_Top
 
 
--p "D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/OneDrive/MattZamora/MakeFPGA_DiamondProject/Implementation" "D:/OneDrive/MattZamora/MakeFPGA_DiamondProject"
+-p "D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/Implementation" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject"
 
 -ngd "MakeFPGA_Implementation.ngd"
 
