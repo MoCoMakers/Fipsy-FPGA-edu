@@ -1,163 +1,0 @@
-<HTML>
-<HEAD><TITLE>Lattice TCL Log</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="pn170604193658"></A><B><U><big>pn170604193658</big></U></B>
-#Start recording tcl command: 6/4/2017 18:18:32
-#Project Location: C:/Lattice/MakeFPGA; Project name: MakeFPGA
-prj_project new -name "MakeFPGA" -impl "Implementation" -dev LCMXO2-256HC-4SG32C -synthesis "lse"
-prj_project save
-prj_src add "C:/Lattice/MakeFPGA/Source/FreqDiv20Bit.v" "C:/Lattice/MakeFPGA/Source/MakeFPGA_Top.v"
-prj_src remove "C:/Lattice/MakeFPGA/Source/FreqDiv20Bit.v" "C:/Lattice/MakeFPGA/Source/MakeFPGA_Top.v"
-prj_src add "C:/Lattice/MakeFPGA/FreqDiv20Bit.v" "C:/Lattice/MakeFPGA/MakeFPGA_Top.v"
-prj_src remove "C:/Lattice/MakeFPGA/FreqDiv20Bit.v" "C:/Lattice/MakeFPGA/MakeFPGA_Top.v"
-prj_src add "C:/Lattice/MakeFPGA/Source/FreqDiv20Bit.v" "C:/Lattice/MakeFPGA/Source/MakeFPGA_Top.v"
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_src remove "C:/Lattice/MakeFPGA/Source/FreqDiv20Bit.v"
-prj_src add "C:/Lattice/MakeFPGA/Source/AppModules/FreqDiv20Bit.v"
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-#Stop recording: 6/4/2017 19:36:58
-
-
-
-<A name="pn170604230007"></A><B><U><big>pn170604230007</big></U></B>
-#Start recording tcl command: 6/4/2017 21:04:28
-#Project Location: C:/Lattice/MakeFPGA; Project name: MakeFPGA
-prj_project open "C:/Lattice/MakeFPGA/MakeFPGA.ldf"
-prj_run Export -impl Implementation -task Bitgen
-prj_run Export -impl Implementation -task Bitgen
-prj_run Export -impl Implementation
-#Stop recording: 6/4/2017 23:00:07
-
-
-
-<A name="pn170609201132"></A><B><U><big>pn170609201132</big></U></B>
-#Start recording tcl command: 6/9/2017 17:15:58
-#Project Location: C:/Lattice/MakeFPGA; Project name: MakeFPGA
-prj_project open "C:/Lattice/MakeFPGA/MakeFPGA.ldf"
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_src remove "C:/Lattice/MakeFPGA/Source/AppModules/FreqDiv20Bit.v"
-prj_run Export -impl Implementation
-prj_src add "C:/Lattice/MakeFPGA/Source/AppModules/FreqDiv20Bit.v"
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-#Stop recording: 6/9/2017 20:11:32
-
-
-
-<A name="pn170620195047"></A><B><U><big>pn170620195047</big></U></B>
-#Start recording tcl command: 6/20/2017 17:30:33
-#Project Location: C:/Lattice/MakeFPGA; Project name: MakeFPGA
-prj_project open "C:/Lattice/MakeFPGA/MakeFPGA.ldf"
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-prj_run Export -impl Implementation
-#Stop recording: 6/20/2017 19:50:47
-
-
-
-<A name="pn170622142944"></A><B><U><big>pn170622142944</big></U></B>
-#Start recording tcl command: 6/22/2017 13:42:14
-#Project Location: C:/Lattice/MakeFPGA; Project name: MakeFPGA
-prj_project open "C:/Lattice/MakeFPGA/MakeFPGA.ldf"
-prj_run Export -impl Implementation
-#Stop recording: 6/22/2017 14:29:44
-
-
-
-<A name="pn170915205727"></A><B><U><big>pn170915205727</big></U></B>
-#Start recording tcl command: 9/15/2017 20:50:34
-#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject; Project name: MakeFPGA
-prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/MakeFPGA.ldf"
-prj_project close
-#Stop recording: 9/15/2017 20:57:27
-
-
-
-<A name="pn171015222456"></A><B><U><big>pn171015222456</big></U></B>
-#Start recording tcl command: 10/15/2017 22:19:08
-#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject; Project name: MakeFPGA
-prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/MakeFPGA_DiamondProject/MakeFPGA.ldf"
-prj_run Export -impl Implementation -task Jedecgen
-prj_project close
-#Stop recording: 10/15/2017 22:24:56
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>

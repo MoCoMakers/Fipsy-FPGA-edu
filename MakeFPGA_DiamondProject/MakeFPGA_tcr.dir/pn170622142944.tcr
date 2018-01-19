@@ -1,5 +1,0 @@
-#Start recording tcl command: 6/22/2017 13:42:14
-#Project Location: C:/Lattice/MakeFPGA; Project name: MakeFPGA
-prj_project open "C:/Lattice/MakeFPGA/MakeFPGA.ldf"
-prj_run Export -impl Implementation
-#Stop recording: 6/22/2017 14:29:44
