@@ -1,7 +1,7 @@
-/* MakeFPGA_Top.v 
+/* Fipsy_Top.v 
 
-   This is the top level source file for the MAKEFPGA module.  The baseline code is built on the 
-   version 1706 hardware, and will generally be modified to add application specific functionality.
+   This is the top level source file for the Fipsy FPGA module.  The baseline code is built on the 
+   version 1712 hardware, and will generally be modified to add application specific functionality.
 
    This top level source file is intended only to identify the pin connections and collect application 
    logic modules.  To add logic to the part, a unique verilog file would generally be written.  
@@ -28,7 +28,7 @@ This version is the baseline, implementing only code to blink the on-board LED.
 // Module header with generic identification of I/O
 //-----------------------------------------------------------------------------------------------
 
-/* This top level header refers to pins of the MAKEFPGA module.  The routing of the pins
+/* This top level header refers to pins of the Fipsy module.  The routing of the pins
    to the physical chip are covered in the project constraints, so they need not be considered
    directly when writing code here.  FPGA pins not routed to module pins or reserved for purposes
    such as the slave SPI port are not identified here.  The exception is the routing of the
@@ -42,7 +42,7 @@ This version is the baseline, implementing only code to blink the on-board LED.
    use of these pins.  Advanced users may revisit these points.  
 */
 
-module MakeFPGA_Top(
+module Fipsy_Top(
   PIN7, PIN8, PIN9, PIN10, 
   PIN11, PIN12, PIN13, PIN14, PIN17, PIN18, PIN19, PIN20,
   LEDn
@@ -124,7 +124,7 @@ assign PIN9 = 0;
 //assign PIN11 = 0;
 assign PIN12 = 0;
 assign PIN13 = 0;
-//assign PIN14 = 0;
+assign PIN14 = 0;
 assign PIN17 = 0;
 assign PIN18 = 0;
 assign PIN19 = 0;
@@ -160,31 +160,11 @@ FreqDiv20Bit FreqDiv20Bit_inst(
 // Route the output signal to a pin and the LED
 // The LED lights when the signal driving it is low, so inverting the signal will make it light
 // when the signal is high                              
-
-//assign LEDn = !Out2Hz; 
-
+assign LEDn = !Out2Hz; 
 // View the signal on a chosen pin
 assign PIN20 = Out2Hz;
 // Also put the oscillator signal itself on a pin
 assign PIN11 = INTERNAL_OSC;
-
-reg flop1;
-reg flop2;
-//assign flop1 = Out2Hz;
-
-initial
-	begin
-		flop2=0;
-		flop1=1;
-	end
-
-always @ (posedge Out2Hz)
-begin
-	flop1 <= flop2;
-	flop2 <= flop1;
-end
-
-assign LEDn=!(flop2&!PIN14);
 
 //-----------------------------------------------------------------------------------------------
 // End of module  	
