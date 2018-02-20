@@ -28,7 +28,6 @@ OSCH OSCH_inst( .STDBY(1'b0),           // Enable input, 0=Enabled, 1=Disabled (
 // BASELINE EXAMPLE 
 // Create wires to connect the counter (see example application)
 wire Out2Hz;
-----------------------------------------------------------------------------------------------
 
 /* Default assignments -
    If pins are not used, it may be a good idea to drive them to a known state. 

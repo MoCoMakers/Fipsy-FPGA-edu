@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/blinky_rate_divider.v(4): </Dynamic>
+            <Dynamic>MakeFPGA_Top</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/blinky_rate_divider.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>OSCH</Dynamic>
+            <Navigation>D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1793</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/freqdiv20bit.v(20): </Dynamic>
+            <Dynamic>FreqDiv20Bit</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/freqdiv20bit.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/freqdiv20bit.v(55): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>20</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/freqdiv20bit.v</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061045</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIN10_c</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+            <Dynamic>PIN10</Dynamic>
+            <Dynamic>14</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=PIN20_c_19 loads=3 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=PIN20_c_19 loads=3 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>
