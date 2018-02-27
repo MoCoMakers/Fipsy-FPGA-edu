@@ -1,0 +1,9 @@
+#Start recording tcl command: 2/20/2018 18:45:08
+#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files; Project name: FipsyBaseline
+prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/FipsyBaseline.ldf"
+prj_src remove "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/Fipsy_Top.v"
+prj_src remove "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/AppModules/FreqDiv20Bit.v"
+prj_src add "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/Blinky_Rate_Divider.v" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/FreqDiv20Bit.v"
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+#Stop recording: 2/20/2018 20:27:26

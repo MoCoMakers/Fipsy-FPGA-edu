@@ -1,0 +1,21 @@
+---------------------------------------------------
+Report for cell Fipsy_Top
+   Instance path: Fipsy_Top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      12.00        100.0
+                                  LUT4	       2.00        100.0
+                                 IOBUF	         13        100.0
+                                PFUREG	         20        100.0
+                                RIPPLE	         11        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                          FreqDiv20Bit	          1        91.7
+---------------------------------------------------
+Report for cell FreqDiv20Bit
+   Instance path: Fipsy_Top/FreqDiv20Bit_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.00        91.7
+                                PFUREG	         20        100.0
+                                RIPPLE	         11        100.0

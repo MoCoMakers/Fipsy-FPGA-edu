@@ -11,7 +11,7 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
 
 Loading design for application Bitgen from file FipsyBaseline_Implementation.ncd.
-Design name: MakeFPGA_Top
+Design name: Fipsy_Top
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LCMXO2-256HC

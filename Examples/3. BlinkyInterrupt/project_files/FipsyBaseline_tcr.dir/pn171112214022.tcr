@@ -1,0 +1,5 @@
+#Start recording tcl command: 11/12/2017 21:34:56
+#Project Location: C:/Lattice/FipsyBaseline; Project name: FipsyBaseline
+prj_project open "C:/Lattice/FipsyBaseline/FipsyBaseline.ldf"
+prj_run Export -impl Implementation -task Jedecgen -forceAll
+#Stop recording: 11/12/2017 21:40:22
