@@ -1,122 +1,0 @@
-<HTML>
-<HEAD><TITLE>Lattice TCL Log</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="pn171112214022"></A><B><U><big>pn171112214022</big></U></B>
-#Start recording tcl command: 11/12/2017 21:34:56
-#Project Location: C:/Lattice/FipsyBaseline; Project name: FipsyBaseline
-prj_project open "C:/Lattice/FipsyBaseline/FipsyBaseline.ldf"
-prj_run Export -impl Implementation -task Jedecgen -forceAll
-#Stop recording: 11/12/2017 21:40:22
-
-
-
-<A name="pn171208161323"></A><B><U><big>pn171208161323</big></U></B>
-#Start recording tcl command: 12/8/2017 15:53:17
-#Project Location: C:/Lattice/FipsyBaseline_DiamondProject; Project name: FipsyBaseline
-prj_project open "C:/Lattice/FipsyBaseline_DiamondProject/FipsyBaseline.ldf"
-prj_run Export -impl Implementation -task Jedecgen
-prj_run Synthesis -impl Implementation -task Lattice_Synthesis -forceOne
-prj_run Export -impl Implementation -task Jedecgen -forceAll
-prj_run Export -impl Implementation -task Jedecgen -forceAll
-#Stop recording: 12/8/2017 16:13:23
-
-
-
-<A name="pn171208161820"></A><B><U><big>pn171208161820</big></U></B>
-#Start recording tcl command: 12/8/2017 16:14:19
-#Project Location: C:/Lattice/FipsyBaseline_DiamondProject; Project name: FipsyBaseline
-prj_project open "C:/Lattice/FipsyBaseline_DiamondProject/FipsyBaseline.ldf"
-prj_run Export -impl Implementation -task Jedecgen -forceAll
-prj_run Export -impl Implementation -task Jedecgen -forceAll
-#Stop recording: 12/8/2017 16:18:20
-
-
-
-<A name="pn171208162344"></A><B><U><big>pn171208162344</big></U></B>
-#Start recording tcl command: 12/8/2017 16:23:04
-#Project Location: C:/Lattice/FipsyBaseline_DiamondProject; Project name: FipsyBaseline
-prj_project open "C:/Lattice/FipsyBaseline_DiamondProject/FipsyBaseline.ldf"
-prj_run Export -impl Implementation -task Jedecgen -forceAll
-#Stop recording: 12/8/2017 16:23:44
-
-
-
-<A name="pn180220202726"></A><B><U><big>pn180220202726</big></U></B>
-#Start recording tcl command: 2/20/2018 18:45:08
-#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files; Project name: FipsyBaseline
-prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/FipsyBaseline.ldf"
-prj_src remove "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/Fipsy_Top.v"
-prj_src remove "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/AppModules/FreqDiv20Bit.v"
-prj_src add "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/Blinky_Rate_Divider.v" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/FreqDiv20Bit.v"
-prj_run Export -impl Implementation -task Jedecgen
-prj_run Export -impl Implementation -task Jedecgen
-#Stop recording: 2/20/2018 20:27:26
-
-
-
-<A name="pn180226232211"></A><B><U><big>pn180226232211</big></U></B>
-#Start recording tcl command: 2/26/2018 23:21:24
-#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files; Project name: FipsyBaseline
-prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/FipsyBaseline.ldf"
-#Stop recording: 2/26/2018 23:22:11
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>
