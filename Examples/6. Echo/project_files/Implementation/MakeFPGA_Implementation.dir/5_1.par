@@ -1,0 +1,200 @@
+
+Lattice Place and Route Report for Design "MakeFPGA_Implementation_map.ncd"
+Fri Oct 27 22:45:01 2017
+
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF MakeFPGA_Implementation_map.ncd MakeFPGA_Implementation.dir/5_1.ncd MakeFPGA_Implementation.prf
+Preference file: MakeFPGA_Implementation.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file MakeFPGA_Implementation_map.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application par from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   13+4(JTAG)/56      30% used
+                  13+4(JTAG)/22      77% bonded
+
+   SLICE             75/128          58% used
+
+   OSC                1/1           100% used
+
+
+Number of Signals: 287
+Number of Connections: 606
+WARNING - par: The SN pin is not available for use as a general purpose I/O pin when the SLAVE_SPI_PORT attribute is enabled.  The SN pin should be tied high with an external pull-up if you are not using the Slave SPI port for configuration.
+
+Pin Constraint Summary:
+   13 out of 13 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    PIN11_c (driver: OSCH_inst, clk load #: 75)
+
+
+The following 4 signals are selected to use the secondary clock routing resources:
+    TX0/PIN11_c_enable_48 (driver: SLICE_91, clk load #: 0, sr load #: 0, ce load #: 12)
+    n584 (driver: SLICE_92, clk load #: 0, sr load #: 11, ce load #: 0)
+    PIN10_c_2 (driver: TX0/SLICE_33, clk load #: 0, sr load #: 11, ce load #: 0)
+    rcv (driver: SLICE_82, clk load #: 0, sr load #: 0, ce load #: 11)
+
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+...................
+Placer score = 13609.
+Finished Placer Phase 1.  REAL time: 6 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  13573
+Finished Placer Phase 2.  REAL time: 6 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "PIN11_c" from OSC on comp "OSCH_inst" on site "OSC", clk load = 75
+  SECONDARY "TX0/PIN11_c_enable_48" from F1 on comp "SLICE_91" on site "R5C5A", clk load = 0, ce load = 12, sr load = 0
+  SECONDARY "n584" from F0 on comp "SLICE_92" on site "R2C6A", clk load = 0, ce load = 0, sr load = 11
+  SECONDARY "PIN10_c_2" from Q0 on comp "TX0/SLICE_33" on site "R2C6D", clk load = 0, ce load = 0, sr load = 11
+  SECONDARY "rcv" from Q0 on comp "SLICE_82" on site "R5C5C", clk load = 0, ce load = 11, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 4 out of 8 (50%)
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   13 + 4(JTAG) out of 56 (30.4%) PIO sites used.
+   13 + 4(JTAG) out of 22 (77.3%) bonded PIO sites used.
+   Number of PIO comps: 13; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+--------------+------------+-----------+
+| I/O Bank | Usage        | Bank Vccio | Bank Vref |
++----------+--------------+------------+-----------+
+| 0        | 4 / 9 ( 44%) | 3.3V       | -         |
+| 1        | 2 / 2 (100%) | 3.3V       | -         |
+| 2        | 5 / 9 ( 55%) | 3.3V       | -         |
+| 3        | 2 / 2 (100%) | 3.3V       | -         |
++----------+--------------+------------+-----------+
+
+Total placer CPU time: 5 secs 
+
+Dumping design to file MakeFPGA_Implementation.dir/5_1.ncd.
+
+0 connections routed; 606 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 6 secs 
+
+Start NBR router at 22:45:07 10/27/17
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 22:45:07 10/27/17
+
+Start NBR section for initial routing at 22:45:07 10/27/17
+Level 4, iteration 1
+8(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 469.196ns/0.000ns; real time: 6 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 22:45:07 10/27/17
+Level 4, iteration 1
+2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 469.196ns/0.000ns; real time: 6 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 469.196ns/0.000ns; real time: 6 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 22:45:07 10/27/17
+
+Start NBR section for re-routing at 22:45:07 10/27/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 469.196ns/0.000ns; real time: 6 secs 
+
+Start NBR section for post-routing at 22:45:07 10/27/17
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 469.196ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 6 secs 
+Total REAL time: 7 secs 
+Completely routed.
+End of route.  606 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file MakeFPGA_Implementation.dir/5_1.ncd.
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 469.196
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.304
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 6 secs 
+Total REAL time to completion: 7 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.

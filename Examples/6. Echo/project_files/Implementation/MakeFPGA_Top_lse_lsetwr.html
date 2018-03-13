@@ -1,0 +1,208 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Oct 27 22:44:59 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     MakeFPGA_Top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets PIN11_c]
+            1786 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 493.379ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \TX0/bitc__i0  (from PIN11_c +)
+   Destination:    FD1S3IX    CD             \TX0/next_state_i0  (to PIN11_c -)
+
+   Delay:                   6.461ns  (29.8% logic, 70.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.461ns data_path \TX0/bitc__i0 to \TX0/next_state_i0 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 493.379ns
+
+ Path Details: \TX0/bitc__i0 to \TX0/next_state_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/bitc__i0 (from PIN11_c)
+Route         6   e 1.515                                  \TX0/bitc[0]
+LUT4        ---     0.493              A to Z              \TX0/i863_2_lut
+Route         1   e 0.941                                  \TX0/n1099
+LUT4        ---     0.493              C to Z              \TX0/i2_4_lut
+Route         2   e 1.141                                  n1070
+LUT4        ---     0.493              C to Z              i115_3_lut
+Route         1   e 0.941                                  n232
+                  --------
+                    6.461  (29.8% logic, 70.2% route), 4 logic levels.
+
+
+Passed:  The following path meets requirements by 493.379ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \TX0/bitc__i0  (from PIN11_c +)
+   Destination:    FD1S3AX    D              \TX0/next_state_i1  (to PIN11_c -)
+
+   Delay:                   6.461ns  (29.8% logic, 70.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.461ns data_path \TX0/bitc__i0 to \TX0/next_state_i1 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 493.379ns
+
+ Path Details: \TX0/bitc__i0 to \TX0/next_state_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/bitc__i0 (from PIN11_c)
+Route         6   e 1.515                                  \TX0/bitc[0]
+LUT4        ---     0.493              A to Z              \TX0/i863_2_lut
+Route         1   e 0.941                                  \TX0/n1099
+LUT4        ---     0.493              C to Z              \TX0/i2_4_lut
+Route         2   e 1.141                                  n1070
+LUT4        ---     0.493              B to Z              \TX0/i879_4_lut_4_lut_3_lut
+Route         1   e 0.941                                  \TX0/next_state_1__N_190[1]
+                  --------
+                    6.461  (29.8% logic, 70.2% route), 4 logic levels.
+
+
+Passed:  The following path meets requirements by 493.579ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \TX0/bitc__i3  (from PIN11_c +)
+   Destination:    FD1S3IX    CD             \TX0/next_state_i0  (to PIN11_c -)
+
+   Delay:                   6.261ns  (30.7% logic, 69.3% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.261ns data_path \TX0/bitc__i3 to \TX0/next_state_i0 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 493.579ns
+
+ Path Details: \TX0/bitc__i3 to \TX0/next_state_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/bitc__i3 (from PIN11_c)
+Route         3   e 1.315                                  \TX0/bitc[3]
+LUT4        ---     0.493              B to Z              \TX0/i863_2_lut
+Route         1   e 0.941                                  \TX0/n1099
+LUT4        ---     0.493              C to Z              \TX0/i2_4_lut
+Route         2   e 1.141                                  n1070
+LUT4        ---     0.493              C to Z              i115_3_lut
+Route         1   e 0.941                                  n232
+                  --------
+                    6.261  (30.7% logic, 69.3% route), 4 logic levels.
+
+Report: 6.621 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets PIN11_c]                 |  1000.000 ns|    13.242 ns|     4  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  1786 paths, 290 nets, and 720 connections (99.2% coverage)
+
+
+Peak memory: 56451072 bytes, TRCE: 2342912 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,137 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Mon Mar 12 22:16:04 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     MakeFPGA_Top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets PIN11_c]
+            860 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 493.653ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \TX0/TX0/baud_en_52_i1  (from PIN11_c +)
+   Destination:    FD1P3JX    SP             \TX0/TX0/shifter_i4  (to PIN11_c +)
+
+   Delay:                   6.062ns  (23.6% logic, 76.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      6.062ns data_path \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i4 meets
+    500.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 499.715ns) by 493.653ns
+
+ Path Details: \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i4
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/TX0/baud_en_52_i1 (from PIN11_c)
+Route         7   e 1.559                                  \TX0/TX0/baud_en
+LUT4        ---     0.493              A to Z              \TX0/TX0/BAUD0/i7_4_lut
+Route         3   e 1.258                                  clk_baud
+LUT4        ---     0.493              B to Z              i2_3_lut_rep_7_3_lut
+Route        16   e 1.815                                  PIN11_c_enable_23
+                  --------
+                    6.062  (23.6% logic, 76.4% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 493.653ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \TX0/TX0/baud_en_52_i1  (from PIN11_c +)
+   Destination:    FD1P3JX    SP             \TX0/TX0/shifter_i3  (to PIN11_c +)
+
+   Delay:                   6.062ns  (23.6% logic, 76.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      6.062ns data_path \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i3 meets
+    500.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 499.715ns) by 493.653ns
+
+ Path Details: \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/TX0/baud_en_52_i1 (from PIN11_c)
+Route         7   e 1.559                                  \TX0/TX0/baud_en
+LUT4        ---     0.493              A to Z              \TX0/TX0/BAUD0/i7_4_lut
+Route         3   e 1.258                                  clk_baud
+LUT4        ---     0.493              B to Z              i2_3_lut_rep_7_3_lut
+Route        16   e 1.815                                  PIN11_c_enable_23
+                  --------
+                    6.062  (23.6% logic, 76.4% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 493.653ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \TX0/TX0/baud_en_52_i1  (from PIN11_c +)
+   Destination:    FD1P3JX    SP             \TX0/TX0/shifter_i2  (to PIN11_c +)
+
+   Delay:                   6.062ns  (23.6% logic, 76.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      6.062ns data_path \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i2 meets
+    500.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 499.715ns) by 493.653ns
+
+ Path Details: \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/TX0/baud_en_52_i1 (from PIN11_c)
+Route         7   e 1.559                                  \TX0/TX0/baud_en
+LUT4        ---     0.493              A to Z              \TX0/TX0/BAUD0/i7_4_lut
+Route         3   e 1.258                                  clk_baud
+LUT4        ---     0.493              B to Z              i2_3_lut_rep_7_3_lut
+Route        16   e 1.815                                  PIN11_c_enable_23
+                  --------
+                    6.062  (23.6% logic, 76.4% route), 3 logic levels.
+
+Report: 6.347 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets PIN11_c]                 |  1000.000 ns|    12.694 ns|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  860 paths, 179 nets, and 401 connections (94.4% coverage)
+
+
+Peak memory: 55193600 bytes, TRCE: 1732608 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,28 @@
+#Start recording tcl command: 10/13/2017 18:48:16
+#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject; Project name: MakeFPGA
+prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/MakeFPGA.ldf"
+prj_src add "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/Source/uart_tx.v"
+prj_src add "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/Source/baudgen_tx.v"
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_src add "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/Source/txchar.v"
+prj_run Export -impl Implementation -task Jedecgen
+prj_src remove "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/Source/uart_rx.v" "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/Source/baudgen_rx.v"
+prj_run Export -impl Implementation -task Jedecgen
+prj_src add "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/Source/baudgen.h"
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+#Stop recording: 10/15/2017 22:17:33

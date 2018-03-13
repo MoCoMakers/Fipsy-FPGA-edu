@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "FipsyBaseline_Implementation.log"
+-o "FipsyBaseline_Implementation.csv"
+-pr "FipsyBaseline_Implementation.prf"

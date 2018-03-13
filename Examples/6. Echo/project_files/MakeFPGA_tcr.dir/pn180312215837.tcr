@@ -1,0 +1,5 @@
+#Start recording tcl command: 3/12/2018 21:56:15
+#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project; Project name: MakeFPGA
+prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/MakeFPGA.ldf"
+prj_project close
+#Stop recording: 3/12/2018 21:58:37

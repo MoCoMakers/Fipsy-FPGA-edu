@@ -1,0 +1,52 @@
+---------------------------------------------------
+Report for cell MakeFPGA_Top
+   Instance path: MakeFPGA_Top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      60.00        100.0
+                                  LUT4	      65.00        100.0
+                                 IOBUF	         13        100.0
+                                PFUREG	         91        100.0
+                                RIPPLE	         21        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                 txstr	          1        57.4
+                          FreqDiv20Bit	          1        18.3
+---------------------------------------------------
+Report for cell txstr
+   Instance path: MakeFPGA_Top/TX0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      34.42        57.4
+                                  LUT4	      49.00        75.4
+                                PFUREG	         51        56.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               uart_tx	          1        45.1
+---------------------------------------------------
+Report for cell uart_tx
+   Instance path: MakeFPGA_Top/TX0/TX0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      27.08        45.1
+                                  LUT4	      38.00        58.5
+                                PFUREG	         45        49.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            baudgen_tx	          1        12.8
+---------------------------------------------------
+Report for cell baudgen_tx
+   Instance path: MakeFPGA_Top/TX0/TX0/BAUD0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.67        12.8
+                                  LUT4	      17.00        26.2
+                                PFUREG	          7         7.7
+---------------------------------------------------
+Report for cell FreqDiv20Bit
+   Instance path: MakeFPGA_Top/FreqDiv20Bit_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.00        18.3
+                                PFUREG	         20        22.0
+                                RIPPLE	         11        52.4

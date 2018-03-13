@@ -2,9 +2,9 @@
 <BaliProject version="3.2" title="FipsyBaseline" device="LCMXO2-256HC-4SG32C" default_implementation="Implementation">
     <Options/>
     <Implementation title="Implementation" dir="Implementation" description="Implementation" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="Fipsy_Top"/>
+        <Options def_top="MakeFPGA_Top"/>
         <Source name="Source/Fipsy_Top.v" type="Verilog" type_short="Verilog">
-            <Options top_module="Fipsy_Top"/>
+            <Options top_module="MakeFPGA_Top"/>
         </Source>
         <Source name="Source/AppModules/FreqDiv20Bit.v" type="Verilog" type_short="Verilog">
             <Options/>

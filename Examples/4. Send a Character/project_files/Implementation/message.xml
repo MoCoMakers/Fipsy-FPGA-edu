@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(12): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(19): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(58): </Dynamic>
+            <Dynamic>state</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(58): </Dynamic>
+            <Dynamic>IDLE</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(13): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/send_character.v(45): </Dynamic>
+            <Dynamic>MakeFPGA_Top</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/send_character.v</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;12.09&quot;)</Dynamic>
+            <Navigation>D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1793</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v(20): </Dynamic>
+            <Dynamic>FreqDiv20Bit</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v(55): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>20</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(16): </Dynamic>
+            <Dynamic>txchar</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(23): </Dynamic>
+            <Dynamic>uart_tx</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(93): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
+            <Navigation>93</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(30): </Dynamic>
+            <Dynamic>baudgen_tx</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(61): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v</Navigation>
+            <Navigation>61</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(70): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v</Navigation>
+            <Navigation>70</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\TX0/TX0/data_r</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\TX0/TX0/data_r</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\TX0/TX0/data_r</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\TX0/TX0/data_r</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\TX0/TX0/data_r</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\TX0/TX0/data_r</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>\TX0/TX0/data_r</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>7</Dynamic>
+            <Dynamic>\TX0/TX0/data_r</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061045</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIN10_c</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+            <Dynamic>PIN10</Dynamic>
+            <Dynamic>14</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

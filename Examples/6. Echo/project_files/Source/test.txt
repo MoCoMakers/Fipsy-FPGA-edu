@@ -1,0 +1,11 @@
+`define B115200 18.0
+`define B57600 36.0
+`define B38400 54.0
+`define B31250 66.0
+`define B19200 108.0
+`define B9600 216.0
+`define B4800 433.0
+`define B2400 866.0
+`define B1200 1733.0
+`define B600 3466.0
+`define B300 6933.0
