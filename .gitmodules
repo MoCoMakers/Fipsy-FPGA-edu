@@ -1,0 +1,3 @@
+[submodule "Programmer/Arduino/Arduino-Fipsy-Programmer"]
+	path = Programmer/Arduino/Arduino-Fipsy-Programmer
+	url = https://github.com/MocoMakers/Arduino-Fipsy-Programmer
