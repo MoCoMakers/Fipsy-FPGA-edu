@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Mar 12 21:31:04 2018
+Wed Mar 14 15:16:21 2018
 
 
-Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/promote.xml 
+Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -61,15 +61,15 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files (searchpath added)
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files (searchpath added)
 -p D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Implementation (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files (searchpath added)
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/Fipsy_Top.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/baudgen_tx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/FreqDiv20Bit.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/uart_tx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/txchar.v
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Implementation (searchpath added)
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files (searchpath added)
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/send_string.v
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/txstr.v
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/uart_tx.v
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/baudgen_tx.v
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/FreqDiv20Bit.v
 NGD file = FipsyBaseline_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -80,30 +80,30 @@ Technology check ok...
 Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/fipsy_top.v. VERI-1482
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(12): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh. VERI-1328
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v. VERI-1482
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(19): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh. VERI-1328
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(58): identifier state is used before its declaration. VERI-1875
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(58): identifier IDLE is used before its declaration. VERI-1875
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(13): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh. VERI-1328
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(47): identifier char_count is used before its declaration. VERI-1875
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/send_string.v. VERI-1482
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v. VERI-1482
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v(13): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen.vh. VERI-1328
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v(47): identifier char_count is used before its declaration. VERI-1875
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v. VERI-1482
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(19): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen.vh. VERI-1328
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(58): identifier state is used before its declaration. VERI-1875
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(58): identifier IDLE is used before its declaration. VERI-1875
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v. VERI-1482
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v(12): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/freqdiv20bit.v. VERI-1482
 Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): MakeFPGA_Top
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/fipsy_top.v(45): compiling module MakeFPGA_Top. VERI-1018
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/send_string.v(45): compiling module MakeFPGA_Top. VERI-1018
 INFO - synthesis: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="12.09"). VERI-1018
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(16): compiling module txstr. VERI-1018
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(23): compiling module uart_tx. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(93): expression size 32 truncated to fit in target size 5. VERI-1209
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(30): compiling module baudgen_tx. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(61): expression size 32 truncated to fit in target size 7. VERI-1209
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(70): expression size 32 truncated to fit in target size 1. VERI-1209
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(68): expression size 32 truncated to fit in target size 3. VERI-1209
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v(16): compiling module txstr. VERI-1018
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(23): compiling module uart_tx. VERI-1018
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(93): expression size 32 truncated to fit in target size 5. VERI-1209
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v(30): compiling module baudgen_tx. VERI-1018
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v(61): expression size 32 truncated to fit in target size 7. VERI-1209
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v(70): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v(68): expression size 32 truncated to fit in target size 3. VERI-1209
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
@@ -221,8 +221,8 @@ clk0 [get_nets PIN11_c]                 |    1.000 MHz|   75.517 MHz|     4
 All constraints were met.
 
 
-Peak Memory Usage: 53.164  MB
+Peak Memory Usage: 53.105  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.953  secs
+Elapsed CPU time for LSE flow : 0.734  secs
 --------------------------------------------------------------

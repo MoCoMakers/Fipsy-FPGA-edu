@@ -16,15 +16,18 @@
 Command line:   map -a MachXO2 -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial
      FipsyBaseline_Implementation.ngd -o FipsyBaseline_Implementation_map.ncd
      -pr FipsyBaseline_Implementation.prf -mp FipsyBaseline_Implementation.mrp
-     -lpf C:/Lattice/FipsyBaseline_DiamondProject/Implementation/FipsyBaseline_I
-     mplementation.lpf -lpf
-     C:/Lattice/FipsyBaseline_DiamondProject/FipsyBaseline.lpf -c 0 -gui -msgset
-     C:/Lattice/FipsyBaseline_DiamondProject/promote.xml 
+     -lpf
+     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1.
+     Blinky/project_files/Implementation/FipsyBaseline_Implementation.lpf -lpf
+     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1.
+     Blinky/project_files/FipsyBaseline.lpf -c 0 -gui -msgset
+     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1.
+     Blinky/project_files/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
-Mapped on:  12/08/17  16:23:12
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
+Mapped on:  03/14/18  15:04:43
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -64,10 +67,10 @@ Mapped on:  12/08/17  16:23:12
    Number of Clock Enables:  0
    Number of LSRs:  1
      Net PIN10_c: 11 loads, 11 LSLICEs
+
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net PIN10_c: 11 loads
-
      Net PIN20_c_19: 3 loads
      Net FreqDiv20Bit_inst/n105: 1 loads
      Net FreqDiv20Bit_inst/n2: 1 loads
@@ -124,9 +127,9 @@ Mapped on:  12/08/17  16:23:12
 +---------------------+-----------+-----------+------------+
 | LEDn                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
 | PIN10               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 
 
 
@@ -178,11 +181,6 @@ Instance Name: OSCH_inst
    Total REAL Time: 0 secs  
    Peak Memory Usage: 30 MB
         
-
-
-
-
-
 
 
 

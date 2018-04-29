@@ -9,19 +9,18 @@ Command line:   map -a MachXO2 -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial
      FipsyBaseline_Implementation.ngd -o FipsyBaseline_Implementation_map.ncd
      -pr FipsyBaseline_Implementation.prf -mp FipsyBaseline_Implementation.mrp
      -lpf
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4.
-     Send a
-     Character/project_files/Implementation/FipsyBaseline_Implementation.lpf
+     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5.
+     Send a String/project_files/Implementation/FipsyBaseline_Implementation.lpf
      -lpf
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4.
-     Send a Character/project_files/FipsyBaseline.lpf -c 0 -gui -msgset
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4.
-     Send a Character/project_files/promote.xml 
+     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5.
+     Send a String/project_files/FipsyBaseline.lpf -c 0 -gui -msgset
+     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5.
+     Send a String/project_files/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
-Mapped on:  03/12/18  21:31:07
+Mapped on:  03/14/18  15:16:22
 
 Design Summary
 --------------
@@ -60,17 +59,17 @@ Design Summary
    Number of clocks:  1
      Net PIN11_c: 55 loads, 51 rising, 4 falling (Driver: OSCH_inst )
    Number of Clock Enables:  4
+     Net PIN11_c_enable_31: 10 loads, 10 LSLICEs
 
                                     Page 1
 
 
 
 
-Design:  MakeFPGA_Top                                  Date:  03/12/18  21:31:07
+Design:  MakeFPGA_Top                                  Date:  03/14/18  15:16:22
 
 Design Summary (cont)
 ---------------------
-     Net PIN11_c_enable_31: 10 loads, 10 LSLICEs
      Net PIN11_c_enable_9: 1 loads, 1 LSLICEs
      Net TX0/TX0/PIN11_c_enable_30: 2 loads, 2 LSLICEs
      Net TX0/TX0/PIN11_c_enable_27: 6 loads, 6 LSLICEs
@@ -126,17 +125,17 @@ IO (PIO) Attributes
 | PIN12               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PIN13               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 
                                     Page 2
 
 
 
 
-Design:  MakeFPGA_Top                                  Date:  03/12/18  21:31:07
+Design:  MakeFPGA_Top                                  Date:  03/14/18  15:16:22
 
 IO (PIO) Attributes (cont)
 --------------------------
-+---------------------+-----------+-----------+------------+
 | PIN14               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PIN17               | OUTPUT    | LVCMOS33  |            |
@@ -193,12 +192,13 @@ OSC 1:                                     Pin/Node Value
 
 
 
+
                                     Page 3
 
 
 
 
-Design:  MakeFPGA_Top                                  Date:  03/12/18  21:31:07
+Design:  MakeFPGA_Top                                  Date:  03/14/18  15:16:22
 
 ASIC Components
 ---------------

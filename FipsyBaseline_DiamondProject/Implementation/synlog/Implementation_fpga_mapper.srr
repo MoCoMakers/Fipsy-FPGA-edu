@@ -1,0 +1,314 @@
+# Tue Mar 20 18:52:18 2018
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   475.81ns		   2 /        20
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 20 clock pin(s) of sequential element(s)
+0 instances converted, 20 sequential instances remain driven by gated/generated clocks
+
+====================================================================== Gated/Generated Clocks =======================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                 Explanation                                                  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       OSCH_inst           OSCH                   20         FreqDiv20Bit_inst.count[19]     No gated clock conversion method for cell cell:LUCENT.FD1S3IX
+=====================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 142MB)
+
+Writing Analyst data base D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Implementation\synwork\Implementation_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Implementation\Implementation.edi
+L-2016.09L-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+@W: MT420 |Found inferred clock Fipsy_Top|PIN11_inferred_clock with period 480.77ns. Please declare a user-defined clock on object "n:PIN11"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Mar 20 18:52:19 2018
+#
+
+
+Top view:               Fipsy_Top
+Requested Frequency:    2.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 475.241
+
+                                   Requested     Estimated     Requested     Estimated                 Clock        Clock                
+Starting Clock                     Frequency     Frequency     Period        Period        Slack       Type         Group                
+-----------------------------------------------------------------------------------------------------------------------------------------
+Fipsy_Top|PIN11_inferred_clock     2.1 MHz       180.9 MHz     480.769       5.528         475.241     inferred     Autoconstr_clkgroup_0
+System                             1.0 MHz       NA            1000.000      NA            NA          system       system_clkgroup      
+=========================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                          |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                        Ending                          |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Fipsy_Top|PIN11_inferred_clock  Fipsy_Top|PIN11_inferred_clock  |  480.769     475.241  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Fipsy_Top|PIN11_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                               Starting                                                            Arrival            
+Instance                       Reference                          Type        Pin     Net          Time        Slack  
+                               Clock                                                                                  
+----------------------------------------------------------------------------------------------------------------------
+FreqDiv20Bit_inst.count[0]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[0]     1.044       475.241
+FreqDiv20Bit_inst.count[1]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[1]     0.972       475.456
+FreqDiv20Bit_inst.count[2]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[2]     0.972       475.456
+FreqDiv20Bit_inst.count[3]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[3]     0.972       475.599
+FreqDiv20Bit_inst.count[4]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[4]     0.972       475.599
+FreqDiv20Bit_inst.count[5]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[5]     0.972       475.741
+FreqDiv20Bit_inst.count[6]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[6]     0.972       475.741
+FreqDiv20Bit_inst.count[7]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[7]     0.972       475.884
+FreqDiv20Bit_inst.count[8]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[8]     0.972       475.884
+FreqDiv20Bit_inst.count[9]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     Q       count[9]     0.972       476.027
+======================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                Starting                                                                         Required            
+Instance                        Reference                          Type        Pin     Net                       Time         Slack  
+                                Clock                                                                                                
+-------------------------------------------------------------------------------------------------------------------------------------
+FreqDiv20Bit_inst.count[19]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_s_19_0_S0       480.664      475.241
+FreqDiv20Bit_inst.count[17]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_cry_17_0_S0     480.664      475.384
+FreqDiv20Bit_inst.count[18]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_cry_17_0_S1     480.664      475.384
+FreqDiv20Bit_inst.count[15]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_cry_15_0_S0     480.664      475.527
+FreqDiv20Bit_inst.count[16]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_cry_15_0_S1     480.664      475.527
+FreqDiv20Bit_inst.count[13]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_cry_13_0_S0     480.664      475.670
+FreqDiv20Bit_inst.count[14]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_cry_13_0_S1     480.664      475.670
+FreqDiv20Bit_inst.count[11]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_cry_11_0_S0     480.664      475.812
+FreqDiv20Bit_inst.count[12]     Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_cry_11_0_S1     480.664      475.812
+FreqDiv20Bit_inst.count[9]      Fipsy_Top|PIN11_inferred_clock     FD1S3IX     D       un3_count_cry_9_0_S0      480.664      475.955
+=====================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      480.769
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         480.664
+
+    - Propagation time:                      5.423
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     475.241
+
+    Number of logic level(s):                11
+    Starting point:                          FreqDiv20Bit_inst.count[0] / Q
+    Ending point:                            FreqDiv20Bit_inst.count[19] / D
+    The start point is clocked by            Fipsy_Top|PIN11_inferred_clock [rising] on pin CK
+    The end   point is clocked by            Fipsy_Top|PIN11_inferred_clock [rising] on pin CK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                     Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+FreqDiv20Bit_inst.count[0]               FD1S3IX     Q        Out     1.044     1.044       -         
+count[0]                                 Net         -        -       -         -           2         
+FreqDiv20Bit_inst.un3_count_cry_0_0      CCU2D       A1       In      0.000     1.044       -         
+FreqDiv20Bit_inst.un3_count_cry_0_0      CCU2D       COUT     Out     1.545     2.588       -         
+un3_count_cry_0                          Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_cry_1_0      CCU2D       CIN      In      0.000     2.588       -         
+FreqDiv20Bit_inst.un3_count_cry_1_0      CCU2D       COUT     Out     0.143     2.731       -         
+un3_count_cry_2                          Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_cry_3_0      CCU2D       CIN      In      0.000     2.731       -         
+FreqDiv20Bit_inst.un3_count_cry_3_0      CCU2D       COUT     Out     0.143     2.874       -         
+un3_count_cry_4                          Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_cry_5_0      CCU2D       CIN      In      0.000     2.874       -         
+FreqDiv20Bit_inst.un3_count_cry_5_0      CCU2D       COUT     Out     0.143     3.017       -         
+un3_count_cry_6                          Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_cry_7_0      CCU2D       CIN      In      0.000     3.017       -         
+FreqDiv20Bit_inst.un3_count_cry_7_0      CCU2D       COUT     Out     0.143     3.160       -         
+un3_count_cry_8                          Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_cry_9_0      CCU2D       CIN      In      0.000     3.160       -         
+FreqDiv20Bit_inst.un3_count_cry_9_0      CCU2D       COUT     Out     0.143     3.302       -         
+un3_count_cry_10                         Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_cry_11_0     CCU2D       CIN      In      0.000     3.302       -         
+FreqDiv20Bit_inst.un3_count_cry_11_0     CCU2D       COUT     Out     0.143     3.445       -         
+un3_count_cry_12                         Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_cry_13_0     CCU2D       CIN      In      0.000     3.445       -         
+FreqDiv20Bit_inst.un3_count_cry_13_0     CCU2D       COUT     Out     0.143     3.588       -         
+un3_count_cry_14                         Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_cry_15_0     CCU2D       CIN      In      0.000     3.588       -         
+FreqDiv20Bit_inst.un3_count_cry_15_0     CCU2D       COUT     Out     0.143     3.731       -         
+un3_count_cry_16                         Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_cry_17_0     CCU2D       CIN      In      0.000     3.731       -         
+FreqDiv20Bit_inst.un3_count_cry_17_0     CCU2D       COUT     Out     0.143     3.873       -         
+un3_count_cry_18                         Net         -        -       -         -           1         
+FreqDiv20Bit_inst.un3_count_s_19_0       CCU2D       CIN      In      0.000     3.873       -         
+FreqDiv20Bit_inst.un3_count_s_19_0       CCU2D       S0       Out     1.549     5.423       -         
+un3_count_s_19_0_S0                      Net         -        -       -         -           1         
+FreqDiv20Bit_inst.count[19]              FD1S3IX     D        In      0.000     5.423       -         
+======================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_256hc-4
+
+Register bits: 20 of 256 (8%)
+PIC Latch:       0
+I/O cells:       13
+
+
+Details:
+CCU2D:          11
+FD1S3IX:        20
+GSR:            1
+IB:             1
+INV:            2
+OB:             12
+OSCH:           1
+PUR:            1
+VHI:            2
+VLO:            2
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 32MB peak: 145MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Mar 20 18:52:20 2018
+
+###########################################################]

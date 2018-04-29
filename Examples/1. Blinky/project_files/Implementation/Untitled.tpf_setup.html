@@ -1,0 +1,718 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.9.1.119
+Thu Mar 15 20:00:44 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     Fipsy_Top
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+
+
+</A><A name="FREQUENCY NET 'PIN11_c' 2.080000 MH"></A>================================================================================
+Preference: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.563ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/count_8__i0</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_0">FreqDiv20Bit_inst/count_8__i19</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               4.040ns  (83.8% logic, 16.2% route), 12 logic levels.
+
+ Constraint Details:
+
+      4.040ns physical path delay FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_0 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.563ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7A.CLK,R3C7A.Q1,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.656,R3C7A.Q1,R3C7A.A1,FreqDiv20Bit_inst/n20:C1TOFCO_DEL, 0.889,R3C7A.A1,R3C7A.FCO,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.000,R3C7A.FCO,R3C7B.FCI,FreqDiv20Bit_inst/n28:FCITOFCO_DEL, 0.162,R3C7B.FCI,R3C7B.FCO,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.FCO,R3C7C.FCI,FreqDiv20Bit_inst/n29:FCITOFCO_DEL, 0.162,R3C7C.FCI,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOFCO_DEL, 0.162,R3C9A.FCI,R3C9A.FCO,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.FCO,R3C9B.FCI,FreqDiv20Bit_inst/n36:FCITOFCO_DEL, 0.162,R3C9B.FCI,R3C9B.FCO,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.FCO,R3C9C.FCI,FreqDiv20Bit_inst/n37:FCITOF0_DEL, 0.585,R3C9C.FCI,R3C9C.F0,FreqDiv20Bit_inst/SLICE_0:ROUTE, 0.000,R3C9C.F0,R3C9C.DI0,FreqDiv20Bit_inst/n86">Data path</A> FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7A.CLK to       R3C7A.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n20:R3C7A.Q1:R3C7A.A1:0.656">       R3C7A.Q1 to R3C7A.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n20">FreqDiv20Bit_inst/n20</A>
+C1TOFCO_DE  ---     0.889       R3C7A.A1 to      R3C7A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n28:R3C7A.FCO:R3C7B.FCI:0.000">      R3C7A.FCO to R3C7B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n28">FreqDiv20Bit_inst/n28</A>
+FCITOFCO_D  ---     0.162      R3C7B.FCI to      R3C7B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n29:R3C7B.FCO:R3C7C.FCI:0.000">      R3C7B.FCO to R3C7C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n29">FreqDiv20Bit_inst/n29</A>
+FCITOFCO_D  ---     0.162      R3C7C.FCI to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOFCO_D  ---     0.162      R3C9A.FCI to      R3C9A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n36:R3C9A.FCO:R3C9B.FCI:0.000">      R3C9A.FCO to R3C9B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n36">FreqDiv20Bit_inst/n36</A>
+FCITOFCO_D  ---     0.162      R3C9B.FCI to      R3C9B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n37:R3C9B.FCO:R3C9C.FCI:0.000">      R3C9B.FCO to R3C9C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n37">FreqDiv20Bit_inst/n37</A>
+FCITOF0_DE  ---     0.585      R3C9C.FCI to       R3C9C.F0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_0">FreqDiv20Bit_inst/SLICE_0</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n86:R3C9C.F0:R3C9C.DI0:0.000">       R3C9C.F0 to R3C9C.DI0     </A> <A href="#@net:FreqDiv20Bit_inst/n86">FreqDiv20Bit_inst/n86</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    4.040   (83.8% logic, 16.2% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7A.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7A.CLK:2.977">        OSC.OSC to R3C7A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9C.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9C.CLK:2.977">        OSC.OSC to R3C9C.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.591ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/count_8__i1</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_0">FreqDiv20Bit_inst/count_8__i19</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               4.012ns  (83.6% logic, 16.4% route), 11 logic levels.
+
+ Constraint Details:
+
+      4.012ns physical path delay FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_0 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.591ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7B.CLK,R3C7B.Q0,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.656,R3C7B.Q0,R3C7B.A0,FreqDiv20Bit_inst/n19:C0TOFCO_DEL, 1.023,R3C7B.A0,R3C7B.FCO,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.FCO,R3C7C.FCI,FreqDiv20Bit_inst/n29:FCITOFCO_DEL, 0.162,R3C7C.FCI,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOFCO_DEL, 0.162,R3C9A.FCI,R3C9A.FCO,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.FCO,R3C9B.FCI,FreqDiv20Bit_inst/n36:FCITOFCO_DEL, 0.162,R3C9B.FCI,R3C9B.FCO,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.FCO,R3C9C.FCI,FreqDiv20Bit_inst/n37:FCITOF0_DEL, 0.585,R3C9C.FCI,R3C9C.F0,FreqDiv20Bit_inst/SLICE_0:ROUTE, 0.000,R3C9C.F0,R3C9C.DI0,FreqDiv20Bit_inst/n86">Data path</A> FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7B.CLK to       R3C7B.Q0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n19:R3C7B.Q0:R3C7B.A0:0.656">       R3C7B.Q0 to R3C7B.A0      </A> <A href="#@net:FreqDiv20Bit_inst/n19">FreqDiv20Bit_inst/n19</A>
+C0TOFCO_DE  ---     1.023       R3C7B.A0 to      R3C7B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n29:R3C7B.FCO:R3C7C.FCI:0.000">      R3C7B.FCO to R3C7C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n29">FreqDiv20Bit_inst/n29</A>
+FCITOFCO_D  ---     0.162      R3C7C.FCI to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOFCO_D  ---     0.162      R3C9A.FCI to      R3C9A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n36:R3C9A.FCO:R3C9B.FCI:0.000">      R3C9A.FCO to R3C9B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n36">FreqDiv20Bit_inst/n36</A>
+FCITOFCO_D  ---     0.162      R3C9B.FCI to      R3C9B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n37:R3C9B.FCO:R3C9C.FCI:0.000">      R3C9B.FCO to R3C9C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n37">FreqDiv20Bit_inst/n37</A>
+FCITOF0_DE  ---     0.585      R3C9C.FCI to       R3C9C.F0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_0">FreqDiv20Bit_inst/SLICE_0</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n86:R3C9C.F0:R3C9C.DI0:0.000">       R3C9C.F0 to R3C9C.DI0     </A> <A href="#@net:FreqDiv20Bit_inst/n86">FreqDiv20Bit_inst/n86</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    4.012   (83.6% logic, 16.4% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7B.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7B.CLK:2.977">        OSC.OSC to R3C7B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9C.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9C.CLK:2.977">        OSC.OSC to R3C9C.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.667ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/count_8__i0</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/count_8__i18</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               3.936ns  (83.3% logic, 16.7% route), 11 logic levels.
+
+ Constraint Details:
+
+      3.936ns physical path delay FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_1 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.667ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7A.CLK,R3C7A.Q1,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.656,R3C7A.Q1,R3C7A.A1,FreqDiv20Bit_inst/n20:C1TOFCO_DEL, 0.889,R3C7A.A1,R3C7A.FCO,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.000,R3C7A.FCO,R3C7B.FCI,FreqDiv20Bit_inst/n28:FCITOFCO_DEL, 0.162,R3C7B.FCI,R3C7B.FCO,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.FCO,R3C7C.FCI,FreqDiv20Bit_inst/n29:FCITOFCO_DEL, 0.162,R3C7C.FCI,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOFCO_DEL, 0.162,R3C9A.FCI,R3C9A.FCO,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.FCO,R3C9B.FCI,FreqDiv20Bit_inst/n36:FCITOF1_DEL, 0.643,R3C9B.FCI,R3C9B.F1,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.F1,R3C9B.DI1,FreqDiv20Bit_inst/n87">Data path</A> FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7A.CLK to       R3C7A.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n20:R3C7A.Q1:R3C7A.A1:0.656">       R3C7A.Q1 to R3C7A.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n20">FreqDiv20Bit_inst/n20</A>
+C1TOFCO_DE  ---     0.889       R3C7A.A1 to      R3C7A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n28:R3C7A.FCO:R3C7B.FCI:0.000">      R3C7A.FCO to R3C7B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n28">FreqDiv20Bit_inst/n28</A>
+FCITOFCO_D  ---     0.162      R3C7B.FCI to      R3C7B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n29:R3C7B.FCO:R3C7C.FCI:0.000">      R3C7B.FCO to R3C7C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n29">FreqDiv20Bit_inst/n29</A>
+FCITOFCO_D  ---     0.162      R3C7C.FCI to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOFCO_D  ---     0.162      R3C9A.FCI to      R3C9A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n36:R3C9A.FCO:R3C9B.FCI:0.000">      R3C9A.FCO to R3C9B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n36">FreqDiv20Bit_inst/n36</A>
+FCITOF1_DE  ---     0.643      R3C9B.FCI to       R3C9B.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n87:R3C9B.F1:R3C9B.DI1:0.000">       R3C9B.F1 to R3C9B.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n87">FreqDiv20Bit_inst/n87</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    3.936   (83.3% logic, 16.7% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7A.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7A.CLK:2.977">        OSC.OSC to R3C7A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9B.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9B.CLK:2.977">        OSC.OSC to R3C9B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.695ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/count_8__i1</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/count_8__i18</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               3.908ns  (83.2% logic, 16.8% route), 10 logic levels.
+
+ Constraint Details:
+
+      3.908ns physical path delay FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_1 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.695ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7B.CLK,R3C7B.Q0,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.656,R3C7B.Q0,R3C7B.A0,FreqDiv20Bit_inst/n19:C0TOFCO_DEL, 1.023,R3C7B.A0,R3C7B.FCO,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.FCO,R3C7C.FCI,FreqDiv20Bit_inst/n29:FCITOFCO_DEL, 0.162,R3C7C.FCI,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOFCO_DEL, 0.162,R3C9A.FCI,R3C9A.FCO,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.FCO,R3C9B.FCI,FreqDiv20Bit_inst/n36:FCITOF1_DEL, 0.643,R3C9B.FCI,R3C9B.F1,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.F1,R3C9B.DI1,FreqDiv20Bit_inst/n87">Data path</A> FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7B.CLK to       R3C7B.Q0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n19:R3C7B.Q0:R3C7B.A0:0.656">       R3C7B.Q0 to R3C7B.A0      </A> <A href="#@net:FreqDiv20Bit_inst/n19">FreqDiv20Bit_inst/n19</A>
+C0TOFCO_DE  ---     1.023       R3C7B.A0 to      R3C7B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n29:R3C7B.FCO:R3C7C.FCI:0.000">      R3C7B.FCO to R3C7C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n29">FreqDiv20Bit_inst/n29</A>
+FCITOFCO_D  ---     0.162      R3C7C.FCI to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOFCO_D  ---     0.162      R3C9A.FCI to      R3C9A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n36:R3C9A.FCO:R3C9B.FCI:0.000">      R3C9A.FCO to R3C9B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n36">FreqDiv20Bit_inst/n36</A>
+FCITOF1_DE  ---     0.643      R3C9B.FCI to       R3C9B.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n87:R3C9B.F1:R3C9B.DI1:0.000">       R3C9B.F1 to R3C9B.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n87">FreqDiv20Bit_inst/n87</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    3.908   (83.2% logic, 16.8% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7B.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7B.CLK:2.977">        OSC.OSC to R3C7B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9B.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9B.CLK:2.977">        OSC.OSC to R3C9B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.725ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/count_8__i0</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/count_8__i17</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               3.878ns  (83.1% logic, 16.9% route), 11 logic levels.
+
+ Constraint Details:
+
+      3.878ns physical path delay FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_1 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.725ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7A.CLK,R3C7A.Q1,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.656,R3C7A.Q1,R3C7A.A1,FreqDiv20Bit_inst/n20:C1TOFCO_DEL, 0.889,R3C7A.A1,R3C7A.FCO,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.000,R3C7A.FCO,R3C7B.FCI,FreqDiv20Bit_inst/n28:FCITOFCO_DEL, 0.162,R3C7B.FCI,R3C7B.FCO,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.FCO,R3C7C.FCI,FreqDiv20Bit_inst/n29:FCITOFCO_DEL, 0.162,R3C7C.FCI,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOFCO_DEL, 0.162,R3C9A.FCI,R3C9A.FCO,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.FCO,R3C9B.FCI,FreqDiv20Bit_inst/n36:FCITOF0_DEL, 0.585,R3C9B.FCI,R3C9B.F0,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.F0,R3C9B.DI0,FreqDiv20Bit_inst/n88">Data path</A> FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7A.CLK to       R3C7A.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n20:R3C7A.Q1:R3C7A.A1:0.656">       R3C7A.Q1 to R3C7A.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n20">FreqDiv20Bit_inst/n20</A>
+C1TOFCO_DE  ---     0.889       R3C7A.A1 to      R3C7A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n28:R3C7A.FCO:R3C7B.FCI:0.000">      R3C7A.FCO to R3C7B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n28">FreqDiv20Bit_inst/n28</A>
+FCITOFCO_D  ---     0.162      R3C7B.FCI to      R3C7B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n29:R3C7B.FCO:R3C7C.FCI:0.000">      R3C7B.FCO to R3C7C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n29">FreqDiv20Bit_inst/n29</A>
+FCITOFCO_D  ---     0.162      R3C7C.FCI to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOFCO_D  ---     0.162      R3C9A.FCI to      R3C9A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n36:R3C9A.FCO:R3C9B.FCI:0.000">      R3C9A.FCO to R3C9B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n36">FreqDiv20Bit_inst/n36</A>
+FCITOF0_DE  ---     0.585      R3C9B.FCI to       R3C9B.F0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n88:R3C9B.F0:R3C9B.DI0:0.000">       R3C9B.F0 to R3C9B.DI0     </A> <A href="#@net:FreqDiv20Bit_inst/n88">FreqDiv20Bit_inst/n88</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    3.878   (83.1% logic, 16.9% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7A.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7A.CLK:2.977">        OSC.OSC to R3C7A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9B.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9B.CLK:2.977">        OSC.OSC to R3C9B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.725ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/count_8__i2</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_0">FreqDiv20Bit_inst/count_8__i19</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               3.878ns  (83.1% logic, 16.9% route), 11 logic levels.
+
+ Constraint Details:
+
+      3.878ns physical path delay FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_0 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.725ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7B.CLK,R3C7B.Q1,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.656,R3C7B.Q1,R3C7B.A1,FreqDiv20Bit_inst/n18:C1TOFCO_DEL, 0.889,R3C7B.A1,R3C7B.FCO,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.FCO,R3C7C.FCI,FreqDiv20Bit_inst/n29:FCITOFCO_DEL, 0.162,R3C7C.FCI,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOFCO_DEL, 0.162,R3C9A.FCI,R3C9A.FCO,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.FCO,R3C9B.FCI,FreqDiv20Bit_inst/n36:FCITOFCO_DEL, 0.162,R3C9B.FCI,R3C9B.FCO,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.FCO,R3C9C.FCI,FreqDiv20Bit_inst/n37:FCITOF0_DEL, 0.585,R3C9C.FCI,R3C9C.F0,FreqDiv20Bit_inst/SLICE_0:ROUTE, 0.000,R3C9C.F0,R3C9C.DI0,FreqDiv20Bit_inst/n86">Data path</A> FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7B.CLK to       R3C7B.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n18:R3C7B.Q1:R3C7B.A1:0.656">       R3C7B.Q1 to R3C7B.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n18">FreqDiv20Bit_inst/n18</A>
+C1TOFCO_DE  ---     0.889       R3C7B.A1 to      R3C7B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n29:R3C7B.FCO:R3C7C.FCI:0.000">      R3C7B.FCO to R3C7C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n29">FreqDiv20Bit_inst/n29</A>
+FCITOFCO_D  ---     0.162      R3C7C.FCI to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOFCO_D  ---     0.162      R3C9A.FCI to      R3C9A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n36:R3C9A.FCO:R3C9B.FCI:0.000">      R3C9A.FCO to R3C9B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n36">FreqDiv20Bit_inst/n36</A>
+FCITOFCO_D  ---     0.162      R3C9B.FCI to      R3C9B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n37:R3C9B.FCO:R3C9C.FCI:0.000">      R3C9B.FCO to R3C9C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n37">FreqDiv20Bit_inst/n37</A>
+FCITOF0_DE  ---     0.585      R3C9C.FCI to       R3C9C.F0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_0">FreqDiv20Bit_inst/SLICE_0</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n86:R3C9C.F0:R3C9C.DI0:0.000">       R3C9C.F0 to R3C9C.DI0     </A> <A href="#@net:FreqDiv20Bit_inst/n86">FreqDiv20Bit_inst/n86</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    3.878   (83.1% logic, 16.9% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7B.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7B.CLK:2.977">        OSC.OSC to R3C7B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9C.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9C.CLK:2.977">        OSC.OSC to R3C9C.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.753ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/count_8__i3</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_0">FreqDiv20Bit_inst/count_8__i19</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               3.850ns  (83.0% logic, 17.0% route), 10 logic levels.
+
+ Constraint Details:
+
+      3.850ns physical path delay FreqDiv20Bit_inst/SLICE_8 to FreqDiv20Bit_inst/SLICE_0 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.753ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7C.CLK,R3C7C.Q0,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.656,R3C7C.Q0,R3C7C.A0,FreqDiv20Bit_inst/n17:C0TOFCO_DEL, 1.023,R3C7C.A0,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOFCO_DEL, 0.162,R3C9A.FCI,R3C9A.FCO,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.FCO,R3C9B.FCI,FreqDiv20Bit_inst/n36:FCITOFCO_DEL, 0.162,R3C9B.FCI,R3C9B.FCO,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.FCO,R3C9C.FCI,FreqDiv20Bit_inst/n37:FCITOF0_DEL, 0.585,R3C9C.FCI,R3C9C.F0,FreqDiv20Bit_inst/SLICE_0:ROUTE, 0.000,R3C9C.F0,R3C9C.DI0,FreqDiv20Bit_inst/n86">Data path</A> FreqDiv20Bit_inst/SLICE_8 to FreqDiv20Bit_inst/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7C.CLK to       R3C7C.Q0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n17:R3C7C.Q0:R3C7C.A0:0.656">       R3C7C.Q0 to R3C7C.A0      </A> <A href="#@net:FreqDiv20Bit_inst/n17">FreqDiv20Bit_inst/n17</A>
+C0TOFCO_DE  ---     1.023       R3C7C.A0 to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOFCO_D  ---     0.162      R3C9A.FCI to      R3C9A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n36:R3C9A.FCO:R3C9B.FCI:0.000">      R3C9A.FCO to R3C9B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n36">FreqDiv20Bit_inst/n36</A>
+FCITOFCO_D  ---     0.162      R3C9B.FCI to      R3C9B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n37:R3C9B.FCO:R3C9C.FCI:0.000">      R3C9B.FCO to R3C9C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n37">FreqDiv20Bit_inst/n37</A>
+FCITOF0_DE  ---     0.585      R3C9C.FCI to       R3C9C.F0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_0">FreqDiv20Bit_inst/SLICE_0</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n86:R3C9C.F0:R3C9C.DI0:0.000">       R3C9C.F0 to R3C9C.DI0     </A> <A href="#@net:FreqDiv20Bit_inst/n86">FreqDiv20Bit_inst/n86</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    3.850   (83.0% logic, 17.0% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7C.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7C.CLK:2.977">        OSC.OSC to R3C7C.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9C.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9C.CLK:2.977">        OSC.OSC to R3C9C.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.753ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/count_8__i1</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/count_8__i17</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               3.850ns  (83.0% logic, 17.0% route), 10 logic levels.
+
+ Constraint Details:
+
+      3.850ns physical path delay FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_1 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.753ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7B.CLK,R3C7B.Q0,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.656,R3C7B.Q0,R3C7B.A0,FreqDiv20Bit_inst/n19:C0TOFCO_DEL, 1.023,R3C7B.A0,R3C7B.FCO,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.FCO,R3C7C.FCI,FreqDiv20Bit_inst/n29:FCITOFCO_DEL, 0.162,R3C7C.FCI,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOFCO_DEL, 0.162,R3C9A.FCI,R3C9A.FCO,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.FCO,R3C9B.FCI,FreqDiv20Bit_inst/n36:FCITOF0_DEL, 0.585,R3C9B.FCI,R3C9B.F0,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.F0,R3C9B.DI0,FreqDiv20Bit_inst/n88">Data path</A> FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7B.CLK to       R3C7B.Q0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n19:R3C7B.Q0:R3C7B.A0:0.656">       R3C7B.Q0 to R3C7B.A0      </A> <A href="#@net:FreqDiv20Bit_inst/n19">FreqDiv20Bit_inst/n19</A>
+C0TOFCO_DE  ---     1.023       R3C7B.A0 to      R3C7B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n29:R3C7B.FCO:R3C7C.FCI:0.000">      R3C7B.FCO to R3C7C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n29">FreqDiv20Bit_inst/n29</A>
+FCITOFCO_D  ---     0.162      R3C7C.FCI to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOFCO_D  ---     0.162      R3C9A.FCI to      R3C9A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n36:R3C9A.FCO:R3C9B.FCI:0.000">      R3C9A.FCO to R3C9B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n36">FreqDiv20Bit_inst/n36</A>
+FCITOF0_DE  ---     0.585      R3C9B.FCI to       R3C9B.F0 <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n88:R3C9B.F0:R3C9B.DI0:0.000">       R3C9B.F0 to R3C9B.DI0     </A> <A href="#@net:FreqDiv20Bit_inst/n88">FreqDiv20Bit_inst/n88</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    3.850   (83.0% logic, 17.0% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7B.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7B.CLK:2.977">        OSC.OSC to R3C7B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9B.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9B.CLK:2.977">        OSC.OSC to R3C9B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.829ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/count_8__i0</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/count_8__i16</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               3.774ns  (82.6% logic, 17.4% route), 10 logic levels.
+
+ Constraint Details:
+
+      3.774ns physical path delay FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_2 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.829ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7A.CLK,R3C7A.Q1,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.656,R3C7A.Q1,R3C7A.A1,FreqDiv20Bit_inst/n20:C1TOFCO_DEL, 0.889,R3C7A.A1,R3C7A.FCO,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.000,R3C7A.FCO,R3C7B.FCI,FreqDiv20Bit_inst/n28:FCITOFCO_DEL, 0.162,R3C7B.FCI,R3C7B.FCO,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.FCO,R3C7C.FCI,FreqDiv20Bit_inst/n29:FCITOFCO_DEL, 0.162,R3C7C.FCI,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOF1_DEL, 0.643,R3C9A.FCI,R3C9A.F1,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.F1,R3C9A.DI1,FreqDiv20Bit_inst/n89">Data path</A> FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7A.CLK to       R3C7A.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n20:R3C7A.Q1:R3C7A.A1:0.656">       R3C7A.Q1 to R3C7A.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n20">FreqDiv20Bit_inst/n20</A>
+C1TOFCO_DE  ---     0.889       R3C7A.A1 to      R3C7A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n28:R3C7A.FCO:R3C7B.FCI:0.000">      R3C7A.FCO to R3C7B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n28">FreqDiv20Bit_inst/n28</A>
+FCITOFCO_D  ---     0.162      R3C7B.FCI to      R3C7B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n29:R3C7B.FCO:R3C7C.FCI:0.000">      R3C7B.FCO to R3C7C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n29">FreqDiv20Bit_inst/n29</A>
+FCITOFCO_D  ---     0.162      R3C7C.FCI to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOF1_DE  ---     0.643      R3C9A.FCI to       R3C9A.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n89:R3C9A.F1:R3C9A.DI1:0.000">       R3C9A.F1 to R3C9A.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n89">FreqDiv20Bit_inst/n89</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    3.774   (82.6% logic, 17.4% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7A.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7A.CLK:2.977">        OSC.OSC to R3C7A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9A.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9A.CLK:2.977">        OSC.OSC to R3C9A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 476.829ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/count_8__i2</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/count_8__i18</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               3.774ns  (82.6% logic, 17.4% route), 10 logic levels.
+
+ Constraint Details:
+
+      3.774ns physical path delay FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_1 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.829ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.452,R3C7B.CLK,R3C7B.Q1,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.656,R3C7B.Q1,R3C7B.A1,FreqDiv20Bit_inst/n18:C1TOFCO_DEL, 0.889,R3C7B.A1,R3C7B.FCO,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.FCO,R3C7C.FCI,FreqDiv20Bit_inst/n29:FCITOFCO_DEL, 0.162,R3C7C.FCI,R3C7C.FCO,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.FCO,R3C7D.FCI,FreqDiv20Bit_inst/n30:FCITOFCO_DEL, 0.162,R3C7D.FCI,R3C7D.FCO,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.FCO,R3C8A.FCI,FreqDiv20Bit_inst/n31:FCITOFCO_DEL, 0.162,R3C8A.FCI,R3C8A.FCO,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.FCO,R3C8B.FCI,FreqDiv20Bit_inst/n32:FCITOFCO_DEL, 0.162,R3C8B.FCI,R3C8B.FCO,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.FCO,R3C8C.FCI,FreqDiv20Bit_inst/n33:FCITOFCO_DEL, 0.162,R3C8C.FCI,R3C8C.FCO,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.FCO,R3C8D.FCI,FreqDiv20Bit_inst/n34:FCITOFCO_DEL, 0.162,R3C8D.FCI,R3C8D.FCO,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.FCO,R3C9A.FCI,FreqDiv20Bit_inst/n35:FCITOFCO_DEL, 0.162,R3C9A.FCI,R3C9A.FCO,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.FCO,R3C9B.FCI,FreqDiv20Bit_inst/n36:FCITOF1_DEL, 0.643,R3C9B.FCI,R3C9B.F1,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.F1,R3C9B.DI1,FreqDiv20Bit_inst/n87">Data path</A> FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C7B.CLK to       R3C7B.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.656<A href="#@net:FreqDiv20Bit_inst/n18:R3C7B.Q1:R3C7B.A1:0.656">       R3C7B.Q1 to R3C7B.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n18">FreqDiv20Bit_inst/n18</A>
+C1TOFCO_DE  ---     0.889       R3C7B.A1 to      R3C7B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n29:R3C7B.FCO:R3C7C.FCI:0.000">      R3C7B.FCO to R3C7C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n29">FreqDiv20Bit_inst/n29</A>
+FCITOFCO_D  ---     0.162      R3C7C.FCI to      R3C7C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n30:R3C7C.FCO:R3C7D.FCI:0.000">      R3C7C.FCO to R3C7D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n30">FreqDiv20Bit_inst/n30</A>
+FCITOFCO_D  ---     0.162      R3C7D.FCI to      R3C7D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n31:R3C7D.FCO:R3C8A.FCI:0.000">      R3C7D.FCO to R3C8A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n31">FreqDiv20Bit_inst/n31</A>
+FCITOFCO_D  ---     0.162      R3C8A.FCI to      R3C8A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n32:R3C8A.FCO:R3C8B.FCI:0.000">      R3C8A.FCO to R3C8B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n32">FreqDiv20Bit_inst/n32</A>
+FCITOFCO_D  ---     0.162      R3C8B.FCI to      R3C8B.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n33:R3C8B.FCO:R3C8C.FCI:0.000">      R3C8B.FCO to R3C8C.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n33">FreqDiv20Bit_inst/n33</A>
+FCITOFCO_D  ---     0.162      R3C8C.FCI to      R3C8C.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n34:R3C8C.FCO:R3C8D.FCI:0.000">      R3C8C.FCO to R3C8D.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n34">FreqDiv20Bit_inst/n34</A>
+FCITOFCO_D  ---     0.162      R3C8D.FCI to      R3C8D.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n35:R3C8D.FCO:R3C9A.FCI:0.000">      R3C8D.FCO to R3C9A.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n35">FreqDiv20Bit_inst/n35</A>
+FCITOFCO_D  ---     0.162      R3C9A.FCI to      R3C9A.FCO <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n36:R3C9A.FCO:R3C9B.FCI:0.000">      R3C9A.FCO to R3C9B.FCI     </A> <A href="#@net:FreqDiv20Bit_inst/n36">FreqDiv20Bit_inst/n36</A>
+FCITOF1_DE  ---     0.643      R3C9B.FCI to       R3C9B.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n87:R3C9B.F1:R3C9B.DI1:0.000">       R3C9B.F1 to R3C9B.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n87">FreqDiv20Bit_inst/n87</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    3.774   (82.6% logic, 17.4% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C7B.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C7B.CLK:2.977">        OSC.OSC to R3C7B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 2.977,OSC.OSC,R3C9B.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     2.977<A href="#@net:PIN11_c:OSC.OSC:R3C9B.CLK:2.977">        OSC.OSC to R3C9B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    2.977   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  237.756MHz is the maximum frequency for this preference.
+
+
+</A><A name="FREQUENCY 20.000000 MH"></A>================================================================================
+Preference: FREQUENCY 20.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 47.500ns
+         The internal maximum frequency of the following component is 400.000 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    SLICE      CLK            <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A>
+
+   Delay:               2.500ns -- based on Minimum Pulse Width
+
+Report:  400.000MHz is the maximum frequency for this preference.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "PIN11_c" 2.080000 MHz ;  |    2.080 MHz|  237.756 MHz|  12  
+                                        |             |             |
+FREQUENCY 20.000000 MHz ;               |   20.000 MHz|  400.000 MHz|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: <A href="#@net:PIN11_c">PIN11_c</A>   Source: OSCH_inst.OSC   Loads: 12
+   Covered under: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
+

@@ -1,0 +1,6 @@
+#Start recording tcl command: 4/27/2018 02:55:57
+#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1. Blinky/project_files; Project name: FipsyBaseline
+prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1. Blinky/project_files/FipsyBaseline.ldf"
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+#Stop recording: 4/27/2018 03:10:49

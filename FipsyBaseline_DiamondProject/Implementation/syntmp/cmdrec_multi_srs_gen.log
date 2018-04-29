@@ -1,0 +1,7 @@
+D:\Programs\LatticeDiamond\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Implementation\synwork\Implementation_comp.srs  -osyn  D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Implementation\synwork\Implementation_mult.srs  -log  D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Implementation\synlog\Implementation_multi_srs_gen.srr 
+rc:0 success:1 runtime:0
+file:D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Implementation\synwork\Implementation_comp.srs|io:i|time:1521586335|size:3389|exec:0
+file:D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Implementation\synwork\Implementation_mult.srs|io:o|time:1521586336|size:2547|exec:0
+file:D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Implementation\synlog\Implementation_multi_srs_gen.srr|io:o|time:1521586336|size:811|exec:0
+file:D:\Programs\LatticeDiamond\diamond\3.9_x64\synpbase\bin\syn_nfilter.exe|io:i|time:1489039652|size:3128320|exec:1
+file:D:\Programs\LatticeDiamond\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1489039920|size:3947520|exec:1

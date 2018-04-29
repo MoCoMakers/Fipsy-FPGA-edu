@@ -1,0 +1,540 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.9.1.119
+Thu Mar 15 20:00:44 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     Fipsy_Top
+Device,speed:    LCMXO2-256HC,M
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+
+
+</A><A name="FREQUENCY NET 'PIN11_c' 2.080000 MH"></A>================================================================================
+Preference: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/count_8__i2</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/count_8__i2</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_9 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C7B.CLK,R3C7B.Q1,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.130,R3C7B.Q1,R3C7B.A1,FreqDiv20Bit_inst/n18:CTOF_DEL, 0.101,R3C7B.A1,R3C7B.F1,FreqDiv20Bit_inst/SLICE_9:ROUTE, 0.000,R3C7B.F1,R3C7B.DI1,FreqDiv20Bit_inst/n103">Data path</A> FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C7B.CLK to       R3C7B.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n18:R3C7B.Q1:R3C7B.A1:0.130">       R3C7B.Q1 to R3C7B.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n18">FreqDiv20Bit_inst/n18</A>
+CTOF_DEL    ---     0.101       R3C7B.A1 to       R3C7B.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_9">FreqDiv20Bit_inst/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n103:R3C7B.F1:R3C7B.DI1:0.000">       R3C7B.F1 to R3C7B.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n103">FreqDiv20Bit_inst/n103</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C7B.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C7B.CLK:1.034">        OSC.OSC to R3C7B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C7B.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C7B.CLK:1.034">        OSC.OSC to R3C7B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/count_8__i14</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/count_8__i14</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_3 to FreqDiv20Bit_inst/SLICE_3 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C8D.CLK,R3C8D.Q1,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.130,R3C8D.Q1,R3C8D.A1,FreqDiv20Bit_inst/n6:CTOF_DEL, 0.101,R3C8D.A1,R3C8D.F1,FreqDiv20Bit_inst/SLICE_3:ROUTE, 0.000,R3C8D.F1,R3C8D.DI1,FreqDiv20Bit_inst/n91">Data path</A> FreqDiv20Bit_inst/SLICE_3 to FreqDiv20Bit_inst/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C8D.CLK to       R3C8D.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n6:R3C8D.Q1:R3C8D.A1:0.130">       R3C8D.Q1 to R3C8D.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n6">FreqDiv20Bit_inst/n6</A>
+CTOF_DEL    ---     0.101       R3C8D.A1 to       R3C8D.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_3">FreqDiv20Bit_inst/SLICE_3</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n91:R3C8D.F1:R3C8D.DI1:0.000">       R3C8D.F1 to R3C8D.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n91">FreqDiv20Bit_inst/n91</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C8D.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C8D.CLK:1.034">        OSC.OSC to R3C8D.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C8D.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C8D.CLK:1.034">        OSC.OSC to R3C8D.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/count_8__i10</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/count_8__i10</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_5 to FreqDiv20Bit_inst/SLICE_5 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C8B.CLK,R3C8B.Q1,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.130,R3C8B.Q1,R3C8B.A1,FreqDiv20Bit_inst/n10:CTOF_DEL, 0.101,R3C8B.A1,R3C8B.F1,FreqDiv20Bit_inst/SLICE_5:ROUTE, 0.000,R3C8B.F1,R3C8B.DI1,FreqDiv20Bit_inst/n95">Data path</A> FreqDiv20Bit_inst/SLICE_5 to FreqDiv20Bit_inst/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C8B.CLK to       R3C8B.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n10:R3C8B.Q1:R3C8B.A1:0.130">       R3C8B.Q1 to R3C8B.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n10">FreqDiv20Bit_inst/n10</A>
+CTOF_DEL    ---     0.101       R3C8B.A1 to       R3C8B.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_5">FreqDiv20Bit_inst/SLICE_5</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n95:R3C8B.F1:R3C8B.DI1:0.000">       R3C8B.F1 to R3C8B.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n95">FreqDiv20Bit_inst/n95</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C8B.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C8B.CLK:1.034">        OSC.OSC to R3C8B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C8B.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C8B.CLK:1.034">        OSC.OSC to R3C8B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/count_8__i6</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/count_8__i6</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_7 to FreqDiv20Bit_inst/SLICE_7 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C7D.CLK,R3C7D.Q1,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.130,R3C7D.Q1,R3C7D.A1,FreqDiv20Bit_inst/n14:CTOF_DEL, 0.101,R3C7D.A1,R3C7D.F1,FreqDiv20Bit_inst/SLICE_7:ROUTE, 0.000,R3C7D.F1,R3C7D.DI1,FreqDiv20Bit_inst/n99">Data path</A> FreqDiv20Bit_inst/SLICE_7 to FreqDiv20Bit_inst/SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C7D.CLK to       R3C7D.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n14:R3C7D.Q1:R3C7D.A1:0.130">       R3C7D.Q1 to R3C7D.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n14">FreqDiv20Bit_inst/n14</A>
+CTOF_DEL    ---     0.101       R3C7D.A1 to       R3C7D.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_7">FreqDiv20Bit_inst/SLICE_7</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n99:R3C7D.F1:R3C7D.DI1:0.000">       R3C7D.F1 to R3C7D.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n99">FreqDiv20Bit_inst/n99</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C7D.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C7D.CLK:1.034">        OSC.OSC to R3C7D.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C7D.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C7D.CLK:1.034">        OSC.OSC to R3C7D.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/count_8__i18</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/count_8__i18</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_1 to FreqDiv20Bit_inst/SLICE_1 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C9B.CLK,R3C9B.Q1,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.130,R3C9B.Q1,R3C9B.A1,FreqDiv20Bit_inst/n2:CTOF_DEL, 0.101,R3C9B.A1,R3C9B.F1,FreqDiv20Bit_inst/SLICE_1:ROUTE, 0.000,R3C9B.F1,R3C9B.DI1,FreqDiv20Bit_inst/n87">Data path</A> FreqDiv20Bit_inst/SLICE_1 to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C9B.CLK to       R3C9B.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n2:R3C9B.Q1:R3C9B.A1:0.130">       R3C9B.Q1 to R3C9B.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n2">FreqDiv20Bit_inst/n2</A>
+CTOF_DEL    ---     0.101       R3C9B.A1 to       R3C9B.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_1">FreqDiv20Bit_inst/SLICE_1</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n87:R3C9B.F1:R3C9B.DI1:0.000">       R3C9B.F1 to R3C9B.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n87">FreqDiv20Bit_inst/n87</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C9B.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C9B.CLK:1.034">        OSC.OSC to R3C9B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C9B.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C9B.CLK:1.034">        OSC.OSC to R3C9B.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/count_8__i16</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/count_8__i16</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_2 to FreqDiv20Bit_inst/SLICE_2 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C9A.CLK,R3C9A.Q1,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.130,R3C9A.Q1,R3C9A.A1,FreqDiv20Bit_inst/n4:CTOF_DEL, 0.101,R3C9A.A1,R3C9A.F1,FreqDiv20Bit_inst/SLICE_2:ROUTE, 0.000,R3C9A.F1,R3C9A.DI1,FreqDiv20Bit_inst/n89">Data path</A> FreqDiv20Bit_inst/SLICE_2 to FreqDiv20Bit_inst/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C9A.CLK to       R3C9A.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n4:R3C9A.Q1:R3C9A.A1:0.130">       R3C9A.Q1 to R3C9A.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n4">FreqDiv20Bit_inst/n4</A>
+CTOF_DEL    ---     0.101       R3C9A.A1 to       R3C9A.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_2">FreqDiv20Bit_inst/SLICE_2</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n89:R3C9A.F1:R3C9A.DI1:0.000">       R3C9A.F1 to R3C9A.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n89">FreqDiv20Bit_inst/n89</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C9A.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C9A.CLK:1.034">        OSC.OSC to R3C9A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C9A.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C9A.CLK:1.034">        OSC.OSC to R3C9A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/count_8__i12</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/count_8__i12</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_4 to FreqDiv20Bit_inst/SLICE_4 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C8C.CLK,R3C8C.Q1,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.130,R3C8C.Q1,R3C8C.A1,FreqDiv20Bit_inst/n8:CTOF_DEL, 0.101,R3C8C.A1,R3C8C.F1,FreqDiv20Bit_inst/SLICE_4:ROUTE, 0.000,R3C8C.F1,R3C8C.DI1,FreqDiv20Bit_inst/n93">Data path</A> FreqDiv20Bit_inst/SLICE_4 to FreqDiv20Bit_inst/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C8C.CLK to       R3C8C.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n8:R3C8C.Q1:R3C8C.A1:0.130">       R3C8C.Q1 to R3C8C.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n8">FreqDiv20Bit_inst/n8</A>
+CTOF_DEL    ---     0.101       R3C8C.A1 to       R3C8C.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_4">FreqDiv20Bit_inst/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n93:R3C8C.F1:R3C8C.DI1:0.000">       R3C8C.F1 to R3C8C.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n93">FreqDiv20Bit_inst/n93</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C8C.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C8C.CLK:1.034">        OSC.OSC to R3C8C.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C8C.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C8C.CLK:1.034">        OSC.OSC to R3C8C.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/count_8__i0</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/count_8__i0</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_10 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C7A.CLK,R3C7A.Q1,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.130,R3C7A.Q1,R3C7A.A1,FreqDiv20Bit_inst/n20:CTOF_DEL, 0.101,R3C7A.A1,R3C7A.F1,FreqDiv20Bit_inst/SLICE_10:ROUTE, 0.000,R3C7A.F1,R3C7A.DI1,FreqDiv20Bit_inst/n105">Data path</A> FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C7A.CLK to       R3C7A.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n20:R3C7A.Q1:R3C7A.A1:0.130">       R3C7A.Q1 to R3C7A.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n20">FreqDiv20Bit_inst/n20</A>
+CTOF_DEL    ---     0.101       R3C7A.A1 to       R3C7A.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_10">FreqDiv20Bit_inst/SLICE_10</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n105:R3C7A.F1:R3C7A.DI1:0.000">       R3C7A.F1 to R3C7A.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n105">FreqDiv20Bit_inst/n105</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C7A.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C7A.CLK:1.034">        OSC.OSC to R3C7A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C7A.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C7A.CLK:1.034">        OSC.OSC to R3C7A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/count_8__i8</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/count_8__i8</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_6 to FreqDiv20Bit_inst/SLICE_6 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C8A.CLK,R3C8A.Q1,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.130,R3C8A.Q1,R3C8A.A1,FreqDiv20Bit_inst/n12:CTOF_DEL, 0.101,R3C8A.A1,R3C8A.F1,FreqDiv20Bit_inst/SLICE_6:ROUTE, 0.000,R3C8A.F1,R3C8A.DI1,FreqDiv20Bit_inst/n97">Data path</A> FreqDiv20Bit_inst/SLICE_6 to FreqDiv20Bit_inst/SLICE_6:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C8A.CLK to       R3C8A.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n12:R3C8A.Q1:R3C8A.A1:0.130">       R3C8A.Q1 to R3C8A.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n12">FreqDiv20Bit_inst/n12</A>
+CTOF_DEL    ---     0.101       R3C8A.A1 to       R3C8A.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_6">FreqDiv20Bit_inst/SLICE_6</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n97:R3C8A.F1:R3C8A.DI1:0.000">       R3C8A.F1 to R3C8A.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n97">FreqDiv20Bit_inst/n97</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C8A.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_6:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C8A.CLK:1.034">        OSC.OSC to R3C8A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C8A.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_6:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C8A.CLK:1.034">        OSC.OSC to R3C8A.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/count_8__i4</A>  (from <A href="#@net:PIN11_c">PIN11_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/count_8__i4</A>  (to <A href="#@net:PIN11_c">PIN11_c</A> +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay FreqDiv20Bit_inst/SLICE_8 to FreqDiv20Bit_inst/SLICE_8 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:REG_DEL, 0.133,R3C7C.CLK,R3C7C.Q1,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.130,R3C7C.Q1,R3C7C.A1,FreqDiv20Bit_inst/n16:CTOF_DEL, 0.101,R3C7C.A1,R3C7C.F1,FreqDiv20Bit_inst/SLICE_8:ROUTE, 0.000,R3C7C.F1,R3C7C.DI1,FreqDiv20Bit_inst/n101">Data path</A> FreqDiv20Bit_inst/SLICE_8 to FreqDiv20Bit_inst/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C7C.CLK to       R3C7C.Q1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A> (from <A href="#@net:PIN11_c">PIN11_c</A>)
+ROUTE         1     0.130<A href="#@net:FreqDiv20Bit_inst/n16:R3C7C.Q1:R3C7C.A1:0.130">       R3C7C.Q1 to R3C7C.A1      </A> <A href="#@net:FreqDiv20Bit_inst/n16">FreqDiv20Bit_inst/n16</A>
+CTOF_DEL    ---     0.101       R3C7C.A1 to       R3C7C.F1 <A href="#@comp:FreqDiv20Bit_inst/SLICE_8">FreqDiv20Bit_inst/SLICE_8</A>
+ROUTE         1     0.000<A href="#@net:FreqDiv20Bit_inst/n101:R3C7C.F1:R3C7C.DI1:0.000">       R3C7C.F1 to R3C7C.DI1     </A> <A href="#@net:FreqDiv20Bit_inst/n101">FreqDiv20Bit_inst/n101</A> (to <A href="#@net:PIN11_c">PIN11_c</A>)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C7C.CLK,PIN11_c">Source Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C7C.CLK:1.034">        OSC.OSC to R3C7C.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'PIN11_c' 2.080000 MHz ;:ROUTE, 1.034,OSC.OSC,R3C7C.CLK,PIN11_c">Destination Clock Path</A> OSCH_inst to FreqDiv20Bit_inst/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        12     1.034<A href="#@net:PIN11_c:OSC.OSC:R3C7C.CLK:1.034">        OSC.OSC to R3C7C.CLK     </A> <A href="#@net:PIN11_c">PIN11_c</A>
+                  --------
+                    1.034   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+</A><A name="FREQUENCY 20.000000 MH"></A>================================================================================
+Preference: FREQUENCY 20.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "PIN11_c" 2.080000 MHz ;  |     0.000 ns|     0.377 ns|   2  
+                                        |             |             |
+FREQUENCY 20.000000 MHz ;               |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: <A href="#@net:PIN11_c">PIN11_c</A>   Source: OSCH_inst.OSC   Loads: 12
+   Covered under: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)

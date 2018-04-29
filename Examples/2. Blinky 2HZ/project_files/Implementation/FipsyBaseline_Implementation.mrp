@@ -10,17 +10,17 @@ Command line:   map -a MachXO2 -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial
      -pr FipsyBaseline_Implementation.prf -mp FipsyBaseline_Implementation.mrp
      -lpf
      D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2.
-     Blinky 1HZ/project_files/Implementation/FipsyBaseline_Implementation.lpf
+     Blinky 2HZ/project_files/Implementation/FipsyBaseline_Implementation.lpf
      -lpf
      D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2.
-     Blinky 1HZ/project_files/FipsyBaseline.lpf -c 0 -gui -msgset
+     Blinky 2HZ/project_files/FipsyBaseline.lpf -c 0 -gui -msgset
      D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2.
-     Blinky 1HZ/project_files/promote.xml 
+     Blinky 2HZ/project_files/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
-Mapped on:  02/26/18  23:42:52
+Mapped on:  03/14/18  15:07:57
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  MakeFPGA_Top                                  Date:  02/26/18  23:42:52
+Design:  MakeFPGA_Top                                  Date:  03/14/18  15:07:57
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  MakeFPGA_Top                                  Date:  02/26/18  23:42:52
+Design:  MakeFPGA_Top                                  Date:  03/14/18  15:07:57
 
 IO (PIO) Attributes (cont)
 --------------------------

@@ -3,19 +3,19 @@
     <Options/>
     <Implementation title="Implementation" dir="Implementation" description="Implementation" synthesis="lse" default_strategy="Strategy1">
         <Options def_top="MakeFPGA_Top"/>
-        <Source name="Source/Fipsy_Top.v" type="Verilog" type_short="Verilog">
+        <Source name="Source/send_string.v" type="Verilog" type_short="Verilog">
             <Options top_module="MakeFPGA_Top"/>
         </Source>
-        <Source name="Source/baudgen_tx.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="Source/FreqDiv20Bit.v" type="Verilog" type_short="Verilog">
+        <Source name="Source/txstr.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="Source/uart_tx.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="Source/txchar.v" type="Verilog" type_short="Verilog">
+        <Source name="Source/baudgen_tx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Source/FreqDiv20Bit.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="FipsyBaseline.lpf" type="Logic Preference" type_short="LPF">

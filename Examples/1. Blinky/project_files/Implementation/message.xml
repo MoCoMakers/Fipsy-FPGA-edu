@@ -12,34 +12,34 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/lattice/fipsybaseline_diamondproject/source/fipsy_top.v(45): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/1. blinky/project_files/source/fipsy_top.v(45): </Dynamic>
             <Dynamic>Fipsy_Top</Dynamic>
-            <Navigation>c:/lattice/fipsybaseline_diamondproject/source/fipsy_top.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/1. blinky/project_files/source/fipsy_top.v</Navigation>
             <Navigation>45</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/Lattice/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
             <Dynamic>OSCH</Dynamic>
-            <Navigation>C:/Lattice/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1793</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/lattice/fipsybaseline_diamondproject/source/appmodules/freqdiv20bit.v(20): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/1. blinky/project_files/source/appmodules/freqdiv20bit.v(20): </Dynamic>
             <Dynamic>FreqDiv20Bit</Dynamic>
-            <Navigation>c:/lattice/fipsybaseline_diamondproject/source/appmodules/freqdiv20bit.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/1. blinky/project_files/source/appmodules/freqdiv20bit.v</Navigation>
             <Navigation>20</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lattice/fipsybaseline_diamondproject/source/appmodules/freqdiv20bit.v(55): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/1. blinky/project_files/source/appmodules/freqdiv20bit.v(55): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>20</Dynamic>
-            <Navigation>c:/lattice/fipsybaseline_diamondproject/source/appmodules/freqdiv20bit.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/1. blinky/project_files/source/appmodules/freqdiv20bit.v</Navigation>
             <Navigation>55</Navigation>
         </Message>
         <Message>

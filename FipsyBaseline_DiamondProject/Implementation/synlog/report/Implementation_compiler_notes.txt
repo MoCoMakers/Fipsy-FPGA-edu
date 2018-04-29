@@ -1,0 +1,11 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"D:\Programs\LatticeDiamond\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
+@N: CG364 :"D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Source\AppModules\FreqDiv20Bit.v":20:7:20:18|Synthesizing module FreqDiv20Bit in library work.
+@N: CG364 :"D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Source\Fipsy_Top.v":45:7:45:15|Synthesizing module Fipsy_Top in library work.
+@N|Running in 64-bit mode
+@N: NF107 :"D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Source\Fipsy_Top.v":45:7:45:15|Selected library: work cell: Fipsy_Top view verilog as top level
+@N: NF107 :"D:\Programs\Hubic\Maker\Business\FPGA\Education\fipsy-fpga-edu\FipsyBaseline_DiamondProject\Source\Fipsy_Top.v":45:7:45:15|Selected library: work cell: Fipsy_Top view verilog as top level
+

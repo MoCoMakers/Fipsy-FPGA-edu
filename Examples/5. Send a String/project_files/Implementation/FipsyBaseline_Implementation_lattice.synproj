@@ -30,16 +30,16 @@
 
 
 -lpf 1
--p "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files"
--ver "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/Fipsy_Top.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/baudgen_tx.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/FreqDiv20Bit.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/uart_tx.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/txchar.v"
+-p "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files"
+-ver "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/send_string.v"
+"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/txstr.v"
+"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/uart_tx.v"
+"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/baudgen_tx.v"
+"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Source/FreqDiv20Bit.v"
 -top MakeFPGA_Top
 
 
--p "D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Implementation" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files"
+-p "D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files/Implementation" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5. Send a String/project_files"
 
 -ngd "FipsyBaseline_Implementation.ngd"
 

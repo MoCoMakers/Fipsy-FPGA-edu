@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Feb 26 23:42:50 2018
+Wed Mar 14 15:07:56 2018
 
 
-Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/promote.xml 
+Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -61,12 +61,12 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files (searchpath added)
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files (searchpath added)
 -p D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Implementation (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files (searchpath added)
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/Blinky_Rate_Divider.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 1HZ/project_files/Source/FreqDiv20Bit.v
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/Implementation (searchpath added)
+-p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files (searchpath added)
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/Source/Blinky_Rate_Divider.v
+Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/Source/FreqDiv20Bit.v
 NGD file = FipsyBaseline_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -77,14 +77,14 @@ Technology check ok...
 Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/blinky_rate_divider.v. VERI-1482
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/blinky_rate_divider.v. VERI-1482
+Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/freqdiv20bit.v. VERI-1482
 Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): MakeFPGA_Top
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/blinky_rate_divider.v(4): compiling module MakeFPGA_Top. VERI-1018
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/blinky_rate_divider.v(4): compiling module MakeFPGA_Top. VERI-1018
 INFO - synthesis: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH. VERI-1018
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 1hz/project_files/source/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
+INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
+WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
@@ -173,8 +173,8 @@ clk0 [get_nets PIN20_c_19]              |    1.000 MHz|  554.939 MHz|     1
 All constraints were met.
 
 
-Peak Memory Usage: 49.469  MB
+Peak Memory Usage: 49.055  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.531  secs
+Elapsed CPU time for LSE flow : 0.469  secs
 --------------------------------------------------------------

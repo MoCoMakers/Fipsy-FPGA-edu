@@ -12,57 +12,57 @@
         <Message>
             <ID>35901328</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(12): </Dynamic>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v</Navigation>
-            <Navigation>12</Navigation>
-        </Message>
-        <Message>
-            <ID>35901328</ID>
-            <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(19): </Dynamic>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
-            <Navigation>19</Navigation>
-        </Message>
-        <Message>
-            <ID>35901875</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(58): </Dynamic>
-            <Dynamic>state</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
-            <Navigation>58</Navigation>
-        </Message>
-        <Message>
-            <ID>35901875</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(58): </Dynamic>
-            <Dynamic>IDLE</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
-            <Navigation>58</Navigation>
-        </Message>
-        <Message>
-            <ID>35901328</ID>
-            <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(13): </Dynamic>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v</Navigation>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v(13): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v</Navigation>
             <Navigation>13</Navigation>
         </Message>
         <Message>
             <ID>35901875</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(47): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v(47): </Dynamic>
             <Dynamic>char_count</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v</Navigation>
             <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(19): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(58): </Dynamic>
+            <Dynamic>state</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(58): </Dynamic>
+            <Dynamic>IDLE</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v(12): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v</Navigation>
+            <Navigation>12</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/fipsy_top.v(45): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/send_string.v(45): </Dynamic>
             <Dynamic>MakeFPGA_Top</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/fipsy_top.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/send_string.v</Navigation>
             <Navigation>45</Navigation>
         </Message>
         <Message>
@@ -76,78 +76,78 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v(20): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/freqdiv20bit.v(20): </Dynamic>
             <Dynamic>FreqDiv20Bit</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/freqdiv20bit.v</Navigation>
             <Navigation>20</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v(55): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/freqdiv20bit.v(55): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>20</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/freqdiv20bit.v</Navigation>
             <Navigation>55</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(16): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v(16): </Dynamic>
             <Dynamic>txstr</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v</Navigation>
             <Navigation>16</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(23): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(23): </Dynamic>
             <Dynamic>uart_tx</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v</Navigation>
             <Navigation>23</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(93): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v(93): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>5</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/uart_tx.v</Navigation>
             <Navigation>93</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(30): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v(30): </Dynamic>
             <Dynamic>baudgen_tx</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v</Navigation>
             <Navigation>30</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(61): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v(61): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>7</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v</Navigation>
             <Navigation>61</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(70): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v(70): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/baudgen_tx.v</Navigation>
             <Navigation>70</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(68): </Dynamic>
+            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v(68): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>3</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v</Navigation>
+            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/5. send a string/project_files/source/txstr.v</Navigation>
             <Navigation>68</Navigation>
         </Message>
         <Message>

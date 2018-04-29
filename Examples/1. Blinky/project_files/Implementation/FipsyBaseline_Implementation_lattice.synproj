@@ -30,13 +30,13 @@
 
 
 -lpf 1
--p "C:/Lattice/FipsyBaseline_DiamondProject"
--ver "C:/Lattice/FipsyBaseline_DiamondProject/Source/Fipsy_Top.v"
-"C:/Lattice/FipsyBaseline_DiamondProject/Source/AppModules/FreqDiv20Bit.v"
+-p "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1. Blinky/project_files"
+-ver "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1. Blinky/project_files/Source/Fipsy_Top.v"
+"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1. Blinky/project_files/Source/AppModules/FreqDiv20Bit.v"
 -top Fipsy_Top
 
 
--p "C:/Lattice/diamond/3.9_x64/ispfpga/xo2c00/data" "C:/Lattice/FipsyBaseline_DiamondProject/Implementation" "C:/Lattice/FipsyBaseline_DiamondProject"
+-p "D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1. Blinky/project_files/Implementation" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1. Blinky/project_files"
 
 -ngd "FipsyBaseline_Implementation.ngd"
 
