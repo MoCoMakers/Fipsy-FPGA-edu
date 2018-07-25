@@ -6,7 +6,7 @@ Notice how the baudgen.py script file has a variable CLOCK_HZ.
 
 If your clock rate is:
 2.08MHz, you would set:
-CLOCK_HZ = 12080000 
+CLOCK_HZ = 2080000 
 
 If your clock rate is 12.08MHz, you would set:
 CLOCK_HZ = 12080000 
