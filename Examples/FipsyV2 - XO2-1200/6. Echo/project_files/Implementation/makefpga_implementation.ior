@@ -1,0 +1,68 @@
+Loading design for application iotiming from file makefpga_implementation.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-1200HC
+Package:     QFN32
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file makefpga_implementation.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-1200HC
+Package:     QFN32
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file makefpga_implementation.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-1200HC
+Package:     QFN32
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: MakeFPGA_Top
+// Package: QFN32
+// ncd File: makefpga_implementation.ncd
+// Version: Diamond (64-bit) 3.13.0.56.2
+// Written on Mon Aug 12 22:54:25 2024
+// M: Minimum Performance Grade
+// iotiming MakeFPGA_Implementation.ncd MakeFPGA_Implementation.prf -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)
+
+
+// Internal_Clock to Input
+
+Port  Internal_Clock
+--------------------------------------------------------
+PIN9  PIN11_c       
+
+
+// Internal_Clock to Output
+
+Port  Internal_Clock
+--------------------------------------------------------
+LEDn  PIN11_c       
+PIN10 PIN11_c       
+PIN20 PIN11_c       
+PIN8  PIN11_c       

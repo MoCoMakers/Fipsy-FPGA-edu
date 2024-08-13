@@ -1,0 +1,87 @@
+----------------------------------------------------------------------
+Report for cell MakeFPGA_Top.TECH
+Register bits:  128 of 1346 (9.510%)
+I/O cells:      13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        32          100.0
+                            FD1P3AX        33          100.0
+                            FD1P3IX        29          100.0
+                            FD1P3JX        11          100.0
+                            FD1S3AX        10          100.0
+                            FD1S3IX        33          100.0
+                            FD1S3JX        12          100.0
+                                GSR         1          100.0
+                                 IB         1          100.0
+                                INV         1          100.0
+                               LUT4        75          100.0
+                                 OB        12          100.0
+                               OSCH         1          100.0
+                              PFUMX         1          100.0
+SUB MODULES
+                       FreqDiv20Bit         1
+                         baudgen_rx         1
+                         baudgen_tx         1
+                            uart_rx         1
+                            uart_tx         1
+                              TOTAL       257
+----------------------------------------------------------------------
+Report for cell uart_rx.v1
+Instance Path : RX0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           15.6
+                            FD1P3AX        17           51.5
+                            FD1P3IX         3           10.3
+                            FD1S3AX         5           50.0
+                            FD1S3IX         7           21.2
+                            FD1S3JX         6           50.0
+                               LUT4        24           32.0
+                              PFUMX         1          100.0
+SUB MODULES
+                         baudgen_rx         1
+                              TOTAL        69
+----------------------------------------------------------------------
+Report for cell baudgen_rx.v1
+Instance Path : RX0.baudgen0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           15.6
+                            FD1S3IX         2            6.1
+                            FD1S3JX         6           50.0
+                               LUT4        12           16.0
+                              TOTAL        25
+----------------------------------------------------------------------
+Report for cell uart_tx.v1
+Instance Path : TX0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           15.6
+                            FD1P3AX        15           45.5
+                            FD1P3IX         5           17.2
+                            FD1P3JX        11          100.0
+                            FD1S3AX         5           50.0
+                            FD1S3IX         6           18.2
+                            FD1S3JX         6           50.0
+                               LUT4        36           48.0
+SUB MODULES
+                         baudgen_tx         1
+                              TOTAL        90
+----------------------------------------------------------------------
+Report for cell baudgen_tx.v1
+Instance Path : TX0.BAUD0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           15.6
+                            FD1S3IX         2            6.1
+                            FD1S3JX         6           50.0
+                               LUT4         6            8.0
+                              TOTAL        19
+----------------------------------------------------------------------
+Report for cell FreqDiv20Bit.v1
+Instance Path : FreqDiv20Bit_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11           34.4
+                            FD1S3IX        20           60.6
+                              TOTAL        31

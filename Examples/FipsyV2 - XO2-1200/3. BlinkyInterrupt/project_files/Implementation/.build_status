@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1723517397"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1723517399"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1723517393">
+            <Task name="Map" build_result="2" update_result="0" update_time="1723517393"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1723517393"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1723517393"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1723517394"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1723517397">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1723517397"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1723517397"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1723517398"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1723517392">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1723517392"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1723517392"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1723517345"/>
+            <Task name="BKM" build_result="0" update_result="3" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/FipsyBaseline_Implementation_map.vdb" last_build_time="1723517393" last_build_size="38634"/>
+        <Report name="FipsyBaseline_Implementation.bgn" last_build_time="1723517399" last_build_size="4764"/>
+        <Report name="FipsyBaseline_Implementation.bit" last_build_time="1723517365" last_build_size="6333"/>
+        <Report name="FipsyBaseline_Implementation.ior" last_build_time="1723517398" last_build_size="2273"/>
+        <Report name="FipsyBaseline_Implementation.jed" last_build_time="1723517399" last_build_size="350506"/>
+        <Report name="FipsyBaseline_Implementation.lsedata" last_build_time="1723517392" last_build_size="25190"/>
+        <Report name="FipsyBaseline_Implementation.ncd" last_build_time="1723517397" last_build_size="34725"/>
+        <Report name="FipsyBaseline_Implementation.ngd" last_build_time="1723517392" last_build_size="30223"/>
+        <Report name="FipsyBaseline_Implementation.tw1" last_build_time="1723517393" last_build_size="14122"/>
+        <Report name="FipsyBaseline_Implementation.twr" last_build_time="1723517397" last_build_size="67919"/>
+        <Report name="FipsyBaseline_Implementation_map.ncd" last_build_time="1723517392" last_build_size="25724"/>
+        <Report name="FipsyBaseline_Implementation_mapvho.sdf" last_build_time="1723517394" last_build_size="23161"/>
+        <Report name="FipsyBaseline_Implementation_mapvho.vho" last_build_time="1723517394" last_build_size="189317"/>
+        <Report name="FipsyBaseline_Implementation_mapvo.sdf" last_build_time="1723517393" last_build_size="23137"/>
+        <Report name="FipsyBaseline_Implementation_mapvo.vo" last_build_time="1723517393" last_build_size="29175"/>
+    </Strategy>
+</BuildStatus>

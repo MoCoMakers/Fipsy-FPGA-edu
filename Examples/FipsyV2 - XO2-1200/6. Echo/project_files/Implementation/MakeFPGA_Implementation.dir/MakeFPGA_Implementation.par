@@ -1,0 +1,28 @@
+PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Aug 12 22:54:21 2024
+
+C:/Program Files/Lattice/diamond/3.13/ispfpga\bin\nt64\par -f
+MakeFPGA_Implementation.p2t MakeFPGA_Implementation_map.ncd
+MakeFPGA_Implementation.dir MakeFPGA_Implementation.prf -gui -msgset
+C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/promote.xml
+
+
+Preference file: MakeFPGA_Implementation.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            469.528      0            0.304        0            03           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 3 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

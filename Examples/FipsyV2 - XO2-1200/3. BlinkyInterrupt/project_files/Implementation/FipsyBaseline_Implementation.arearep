@@ -1,0 +1,26 @@
+----------------------------------------------------------------------
+Report for cell MakeFPGA_Top.TECH
+Register bits:  22 of 1346 (1.634%)
+I/O cells:      13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11          100.0
+                            FD1S3AX         1          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX        20          100.0
+                                GSR         1          100.0
+                                 IB         2          100.0
+                               LUT4         1          100.0
+                                 OB        11          100.0
+                               OSCH         1          100.0
+SUB MODULES
+                       FreqDiv20Bit         1
+                              TOTAL        50
+----------------------------------------------------------------------
+Report for cell FreqDiv20Bit.v1
+Instance Path : FreqDiv20Bit_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11          100.0
+                            FD1S3IX        20          100.0
+                              TOTAL        31

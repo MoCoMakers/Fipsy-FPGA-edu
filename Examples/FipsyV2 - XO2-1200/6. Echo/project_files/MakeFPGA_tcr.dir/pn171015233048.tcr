@@ -1,0 +1,19 @@
+#Start recording tcl command: 10/15/2017 22:24:57
+#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject; Project name: MakeFPGA
+prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/MakeFPGA.ldf"
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_src remove "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/Source/baudgen_tx.v"
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_src add "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/Source/baudgen_tx.v"
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation
+prj_project save
+prj_project close
+#Stop recording: 10/15/2017 23:30:50

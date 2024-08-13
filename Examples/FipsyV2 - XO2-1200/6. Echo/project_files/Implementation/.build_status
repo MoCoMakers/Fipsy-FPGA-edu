@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1723517667"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1723517659">
+            <Task name="Map" build_result="2" update_result="0" update_time="1723517659"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1723517660"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1723517660"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1723517661"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1723517664">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1723517664"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1723517664"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1723517665"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1723517659">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1723517659"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1723517659"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1723517607"/>
+            <Task name="BKM" build_result="0" update_result="3" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/MakeFPGA_Implementation_map.vdb" last_build_time="1723517659" last_build_size="78742"/>
+        <Report name="MakeFPGA_Implementation.bgn" last_build_time="1723517667" last_build_size="4717"/>
+        <Report name="MakeFPGA_Implementation.bit" last_build_time="1497052692" last_build_size="2121"/>
+        <Report name="MakeFPGA_Implementation.ior" last_build_time="1723517665" last_build_size="2276"/>
+        <Report name="MakeFPGA_Implementation.jed" last_build_time="1723517667" last_build_size="350502"/>
+        <Report name="MakeFPGA_Implementation.lsedata" last_build_time="1723517659" last_build_size="263885"/>
+        <Report name="MakeFPGA_Implementation.ncd" last_build_time="1723517664" last_build_size="166386"/>
+        <Report name="MakeFPGA_Implementation.ngd" last_build_time="1723517659" last_build_size="148741"/>
+        <Report name="MakeFPGA_Implementation.tw1" last_build_time="1723517660" last_build_size="10040"/>
+        <Report name="MakeFPGA_Implementation.twr" last_build_time="1723517664" last_build_size="43933"/>
+        <Report name="MakeFPGA_Implementation_map.ncd" last_build_time="1723517659" last_build_size="115529"/>
+        <Report name="MakeFPGA_Implementation_mapvho.sdf" last_build_time="1723517661" last_build_size="114744"/>
+        <Report name="MakeFPGA_Implementation_mapvho.vho" last_build_time="1723517661" last_build_size="949184"/>
+        <Report name="MakeFPGA_Implementation_mapvo.sdf" last_build_time="1723517660" last_build_size="114320"/>
+        <Report name="MakeFPGA_Implementation_mapvo.vo" last_build_time="1723517660" last_build_size="132736"/>
+    </Strategy>
+</BuildStatus>

@@ -1,5 +1,0 @@
-#Start recording tcl command: 3/15/2018 19:58:22
-#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1. Blinky/project_files; Project name: FipsyBaseline
-prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/1. Blinky/project_files/FipsyBaseline.ldf"
-prj_project close
-#Stop recording: 3/15/2018 20:01:34

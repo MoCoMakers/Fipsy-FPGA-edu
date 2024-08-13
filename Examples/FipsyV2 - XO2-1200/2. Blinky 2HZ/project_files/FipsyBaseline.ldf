@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="FipsyBaseline" device="LCMXO2-1200HC-4SG32C" default_implementation="Implementation">
+    <Options/>
+    <Implementation title="Implementation" dir="Implementation" description="Implementation" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="MakeFPGA_Top"/>
+        <Source name="Source/Blinky_Rate_Divider.v" type="Verilog" type_short="Verilog">
+            <Options top_module="MakeFPGA_Top"/>
+        </Source>
+        <Source name="Source/FreqDiv20Bit.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="FipsyBaseline.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="FipsyBaseline.sty"/>
+</BaliProject>

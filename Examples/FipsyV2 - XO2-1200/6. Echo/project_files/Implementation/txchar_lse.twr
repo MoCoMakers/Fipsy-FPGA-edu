@@ -1,0 +1,143 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Oct 27 03:30:10 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     txchar
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets clk_c]
+            229 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 992.596ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \TX0/BAUD0/divcounter__i1  (from clk_c +)
+   Destination:    FD1S3IX    D              \TX0/bitc__i0  (to clk_c +)
+
+   Delay:                   7.244ns  (26.5% logic, 73.5% route), 4 logic levels.
+
+ Constraint Details:
+
+      7.244ns data_path \TX0/BAUD0/divcounter__i1 to \TX0/bitc__i0 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 992.596ns
+
+ Path Details: \TX0/BAUD0/divcounter__i1 to \TX0/bitc__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/BAUD0/divcounter__i1 (from clk_c)
+Route         9   e 1.632                                  divcounter[1]
+LUT4        ---     0.493              A to Z              i5_4_lut
+Route         1   e 0.941                                  n12
+LUT4        ---     0.493              D to Z              i2_4_lut
+Route        14   e 1.807                                  clk_c_enable_13
+LUT4        ---     0.493              B to Z              i20_2_lut
+Route         1   e 0.941                                  n11
+                  --------
+                    7.244  (26.5% logic, 73.5% route), 4 logic levels.
+
+
+Passed:  The following path meets requirements by 992.669ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \TX0/BAUD0/divcounter__i0  (from clk_c +)
+   Destination:    FD1S3IX    D              \TX0/bitc__i0  (to clk_c +)
+
+   Delay:                   7.171ns  (26.8% logic, 73.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      7.171ns data_path \TX0/BAUD0/divcounter__i0 to \TX0/bitc__i0 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 992.669ns
+
+ Path Details: \TX0/BAUD0/divcounter__i0 to \TX0/bitc__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/BAUD0/divcounter__i0 (from clk_c)
+Route         7   e 1.559                                  divcounter[0]
+LUT4        ---     0.493              D to Z              i4_3_lut_4_lut
+Route         1   e 0.941                                  n11_adj_72
+LUT4        ---     0.493              C to Z              i2_4_lut
+Route        14   e 1.807                                  clk_c_enable_13
+LUT4        ---     0.493              B to Z              i20_2_lut
+Route         1   e 0.941                                  n11
+                  --------
+                    7.171  (26.8% logic, 73.2% route), 4 logic levels.
+
+
+Passed:  The following path meets requirements by 992.669ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \TX0/baud_en_51_i1  (from clk_c +)
+   Destination:    FD1S3IX    D              \TX0/bitc__i0  (to clk_c +)
+
+   Delay:                   7.171ns  (26.8% logic, 73.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      7.171ns data_path \TX0/baud_en_51_i1 to \TX0/bitc__i0 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 992.669ns
+
+ Path Details: \TX0/baud_en_51_i1 to \TX0/bitc__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/baud_en_51_i1 (from clk_c)
+Route         7   e 1.559                                  baud_en
+LUT4        ---     0.493              C to Z              i4_3_lut_4_lut
+Route         1   e 0.941                                  n11_adj_72
+LUT4        ---     0.493              C to Z              i2_4_lut
+Route        14   e 1.807                                  clk_c_enable_13
+LUT4        ---     0.493              B to Z              i20_2_lut
+Route         1   e 0.941                                  n11
+                  --------
+                    7.171  (26.8% logic, 73.2% route), 4 logic levels.
+
+Report: 7.404 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk_c]                   |  1000.000 ns|     7.404 ns|     4  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  229 paths, 64 nets, and 180 connections (90.5% coverage)
+
+
+Peak memory: 52887552 bytes, TRCE: 1519616 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

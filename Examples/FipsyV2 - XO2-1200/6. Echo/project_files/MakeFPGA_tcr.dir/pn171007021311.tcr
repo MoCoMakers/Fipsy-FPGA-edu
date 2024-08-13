@@ -1,0 +1,13 @@
+#Start recording tcl command: 10/6/2017 17:24:26
+#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject; Project name: MakeFPGA
+prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/MakeFPGA_DiamondProject/MakeFPGA.ldf"
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen -forceOne
+prj_run Export -impl Implementation -task Jedecgen
+prj_run Export -impl Implementation -task Jedecgen
+#Stop recording: 10/7/2017 02:13:11

@@ -1,0 +1,226 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Mon Aug 12 22:54:19 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     MakeFPGA_Top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets PIN11_c]
+            1788 items scored, 1096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 4.121ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \TX0/bitc__i0  (from PIN11_c +)
+   Destination:    FD1S3IX    CD             \TX0/next_state_i0  (to PIN11_c -)
+
+   Delay:                   6.461ns  (29.8% logic, 70.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.461ns data_path \TX0/bitc__i0 to \TX0/next_state_i0 violates
+      2.500ns delay constraint less
+      0.160ns L_S requirement (totaling 2.340ns) by 4.121ns
+
+ Path Details: \TX0/bitc__i0 to \TX0/next_state_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/bitc__i0 (from PIN11_c)
+Route         6   e 1.515                                  \TX0/bitc[0]
+LUT4        ---     0.493              B to Z              \TX0/i866_3_lut
+Route         1   e 0.941                                  \TX0/n1103
+LUT4        ---     0.493              D to Z              \TX0/i3_4_lut
+Route         2   e 1.141                                  n523
+LUT4        ---     0.493              B to Z              i108_3_lut
+Route         1   e 0.941                                  n225
+                  --------
+                    6.461  (29.8% logic, 70.2% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 4.121ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \TX0/bitc__i0  (from PIN11_c +)
+   Destination:    FD1S3AX    D              \TX0/next_state_i1  (to PIN11_c -)
+
+   Delay:                   6.461ns  (29.8% logic, 70.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.461ns data_path \TX0/bitc__i0 to \TX0/next_state_i1 violates
+      2.500ns delay constraint less
+      0.160ns L_S requirement (totaling 2.340ns) by 4.121ns
+
+ Path Details: \TX0/bitc__i0 to \TX0/next_state_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/bitc__i0 (from PIN11_c)
+Route         6   e 1.515                                  \TX0/bitc[0]
+LUT4        ---     0.493              B to Z              \TX0/i866_3_lut
+Route         1   e 0.941                                  \TX0/n1103
+LUT4        ---     0.493              D to Z              \TX0/i3_4_lut
+Route         2   e 1.141                                  n523
+LUT4        ---     0.493              B to Z              \TX0/i582_3_lut
+Route         1   e 0.941                                  \TX0/next_state_1__N_190[1]
+                  --------
+                    6.461  (29.8% logic, 70.2% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 4.068ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \TX0/bitc__i1  (from PIN11_c +)
+   Destination:    FD1S3IX    CD             \TX0/next_state_i0  (to PIN11_c -)
+
+   Delay:                   6.408ns  (30.0% logic, 70.0% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.408ns data_path \TX0/bitc__i1 to \TX0/next_state_i0 violates
+      2.500ns delay constraint less
+      0.160ns L_S requirement (totaling 2.340ns) by 4.068ns
+
+ Path Details: \TX0/bitc__i1 to \TX0/next_state_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \TX0/bitc__i1 (from PIN11_c)
+Route         5   e 1.462                                  \TX0/bitc[1]
+LUT4        ---     0.493              A to Z              \TX0/i866_3_lut
+Route         1   e 0.941                                  \TX0/n1103
+LUT4        ---     0.493              D to Z              \TX0/i3_4_lut
+Route         2   e 1.141                                  n523
+LUT4        ---     0.493              B to Z              i108_3_lut
+Route         1   e 0.941                                  n225
+                  --------
+                    6.408  (30.0% logic, 70.0% route), 4 logic levels.
+
+Warning: 6.621 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets PIN11_c]                 |     5.000 ns|    13.242 ns|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+LEDn_N_45                               |       2|     462|     42.15%
+                                        |        |        |
+n591                                    |      21|     441|     40.24%
+                                        |        |        |
+n40                                     |       1|     286|     26.09%
+                                        |        |        |
+\TX0/n724                               |       3|     225|     20.53%
+                                        |        |        |
+\TX0/PIN11_c_enable_39                  |      22|     220|     20.07%
+                                        |        |        |
+n38                                     |       1|     176|     16.06%
+                                        |        |        |
+\TX0/BAUD0/n1097                        |       1|     125|     11.41%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 1096  Score: 2858785
+
+Constraints cover  1788 paths, 290 nets, and 716 connections (99.2% coverage)
+
+
+Peak memory: 59170816 bytes, TRCE: 2613248 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,28 @@
+PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Aug 12 22:40:31 2024
+
+C:/Program Files/Lattice/diamond/3.13/ispfpga\bin\nt64\par -f
+FipsyBaseline_Implementation.p2t FipsyBaseline_Implementation_map.ncd
+FipsyBaseline_Implementation.dir FipsyBaseline_Implementation.prf -gui -msgset
+C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/2. Blinky 2HZ/project_files/promote.xml
+
+
+Preference file: FipsyBaseline_Implementation.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            48.186       0            0.306        0            02           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 2 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

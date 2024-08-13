@@ -1,0 +1,230 @@
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Aug 12 22:54:19 2024
+
+
+Command Line:  synthesis -f MakeFPGA_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is QFN32.
+The -d option is LCMXO2-1200HC.
+Using package QFN32.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-1200HC
+
+### Package : QFN32
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = MakeFPGA_Top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files (searchpath added)
+-p C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/Implementation (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files (searchpath added)
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/Source/MakeFPGA_Top.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/Source/AppModules/FreqDiv20Bit.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/Source/uart_tx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/Source/baudgen_tx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/Source/baudgen_rx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/6. Echo/project_files/Source/uart_rx.v
+NGD file = MakeFPGA_Implementation.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/makefpga_top.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/makefpga_top.v(46): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/appmodules/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_tx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_tx.v(19): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen.vh. VERI-1328
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_tx.v(57): identifier state is used before its declaration. VERI-1875
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_tx.v(57): identifier IDLE is used before its declaration. VERI-1875
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_tx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_tx.v(12): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_rx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_rx.v(13): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_rx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_rx.v(18): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): MakeFPGA_Top
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/makefpga_top.v(49): compiling module MakeFPGA_Top. VERI-1018
+INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH. VERI-1018
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/appmodules/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/appmodules/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_rx.v(21): compiling module uart_rx. VERI-1018
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_rx.v(32): compiling module baudgen_rx. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_rx.v(59): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_rx.v(67): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_rx.v(67): expression size 32 truncated to fit in target size 4. VERI-1209
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_tx.v(23): compiling module uart_tx. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/uart_tx.v(92): expression size 32 truncated to fit in target size 5. VERI-1209
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_tx.v(30): compiling module baudgen_tx. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_tx.v(53): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/baudgen_tx.v(61): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv2 - xo2-1200/6. echo/project_files/source/makefpga_top.v(217): Register rstn_18 is stuck at One. VDB-5014
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c1200.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = MakeFPGA_Top.
+WARNING - synthesis: Initial value found on net pwr will be ignored due to unrecognized driver type
+######## Converting I/O port PIN7 to output.
+######## Converting I/O port PIN8 to output.
+######## Converting I/O port PIN9 to input.
+######## Converting I/O port PIN10 to output.
+######## Converting I/O port PIN11 to output.
+######## Converting I/O port PIN12 to output.
+######## Converting I/O port PIN13 to output.
+######## Converting I/O port PIN14 to output.
+######## Converting I/O port PIN17 to output.
+######## Converting I/O port PIN18 to output.
+######## Converting I/O port PIN19 to output.
+######## Converting I/O port PIN20 to output.
+
+
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: Initial value found on instance \RX0/baudgen0/divcounter_i0 will be ignored.
+WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i0 will be ignored.
+WARNING - synthesis: Initial value found on instance \RX0/baudgen0/divcounter_i1 will be ignored.
+WARNING - synthesis: Initial value found on instance \RX0/baudgen0/divcounter_i2 will be ignored.
+WARNING - synthesis: Initial value found on instance \RX0/baudgen0/divcounter_i4 will be ignored.
+WARNING - synthesis: Initial value found on instance \RX0/baudgen0/divcounter_i6 will be ignored.
+WARNING - synthesis: Initial value found on instance \RX0/baudgen0/divcounter_i7 will be ignored.
+WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i1 will be ignored.
+WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i2 will be ignored.
+WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i4 will be ignored.
+WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i6 will be ignored.
+WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i7 will be ignored.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in MakeFPGA_Top_drc.log.
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file MakeFPGA_Implementation.ngd.
+
+################### Begin Area Report (MakeFPGA_Top)######################
+Number of register bits => 128 of 1346 (9 % )
+CCU2D => 32
+FD1P3AX => 33
+FD1P3IX => 29
+FD1P3JX => 11
+FD1S3AX => 10
+FD1S3IX => 33
+FD1S3JX => 12
+GSR => 1
+IB => 1
+INV => 1
+LUT4 => 75
+OB => 12
+OSCH => 1
+PFUMX => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : PIN11_c, loads : 125
+Clock Enable Nets
+Number of Clock Enables: 8
+Top 8 highest fanout Clock Enables:
+  Net : TX0/PIN11_c_enable_39, loads : 22
+  Net : PIN11_c_enable_48, loads : 22
+  Net : RX0/load, loads : 8
+  Net : TX0/data_r_7__N_194, loads : 8
+  Net : TX0/PIN11_c_enable_30, loads : 2
+  Net : PIN11_c_enable_22, loads : 1
+  Net : PIN11_c_enable_33, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : TX0/load, loads : 26
+  Net : PIN11_c_enable_48, loads : 22
+  Net : TX0/PIN11_c_enable_39, loads : 22
+  Net : n591, loads : 21
+  Net : TX0/PIN10_c_2, loads : 20
+  Net : RX0/baudgen0/clk_baud, loads : 9
+  Net : RX0/load, loads : 8
+  Net : RX0/baudgen0/divcounter_3, loads : 8
+  Net : RX0/baudgen0/divcounter_5, loads : 8
+  Net : TX0/data_r_7__N_194, loads : 8
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets PIN11_c]                 |  200.000 MHz|   75.517 MHz|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 56.500  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.313  secs
+--------------------------------------------------------------
