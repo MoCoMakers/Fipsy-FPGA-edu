@@ -14,7 +14,7 @@ Performance Grade:      4
 PACKAGE:          QFN32
 Package Status:                     Final          Version 1.41
 
-Fri Dec 08 16:23:22 2017
+Tue Aug 20 23:44:14 2024
 
 Pinout by Port Name:
 +-----------+----------+--------------+------+-----------+-----------+--------------------------------------+
@@ -25,7 +25,7 @@ Pinout by Port Name:
 | PIN11     | 5/3      | LVCMOS33_OUT | PL5D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | PIN12     | 4/3      | LVCMOS33_OUT | PL5C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | PIN13     | 20/1     | LVCMOS33_OUT | PR5B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| PIN14     | 21/1     | LVCMOS33_OUT | PR5A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| PIN14     | 21/1     | LVCMOS33_IN  | PR5A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | PIN17     | 27/0     | LVCMOS33_OUT | PT8D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | PIN18     | 28/0     | LVCMOS33_OUT | PT8C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | PIN19     | 8/2      | LVCMOS33_OUT | PB2A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
@@ -69,7 +69,7 @@ Vccio by Bank:
 | 16/2     | Reserved: sysCONFIG   |            | LVCMOS33_IN   | PB9A | SN            |           |           |
 | 17/2     | Reserved: sysCONFIG   |            | LVCMOS33_BIDI | PB9B | SI/SISPI      |           |           |
 | 20/1     | PIN13                 | LOCATED    | LVCMOS33_OUT  | PR5B | PCLKC1_0      |           |           |
-| 21/1     | PIN14                 | LOCATED    | LVCMOS33_OUT  | PR5A | PCLKT1_0      |           |           |
+| 21/1     | PIN14                 | LOCATED    | LVCMOS33_IN   | PR5A | PCLKT1_0      |           |           |
 | 23/0     | PIN20                 | LOCATED    | LVCMOS33_OUT  | PT9D | DONE          |           |           |
 | 25/0     | LEDn                  | LOCATED    | LVCMOS33_OUT  | PT9B | PROGRAMN      |           |           |
 | 26/0     |     unused, PULL:DOWN |            |               | PT9A | JTAGENB       |           |           |
@@ -152,13 +152,13 @@ LOCATE  COMP  "PIN9"  SITE  "13";
 
 
 
-PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
+PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Dec 08 16:23:22 2017
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Aug 20 23:44:14 2024
 
 
 

@@ -7,17 +7,17 @@
 </STYLE>
 </HEAD>
 <PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
-synthesis:  version Diamond (64-bit) 3.9.1.119
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Mar 12 22:16:03 2018
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Aug 20 23:44:42 2024
 
 
-Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/promote.xml 
+Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -45,7 +45,7 @@ Using performance grade 4.
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Balanced
 Top-level module name = MakeFPGA_Top.
-Target frequency = 1.000000 MHz.
+Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
 BRAM utilization = 100.000000 %
@@ -70,15 +70,15 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files (searchpath added)
--p D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Implementation (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files (searchpath added)
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/send_character.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/baudgen_tx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/FreqDiv20Bit.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/uart_tx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/txchar.v
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files (searchpath added)
+-p C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files/Implementation (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files (searchpath added)
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files/Source/send_character.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files/Source/baudgen_tx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files/Source/FreqDiv20Bit.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files/Source/uart_tx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files/Source/txchar.v
 NGD file = FipsyBaseline_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -86,35 +86,35 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/send_character.v. VERI-1482
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(12): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh. VERI-1328
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v. VERI-1482
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(19): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh. VERI-1328
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(58): identifier state is used before its declaration. VERI-1875
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(58): identifier IDLE is used before its declaration. VERI-1875
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(13): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen.vh. VERI-1328
-Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/send_character.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/baudgen_tx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/baudgen_tx.v(12): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/uart_tx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/uart_tx.v(19): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/baudgen.vh. VERI-1328
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/uart_tx.v(58): identifier state is used before its declaration. VERI-1875
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/uart_tx.v(58): identifier IDLE is used before its declaration. VERI-1875
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/txchar.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/txchar.v(13): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): MakeFPGA_Top
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/send_character.v(45): compiling module MakeFPGA_Top. VERI-1018
-INFO - synthesis: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="12.09"). VERI-1018
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/txchar.v(16): compiling module txchar. VERI-1018
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(23): compiling module uart_tx. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/uart_tx.v(93): expression size 32 truncated to fit in target size 5. VERI-1209
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(30): compiling module baudgen_tx. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(61): expression size 32 truncated to fit in target size 7. VERI-1209
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/4. send a character/project_files/source/baudgen_tx.v(70): expression size 32 truncated to fit in target size 1. VERI-1209
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/send_character.v(45): compiling module MakeFPGA_Top. VERI-1018
+INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="12.09"). VERI-1018
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/txchar.v(16): compiling module txchar. VERI-1018
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/uart_tx.v(23): compiling module uart_tx. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/uart_tx.v(93): expression size 32 truncated to fit in target size 5. VERI-1209
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/baudgen_tx.v(30): compiling module baudgen_tx. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/baudgen_tx.v(61): expression size 32 truncated to fit in target size 7. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/4. send a character/project_files/source/baudgen_tx.v(70): expression size 32 truncated to fit in target size 1. VERI-1209
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
 Package Status:                     Final          Version 1.41.
 Top-level module name = MakeFPGA_Top.
 ######## Converting I/O port PIN7 to output.
@@ -128,26 +128,27 @@ Top-level module name = MakeFPGA_Top.
 ######## Converting I/O port PIN18 to output.
 ######## Converting I/O port PIN19 to output.
 ######## Converting I/O port PIN20 to output.
+WARNING - synthesis: I/O Port LEDn 's net has no driver and is unused.
 ######## Missing driver on net LEDn. Patching with GND.
-WARNING - synthesis: Bit 0 of Register \TX0/TX0/data_r is stuck at Zero
-WARNING - synthesis: Bit 1 of Register \TX0/TX0/data_r is stuck at One
-WARNING - synthesis: Bit 2 of Register \TX0/TX0/data_r is stuck at Zero
-WARNING - synthesis: Bit 3 of Register \TX0/TX0/data_r is stuck at Zero
-WARNING - synthesis: Bit 4 of Register \TX0/TX0/data_r is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \TX0/TX0/data_r is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \TX0/TX0/data_r is stuck at One
 WARNING - synthesis: Bit 5 of Register \TX0/TX0/data_r is stuck at Zero
-WARNING - synthesis: Bit 6 of Register \TX0/TX0/data_r is stuck at Zero
-WARNING - synthesis: Bit 7 of Register \TX0/TX0/data_r is stuck at One
+WARNING - synthesis: Bit 4 of Register \TX0/TX0/data_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \TX0/TX0/data_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \TX0/TX0/data_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \TX0/TX0/data_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \TX0/TX0/data_r is stuck at One
 
 
 
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-Applying 1.000000 MHz constraint to all clocks
+Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in MakeFPGA_Top_drc.log.
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FipsyBaseline_Implementation.ngd.
 
@@ -181,16 +182,16 @@ Top 2 highest fanout Clock Enables:
   Net : PIN11_c_enable_23, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : TX0/TX0/n152, loads : 22
+  Net : TX0/TX0/n150, loads : 22
   Net : PIN10_c, loads : 20
   Net : PIN11_c_enable_23, loads : 16
-  Net : n567, loads : 9
-  Net : TX0/TX0/PIN11_c_enable_19, loads : 7
+  Net : n600, loads : 9
   Net : TX0/TX0/baud_en, loads : 7
+  Net : TX0/TX0/PIN11_c_enable_19, loads : 7
+  Net : TX0/TX0/BAUD0/divcounter_0, loads : 7
   Net : TX0/TX0/BAUD0/divcounter_2, loads : 7
-  Net : TX0/TX0/BAUD0/n13, loads : 6
-  Net : TX0/TX0/BAUD0/divcounter_0, loads : 6
-  Net : TX0/TX0/BAUD0/divcounter_3, loads : 6
+  Net : TX0/TX0/BAUD0/divcounter_1, loads : 6
+  Net : resetline, loads : 5
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -199,19 +200,19 @@ Top 10 highest fanout non-clock nets:
 Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
-create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets PIN11_c]                 |    1.000 MHz|   78.777 MHz|     3  
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets PIN11_c]                 |  200.000 MHz|   78.777 MHz|     3 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraints not met.
 
 
-Peak Memory Usage: 52.660  MB
+Peak Memory Usage: 53.152  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.813  secs
+Elapsed CPU time for LSE flow : 0.094  secs
 --------------------------------------------------------------
 
 

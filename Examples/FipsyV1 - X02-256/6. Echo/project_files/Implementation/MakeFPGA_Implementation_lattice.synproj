@@ -2,7 +2,7 @@
 -d LCMXO2-256HC
 -t QFN32
 -s 4
-
+-frequency 200
 -optimization_goal Balanced
 -bram_utilization 100
 -ramstyle Auto
@@ -24,23 +24,24 @@
 
 
 
+
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 -use_io_reg auto
 
 
 -lpf 1
--p "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project"
--ver "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/MakeFPGA_Top.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/AppModules/FreqDiv20Bit.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/uart_tx.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/baudgen_tx.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/baudgen_rx.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/uart_rx.v"
+-p "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files"
+-ver "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/MakeFPGA_Top.v"
+"C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/AppModules/FreqDiv20Bit.v"
+"C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/uart_tx.v"
+"C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/baudgen_tx.v"
+"C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/baudgen_rx.v"
+"C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/uart_rx.v"
 -top MakeFPGA_Top
 
 
--p "D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Implementation" "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project"
+-p "C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data" "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Implementation" "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files"
 
 -ngd "MakeFPGA_Implementation.ngd"
 

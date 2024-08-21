@@ -7,7 +7,7 @@
 </STYLE>
 </HEAD>
 <PRE><A name="Mrp"></A>
-          Lattice Mapping Report File for Design Module 'Fipsy_Top'
+         Lattice Mapping Report File for Design Module 'MakeFPGA_Top'
 
 
 
@@ -16,20 +16,22 @@
 Command line:   map -a MachXO2 -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial
      FipsyBaseline_Implementation.ngd -o FipsyBaseline_Implementation_map.ncd
      -pr FipsyBaseline_Implementation.prf -mp FipsyBaseline_Implementation.mrp
-     -lpf C:/Lattice/FipsyBaseline_DiamondProject/Implementation/FipsyBaseline_I
-     mplementation.lpf -lpf
-     C:/Lattice/FipsyBaseline_DiamondProject/FipsyBaseline.lpf -c 0 -gui -msgset
-     C:/Lattice/FipsyBaseline_DiamondProject/promote.xml 
+     -lpf C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3. B
+     linkyInterrupt/project_files/Implementation/FipsyBaseline_Implementation.lp
+     f -lpf C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3.
+     BlinkyInterrupt/project_files/FipsyBaseline.lpf -c 0 -gui -msgset
+     C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3.
+     BlinkyInterrupt/project_files/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
-Mapped on:  12/08/17  16:23:12
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  08/20/24  23:44:10
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     20 out of   322 (6%)
-      PFU registers:           20 out of   256 (8%)
+   Number of registers:     22 out of   322 (7%)
+      PFU registers:           22 out of   256 (9%)
       PIO registers:            0 out of    66 (0%)
    Number of SLICEs:        12 out of   128 (9%)
       SLICEs as Logic/ROM:     12 out of   128 (9%)
@@ -42,14 +44,14 @@ Mapped on:  12/08/17  16:23:12
       Number used as shift registers:     0
    Number of PIO sites used: 13 + 4(JTAG) out of 22 (77%)
    Number of block RAMs:  0 out of 0
-   Number of GSRs:  0 out of 1 (0%)
-   EFB used :       No
-   JTAG used :      No
-   Readback used :  No
-   Oscillator used :  Yes
-   Startup used :   No
-   POR :            On
-   Bandgap :        On
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
    Number of Power Controller:  0 out of 1 (0%)
    Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
    Number of DCCA:  0 out of 8 (0%)
@@ -59,24 +61,26 @@ Mapped on:  12/08/17  16:23:12
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  1
+   Number of clocks:  2
+     Net PIN20_c_19: 1 loads, 1 rising, 0 falling (Driver:
+     FreqDiv20Bit_inst/count_14__i19 )
      Net PIN11_c: 11 loads, 11 rising, 0 falling (Driver: OSCH_inst )
    Number of Clock Enables:  0
    Number of LSRs:  1
+
      Net PIN10_c: 11 loads, 11 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net PIN10_c: 11 loads
-
-     Net PIN20_c_19: 3 loads
+     Net flop2: 2 loads
+     Net flop1: 1 loads
      Net FreqDiv20Bit_inst/n105: 1 loads
      Net FreqDiv20Bit_inst/n2: 1 loads
      Net FreqDiv20Bit_inst/n20: 1 loads
-     Net FreqDiv20Bit_inst/n3: 1 loads
      Net FreqDiv20Bit_inst/n86: 1 loads
      Net FreqDiv20Bit_inst/n87: 1 loads
-     Net FreqDiv20Bit_inst/n88: 1 loads
-     Net FreqDiv20Bit_inst/n89: 1 loads
+     Net LEDn_N_1: 1 loads
+     Net PIN14_c: 1 loads
 
 
 
@@ -112,8 +116,6 @@ Mapped on:  12/08/17  16:23:12
 +---------------------+-----------+-----------+------------+
 | PIN13               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| PIN14               | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | PIN17               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PIN18               | OUTPUT    | LVCMOS33  |            |
@@ -125,29 +127,26 @@ Mapped on:  12/08/17  16:23:12
 | LEDn                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PIN10               | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 
++---------------------+-----------+-----------+------------+
+| PIN14               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 
 
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block i6 undriven or does not drive anything - clipped.
+Block i12 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal FreqDiv20Bit_inst/count_8_add_4_1/S0 undriven or does not drive anything
+Signal FreqDiv20Bit_inst/count_14_add_4_1/S0 undriven or does not drive anything
      - clipped.
-Signal FreqDiv20Bit_inst/count_8_add_4_1/CI undriven or does not drive anything
+Signal FreqDiv20Bit_inst/count_14_add_4_1/CI undriven or does not drive anything
      - clipped.
-Signal FreqDiv20Bit_inst/count_8_add_4_21/S1 undriven or does not drive anything
-     - clipped.
-Signal FreqDiv20Bit_inst/count_8_add_4_21/CO undriven or does not drive anything
-     - clipped.
-
-
-
-<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
-
+Signal FreqDiv20Bit_inst/count_14_add_4_21/S1 undriven or does not drive
+     anything - clipped.
+Signal FreqDiv20Bit_inst/count_14_add_4_21/CO undriven or does not drive
+     anything - clipped.
 
      
 
@@ -176,10 +175,8 @@ Instance Name: OSCH_inst
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 30 MB
+   Peak Memory Usage: 31 MB
         
-
-
 
 
 
@@ -199,7 +196,7 @@ Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
      Copyright (c) 1995 AT&T Corp.   All rights reserved.
      Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
      Copyright (c) 2001 Agere Systems   All rights reserved.
-     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
      reserved.
 
 

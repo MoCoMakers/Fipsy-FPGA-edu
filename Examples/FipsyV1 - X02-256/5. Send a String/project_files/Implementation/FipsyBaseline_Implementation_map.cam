@@ -1,23 +1,23 @@
 [ START MERGED ]
-n759 resetline
+n786 resetline
 clk_N_114 PIN11_c
 [ END MERGED ]
 [ START CLIPPED ]
 VCC_net
-FreqDiv20Bit_inst/count_164_add_4_1/S0
-FreqDiv20Bit_inst/count_164_add_4_1/CI
-FreqDiv20Bit_inst/count_164_add_4_21/S1
-FreqDiv20Bit_inst/count_164_add_4_21/CO
-counting_163_add_4_19/CO
-counting_163_add_4_1/S0
-counting_163_add_4_1/CI
+FreqDiv20Bit_inst/count_160_add_4_1/S0
+FreqDiv20Bit_inst/count_160_add_4_1/CI
+FreqDiv20Bit_inst/count_160_add_4_21/S1
+FreqDiv20Bit_inst/count_160_add_4_21/CO
+counting_159_add_4_19/CO
+counting_159_add_4_1/S0
+counting_159_add_4_1/CI
 [ END CLIPPED ]
 [ START OSC ]
 PIN11_c 12.09
 [ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.9.1.119 -- WARNING: Map write only section -- Wed Mar 14 15:16:23 2018
+# map:  version Diamond (64-bit) 3.13.0.56.2 -- WARNING: Map write only section -- Tue Aug 20 23:45:12 2024
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "PIN8" SITE "12" ;

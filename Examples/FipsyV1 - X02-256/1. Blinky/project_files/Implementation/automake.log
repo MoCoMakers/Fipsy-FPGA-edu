@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Aug 12 14:36:06 2024
+Mon Aug 19 22:33:49 2024
 
 
 Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/1. Blinky/project_files/promote.xml 
@@ -181,10 +181,10 @@ clk0 [get_nets PIN11_c]                 |  200.000 MHz|  181.028 MHz|    12 *
 1 constraints not met.
 
 
-Peak Memory Usage: 50.609  MB
+Peak Memory Usage: 50.176  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.172  secs
+Elapsed CPU time for LSE flow : 0.094  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial   "FipsyBaseline_Implementation.ngd" -o "FipsyBaseline_Implementation_map.ncd" -pr "FipsyBaseline_Implementation.prf" -mp "FipsyBaseline_Implementation.mrp" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/1. Blinky/project_files/Implementation/FipsyBaseline_Implementation.lpf" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/1. Blinky/project_files/FipsyBaseline.lpf"  -c 0           
@@ -284,6 +284,192 @@ ncd2vdb "FipsyBaseline_Implementation_map.ncd" ".vdbs/FipsyBaseline_Implementati
 
 Loading device for application ncd2vdb from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
 
+trce -f "FipsyBaseline_Implementation.mt" -o "FipsyBaseline_Implementation.tw1" "FipsyBaseline_Implementation_map.ncd" "FipsyBaseline_Implementation.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file fipsybaseline_implementation_map.ncd.
+Design name: Fipsy_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Mon Aug 19 22:33:51 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FipsyBaseline_Implementation.tw1 -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/1. Blinky/project_files/promote.xml FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.prf 
+Design file:     fipsybaseline_implementation_map.ncd
+Preference file: fipsybaseline_implementation.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Mon Aug 19 22:33:51 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FipsyBaseline_Implementation.tw1 -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/1. Blinky/project_files/promote.xml FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.prf 
+Design file:     fipsybaseline_implementation_map.ncd
+Preference file: fipsybaseline_implementation.prf
+Device,speed:    LCMXO2-256HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 37 MB
+
+
+ldbanno "FipsyBaseline_Implementation_map.ncd" -n Verilog -o "FipsyBaseline_Implementation_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the FipsyBaseline_Implementation_map design file.
+
+
+Loading design for application ldbanno from file FipsyBaseline_Implementation_map.ncd.
+Design name: Fipsy_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application ldbanno from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design FipsyBaseline_Implementation_map.ncd into .ldb format.
+Writing Verilog netlist to file FipsyBaseline_Implementation_mapvo.vo
+Writing SDF timing to file FipsyBaseline_Implementation_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 33 MB
+
+ldbanno "FipsyBaseline_Implementation_map.ncd" -n VHDL -o "FipsyBaseline_Implementation_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the FipsyBaseline_Implementation_map design file.
+
+
+Loading design for application ldbanno from file FipsyBaseline_Implementation_map.ncd.
+Design name: Fipsy_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application ldbanno from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design FipsyBaseline_Implementation_map.ncd into .ldb format.
+    <postMsg mid="35400209" type="Warning" dynamic="3" navigation="0" arg0="DEFAULT" arg1="-1" arg2="Keyword"  />
+    <postMsg mid="35400209" type="Warning" dynamic="3" navigation="0" arg0="ASSERT" arg1="-1" arg2="Keyword"  />
+Writing VHDL netlist to file FipsyBaseline_Implementation_mapvho.vho
+Writing SDF timing to file FipsyBaseline_Implementation_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 32 MB
+
 mpartrce -p "FipsyBaseline_Implementation.p2t" -f "FipsyBaseline_Implementation.p3t" -tf "FipsyBaseline_Implementation.pt" "FipsyBaseline_Implementation_map.ncd" "FipsyBaseline_Implementation.ncd"
 
 ---- MParTrce Tool ----
@@ -291,7 +477,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "FipsyBaseline_Implementation_map.ncd"
-Mon Aug 12 14:36:07 2024
+Mon Aug 19 22:33:53 2024
 
 PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/1. Blinky/project_files/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.dir/5_1.ncd FipsyBaseline_Implementation.prf
@@ -346,12 +532,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 Starting Placer Phase 1.
 ..................
 Placer score = 1571.
-Finished Placer Phase 1.  REAL time: 3 secs 
+Finished Placer Phase 1.  REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  1571
-Finished Placer Phase 2.  REAL time: 3 secs 
+Finished Placer Phase 2.  REAL time: 4 secs 
 
 
 ------------------ Clock Report ------------------
@@ -395,9 +581,9 @@ Dumping design to file FipsyBaseline_Implementation.dir/5_1.ncd.
 0 connections routed; 85 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 3 secs 
+Completed router resource preassignment. Real time: 4 secs 
 
-Start NBR router at 14:36:10 08/12/24
+Start NBR router at 22:33:57 08/19/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -412,29 +598,29 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 14:36:10 08/12/24
+Start NBR special constraint process at 22:33:57 08/19/24
 
-Start NBR section for initial routing at 14:36:10 08/12/24
+Start NBR section for initial routing at 22:33:57 08/19/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 4 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 14:36:10 08/12/24
+Start NBR section for normal routing at 22:33:57 08/19/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 4 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 14:36:10 08/12/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 22:33:57 08/19/24
 
-Start NBR section for re-routing at 14:36:10 08/12/24
+Start NBR section for re-routing at 22:33:57 08/19/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 4 secs 
 
-Start NBR section for post-routing at 14:36:10 08/12/24
+Start NBR section for post-routing at 22:33:57 08/19/24
 
 End NBR router with 0 unrouted connection
 
@@ -450,7 +636,7 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 Total CPU time 2 secs 
-Total REAL time: 3 secs 
+Total REAL time: 4 secs 
 Completely routed.
 End of route.  85 routed (100.00%); 0 unrouted.
 
@@ -470,7 +656,7 @@ PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
 Total CPU  time to completion: 2 secs 
-Total REAL time to completion: 3 secs 
+Total REAL time to completion: 4 secs 
 
 par done!
 
@@ -483,6 +669,204 @@ Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 Exiting par with exit code 0
 Exiting mpartrce with exit code 0
+
+trce -f "FipsyBaseline_Implementation.pt" -o "FipsyBaseline_Implementation.twr" "FipsyBaseline_Implementation.ncd" "FipsyBaseline_Implementation.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file fipsybaseline_implementation.ncd.
+Design name: Fipsy_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Mon Aug 19 22:33:57 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/1. Blinky/project_files/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
+Design file:     fipsybaseline_implementation.ncd
+Preference file: fipsybaseline_implementation.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Mon Aug 19 22:33:57 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/1. Blinky/project_files/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
+Design file:     fipsybaseline_implementation.ncd
+Preference file: fipsybaseline_implementation.prf
+Device,speed:    LCMXO2-256HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 36 MB
+
+
+iotiming  "FipsyBaseline_Implementation.ncd" "FipsyBaseline_Implementation.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file fipsybaseline_implementation.ncd.
+Design name: Fipsy_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application iotiming from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file fipsybaseline_implementation.ncd.
+Design name: Fipsy_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 5
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file fipsybaseline_implementation.ncd.
+Design name: Fipsy_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 6
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file fipsybaseline_implementation.ncd.
+Design name: Fipsy_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: M
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
 
 tmcheck -par "FipsyBaseline_Implementation.par" 
 
@@ -569,4 +953,4 @@ Padded 59136 bits for this design
 
 Total CPU Time: 1 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 241 MB
+Peak Memory Usage: 240 MB

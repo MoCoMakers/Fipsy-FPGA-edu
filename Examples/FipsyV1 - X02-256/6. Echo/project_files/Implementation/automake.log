@@ -1,16 +1,16 @@
 
 synthesis -f "MakeFPGA_Implementation_lattice.synproj"
-synthesis:  version Diamond (64-bit) 3.9.1.119
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Oct 27 22:44:58 2017
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Aug 20 23:45:42 2024
 
 
-Command Line:  synthesis -f MakeFPGA_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/promote.xml 
+Command Line:  synthesis -f MakeFPGA_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -39,7 +39,7 @@ Using performance grade 4.
     <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
 Optimization goal = Balanced
 Top-level module name = MakeFPGA_Top.
-Target frequency = 1.000000 MHz.
+Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
 BRAM utilization = 100.000000 %
@@ -64,16 +64,16 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project (searchpath added)
--p D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Implementation (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project (searchpath added)
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/MakeFPGA_Top.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/AppModules/FreqDiv20Bit.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/uart_tx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/baudgen_tx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/baudgen_rx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/uart_rx.v
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files (searchpath added)
+-p C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Implementation (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files (searchpath added)
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/MakeFPGA_Top.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/AppModules/FreqDiv20Bit.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/uart_tx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/baudgen_tx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/baudgen_rx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/uart_rx.v
 NGD file = MakeFPGA_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -81,44 +81,44 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v. VERI-1482
-    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v(46): " arg1="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v" arg3="46"  />
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v. VERI-1482
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v. VERI-1482
-    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(19): " arg1="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v" arg3="19"  />
-    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(57): " arg1="state" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v" arg3="57"  />
-    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(57): " arg1="IDLE" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v" arg3="57"  />
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v. VERI-1482
-    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(12): " arg1="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v" arg3="12"  />
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v. VERI-1482
-    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(13): " arg1="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v" arg3="13"  />
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v. VERI-1482
-    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v(18): " arg1="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v" arg3="18"  />
-Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v(46): " arg1="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v" arg3="46"  />
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(19): " arg1="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v" arg3="19"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(57): " arg1="state" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v" arg3="57"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(57): " arg1="IDLE" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v" arg3="57"  />
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(12): " arg1="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v" arg3="12"  />
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(13): " arg1="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v" arg3="13"  />
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v(18): " arg1="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v" arg3="18"  />
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): MakeFPGA_Top
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v(49): " arg1="MakeFPGA_Top" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v" arg3="49"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH" arg2="D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v(20): " arg1="FreqDiv20Bit" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v" arg3="20"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v(55): " arg1="32" arg2="20" arg3="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v" arg4="55"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v(21): " arg1="uart_rx" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v" arg3="21"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(32): " arg1="baudgen_rx" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v" arg3="32"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(59): " arg1="32" arg2="8" arg3="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v" arg4="59"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(67): " arg1="32" arg2="1" arg3="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v" arg4="67"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v(67): " arg1="32" arg2="4" arg3="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v" arg4="67"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(23): " arg1="uart_tx" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v" arg3="23"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(92): " arg1="32" arg2="5" arg3="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v" arg4="92"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(30): " arg1="baudgen_tx" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v" arg3="30"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(53): " arg1="32" arg2="8" arg3="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v" arg4="53"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(61): " arg1="32" arg2="1" arg3="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v" arg4="61"  />
-    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v(217): " arg1="rstn_18" arg2="d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v" arg3="217"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v(49): " arg1="MakeFPGA_Top" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v" arg3="49"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH" arg2="C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v(20): " arg1="FreqDiv20Bit" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v" arg3="20"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v(55): " arg1="32" arg2="20" arg3="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v" arg4="55"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v(21): " arg1="uart_rx" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v" arg3="21"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(32): " arg1="baudgen_rx" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v" arg3="32"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(59): " arg1="32" arg2="8" arg3="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v" arg4="59"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(67): " arg1="32" arg2="1" arg3="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v" arg4="67"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v(67): " arg1="32" arg2="4" arg3="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v" arg4="67"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(23): " arg1="uart_tx" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v" arg3="23"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(92): " arg1="32" arg2="5" arg3="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v" arg4="92"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(30): " arg1="baudgen_tx" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v" arg3="30"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(53): " arg1="32" arg2="8" arg3="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v" arg4="53"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(61): " arg1="32" arg2="1" arg3="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v" arg4="61"  />
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v(217): " arg1="rstn_18" arg2="c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v" arg3="217"  />
 Last elaborated design is MakeFPGA_Top()
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
 Package Status:                     Final          Version 1.41.
 Top-level module name = MakeFPGA_Top.
     <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="pwr"  />
@@ -150,13 +150,13 @@ GSR will not be inferred because no asynchronous signal was found in the netlist
     <postMsg mid="35001779" type="Warning" dynamic="1" navigation="0" arg0="\TX0/BAUD0/divcounter_i4"  />
     <postMsg mid="35001779" type="Warning" dynamic="1" navigation="0" arg0="\TX0/BAUD0/divcounter_i6"  />
     <postMsg mid="35001779" type="Warning" dynamic="1" navigation="0" arg0="\TX0/BAUD0/divcounter_i7"  />
-Applying 1.000000 MHz constraint to all clocks
+Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
 Results of NGD DRC are available in MakeFPGA_Top_drc.log.
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
 
 
 Running DRC...
@@ -198,23 +198,25 @@ Number of Clocks: 1
 Clock Enable Nets
 Number of Clock Enables: 8
 Top 8 highest fanout Clock Enables:
-  Net : PIN11_c_enable_56, loads : 22
+  Net : TX0/PIN11_c_enable_39, loads : 22
+  Net : PIN11_c_enable_48, loads : 22
   Net : RX0/load, loads : 8
-  Net : TX0/PIN11_c_enable_41, loads : 8
-  Net : PIN11_c_enable_34, loads : 1
-  Net : PIN11_c_enable_23, loads : 1
+  Net : TX0/data_r_7__N_194, loads : 8
+  Net : TX0/PIN11_c_enable_30, loads : 2
+  Net : PIN11_c_enable_22, loads : 1
+  Net : PIN11_c_enable_33, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : TX0/load, loads : 26
-  Net : PIN11_c_enable_56, loads : 22
-  Net : n584, loads : 21
-  Net : TX0/BAUD0/PIN11_c_enable_48, loads : 21
+  Net : PIN11_c_enable_48, loads : 22
+  Net : TX0/PIN11_c_enable_39, loads : 22
+  Net : n591, loads : 21
   Net : TX0/PIN10_c_2, loads : 20
   Net : RX0/baudgen0/clk_baud, loads : 9
+  Net : RX0/load, loads : 8
   Net : RX0/baudgen0/divcounter_3, loads : 8
   Net : RX0/baudgen0/divcounter_5, loads : 8
-  Net : RX0/load, loads : 8
-  Net : TX0/PIN11_c_enable_41, loads : 8
+  Net : TX0/data_r_7__N_194, loads : 8
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -223,29 +225,29 @@ Timing Report Summary
 Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
-create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets PIN11_c]                 |    1.000 MHz|   75.517 MHz|     4  
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets PIN11_c]                 |  200.000 MHz|   75.517 MHz|     4 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraints not met.
 
 
-Peak Memory Usage: 53.906  MB
+Peak Memory Usage: 55.211  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.563  secs
+Elapsed CPU time for LSE flow : 0.109  secs
 --------------------------------------------------------------
 
-map -a "MachXO2" -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial   "MakeFPGA_Implementation.ngd" -o "MakeFPGA_Implementation_map.ncd" -pr "MakeFPGA_Implementation.prf" -mp "MakeFPGA_Implementation.mrp" -lpf "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Implementation/MakeFPGA_Implementation.lpf" -lpf "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/MakeFPGA.lpf" -c 0            
-map:  version Diamond (64-bit) 3.9.1.119
+map -a "MachXO2" -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial   "MakeFPGA_Implementation.ngd" -o "MakeFPGA_Implementation_map.ncd" -pr "MakeFPGA_Implementation.prf" -mp "MakeFPGA_Implementation.mrp" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Implementation/MakeFPGA_Implementation.lpf" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/MakeFPGA.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.13.0.56.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
    Process the file: MakeFPGA_Implementation.ngd
    Picdevice="LCMXO2-256HC"
 
@@ -259,8 +261,8 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
 Part used: LCMXO2-256HCQFN32, Performance used: 4.
 
-Loading device for application baspr from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
-    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/MakeFPGA.lpf(39): Semantic error in &quot;FREQUENCY PORT &quot;MCLK&quot; 120.000000 MHz ;&quot;: " arg1="&quot;MCLK&quot; matches no ports in the design. " arg2="D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/MakeFPGA.lpf" arg3="39"  />
+Loading device for application baspr from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/MakeFPGA.lpf(39): Semantic error in &quot;FREQUENCY PORT &quot;MCLK&quot; 120.000000 MHz ;&quot;: " arg1="&quot;MCLK&quot; matches no ports in the design. " arg2="C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/MakeFPGA.lpf" arg3="39"  />
 Package Status:                     Final          Version 1.41.
 
 Running general design DRC...
@@ -287,14 +289,14 @@ Design Summary:
       Number used as shift registers:     0
    Number of PIO sites used: 13 + 4(JTAG) out of 22 (77%)
    Number of block RAMs:  0 out of 0
-   Number of GSRs:  0 out of 1 (0%)
-   EFB used :       No
-   JTAG used :      No
-   Readback used :  No
-   Oscillator used :  Yes
-   Startup used :   No
-   POR :            On
-   Bandgap :        On
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
    Number of Power Controller:  0 out of 1 (0%)
    Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
    Number of DCCA:  0 out of 8 (0%)
@@ -306,38 +308,38 @@ Design Summary:
      Net PIN11_c: 75 loads, 71 rising, 4 falling (Driver: OSCH_inst )
    Number of Clock Enables:  8
      Net rcv: 11 loads, 11 LSLICEs
+     Net PIN11_c_enable_22: 1 loads, 1 LSLICEs
      Net clk_baud: 5 loads, 5 LSLICEs
-     Net PIN11_c_enable_34: 2 loads, 2 LSLICEs
-     Net PIN11_c_enable_23: 1 loads, 1 LSLICEs
+     Net PIN11_c_enable_33: 2 loads, 2 LSLICEs
      Net RX0/load: 4 loads, 4 LSLICEs
-     Net TX0/PIN11_c_enable_48: 12 loads, 12 LSLICEs
-     Net TX0/PIN11_c_enable_41: 4 loads, 4 LSLICEs
-     Net TX0/PIN11_c_enable_31: 1 loads, 1 LSLICEs
+     Net TX0/data_r_7__N_194: 4 loads, 4 LSLICEs
+     Net TX0/PIN11_c_enable_39: 12 loads, 12 LSLICEs
+     Net TX0/PIN11_c_enable_30: 1 loads, 1 LSLICEs
    Number of LSRs:  12
-     Net n584: 11 loads, 11 LSLICEs
+     Net n591: 11 loads, 11 LSLICEs
      Net PIN10_c_2: 11 loads, 11 LSLICEs
-     Net clear: 3 loads, 3 LSLICEs
      Net state_1: 1 loads, 1 LSLICEs
-     Net n232: 1 loads, 1 LSLICEs
+     Net n225: 1 loads, 1 LSLICEs
+     Net clear: 3 loads, 3 LSLICEs
      Net RX0/state_1: 3 loads, 3 LSLICEs
      Net RX0/bauden: 3 loads, 3 LSLICEs
-     Net RX0/n618: 2 loads, 2 LSLICEs
+     Net RX0/n611: 2 loads, 2 LSLICEs
      Net TX0/load: 9 loads, 9 LSLICEs
      Net TX0/baud_en: 3 loads, 3 LSLICEs
      Net TX0/n29: 2 loads, 2 LSLICEs
-     Net TX0/PIN11_c_enable_31: 1 loads, 1 LSLICEs
+     Net TX0/PIN11_c_enable_30: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net TX0/load: 19 loads
      Net rcv: 16 loads
      Net PIN10_c_2: 12 loads
-     Net TX0/PIN11_c_enable_48: 12 loads
-     Net n584: 11 loads
+     Net TX0/PIN11_c_enable_39: 12 loads
+     Net n591: 11 loads
      Net RX0/divcounter_3: 9 loads
      Net RX0/divcounter_5: 9 loads
+     Net state_0: 8 loads
      Net clk_baud: 7 loads
-     Net RX0/n42: 7 loads
-     Net state_0: 7 loads
+     Net RX0/n39: 7 loads
  
 
    Number of warnings:  1
@@ -347,13 +349,199 @@ Design Summary:
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 31 MB
+Peak Memory Usage: 32 MB
 
 Dumping design to file MakeFPGA_Implementation_map.ncd.
 
 ncd2vdb "MakeFPGA_Implementation_map.ncd" ".vdbs/MakeFPGA_Implementation_map.vdb"
 
-Loading device for application ncd2vdb from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
+Loading device for application ncd2vdb from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+
+trce -f "MakeFPGA_Implementation.mt" -o "MakeFPGA_Implementation.tw1" "MakeFPGA_Implementation_map.ncd" "MakeFPGA_Implementation.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file makefpga_implementation_map.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Tue Aug 20 23:45:43 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o MakeFPGA_Implementation.tw1 -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/promote.xml MakeFPGA_Implementation_map.ncd MakeFPGA_Implementation.prf 
+Design file:     makefpga_implementation_map.ncd
+Preference file: makefpga_implementation.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1346 paths, 1 nets, and 601 connections (99.83% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Tue Aug 20 23:45:43 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o MakeFPGA_Implementation.tw1 -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/promote.xml MakeFPGA_Implementation_map.ncd MakeFPGA_Implementation.prf 
+Design file:     makefpga_implementation_map.ncd
+Preference file: makefpga_implementation.prf
+Device,speed:    LCMXO2-256HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1346 paths, 1 nets, and 601 connections (99.83% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 37 MB
+
+
+ldbanno "MakeFPGA_Implementation_map.ncd" -n Verilog -o "MakeFPGA_Implementation_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the MakeFPGA_Implementation_map design file.
+
+
+Loading design for application ldbanno from file MakeFPGA_Implementation_map.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application ldbanno from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design MakeFPGA_Implementation_map.ncd into .ldb format.
+Writing Verilog netlist to file MakeFPGA_Implementation_mapvo.vo
+Writing SDF timing to file MakeFPGA_Implementation_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 35 MB
+
+ldbanno "MakeFPGA_Implementation_map.ncd" -n VHDL -o "MakeFPGA_Implementation_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the MakeFPGA_Implementation_map design file.
+
+
+Loading design for application ldbanno from file MakeFPGA_Implementation_map.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application ldbanno from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design MakeFPGA_Implementation_map.ncd into .ldb format.
+    <postMsg mid="35400209" type="Warning" dynamic="3" navigation="0" arg0="DEFAULT" arg1="-1" arg2="Keyword"  />
+    <postMsg mid="35400209" type="Warning" dynamic="3" navigation="0" arg0="ASSERT" arg1="-1" arg2="Keyword"  />
+Writing VHDL netlist to file MakeFPGA_Implementation_mapvho.vho
+Writing SDF timing to file MakeFPGA_Implementation_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 36 MB
 
 mpartrce -p "MakeFPGA_Implementation.p2t" -f "MakeFPGA_Implementation.p3t" -tf "MakeFPGA_Implementation.pt" "MakeFPGA_Implementation_map.ncd" "MakeFPGA_Implementation.ncd"
 
@@ -362,10 +550,10 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "MakeFPGA_Implementation_map.ncd"
-Fri Oct 27 22:45:01 2017
+Tue Aug 20 23:45:44 2024
 
-PAR: Place And Route Diamond (64-bit) 3.9.1.119.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF MakeFPGA_Implementation_map.ncd MakeFPGA_Implementation.dir/5_1.ncd MakeFPGA_Implementation.prf
+PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 MakeFPGA_Implementation_map.ncd MakeFPGA_Implementation.dir/5_1.ncd MakeFPGA_Implementation.prf
 Preference file: MakeFPGA_Implementation.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
@@ -377,7 +565,7 @@ Vendor:      LATTICE
 Device:      LCMXO2-256HC
 Package:     QFN32
 Performance: 4
-Loading device for application par from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
+Loading device for application par from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
 Package Status:                     Final          Version 1.41.
 Performance Hardware Data Status:   Final          Version 34.4.
 License checked out.
@@ -395,7 +583,7 @@ Device utilization summary:
 
 
 Number of Signals: 287
-Number of Connections: 606
+Number of Connections: 602
     <postMsg mid="61061045" type="Warning" dynamic="0" navigation="0"  />
 
 Pin Constraint Summary:
@@ -406,25 +594,25 @@ The following 1 signal is selected to use the primary clock routing resources:
 
 
 The following 4 signals are selected to use the secondary clock routing resources:
-    TX0/PIN11_c_enable_48 (driver: SLICE_91, clk load #: 0, sr load #: 0, ce load #: 12)
-    n584 (driver: SLICE_92, clk load #: 0, sr load #: 11, ce load #: 0)
-    PIN10_c_2 (driver: TX0/SLICE_33, clk load #: 0, sr load #: 11, ce load #: 0)
+    TX0/PIN11_c_enable_39 (driver: SLICE_91, clk load #: 0, sr load #: 0, ce load #: 12)
     rcv (driver: SLICE_82, clk load #: 0, sr load #: 0, ce load #: 11)
+    n591 (driver: SLICE_93, clk load #: 0, sr load #: 11, ce load #: 0)
+    PIN10_c_2 (driver: TX0/SLICE_33, clk load #: 0, sr load #: 11, ce load #: 0)
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
-
+.......
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-...................
-Placer score = 13609.
-Finished Placer Phase 1.  REAL time: 6 secs 
+..................
+Placer score = 13374.
+Finished Placer Phase 1.  REAL time: 3 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  13573
-Finished Placer Phase 2.  REAL time: 6 secs 
+Placer score =  13367
+Finished Placer Phase 2.  REAL time: 3 secs 
 
 
 ------------------ Clock Report ------------------
@@ -434,12 +622,12 @@ Global Clock Resources:
   DCM        : 0 out of 2 (0%)
   DCC        : 0 out of 8 (0%)
 
-Quadrants All (TL, TR, BL, BR) - Global Clocks:
+Global Clocks:
   PRIMARY "PIN11_c" from OSC on comp "OSCH_inst" on site "OSC", clk load = 75
-  SECONDARY "TX0/PIN11_c_enable_48" from F1 on comp "SLICE_91" on site "R5C5A", clk load = 0, ce load = 12, sr load = 0
-  SECONDARY "n584" from F0 on comp "SLICE_92" on site "R2C6A", clk load = 0, ce load = 0, sr load = 11
-  SECONDARY "PIN10_c_2" from Q0 on comp "TX0/SLICE_33" on site "R2C6D", clk load = 0, ce load = 0, sr load = 11
-  SECONDARY "rcv" from Q0 on comp "SLICE_82" on site "R5C5C", clk load = 0, ce load = 11, sr load = 0
+  SECONDARY "TX0/PIN11_c_enable_39" from F0 on comp "SLICE_91" on site "R2C6D", clk load = 0, ce load = 12, sr load = 0
+  SECONDARY "rcv" from Q0 on comp "SLICE_82" on site "R5C5A", clk load = 0, ce load = 11, sr load = 0
+  SECONDARY "n591" from F0 on comp "SLICE_93" on site "R5C5B", clk load = 0, ce load = 0, sr load = 11
+  SECONDARY "PIN10_c_2" from Q0 on comp "TX0/SLICE_33" on site "R2C6B", clk load = 0, ce load = 0, sr load = 11
 
   PRIMARY  : 1 out of 8 (12%)
   SECONDARY: 4 out of 8 (50%)
@@ -463,16 +651,16 @@ I/O Bank Usage Summary:
 | 3        | 2 / 2 (100%) | 3.3V       | -         |
 +----------+--------------+------------+-----------+
 
-Total placer CPU time: 5 secs 
+Total placer CPU time: 1 secs 
 
 Dumping design to file MakeFPGA_Implementation.dir/5_1.ncd.
 
-0 connections routed; 606 unrouted.
+0 connections routed; 602 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 6 secs 
+Completed router resource preassignment. Real time: 3 secs 
 
-Start NBR router at 22:45:07 10/27/17
+Start NBR router at 23:45:47 08/20/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -487,32 +675,35 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 22:45:07 10/27/17
+Start NBR special constraint process at 23:45:47 08/20/24
 
-Start NBR section for initial routing at 22:45:07 10/27/17
+Start NBR section for initial routing at 23:45:47 08/20/24
 Level 4, iteration 1
-8(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 469.196ns/0.000ns; real time: 6 secs 
+9(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 469.166ns/0.000ns; real time: 3 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:45:07 10/27/17
+Start NBR section for normal routing at 23:45:47 08/20/24
 Level 4, iteration 1
-2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 469.196ns/0.000ns; real time: 6 secs 
+4(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 469.166ns/0.000ns; real time: 3 secs 
 Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 469.166ns/0.000ns; real time: 3 secs 
+Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 469.196ns/0.000ns; real time: 6 secs 
+Estimated worst slack/total negative slack<setup>: 469.166ns/0.000ns; real time: 3 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 22:45:07 10/27/17
+Start NBR section for setup/hold timing optimization with effort level 3 at 23:45:47 08/20/24
 
-Start NBR section for re-routing at 22:45:07 10/27/17
+Start NBR section for re-routing at 23:45:47 08/20/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 469.196ns/0.000ns; real time: 6 secs 
+Estimated worst slack/total negative slack<setup>: 469.166ns/0.000ns; real time: 3 secs 
 
-Start NBR section for post-routing at 22:45:07 10/27/17
+Start NBR section for post-routing at 23:45:47 08/20/24
 
 End NBR router with 0 unrouted connection
 
@@ -520,17 +711,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 469.196ns
+  Estimated worst slack<setup> : 469.166ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 6 secs 
-Total REAL time: 7 secs 
+Total CPU time 1 secs 
+Total REAL time: 3 secs 
 Completely routed.
-End of route.  606 routed (100.00%); 0 unrouted.
+End of route.  602 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -539,36 +730,238 @@ Timing score: 0
 Dumping design to file MakeFPGA_Implementation.dir/5_1.ncd.
 
 
-PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 469.196
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 469.166
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.304
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.302
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 6 secs 
-Total REAL time to completion: 7 secs 
+Total CPU  time to completion: 1 secs 
+Total REAL time to completion: 3 secs 
 
 par done!
 
+Note: user must run 'Trace' for timing closure signoff.
+
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 Exiting par with exit code 0
 Exiting mpartrce with exit code 0
 
-bitgen -f "MakeFPGA_Implementation.t2b" -w "MakeFPGA_Implementation.ncd" -jedec "MakeFPGA_Implementation.prf"
+trce -f "MakeFPGA_Implementation.pt" -o "MakeFPGA_Implementation.twr" "MakeFPGA_Implementation.ncd" "MakeFPGA_Implementation.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
 
-
-BITGEN: Bitstream Generator Diamond (64-bit) 3.9.1.119
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file makefpga_implementation.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Tue Aug 20 23:45:48 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o MakeFPGA_Implementation.twr -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/promote.xml MakeFPGA_Implementation.ncd MakeFPGA_Implementation.prf 
+Design file:     makefpga_implementation.ncd
+Preference file: makefpga_implementation.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1346 paths, 1 nets, and 601 connections (99.83% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Tue Aug 20 23:45:48 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o MakeFPGA_Implementation.twr -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/promote.xml MakeFPGA_Implementation.ncd MakeFPGA_Implementation.prf 
+Design file:     makefpga_implementation.ncd
+Preference file: makefpga_implementation.prf
+Device,speed:    LCMXO2-256HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1346 paths, 1 nets, and 601 connections (99.83% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 38 MB
+
+
+iotiming  "MakeFPGA_Implementation.ncd" "MakeFPGA_Implementation.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file makefpga_implementation.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application iotiming from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file makefpga_implementation.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 5
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file makefpga_implementation.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 6
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file makefpga_implementation.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: M
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+tmcheck -par "MakeFPGA_Implementation.par" 
+
+bitgen -f "MakeFPGA_Implementation.t2b" -w "MakeFPGA_Implementation.ncd"  -jedec "MakeFPGA_Implementation.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 
 
 Loading design for application Bitgen from file MakeFPGA_Implementation.ncd.
@@ -578,13 +971,15 @@ Vendor:      LATTICE
 Device:      LCMXO2-256HC
 Package:     QFN32
 Performance: 4
-Loading device for application Bitgen from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
+Loading device for application Bitgen from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
 Package Status:                     Final          Version 1.41.
 Performance Hardware Data Status:   Final          Version 34.4.
 
 Running DRC.
 DRC detected 0 errors and 0 warnings.
 Reading Preference File from MakeFPGA_Implementation.prf.
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###"  />
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK"  />
 
 Preference Summary:
 +---------------------------------+---------------------------------+
@@ -630,6 +1025,15 @@ Preference Summary:
 
 Creating bit map...
  
-Bitstream Status: Final           Version 1.94.
+Bitstream Status: Final           Version 1.95.
  
 Saving bit stream in "MakeFPGA_Implementation.jed".
+=========
+Padding summary
+=========
+Padded 49152 bits for this design
+
+
+Total CPU Time: 0 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 241 MB

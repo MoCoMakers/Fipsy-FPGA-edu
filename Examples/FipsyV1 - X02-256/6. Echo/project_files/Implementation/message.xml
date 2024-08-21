@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DEFAULT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ASSERT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
     <Task name="Map">
         <Message>
             <ID>1100523</ID>
             <Severity>Warning</Severity>
-            <Dynamic>D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/MakeFPGA.lpf(39): Semantic error in &quot;FREQUENCY PORT &quot;MCLK&quot; 120.000000 MHz ;&quot;: </Dynamic>
+            <Dynamic>C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/MakeFPGA.lpf(39): Semantic error in &quot;FREQUENCY PORT &quot;MCLK&quot; 120.000000 MHz ;&quot;: </Dynamic>
             <Dynamic>&quot;MCLK&quot; matches no ports in the design. </Dynamic>
-            <Navigation>D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/MakeFPGA.lpf</Navigation>
+            <Navigation>C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/MakeFPGA.lpf</Navigation>
             <Navigation>39</Navigation>
         </Message>
     </Task>
@@ -22,184 +50,184 @@
         <Message>
             <ID>35901328</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v(46): </Dynamic>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v</Navigation>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v(46): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v</Navigation>
             <Navigation>46</Navigation>
         </Message>
         <Message>
             <ID>35901328</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(19): </Dynamic>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v</Navigation>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(19): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v</Navigation>
             <Navigation>19</Navigation>
         </Message>
         <Message>
             <ID>35901875</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(57): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(57): </Dynamic>
             <Dynamic>state</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v</Navigation>
             <Navigation>57</Navigation>
         </Message>
         <Message>
             <ID>35901875</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(57): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(57): </Dynamic>
             <Dynamic>IDLE</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v</Navigation>
             <Navigation>57</Navigation>
         </Message>
         <Message>
             <ID>35901328</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(12): </Dynamic>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v</Navigation>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(12): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v</Navigation>
             <Navigation>12</Navigation>
         </Message>
         <Message>
             <ID>35901328</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(13): </Dynamic>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v</Navigation>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(13): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v</Navigation>
             <Navigation>13</Navigation>
         </Message>
         <Message>
             <ID>35901328</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v(18): </Dynamic>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v</Navigation>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v(18): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh</Dynamic>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v</Navigation>
             <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v(49): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v(49): </Dynamic>
             <Dynamic>MakeFPGA_Top</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v</Navigation>
             <Navigation>49</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
             <Dynamic>OSCH</Dynamic>
-            <Navigation>D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1793</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v(20): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v(20): </Dynamic>
             <Dynamic>FreqDiv20Bit</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v</Navigation>
             <Navigation>20</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v(55): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v(55): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>20</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v</Navigation>
             <Navigation>55</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v(21): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v(21): </Dynamic>
             <Dynamic>uart_rx</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v</Navigation>
             <Navigation>21</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(32): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(32): </Dynamic>
             <Dynamic>baudgen_rx</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v</Navigation>
             <Navigation>32</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(59): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(59): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>8</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v</Navigation>
             <Navigation>59</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(67): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(67): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v</Navigation>
             <Navigation>67</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v(67): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v(67): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>4</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v</Navigation>
             <Navigation>67</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(23): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(23): </Dynamic>
             <Dynamic>uart_tx</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v</Navigation>
             <Navigation>23</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(92): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(92): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>5</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v</Navigation>
             <Navigation>92</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(30): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(30): </Dynamic>
             <Dynamic>baudgen_tx</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v</Navigation>
             <Navigation>30</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(53): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(53): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>8</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v</Navigation>
             <Navigation>53</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(61): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(61): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v</Navigation>
             <Navigation>61</Navigation>
         </Message>
         <Message>
             <ID>35935014</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v(217): </Dynamic>
+            <Dynamic>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v(217): </Dynamic>
             <Dynamic>rstn_18</Dynamic>
-            <Navigation>d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v</Navigation>
+            <Navigation>c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v</Navigation>
             <Navigation>217</Navigation>
         </Message>
         <Message>
@@ -276,6 +304,18 @@
         <Message>
             <ID>61061045</ID>
             <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

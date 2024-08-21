@@ -1,37 +1,37 @@
 [ START MERGED ]
-RX0/n1162 RX0/bauden
-RX0/n1163 RX0/state_1
+RX0/n1146 RX0/state_1
+RX0/n1142 RX0/bauden
 clk_N_193 PIN11_c
-TX0/n590 TX0/baud_en
+TX0/n579 TX0/baud_en
 [ END MERGED ]
 [ START CLIPPED ]
 VCC_net
-FreqDiv20Bit_inst/count_153_add_4_1/S0
-FreqDiv20Bit_inst/count_153_add_4_1/CI
-FreqDiv20Bit_inst/count_153_add_4_21/S1
-FreqDiv20Bit_inst/count_153_add_4_21/CO
+FreqDiv20Bit_inst/count_146_add_4_1/S0
+FreqDiv20Bit_inst/count_146_add_4_1/CI
+FreqDiv20Bit_inst/count_146_add_4_21/S1
+FreqDiv20Bit_inst/count_146_add_4_21/CO
 TX0/BAUD0/add_16_9/S1
 TX0/BAUD0/add_16_9/CO
 TX0/BAUD0/add_16_1/S0
 TX0/BAUD0/add_16_1/CI
-counter_register_152_add_4_1/S0
-counter_register_152_add_4_1/CI
+counter_register_145_add_4_1/S0
+counter_register_145_add_4_1/CI
 RX0/baudgen0/add_16_9/S1
 RX0/baudgen0/add_16_9/CO
 RX0/baudgen0/add_16_1/S0
 RX0/baudgen0/add_16_1/CI
-counter_register_152_add_4_21/CO
+counter_register_145_add_4_21/CO
 [ END CLIPPED ]
 [ START OSC ]
 PIN11_c 2.08
 [ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.9.1.119 -- WARNING: Map write only section -- Fri Oct 27 22:45:00 2017
+# map:  version Diamond (64-bit) 3.13.0.56.2 -- WARNING: Map write only section -- Tue Aug 20 23:45:42 2024
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
-LOCATE COMP "PIN8" SITE "12" ;
 LOCATE COMP "PIN10" SITE "14" ;
+LOCATE COMP "PIN8" SITE "12" ;
 LOCATE COMP "PIN7" SITE "11" ;
 LOCATE COMP "PIN11" SITE "5" ;
 LOCATE COMP "PIN12" SITE "4" ;

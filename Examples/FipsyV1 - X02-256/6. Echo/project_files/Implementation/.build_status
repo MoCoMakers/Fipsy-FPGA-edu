@@ -2,26 +2,26 @@
 <BuildStatus>
     <Strategy name="Strategy1">
         <Milestone name="Export" build_result="0" build_time="0">
-            <Task name="IBIS" build_result="0" update_result="2" update_time="0"/>
-            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="0"/>
-            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="0"/>
-            <Task name="Bitgen" build_result="0" update_result="2" update_time="1497052692"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1509158710"/>
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1724211947"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1724211947"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1724211947"/>
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1724211947"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1724211950"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1509158700">
-            <Task name="Map" build_result="2" update_result="0" update_time="1509158700"/>
-            <Task name="MapTrace" build_result="0" update_result="2" update_time="0"/>
-            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="0"/>
-            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="0"/>
+        <Milestone name="Map" build_result="2" build_time="1724211942">
+            <Task name="Map" build_result="2" update_result="0" update_time="1724211942"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1724211943"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1724211943"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1724211944"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1509158708">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1509158708"/>
-            <Task name="PARTrace" build_result="0" update_result="2" update_time="0"/>
-            <Task name="IOTiming" build_result="0" update_result="2" update_time="0"/>
+        <Milestone name="PAR" build_result="2" build_time="1724211947">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1724211947"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1724211948"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1724211948"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1509158699">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1509158699"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1509158710"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1724211942">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1724211942"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1724211950"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="2" update_result="0" update_time="1520906175"/>
@@ -30,13 +30,20 @@
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/MakeFPGA_Implementation_map.vdb" last_build_time="1509158700" last_build_size="75236"/>
-        <Report name="MakeFPGA_Implementation.bgn" last_build_time="1509158710" last_build_size="4132"/>
+        <Report name=".vdbs/MakeFPGA_Implementation_map.vdb" last_build_time="1724211942" last_build_size="75601"/>
+        <Report name="MakeFPGA_Implementation.bgn" last_build_time="1724211950" last_build_size="4445"/>
         <Report name="MakeFPGA_Implementation.bit" last_build_time="1497052692" last_build_size="2121"/>
-        <Report name="MakeFPGA_Implementation.jed" last_build_time="1509158710" last_build_size="75937"/>
-        <Report name="MakeFPGA_Implementation.lsedata" last_build_time="1509158698" last_build_size="263885"/>
-        <Report name="MakeFPGA_Implementation.ncd" last_build_time="1509158708" last_build_size="166052"/>
-        <Report name="MakeFPGA_Implementation.ngd" last_build_time="1509158699" last_build_size="148776"/>
-        <Report name="MakeFPGA_Implementation_map.ncd" last_build_time="1509158700" last_build_size="115029"/>
+        <Report name="MakeFPGA_Implementation.ior" last_build_time="1724211948" last_build_size="2272"/>
+        <Report name="MakeFPGA_Implementation.jed" last_build_time="1724211949" last_build_size="75939"/>
+        <Report name="MakeFPGA_Implementation.lsedata" last_build_time="1724211942" last_build_size="263885"/>
+        <Report name="MakeFPGA_Implementation.ncd" last_build_time="1724211947" last_build_size="165725"/>
+        <Report name="MakeFPGA_Implementation.ngd" last_build_time="1724211942" last_build_size="148740"/>
+        <Report name="MakeFPGA_Implementation.tw1" last_build_time="1724211943" last_build_size="10034"/>
+        <Report name="MakeFPGA_Implementation.twr" last_build_time="1724211948" last_build_size="43975"/>
+        <Report name="MakeFPGA_Implementation_map.ncd" last_build_time="1724211942" last_build_size="114966"/>
+        <Report name="MakeFPGA_Implementation_mapvho.sdf" last_build_time="1724211944" last_build_size="114744"/>
+        <Report name="MakeFPGA_Implementation_mapvho.vho" last_build_time="1724211944" last_build_size="949182"/>
+        <Report name="MakeFPGA_Implementation_mapvo.sdf" last_build_time="1724211943" last_build_size="114320"/>
+        <Report name="MakeFPGA_Implementation_mapvo.vo" last_build_time="1724211943" last_build_size="132734"/>
     </Strategy>
 </BuildStatus>

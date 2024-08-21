@@ -6,22 +6,22 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1521057096"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1724211918"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1521054983">
-            <Task name="Map" build_result="2" update_result="0" update_time="1521054983"/>
-            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
-            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
-            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        <Milestone name="Map" build_result="2" build_time="1724211912">
+            <Task name="Map" build_result="2" update_result="0" update_time="1724211912"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1724211913"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1724211913"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1724211914"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1521054988">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1521054988"/>
-            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
-            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        <Milestone name="PAR" build_result="2" build_time="1724211916">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1724211916"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1724211917"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1724211917"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1521054982">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1521054982"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1521054992"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1724211912">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1724211912"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1724211918"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="2" update_result="0" update_time="1521158494"/>
@@ -30,12 +30,19 @@
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/FipsyBaseline_Implementation_map.vdb" last_build_time="1521054983" last_build_size="68781"/>
-        <Report name="FipsyBaseline_Implementation.bgn" last_build_time="1521057096" last_build_size="4189"/>
-        <Report name="FipsyBaseline_Implementation.jed" last_build_time="1521057096" last_build_size="75942"/>
-        <Report name="FipsyBaseline_Implementation.lsedata" last_build_time="1521054981" last_build_size="170598"/>
-        <Report name="FipsyBaseline_Implementation.ncd" last_build_time="1521054988" last_build_size="130420"/>
-        <Report name="FipsyBaseline_Implementation.ngd" last_build_time="1521054982" last_build_size="112717"/>
-        <Report name="FipsyBaseline_Implementation_map.ncd" last_build_time="1521054983" last_build_size="91421"/>
+        <Report name=".vdbs/FipsyBaseline_Implementation_map.vdb" last_build_time="1724211912" last_build_size="67344"/>
+        <Report name="FipsyBaseline_Implementation.bgn" last_build_time="1724211918" last_build_size="4488"/>
+        <Report name="FipsyBaseline_Implementation.ior" last_build_time="1724211917" last_build_size="2267"/>
+        <Report name="FipsyBaseline_Implementation.jed" last_build_time="1724211918" last_build_size="75944"/>
+        <Report name="FipsyBaseline_Implementation.lsedata" last_build_time="1724211912" last_build_size="170598"/>
+        <Report name="FipsyBaseline_Implementation.ncd" last_build_time="1724211916" last_build_size="129914"/>
+        <Report name="FipsyBaseline_Implementation.ngd" last_build_time="1724211912" last_build_size="112818"/>
+        <Report name="FipsyBaseline_Implementation.tw1" last_build_time="1724211912" last_build_size="10126"/>
+        <Report name="FipsyBaseline_Implementation.twr" last_build_time="1724211917" last_build_size="45480"/>
+        <Report name="FipsyBaseline_Implementation_map.ncd" last_build_time="1724211912" last_build_size="91255"/>
+        <Report name="FipsyBaseline_Implementation_mapvho.sdf" last_build_time="1724211913" last_build_size="90140"/>
+        <Report name="FipsyBaseline_Implementation_mapvho.vho" last_build_time="1724211913" last_build_size="724934"/>
+        <Report name="FipsyBaseline_Implementation_mapvo.sdf" last_build_time="1724211913" last_build_size="90535"/>
+        <Report name="FipsyBaseline_Implementation_mapvo.vo" last_build_time="1724211913" last_build_size="103472"/>
     </Strategy>
 </BuildStatus>

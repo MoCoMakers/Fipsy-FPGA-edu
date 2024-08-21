@@ -1,12 +1,12 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Mon Mar 12 22:16:04 2018
+Tue Aug 20 23:44:42 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
@@ -18,12 +18,12 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 1000.000000 -name clk0 [get_nets PIN11_c]
-            860 items scored, 0 timing errors detected.
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets PIN11_c]
+            839 items scored, 348 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Passed:  The following path meets requirements by 493.653ns
+Error:  The following path violates requirements by 3.847ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
@@ -34,24 +34,24 @@ Passed:  The following path meets requirements by 493.653ns
 
  Constraint Details:
 
-      6.062ns data_path \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i4 meets
-    500.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 499.715ns) by 493.653ns
+      6.062ns data_path \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i4 violates
+      2.500ns delay constraint less
+      0.285ns LCE_S requirement (totaling 2.215ns) by 3.847ns
 
  Path Details: \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i4
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \TX0/TX0/baud_en_52_i1 (from PIN11_c)
 Route         7   e 1.559                                  \TX0/TX0/baud_en
-LUT4        ---     0.493              A to Z              \TX0/TX0/BAUD0/i7_4_lut
+LUT4        ---     0.493              C to Z              \TX0/TX0/BAUD0/i6_4_lut
 Route         3   e 1.258                                  clk_baud
-LUT4        ---     0.493              B to Z              i2_3_lut_rep_7_3_lut
+LUT4        ---     0.493              B to Z              i2_3_lut_rep_4_3_lut
 Route        16   e 1.815                                  PIN11_c_enable_23
                   --------
                     6.062  (23.6% logic, 76.4% route), 3 logic levels.
 
 
-Passed:  The following path meets requirements by 493.653ns
+Error:  The following path violates requirements by 3.847ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
@@ -62,24 +62,24 @@ Passed:  The following path meets requirements by 493.653ns
 
  Constraint Details:
 
-      6.062ns data_path \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i3 meets
-    500.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 499.715ns) by 493.653ns
+      6.062ns data_path \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i3 violates
+      2.500ns delay constraint less
+      0.285ns LCE_S requirement (totaling 2.215ns) by 3.847ns
 
  Path Details: \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i3
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \TX0/TX0/baud_en_52_i1 (from PIN11_c)
 Route         7   e 1.559                                  \TX0/TX0/baud_en
-LUT4        ---     0.493              A to Z              \TX0/TX0/BAUD0/i7_4_lut
+LUT4        ---     0.493              C to Z              \TX0/TX0/BAUD0/i6_4_lut
 Route         3   e 1.258                                  clk_baud
-LUT4        ---     0.493              B to Z              i2_3_lut_rep_7_3_lut
+LUT4        ---     0.493              B to Z              i2_3_lut_rep_4_3_lut
 Route        16   e 1.815                                  PIN11_c_enable_23
                   --------
                     6.062  (23.6% logic, 76.4% route), 3 logic levels.
 
 
-Passed:  The following path meets requirements by 493.653ns
+Error:  The following path violates requirements by 3.847ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
@@ -90,23 +90,23 @@ Passed:  The following path meets requirements by 493.653ns
 
  Constraint Details:
 
-      6.062ns data_path \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i2 meets
-    500.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 499.715ns) by 493.653ns
+      6.062ns data_path \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i2 violates
+      2.500ns delay constraint less
+      0.285ns LCE_S requirement (totaling 2.215ns) by 3.847ns
 
  Path Details: \TX0/TX0/baud_en_52_i1 to \TX0/TX0/shifter_i2
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \TX0/TX0/baud_en_52_i1 (from PIN11_c)
 Route         7   e 1.559                                  \TX0/TX0/baud_en
-LUT4        ---     0.493              A to Z              \TX0/TX0/BAUD0/i7_4_lut
+LUT4        ---     0.493              C to Z              \TX0/TX0/BAUD0/i6_4_lut
 Route         3   e 1.258                                  clk_baud
-LUT4        ---     0.493              B to Z              i2_3_lut_rep_7_3_lut
+LUT4        ---     0.493              B to Z              i2_3_lut_rep_4_3_lut
 Route        16   e 1.815                                  PIN11_c_enable_23
                   --------
                     6.062  (23.6% logic, 76.4% route), 3 logic levels.
 
-Report: 6.347 ns is the maximum delay for this constraint.
+Warning: 6.347 ns is the maximum delay for this constraint.
 
 
 Timing Report Summary
@@ -115,23 +115,39 @@ Timing Report Summary
 Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
-create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets PIN11_c]                 |  1000.000 ns|    12.694 ns|     3  
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets PIN11_c]                 |     5.000 ns|    12.694 ns|     3 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraints not met.
 
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+clk_baud                                |       3|     192|     55.17%
+                                        |        |        |
+PIN11_c_enable_23                       |      16|     144|     41.38%
+                                        |        |        |
+\TX0/TX0/BAUD0/n558                     |       1|      96|     27.59%
+                                        |        |        |
+\TX0/TX0/PIN11_c_enable_19              |       7|      63|     18.10%
+                                        |        |        |
+\TX0/TX0/BAUD0/n552                     |       2|      56|     16.09%
+                                        |        |        |
+load                                    |       6|      48|     13.79%
+                                        |        |        |
+--------------------------------------------------------------------------------
 
 
 Timing summary:
 ---------------
 
-Timing errors: 0  Score: 0
+Timing errors: 348  Score: 897222
 
-Constraints cover  860 paths, 179 nets, and 401 connections (94.4% coverage)
+Constraints cover  839 paths, 179 nets, and 398 connections (94.3% coverage)
 
 
-Peak memory: 55193600 bytes, TRCE: 1732608 bytes, DLYMAN: 163840 bytes
+Peak memory: 55713792 bytes, TRCE: 1478656 bytes, DLYMAN: 163840 bytes
 CPU_TIME_REPORT: 0 secs 

@@ -18,7 +18,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
-Mapped on:  08/12/24  14:36:07
+Mapped on:  08/19/24  22:33:50
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  Fipsy_Top                                     Date:  08/12/24  14:36:07
+Design:  Fipsy_Top                                     Date:  08/19/24  22:33:50
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  Fipsy_Top                                     Date:  08/12/24  14:36:07
+Design:  Fipsy_Top                                     Date:  08/19/24  22:33:50
 
 IO (PIO) Attributes (cont)
 --------------------------

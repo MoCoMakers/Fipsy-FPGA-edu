@@ -1,0 +1,333 @@
+
+Loading design for application trce from file fipsybaseline_implementation_map.ncd.
+Design name: MakeFPGA_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     QFN32
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Tue Aug 20 23:44:11 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FipsyBaseline_Implementation.tw1 -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3. BlinkyInterrupt/project_files/promote.xml FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.prf 
+Design file:     fipsybaseline_implementation_map.ncd
+Preference file: fipsybaseline_implementation.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+================================================================================
+Preference: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+            210 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 476.728ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              FreqDiv20Bit_inst/count_14__i0  (from PIN11_c +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_14__i19  (to PIN11_c +)
+
+   Delay:               3.875ns  (87.3% logic, 12.7% route), 12 logic levels.
+
+ Constraint Details:
+
+      3.875ns physical path delay FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_0 meets
+    480.769ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 476.728ns
+
+ Physical Path Details:
+
+      Data path FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 */SLICE_10.CLK to *t/SLICE_10.Q1 FreqDiv20Bit_inst/SLICE_10 (from PIN11_c)
+ROUTE         1   e 0.480 *t/SLICE_10.Q1 to *t/SLICE_10.A1 FreqDiv20Bit_inst/n20
+C1TOFCO_DE  ---     0.889 *t/SLICE_10.A1 to */SLICE_10.FCO FreqDiv20Bit_inst/SLICE_10
+ROUTE         1   e 0.001 */SLICE_10.FCO to *t/SLICE_9.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162 *t/SLICE_9.FCI to *t/SLICE_9.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1   e 0.001 *t/SLICE_9.FCO to *t/SLICE_8.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162 *t/SLICE_8.FCI to *t/SLICE_8.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1   e 0.001 *t/SLICE_8.FCO to *t/SLICE_7.FCI FreqDiv20Bit_inst/n36
+FCITOFCO_D  ---     0.162 *t/SLICE_7.FCI to *t/SLICE_7.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1   e 0.001 *t/SLICE_7.FCO to *t/SLICE_6.FCI FreqDiv20Bit_inst/n37
+FCITOFCO_D  ---     0.162 *t/SLICE_6.FCI to *t/SLICE_6.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1   e 0.001 *t/SLICE_6.FCO to *t/SLICE_5.FCI FreqDiv20Bit_inst/n38
+FCITOFCO_D  ---     0.162 *t/SLICE_5.FCI to *t/SLICE_5.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1   e 0.001 *t/SLICE_5.FCO to *t/SLICE_4.FCI FreqDiv20Bit_inst/n39
+FCITOFCO_D  ---     0.162 *t/SLICE_4.FCI to *t/SLICE_4.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1   e 0.001 *t/SLICE_4.FCO to *t/SLICE_3.FCI FreqDiv20Bit_inst/n40
+FCITOFCO_D  ---     0.162 *t/SLICE_3.FCI to *t/SLICE_3.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1   e 0.001 *t/SLICE_3.FCO to *t/SLICE_2.FCI FreqDiv20Bit_inst/n41
+FCITOFCO_D  ---     0.162 *t/SLICE_2.FCI to *t/SLICE_2.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1   e 0.001 *t/SLICE_2.FCO to *t/SLICE_1.FCI FreqDiv20Bit_inst/n42
+FCITOFCO_D  ---     0.162 *t/SLICE_1.FCI to *t/SLICE_1.FCO FreqDiv20Bit_inst/SLICE_1
+ROUTE         1   e 0.001 *t/SLICE_1.FCO to *t/SLICE_0.FCI FreqDiv20Bit_inst/n43
+FCITOF0_DE  ---     0.585 *t/SLICE_0.FCI to *st/SLICE_0.F0 FreqDiv20Bit_inst/SLICE_0
+ROUTE         1   e 0.001 *st/SLICE_0.F0 to *t/SLICE_0.DI0 FreqDiv20Bit_inst/n86 (to PIN11_c)
+                  --------
+                    3.875   (87.3% logic, 12.7% route), 12 logic levels.
+
+Report:  247.463MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY 20.000000 MHz ;
+            2 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 47.500ns
+         The internal maximum frequency of the following component is 400.000 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    SLICE      CLK            SLICE_11
+
+   Delay:               2.500ns -- based on Minimum Pulse Width
+
+
+Passed: The following path meets requirements by 48.720ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              flop2_10  (from PIN20_c_19 +)
+   Destination:    FF         Data in        flop1_9  (to PIN20_c_19 +)
+
+   Delay:               0.932ns  (48.5% logic, 51.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.932ns physical path delay SLICE_11 to SLICE_11 meets
+     50.000ns delay constraint less
+      0.348ns M_SET requirement (totaling 49.652ns) by 48.720ns
+
+ Physical Path Details:
+
+      Data path SLICE_11 to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452   SLICE_11.CLK to    SLICE_11.Q1 SLICE_11 (from PIN20_c_19)
+ROUTE         2   e 0.480    SLICE_11.Q1 to    SLICE_11.M0 flop2 (to PIN20_c_19)
+                  --------
+                    0.932   (48.5% logic, 51.5% route), 1 logic levels.
+
+Report:  400.000MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "PIN11_c" 2.080000 MHz ;  |    2.080 MHz|  247.463 MHz|  12  
+                                        |             |             |
+FREQUENCY 20.000000 MHz ;               |   20.000 MHz|  400.000 MHz|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: PIN20_c_19   Source: FreqDiv20Bit_inst/SLICE_0.Q0   Loads: 3
+   Covered under: FREQUENCY 20.000000 MHz ;
+
+Clock Domain: PIN11_c   Source: OSCH_inst.OSC   Loads: 12
+   Covered under: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 212 paths, 2 nets, and 75 connections (85.23% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Tue Aug 20 23:44:11 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FipsyBaseline_Implementation.tw1 -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3. BlinkyInterrupt/project_files/promote.xml FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.prf 
+Design file:     fipsybaseline_implementation_map.ncd
+Preference file: fipsybaseline_implementation.prf
+Device,speed:    LCMXO2-256HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+
+
+
+================================================================================
+Preference: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+            210 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              FreqDiv20Bit_inst/count_14__i17  (from PIN11_c +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_14__i17  (to PIN11_c +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay FreqDiv20Bit_inst/SLICE_1 to FreqDiv20Bit_inst/SLICE_1 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path FreqDiv20Bit_inst/SLICE_1 to FreqDiv20Bit_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *t/SLICE_1.CLK to *st/SLICE_1.Q0 FreqDiv20Bit_inst/SLICE_1 (from PIN11_c)
+ROUTE         1   e 0.199 *st/SLICE_1.Q0 to *st/SLICE_1.A0 FreqDiv20Bit_inst/n3
+CTOF_DEL    ---     0.101 *st/SLICE_1.A0 to *st/SLICE_1.F0 FreqDiv20Bit_inst/SLICE_1
+ROUTE         1   e 0.001 *st/SLICE_1.F0 to *t/SLICE_1.DI0 FreqDiv20Bit_inst/n88 (to PIN11_c)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY 20.000000 MHz ;
+            2 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              flop2_10  (from PIN20_c_19 +)
+   Destination:    FF         Data in        flop1_9  (to PIN20_c_19 +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay SLICE_11 to SLICE_11 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path SLICE_11 to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133   SLICE_11.CLK to    SLICE_11.Q1 SLICE_11 (from PIN20_c_19)
+ROUTE         2   e 0.199    SLICE_11.Q1 to    SLICE_11.M0 flop2 (to PIN20_c_19)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "PIN11_c" 2.080000 MHz ;  |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+FREQUENCY 20.000000 MHz ;               |            -|            -|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: PIN20_c_19   Source: FreqDiv20Bit_inst/SLICE_0.Q0   Loads: 3
+   Covered under: FREQUENCY 20.000000 MHz ;
+
+Clock Domain: PIN11_c   Source: OSCH_inst.OSC   Loads: 12
+   Covered under: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 212 paths, 2 nets, and 75 connections (85.23% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

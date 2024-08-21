@@ -97,13 +97,16 @@ prj_project close
 
 
 
-<A name="pn180314155125"></A><B><U><big>pn180314155125</big></U></B>
-#Start recording tcl command: 3/14/2018 15:49:29
-#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files; Project name: FipsyBaseline
-prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/FipsyBaseline.ldf"
-prj_run Export -impl Implementation -task Jedecgen
+<A name="pn240812224236"></A><B><U><big>pn240812224236</big></U></B>
+#Start recording tcl command: 8/12/2024 22:37:51
+#Project Location: C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/2. Blinky 2HZ/project_files; Project name: FipsyBaseline
+prj_project open "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/2. Blinky 2HZ/project_files/FipsyBaseline.ldf"
+prj_dev set -part LCMXO2-1200HC-4SG32C
+prj_run Export -impl Implementation -task Bitgen -forceAll
+prj_run Export -impl Implementation -task Jedecgen -forceAll
+prj_project save
 prj_project close
-#Stop recording: 3/14/2018 15:51:25
+#Stop recording: 8/12/2024 22:42:36
 
 
 

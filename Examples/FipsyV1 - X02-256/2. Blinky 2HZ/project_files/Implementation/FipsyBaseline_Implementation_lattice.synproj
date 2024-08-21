@@ -2,7 +2,7 @@
 -d LCMXO2-256HC
 -t QFN32
 -s 4
-
+-frequency 200
 -optimization_goal Balanced
 -bram_utilization 100
 -ramstyle Auto
@@ -24,19 +24,20 @@
 
 
 
+
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 -use_io_reg auto
 
 
 -lpf 1
--p "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files"
--ver "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/Source/Blinky_Rate_Divider.v"
-"D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/Source/FreqDiv20Bit.v"
+-p "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files"
+-ver "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files/Source/Blinky_Rate_Divider.v"
+"C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files/Source/FreqDiv20Bit.v"
 -top MakeFPGA_Top
 
 
--p "D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/Implementation" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files"
+-p "C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data" "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files/Implementation" "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files"
 
 -ngd "FipsyBaseline_Implementation.ngd"
 

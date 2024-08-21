@@ -2,7 +2,7 @@
 -d LCMXO2-256HC
 -t QFN32
 -s 4
-
+-frequency 200
 -optimization_goal Balanced
 -bram_utilization 100
 -ramstyle Auto
@@ -24,19 +24,20 @@
 
 
 
+
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 -use_io_reg auto
 
 
 -lpf 1
--p "C:/Lattice/FipsyBaseline_DiamondProject"
--ver "C:/Lattice/FipsyBaseline_DiamondProject/Source/Fipsy_Top.v"
-"C:/Lattice/FipsyBaseline_DiamondProject/Source/AppModules/FreqDiv20Bit.v"
--top Fipsy_Top
+-p "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3. BlinkyInterrupt/project_files"
+-ver "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3. BlinkyInterrupt/project_files/Source/Fipsy_Top.v"
+"C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3. BlinkyInterrupt/project_files/Source/AppModules/FreqDiv20Bit.v"
+-top MakeFPGA_Top
 
 
--p "C:/Lattice/diamond/3.9_x64/ispfpga/xo2c00/data" "C:/Lattice/FipsyBaseline_DiamondProject/Implementation" "C:/Lattice/FipsyBaseline_DiamondProject"
+-p "C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data" "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3. BlinkyInterrupt/project_files/Implementation" "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/3. BlinkyInterrupt/project_files"
 
 -ngd "FipsyBaseline_Implementation.ngd"
 

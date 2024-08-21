@@ -3,7 +3,7 @@
 <ReportView version="2.0">
     <Implement name="Implementation">
         <ToolReport id="tooldec" path="" status="0"/>
-        <ToolReport id="toolhle_genhierarchy" path="D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Implementation/hdla_gen_hierarchy.html" status="1"/>
+        <ToolReport id="toolhle_genhierarchy" path="C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a Character/project_files/Implementation/hdla_gen_hierarchy.html" status="1"/>
         <ToolReport id="toolpio" path="" status="2"/>
         <ToolReport id="toolsso" path="" status="2"/>
     </Implement>

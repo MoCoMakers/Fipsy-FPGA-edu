@@ -75,8 +75,8 @@ Instance Path : TX0.BAUD0
                               CCU2D         5           15.6
                             FD1S3IX         2            6.1
                             FD1S3JX         6           50.0
-                               LUT4         8           10.7
-                              TOTAL        21
+                               LUT4         6            8.0
+                              TOTAL        19
 ----------------------------------------------------------------------
 Report for cell FreqDiv20Bit.v1
 Instance Path : FreqDiv20Bit_inst

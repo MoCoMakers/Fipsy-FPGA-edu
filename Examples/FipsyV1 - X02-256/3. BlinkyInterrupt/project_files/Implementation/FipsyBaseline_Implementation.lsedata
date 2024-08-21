@@ -1,12 +1,13 @@
-<top name = "Fipsy_Top"  library = "work"  arch = ""  entry = "Verilog">
+<top name = "MakeFPGA_Top"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
     <clockitem name = "PIN11"  type = "net" />
+    <clockitem name = "PIN20"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 1
+    //  Number of Clocks processed: 2
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.
@@ -16,7 +17,7 @@
 
 <library name = "work">
 
-<unit name = "Fipsy_Top">
+<unit name = "MakeFPGA_Top">
 
     <!--
         Top Level Pins: 13
@@ -39,7 +40,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 6
+        Instances in netlist: 10
     -->
 
     <instance  name = "FreqDiv20Bit_inst/add_3"  library = "work"  arch = ""  type = "comb">
@@ -154,26 +155,26 @@
         <nitem  name = "FreqDiv20Bit_inst/count[2]"  />
         <nitem  name = "FreqDiv20Bit_inst/count[1]"  />
         <nitem  name = "FreqDiv20Bit_inst/count[0]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[19]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[18]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[17]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[16]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[15]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[14]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[13]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[12]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[11]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[10]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[9]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[8]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[7]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[6]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[5]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[4]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[3]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[2]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[1]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[0]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[19]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[18]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[17]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[16]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[15]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[14]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[13]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[12]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[11]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[10]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[9]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[8]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[7]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[6]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[5]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[4]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[3]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[2]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[1]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[0]"  />
         </nets>
     </instance>
 
@@ -189,15 +190,20 @@
         </nets>
     </instance>
 
-    <instance  name = "PIN20_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "flop2_10"  library = "work"  arch = ""  type = "reg">
         <pins>
-        <pitem  name = "i"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
         </pins>
 
         <nets>
+        <nitem  name = "flop1"  />
         <nitem  name = "PIN20"  />
-        <nitem  name = "PIN20_N_1"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "flop2"  />
         </nets>
     </instance>
 
@@ -269,46 +275,101 @@
         <nets>
         <nitem  name = "FreqDiv20Bit_inst/gnd"  />
         <nitem  name = "PIN10"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[19]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[18]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[17]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[16]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[15]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[14]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[13]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[12]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[11]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[10]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[9]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[8]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[7]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[6]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[5]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[4]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[3]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[2]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[1]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_22[0]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[19]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[18]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[17]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[16]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[15]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[14]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[13]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[12]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[11]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[10]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[9]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[8]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[7]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[6]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[5]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[4]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[3]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[2]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[1]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[0]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[19]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[18]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[17]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[16]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[15]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[14]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[13]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[12]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[11]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[10]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[9]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[8]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[7]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[6]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[5]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[4]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[3]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[2]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[1]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_24[0]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[19]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[18]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[17]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[16]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[15]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[14]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[13]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[12]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[11]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[10]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[9]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[8]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[7]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[6]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[5]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[4]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[3]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[2]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[1]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "PIN14_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "PIN14"  />
+        <nitem  name = "PIN14_N_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "flop2_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "flop2"  />
+        <nitem  name = "PIN14_N_3"  />
+        <nitem  name = "LEDn_N_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "LEDn_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "LEDn_N_1"  />
+        <nitem  name = "LEDn"  />
+        </nets>
+    </instance>
+
+    <instance  name = "flop1_9"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "flop2"  />
+        <nitem  name = "PIN20"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "flop1"  />
         </nets>
     </instance>
 
@@ -420,40 +481,42 @@
         <nitem  name = "FreqDiv20Bit_inst/count[2]"  />
         <nitem  name = "FreqDiv20Bit_inst/count[1]"  />
         <nitem  name = "FreqDiv20Bit_inst/count[0]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[19]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[18]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[17]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[16]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[15]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[14]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[13]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[12]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[11]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[10]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[9]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[8]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[7]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[6]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[5]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[4]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[3]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[2]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[1]"  />
-        <nitem  name = "FreqDiv20Bit_inst/count_18__N_2[0]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[19]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[18]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[17]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[16]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[15]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[14]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[13]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[12]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[11]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[10]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[9]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[8]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[7]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[6]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[5]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[4]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[3]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[2]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[1]"  />
+        <nitem  name = "FreqDiv20Bit_inst/count_18__N_4[0]"  />
         </nets>
     </instance>
 
     <instance  name = "FreqDiv20Bit_inst"  />
     <!--
-        REG instances in netlist: 1
+        REG instances in netlist: 3
     -->
 
     <regs>
+        <reg  name = "flop2_10"  />
+        <reg  name = "flop1_9"  />
         <reg  name = "FreqDiv20Bit_inst/count"  />
     </regs>
 
     <!--
-        Views in design "Fipsy_Top": 1
+        Views in design "MakeFPGA_Top": 1
     -->
 
     <views>

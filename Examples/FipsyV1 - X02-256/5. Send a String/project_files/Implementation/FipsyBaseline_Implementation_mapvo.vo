@@ -1,0 +1,2618 @@
+
+// Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.13.0.56.2
+
+// ldbanno -n Verilog -o FipsyBaseline_Implementation_mapvo.vo -w -neg -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/5. Send a String/project_files/promote.xml FipsyBaseline_Implementation_map.ncd 
+// Netlist created on Tue Aug 20 23:45:12 2024
+// Netlist written on Tue Aug 20 23:45:13 2024
+// Design is for device LCMXO2-256HC
+// Design is for package QFN32
+// Design is for performance grade 4
+
+`timescale 1 ns / 1 ps
+
+module MakeFPGA_Top ( PIN7, PIN8, PIN9, PIN10, PIN11, PIN12, PIN13, PIN14, 
+                      PIN17, PIN18, PIN19, PIN20, LEDn );
+  input  PIN10;
+  output PIN7, PIN8, PIN9, PIN11, PIN12, PIN13, PIN14, PIN17, PIN18, PIN19, 
+         PIN20, LEDn;
+  wire   counting_12, counting_11, n88, n89, PIN11_c, n661, n662, counting_10, 
+         counting_9, n90, n91, n660, counting_8, counting_7, n92, n93, n659, 
+         counting_6, counting_5, n94, n95, n658, counting_4, counting_3, n96, 
+         n97, n657, counting_2, counting_1, n98, n99, n656, counting_0, n100, 
+         \TX0/TX0/shifter_0 , PIN8_c, counting_18, counting_17, n82, n83, n664, 
+         counting_16, counting_15, n84, n85, n663, counting_14, counting_13, 
+         n86, n87, PIN20_c_19, \FreqDiv20Bit_inst/n86 , PIN10_c, 
+         \FreqDiv20Bit_inst/n655 , \FreqDiv20Bit_inst/n2 , 
+         \FreqDiv20Bit_inst/n3 , \FreqDiv20Bit_inst/n87 , 
+         \FreqDiv20Bit_inst/n88 , \FreqDiv20Bit_inst/n654 , 
+         \FreqDiv20Bit_inst/n4 , \FreqDiv20Bit_inst/n5 , 
+         \FreqDiv20Bit_inst/n89 , \FreqDiv20Bit_inst/n90 , 
+         \FreqDiv20Bit_inst/n653 , \FreqDiv20Bit_inst/n6 , 
+         \FreqDiv20Bit_inst/n7 , \FreqDiv20Bit_inst/n91 , 
+         \FreqDiv20Bit_inst/n92 , \FreqDiv20Bit_inst/n652 , 
+         \FreqDiv20Bit_inst/n8 , \FreqDiv20Bit_inst/n9 , 
+         \FreqDiv20Bit_inst/n93 , \FreqDiv20Bit_inst/n94 , 
+         \FreqDiv20Bit_inst/n651 , \FreqDiv20Bit_inst/n10 , 
+         \FreqDiv20Bit_inst/n11 , \FreqDiv20Bit_inst/n95 , 
+         \FreqDiv20Bit_inst/n96 , \FreqDiv20Bit_inst/n650 , 
+         \FreqDiv20Bit_inst/n12 , \FreqDiv20Bit_inst/n13 , 
+         \FreqDiv20Bit_inst/n97 , \FreqDiv20Bit_inst/n98 , 
+         \FreqDiv20Bit_inst/n649 , \FreqDiv20Bit_inst/n14 , 
+         \FreqDiv20Bit_inst/n15 , \FreqDiv20Bit_inst/n99 , 
+         \FreqDiv20Bit_inst/n100 , \FreqDiv20Bit_inst/n648 , 
+         \FreqDiv20Bit_inst/n16 , \FreqDiv20Bit_inst/n17 , 
+         \FreqDiv20Bit_inst/n101 , \FreqDiv20Bit_inst/n102 , 
+         \FreqDiv20Bit_inst/n647 , \FreqDiv20Bit_inst/n18 , 
+         \FreqDiv20Bit_inst/n19 , \FreqDiv20Bit_inst/n103 , 
+         \FreqDiv20Bit_inst/n104 , \FreqDiv20Bit_inst/n646 , 
+         \FreqDiv20Bit_inst/n20 , \FreqDiv20Bit_inst/n105 , 
+         \TX0/TX0/BAUD0/divcounter_1 , \TX0/TX0/BAUD0/divcounter_0 , 
+         \TX0/TX0/baud_en , \TX0/TX0/BAUD0/divcounter_6_N_159_1 , 
+         \TX0/TX0/BAUD0/divcounter_6_N_159_0 , resetline, 
+         \TX0/TX0/BAUD0/divcounter_2 , \TX0/TX0/BAUD0/divcounter_5 , 
+         \TX0/TX0/BAUD0/divcounter_6_N_159_2 , \TX0/TX0/BAUD0/n743 , 
+         \TX0/TX0/BAUD0/divcounter_3 , \TX0/TX0/BAUD0/divcounter_4 , 
+         \TX0/TX0/BAUD0/n785 , \TX0/TX0/BAUD0/n117 , \TX0/TX0/BAUD0/n118 , 
+         \TX0/TX0/BAUD0/n668 , \TX0/TX0/BAUD0/n319 , \TX0/TX0/BAUD0/n13 , 
+         \TX0/TX0/BAUD0/divcounter_6 , \TX0/TX0/BAUD0/n778 , 
+         \TX0/TX0/BAUD0/divcounter_6_N_159_6 , 
+         \TX0/TX0/BAUD0/divcounter_6_N_159_5 , state_1, state_0, 
+         \TX0/TX0/baud_en_N_151 , \TX0/TX0/bitc_2 , bitc_0, \TX0/TX0/bitc_1 , 
+         \TX0/TX0/n252 , \TX0/TX0/n253 , PIN11_c_enable_31, n240, 
+         \TX0/TX0/bitc_4 , \TX0/TX0/bitc_3 , \TX0/TX0/n783 , \TX0/TX0/n250 , 
+         \TX0/TX0/n251 , \TX0/char_count_2 , char_count_0, \TX0/n549 , 
+         \TX0/TX0/PIN11_c_enable_27 , \TX0/TX0/n550 , \TX0/TX0/data_r_0 , 
+         \TX0/char_count_1 , \TX0/n5 , \TX0/TX0/n552 , \TX0/TX0/data_r_1 , 
+         \TX0/data_2 , \TX0/TX0/data_r_2 , \TX0/n1 , \TX0/TX0/data_r_3 , 
+         \TX0/data_5 , \TX0/TX0/data_r_5 , \TX0/n784 , \TX0/TX0/data_r_6 , 
+         \TX0/start , \TX0/TX0/n182 , n188, \TX0/TX0/next_state_0 , n457, 
+         \TX0/TX0/next_state_1_N_111_1 , \TX0/TX0/next_state_1 , load, 
+         \TX0/TX0/shifter_13 , \TX0/TX0/shifter_12 , 
+         \TX0/TX0/shifter_18_N_118_12 , \TX0/TX0/shifter_18_N_118_11 , 
+         \TX0/TX0/shifter_11 , \TX0/TX0/shifter_15 , \TX0/TX0/shifter_14 , 
+         \TX0/TX0/shifter_18_N_118_14 , \TX0/TX0/shifter_18_N_118_13 , 
+         \TX0/TX0/shifter_18 , \TX0/TX0/shifter_17 , 
+         \TX0/TX0/shifter_18_N_118_17 , \TX0/TX0/shifter_18_N_118_16 , 
+         \TX0/TX0/shifter_16 , n809, \TX0/TX0/PIN11_c_enable_30 , 
+         \TX0/TX0/shifter_10 , \TX0/n135 , \TX0/n3 , PIN11_c_enable_9, 
+         \TX0/ready , \TX0/n94 , \TX0/n405 , \TX0/TX0/n1 , cena, \TX0/n16 , 
+         clk_baud, n14, \TX0/n106 , n8, n24, n32, n36, n23, resetline_N_20, 
+         \TX0/TX0/BAUD0/n731 , GND_net, \TX0/TX0/n745 , \TX0/TX0/shifter_2 , 
+         \TX0/TX0/shifter_1 , n28, n34, \TX0/TX0/shifter_6 , 
+         \TX0/TX0/shifter_5 , \TX0/TX0/shifter_4 , n30, \TX0/TX0/shifter_3 , 
+         \TX0/TX0/BAUD0/n727 , \TX0/TX0/shifter_8 , \TX0/TX0/shifter_7 , 
+         \TX0/TX0/BAUD0/n781 , \TX0/TX0/shifter_9 , VCCI;
+
+  SLICE_0 SLICE_0( .A1(counting_12), .A0(counting_11), .DI1(n88), .DI0(n89), 
+    .CLK(PIN11_c), .FCI(n661), .F0(n89), .Q0(counting_11), .F1(n88), 
+    .Q1(counting_12), .FCO(n662));
+  SLICE_1 SLICE_1( .A1(counting_10), .A0(counting_9), .DI1(n90), .DI0(n91), 
+    .CLK(PIN11_c), .FCI(n660), .F0(n91), .Q0(counting_9), .F1(n90), 
+    .Q1(counting_10), .FCO(n661));
+  SLICE_2 SLICE_2( .A1(counting_8), .A0(counting_7), .DI1(n92), .DI0(n93), 
+    .CLK(PIN11_c), .FCI(n659), .F0(n93), .Q0(counting_7), .F1(n92), 
+    .Q1(counting_8), .FCO(n660));
+  SLICE_3 SLICE_3( .A1(counting_6), .A0(counting_5), .DI1(n94), .DI0(n95), 
+    .CLK(PIN11_c), .FCI(n658), .F0(n95), .Q0(counting_5), .F1(n94), 
+    .Q1(counting_6), .FCO(n659));
+  SLICE_4 SLICE_4( .A1(counting_4), .A0(counting_3), .DI1(n96), .DI0(n97), 
+    .CLK(PIN11_c), .FCI(n657), .F0(n97), .Q0(counting_3), .F1(n96), 
+    .Q1(counting_4), .FCO(n658));
+  SLICE_5 SLICE_5( .A1(counting_2), .A0(counting_1), .DI1(n98), .DI0(n99), 
+    .CLK(PIN11_c), .FCI(n656), .F0(n99), .Q0(counting_1), .F1(n98), 
+    .Q1(counting_2), .FCO(n657));
+  SLICE_6 SLICE_6( .A1(counting_0), .DI1(n100), .M0(\TX0/TX0/shifter_0 ), 
+    .CLK(PIN11_c), .Q0(PIN8_c), .F1(n100), .Q1(counting_0), .FCO(n656));
+  SLICE_7 SLICE_7( .A1(counting_18), .A0(counting_17), .DI1(n82), .DI0(n83), 
+    .CLK(PIN11_c), .FCI(n664), .F0(n83), .Q0(counting_17), .F1(n82), 
+    .Q1(counting_18));
+  SLICE_8 SLICE_8( .A1(counting_16), .A0(counting_15), .DI1(n84), .DI0(n85), 
+    .CLK(PIN11_c), .FCI(n663), .F0(n85), .Q0(counting_15), .F1(n84), 
+    .Q1(counting_16), .FCO(n664));
+  SLICE_9 SLICE_9( .A1(counting_14), .A0(counting_13), .DI1(n86), .DI0(n87), 
+    .CLK(PIN11_c), .FCI(n662), .F0(n87), .Q0(counting_13), .F1(n86), 
+    .Q1(counting_14), .FCO(n663));
+  FreqDiv20Bit_inst_SLICE_10 \FreqDiv20Bit_inst/SLICE_10 ( .A0(PIN20_c_19), 
+    .DI0(\FreqDiv20Bit_inst/n86 ), .LSR(PIN10_c), .CLK(PIN11_c), 
+    .FCI(\FreqDiv20Bit_inst/n655 ), .F0(\FreqDiv20Bit_inst/n86 ), 
+    .Q0(PIN20_c_19));
+  FreqDiv20Bit_inst_SLICE_11 \FreqDiv20Bit_inst/SLICE_11 ( 
+    .A1(\FreqDiv20Bit_inst/n2 ), .A0(\FreqDiv20Bit_inst/n3 ), 
+    .DI1(\FreqDiv20Bit_inst/n87 ), .DI0(\FreqDiv20Bit_inst/n88 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n654 ), 
+    .F0(\FreqDiv20Bit_inst/n88 ), .Q0(\FreqDiv20Bit_inst/n3 ), 
+    .F1(\FreqDiv20Bit_inst/n87 ), .Q1(\FreqDiv20Bit_inst/n2 ), 
+    .FCO(\FreqDiv20Bit_inst/n655 ));
+  FreqDiv20Bit_inst_SLICE_12 \FreqDiv20Bit_inst/SLICE_12 ( 
+    .A1(\FreqDiv20Bit_inst/n4 ), .A0(\FreqDiv20Bit_inst/n5 ), 
+    .DI1(\FreqDiv20Bit_inst/n89 ), .DI0(\FreqDiv20Bit_inst/n90 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n653 ), 
+    .F0(\FreqDiv20Bit_inst/n90 ), .Q0(\FreqDiv20Bit_inst/n5 ), 
+    .F1(\FreqDiv20Bit_inst/n89 ), .Q1(\FreqDiv20Bit_inst/n4 ), 
+    .FCO(\FreqDiv20Bit_inst/n654 ));
+  FreqDiv20Bit_inst_SLICE_13 \FreqDiv20Bit_inst/SLICE_13 ( 
+    .A1(\FreqDiv20Bit_inst/n6 ), .A0(\FreqDiv20Bit_inst/n7 ), 
+    .DI1(\FreqDiv20Bit_inst/n91 ), .DI0(\FreqDiv20Bit_inst/n92 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n652 ), 
+    .F0(\FreqDiv20Bit_inst/n92 ), .Q0(\FreqDiv20Bit_inst/n7 ), 
+    .F1(\FreqDiv20Bit_inst/n91 ), .Q1(\FreqDiv20Bit_inst/n6 ), 
+    .FCO(\FreqDiv20Bit_inst/n653 ));
+  FreqDiv20Bit_inst_SLICE_14 \FreqDiv20Bit_inst/SLICE_14 ( 
+    .A1(\FreqDiv20Bit_inst/n8 ), .A0(\FreqDiv20Bit_inst/n9 ), 
+    .DI1(\FreqDiv20Bit_inst/n93 ), .DI0(\FreqDiv20Bit_inst/n94 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n651 ), 
+    .F0(\FreqDiv20Bit_inst/n94 ), .Q0(\FreqDiv20Bit_inst/n9 ), 
+    .F1(\FreqDiv20Bit_inst/n93 ), .Q1(\FreqDiv20Bit_inst/n8 ), 
+    .FCO(\FreqDiv20Bit_inst/n652 ));
+  FreqDiv20Bit_inst_SLICE_15 \FreqDiv20Bit_inst/SLICE_15 ( 
+    .A1(\FreqDiv20Bit_inst/n10 ), .A0(\FreqDiv20Bit_inst/n11 ), 
+    .DI1(\FreqDiv20Bit_inst/n95 ), .DI0(\FreqDiv20Bit_inst/n96 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n650 ), 
+    .F0(\FreqDiv20Bit_inst/n96 ), .Q0(\FreqDiv20Bit_inst/n11 ), 
+    .F1(\FreqDiv20Bit_inst/n95 ), .Q1(\FreqDiv20Bit_inst/n10 ), 
+    .FCO(\FreqDiv20Bit_inst/n651 ));
+  FreqDiv20Bit_inst_SLICE_16 \FreqDiv20Bit_inst/SLICE_16 ( 
+    .A1(\FreqDiv20Bit_inst/n12 ), .A0(\FreqDiv20Bit_inst/n13 ), 
+    .DI1(\FreqDiv20Bit_inst/n97 ), .DI0(\FreqDiv20Bit_inst/n98 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n649 ), 
+    .F0(\FreqDiv20Bit_inst/n98 ), .Q0(\FreqDiv20Bit_inst/n13 ), 
+    .F1(\FreqDiv20Bit_inst/n97 ), .Q1(\FreqDiv20Bit_inst/n12 ), 
+    .FCO(\FreqDiv20Bit_inst/n650 ));
+  FreqDiv20Bit_inst_SLICE_17 \FreqDiv20Bit_inst/SLICE_17 ( 
+    .A1(\FreqDiv20Bit_inst/n14 ), .A0(\FreqDiv20Bit_inst/n15 ), 
+    .DI1(\FreqDiv20Bit_inst/n99 ), .DI0(\FreqDiv20Bit_inst/n100 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n648 ), 
+    .F0(\FreqDiv20Bit_inst/n100 ), .Q0(\FreqDiv20Bit_inst/n15 ), 
+    .F1(\FreqDiv20Bit_inst/n99 ), .Q1(\FreqDiv20Bit_inst/n14 ), 
+    .FCO(\FreqDiv20Bit_inst/n649 ));
+  FreqDiv20Bit_inst_SLICE_18 \FreqDiv20Bit_inst/SLICE_18 ( 
+    .A1(\FreqDiv20Bit_inst/n16 ), .A0(\FreqDiv20Bit_inst/n17 ), 
+    .DI1(\FreqDiv20Bit_inst/n101 ), .DI0(\FreqDiv20Bit_inst/n102 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n647 ), 
+    .F0(\FreqDiv20Bit_inst/n102 ), .Q0(\FreqDiv20Bit_inst/n17 ), 
+    .F1(\FreqDiv20Bit_inst/n101 ), .Q1(\FreqDiv20Bit_inst/n16 ), 
+    .FCO(\FreqDiv20Bit_inst/n648 ));
+  FreqDiv20Bit_inst_SLICE_19 \FreqDiv20Bit_inst/SLICE_19 ( 
+    .A1(\FreqDiv20Bit_inst/n18 ), .A0(\FreqDiv20Bit_inst/n19 ), 
+    .DI1(\FreqDiv20Bit_inst/n103 ), .DI0(\FreqDiv20Bit_inst/n104 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n646 ), 
+    .F0(\FreqDiv20Bit_inst/n104 ), .Q0(\FreqDiv20Bit_inst/n19 ), 
+    .F1(\FreqDiv20Bit_inst/n103 ), .Q1(\FreqDiv20Bit_inst/n18 ), 
+    .FCO(\FreqDiv20Bit_inst/n647 ));
+  FreqDiv20Bit_inst_SLICE_20 \FreqDiv20Bit_inst/SLICE_20 ( 
+    .A1(\FreqDiv20Bit_inst/n20 ), .DI1(\FreqDiv20Bit_inst/n105 ), 
+    .LSR(PIN10_c), .CLK(PIN11_c), .F1(\FreqDiv20Bit_inst/n105 ), 
+    .Q1(\FreqDiv20Bit_inst/n20 ), .FCO(\FreqDiv20Bit_inst/n646 ));
+  TX0_TX0_BAUD0_SLICE_22 \TX0/TX0/BAUD0/SLICE_22 ( 
+    .C1(\TX0/TX0/BAUD0/divcounter_1 ), .B1(\TX0/TX0/BAUD0/divcounter_0 ), 
+    .A1(\TX0/TX0/baud_en ), .B0(\TX0/TX0/baud_en ), 
+    .A0(\TX0/TX0/BAUD0/divcounter_0 ), 
+    .DI1(\TX0/TX0/BAUD0/divcounter_6_N_159_1 ), 
+    .DI0(\TX0/TX0/BAUD0/divcounter_6_N_159_0 ), .LSR(resetline), .CLK(PIN11_c), 
+    .F0(\TX0/TX0/BAUD0/divcounter_6_N_159_0 ), 
+    .Q0(\TX0/TX0/BAUD0/divcounter_0 ), 
+    .F1(\TX0/TX0/BAUD0/divcounter_6_N_159_1 ), 
+    .Q1(\TX0/TX0/BAUD0/divcounter_1 ));
+  TX0_TX0_BAUD0_SLICE_23 \TX0/TX0/BAUD0/SLICE_23 ( 
+    .D1(\TX0/TX0/BAUD0/divcounter_2 ), .C1(\TX0/TX0/BAUD0/divcounter_5 ), 
+    .B1(\TX0/TX0/BAUD0/divcounter_1 ), .A1(\TX0/TX0/BAUD0/divcounter_0 ), 
+    .D0(\TX0/TX0/baud_en ), .C0(\TX0/TX0/BAUD0/divcounter_2 ), 
+    .B0(\TX0/TX0/BAUD0/divcounter_0 ), .A0(\TX0/TX0/BAUD0/divcounter_1 ), 
+    .DI0(\TX0/TX0/BAUD0/divcounter_6_N_159_2 ), .LSR(resetline), .CLK(PIN11_c), 
+    .F0(\TX0/TX0/BAUD0/divcounter_6_N_159_2 ), 
+    .Q0(\TX0/TX0/BAUD0/divcounter_2 ), .F1(\TX0/TX0/BAUD0/n743 ));
+  TX0_TX0_BAUD0_SLICE_24 \TX0/TX0/BAUD0/SLICE_24 ( 
+    .D1(\TX0/TX0/BAUD0/divcounter_3 ), .C1(\TX0/TX0/BAUD0/divcounter_4 ), 
+    .B1(\TX0/TX0/BAUD0/n785 ), .A1(\TX0/TX0/BAUD0/divcounter_2 ), 
+    .D0(\TX0/TX0/BAUD0/divcounter_2 ), .C0(\TX0/TX0/BAUD0/divcounter_3 ), 
+    .B0(\TX0/TX0/BAUD0/divcounter_0 ), .A0(\TX0/TX0/BAUD0/divcounter_1 ), 
+    .DI1(\TX0/TX0/BAUD0/n117 ), .DI0(\TX0/TX0/BAUD0/n118 ), 
+    .LSR(\TX0/TX0/BAUD0/n668 ), .CLK(PIN11_c), .F0(\TX0/TX0/BAUD0/n118 ), 
+    .Q0(\TX0/TX0/BAUD0/divcounter_3 ), .F1(\TX0/TX0/BAUD0/n117 ), 
+    .Q1(\TX0/TX0/BAUD0/divcounter_4 ));
+  TX0_TX0_BAUD0_SLICE_25 \TX0/TX0/BAUD0/SLICE_25 ( .D1(\TX0/TX0/BAUD0/n319 ), 
+    .C1(\TX0/TX0/BAUD0/n13 ), .B1(\TX0/TX0/baud_en ), 
+    .A1(\TX0/TX0/BAUD0/divcounter_6 ), .D0(\TX0/TX0/BAUD0/n778 ), 
+    .C0(\TX0/TX0/BAUD0/n13 ), .B0(\TX0/TX0/baud_en ), 
+    .A0(\TX0/TX0/BAUD0/divcounter_5 ), 
+    .DI1(\TX0/TX0/BAUD0/divcounter_6_N_159_6 ), 
+    .DI0(\TX0/TX0/BAUD0/divcounter_6_N_159_5 ), .LSR(resetline), .CLK(PIN11_c), 
+    .F0(\TX0/TX0/BAUD0/divcounter_6_N_159_5 ), 
+    .Q0(\TX0/TX0/BAUD0/divcounter_5 ), 
+    .F1(\TX0/TX0/BAUD0/divcounter_6_N_159_6 ), 
+    .Q1(\TX0/TX0/BAUD0/divcounter_6 ));
+  TX0_TX0_SLICE_26 \TX0/TX0/SLICE_26 ( .B0(state_1), .A0(state_0), 
+    .DI0(\TX0/TX0/baud_en_N_151 ), .CLK(PIN11_c), .F0(\TX0/TX0/baud_en_N_151 ), 
+    .Q0(\TX0/TX0/baud_en ));
+  TX0_TX0_SLICE_27 \TX0/TX0/SLICE_27 ( .C1(\TX0/TX0/bitc_2 ), .B1(bitc_0), 
+    .A1(\TX0/TX0/bitc_1 ), .B0(bitc_0), .A0(\TX0/TX0/bitc_1 ), 
+    .DI1(\TX0/TX0/n252 ), .DI0(\TX0/TX0/n253 ), .CE(PIN11_c_enable_31), 
+    .LSR(n240), .CLK(PIN11_c), .F0(\TX0/TX0/n253 ), .Q0(\TX0/TX0/bitc_1 ), 
+    .F1(\TX0/TX0/n252 ), .Q1(\TX0/TX0/bitc_2 ));
+  TX0_TX0_SLICE_28 \TX0/TX0/SLICE_28 ( .D1(\TX0/TX0/bitc_4 ), 
+    .C1(\TX0/TX0/bitc_3 ), .B1(\TX0/TX0/n783 ), .A1(\TX0/TX0/bitc_2 ), 
+    .D0(\TX0/TX0/bitc_2 ), .C0(\TX0/TX0/bitc_3 ), .B0(bitc_0), 
+    .A0(\TX0/TX0/bitc_1 ), .DI1(\TX0/TX0/n250 ), .DI0(\TX0/TX0/n251 ), 
+    .CE(PIN11_c_enable_31), .LSR(n240), .CLK(PIN11_c), .F0(\TX0/TX0/n251 ), 
+    .Q0(\TX0/TX0/bitc_3 ), .F1(\TX0/TX0/n250 ), .Q1(\TX0/TX0/bitc_4 ));
+  TX0_SLICE_29 \TX0/SLICE_29 ( .B0(\TX0/char_count_2 ), .A0(char_count_0), 
+    .DI0(\TX0/n549 ), .CE(\TX0/TX0/PIN11_c_enable_27 ), .LSR(\TX0/TX0/n550 ), 
+    .CLK(PIN11_c), .F0(\TX0/n549 ), .Q0(\TX0/TX0/data_r_0 ));
+  TX0_SLICE_30 \TX0/SLICE_30 ( .B0(char_count_0), .A0(\TX0/char_count_1 ), 
+    .DI0(\TX0/n5 ), .CE(\TX0/TX0/PIN11_c_enable_27 ), .LSR(\TX0/TX0/n552 ), 
+    .CLK(PIN11_c), .F0(\TX0/n5 ), .Q0(\TX0/TX0/data_r_1 ));
+  TX0_SLICE_31 \TX0/SLICE_31 ( .C0(\TX0/char_count_1 ), .B0(char_count_0), 
+    .A0(\TX0/char_count_2 ), .DI0(\TX0/data_2 ), 
+    .CE(\TX0/TX0/PIN11_c_enable_27 ), .CLK(PIN11_c), .F0(\TX0/data_2 ), 
+    .Q0(\TX0/TX0/data_r_2 ));
+  TX0_SLICE_32 \TX0/SLICE_32 ( .A0(char_count_0), .DI0(\TX0/n1 ), 
+    .CE(\TX0/TX0/PIN11_c_enable_27 ), .LSR(\TX0/TX0/n550 ), .CLK(PIN11_c), 
+    .F0(\TX0/n1 ), .Q0(\TX0/TX0/data_r_3 ));
+  TX0_SLICE_33 \TX0/SLICE_33 ( .C0(\TX0/char_count_2 ), .B0(char_count_0), 
+    .A0(\TX0/char_count_1 ), .DI0(\TX0/data_5 ), 
+    .CE(\TX0/TX0/PIN11_c_enable_27 ), .CLK(PIN11_c), .F0(\TX0/data_5 ), 
+    .Q0(\TX0/TX0/data_r_5 ));
+  TX0_SLICE_34 \TX0/SLICE_34 ( .B0(char_count_0), .A0(\TX0/char_count_1 ), 
+    .DI0(\TX0/n784 ), .CE(\TX0/TX0/PIN11_c_enable_27 ), .LSR(\TX0/TX0/n552 ), 
+    .CLK(PIN11_c), .F0(\TX0/n784 ), .Q0(\TX0/TX0/data_r_6 ));
+  TX0_TX0_SLICE_35 \TX0/TX0/SLICE_35 ( .C1(state_0), .B1(state_1), 
+    .A1(\TX0/start ), .C0(state_0), .B0(state_1), .A0(\TX0/start ), 
+    .DI0(\TX0/TX0/n182 ), .LSR(n188), .CLK(PIN11_c), .F0(\TX0/TX0/n182 ), 
+    .Q0(\TX0/TX0/next_state_0 ), .F1(\TX0/TX0/PIN11_c_enable_27 ));
+  TX0_TX0_SLICE_36 \TX0/TX0/SLICE_36 ( .C0(state_1), .B0(n457), .A0(state_0), 
+    .DI0(\TX0/TX0/next_state_1_N_111_1 ), .CLK(PIN11_c), 
+    .F0(\TX0/TX0/next_state_1_N_111_1 ), .Q0(\TX0/TX0/next_state_1 ));
+  TX0_TX0_SLICE_43 \TX0/TX0/SLICE_43 ( .C1(load), .B1(\TX0/TX0/data_r_1 ), 
+    .A1(\TX0/TX0/shifter_13 ), .C0(load), .B0(\TX0/TX0/data_r_0 ), 
+    .A0(\TX0/TX0/shifter_12 ), .DI1(\TX0/TX0/shifter_18_N_118_12 ), 
+    .DI0(\TX0/TX0/shifter_18_N_118_11 ), .CE(PIN11_c_enable_31), 
+    .LSR(resetline), .CLK(PIN11_c), .F0(\TX0/TX0/shifter_18_N_118_11 ), 
+    .Q0(\TX0/TX0/shifter_11 ), .F1(\TX0/TX0/shifter_18_N_118_12 ), 
+    .Q1(\TX0/TX0/shifter_12 ));
+  TX0_TX0_SLICE_44 \TX0/TX0/SLICE_44 ( .C1(load), .B1(\TX0/TX0/data_r_3 ), 
+    .A1(\TX0/TX0/shifter_15 ), .C0(load), .B0(\TX0/TX0/data_r_2 ), 
+    .A0(\TX0/TX0/shifter_14 ), .DI1(\TX0/TX0/shifter_18_N_118_14 ), 
+    .DI0(\TX0/TX0/shifter_18_N_118_13 ), .CE(PIN11_c_enable_31), 
+    .LSR(resetline), .CLK(PIN11_c), .F0(\TX0/TX0/shifter_18_N_118_13 ), 
+    .Q0(\TX0/TX0/shifter_13 ), .F1(\TX0/TX0/shifter_18_N_118_14 ), 
+    .Q1(\TX0/TX0/shifter_14 ));
+  TX0_TX0_SLICE_46 \TX0/TX0/SLICE_46 ( .C1(load), .B1(\TX0/TX0/data_r_6 ), 
+    .A1(\TX0/TX0/shifter_18 ), .C0(load), .B0(\TX0/TX0/data_r_5 ), 
+    .A0(\TX0/TX0/shifter_17 ), .DI1(\TX0/TX0/shifter_18_N_118_17 ), 
+    .DI0(\TX0/TX0/shifter_18_N_118_16 ), .CE(PIN11_c_enable_31), 
+    .LSR(resetline), .CLK(PIN11_c), .F0(\TX0/TX0/shifter_18_N_118_16 ), 
+    .Q0(\TX0/TX0/shifter_16 ), .F1(\TX0/TX0/shifter_18_N_118_17 ), 
+    .Q1(\TX0/TX0/shifter_17 ));
+  SLICE_47 SLICE_47( .DI0(n809), .M1(\TX0/TX0/shifter_11 ), 
+    .CE(\TX0/TX0/PIN11_c_enable_30 ), .LSR(n240), .CLK(PIN11_c), .F0(n809), 
+    .Q0(\TX0/TX0/shifter_18 ), .Q1(\TX0/TX0/shifter_10 ));
+  TX0_SLICE_48 \TX0/SLICE_48 ( .C1(\TX0/char_count_1 ), .B1(char_count_0), 
+    .A1(\TX0/char_count_2 ), .B0(\TX0/char_count_1 ), .A0(char_count_0), 
+    .DI1(\TX0/n135 ), .DI0(\TX0/n3 ), .CE(PIN11_c_enable_9), .LSR(resetline), 
+    .CLK(PIN11_c), .F0(\TX0/n3 ), .Q0(\TX0/char_count_1 ), .F1(\TX0/n135 ), 
+    .Q1(\TX0/char_count_2 ));
+  TX0_SLICE_49 \TX0/SLICE_49 ( .C0(\TX0/ready ), .B0(\TX0/start ), 
+    .A0(\TX0/n94 ), .DI0(\TX0/n405 ), .LSR(resetline), .CLK(PIN11_c), 
+    .F0(\TX0/n405 ), .Q0(\TX0/n94 ));
+  TX0_TX0_SLICE_50 \TX0/TX0/SLICE_50 ( .A0(state_0), .DI0(\TX0/TX0/n1 ), 
+    .M1(state_0), .LSR(state_1), .CLK(PIN11_c), .F0(\TX0/TX0/n1 ), 
+    .Q0(\TX0/ready ), .Q1(load));
+  TX0_SLICE_51 \TX0/SLICE_51 ( .D0(\TX0/char_count_1 ), 
+    .C0(\TX0/char_count_2 ), .B0(cena), .A0(char_count_0), .DI0(\TX0/n16 ), 
+    .LSR(resetline), .CLK(PIN11_c), .F0(\TX0/n16 ), .Q0(\TX0/start ));
+  SLICE_52 SLICE_52( .B1(load), .A1(resetline), .D0(clk_baud), .C0(load), 
+    .B0(bitc_0), .A0(resetline), .DI0(n14), .LSR(n240), .CLK(PIN11_c), 
+    .F0(n14), .Q0(bitc_0), .F1(n240));
+  TX0_SLICE_53 \TX0/SLICE_53 ( .B0(\TX0/n94 ), .A0(\TX0/ready ), 
+    .DI0(\TX0/n106 ), .LSR(resetline), .CLK(PIN11_c), .F0(\TX0/n106 ), 
+    .Q0(cena));
+  SLICE_54 SLICE_54( .B1(cena), .A1(resetline), .C0(cena), .B0(char_count_0), 
+    .A0(resetline), .DI0(n8), .LSR(resetline), .CLK(PIN11_c), .F0(n8), 
+    .Q0(char_count_0), .F1(PIN11_c_enable_9));
+  SLICE_56 SLICE_56( .B1(counting_17), .A1(counting_13), .D0(n24), .C0(n32), 
+    .B0(n36), .A0(n23), .DI0(resetline_N_20), .CLK(PIN11_c), 
+    .F0(resetline_N_20), .Q0(resetline), .F1(n23));
+  SLICE_57 SLICE_57( .B0(\TX0/TX0/BAUD0/divcounter_5 ), 
+    .A0(\TX0/TX0/BAUD0/divcounter_2 ), .M1(\TX0/TX0/next_state_1 ), 
+    .M0(\TX0/TX0/next_state_0 ), .LSR(resetline), .CLK(PIN11_c), 
+    .F0(\TX0/TX0/BAUD0/n731 ), .Q0(state_0), .F1(GND_net), .Q1(state_1));
+  SLICE_58 SLICE_58( .D1(\TX0/TX0/n745 ), .C1(\TX0/TX0/bitc_2 ), 
+    .B1(\TX0/TX0/bitc_4 ), .A1(state_0), .C0(state_1), .B0(n457), .A0(state_0), 
+    .M1(\TX0/TX0/shifter_2 ), .M0(\TX0/TX0/shifter_1 ), .CE(PIN11_c_enable_31), 
+    .LSR(n240), .CLK(PIN11_c), .F0(n188), .Q0(\TX0/TX0/shifter_0 ), .F1(n457), 
+    .Q1(\TX0/TX0/shifter_1 ));
+  SLICE_59 SLICE_59( .B1(counting_9), .A1(counting_2), .D0(counting_1), 
+    .C0(n28), .B0(n34), .A0(counting_12), .M1(\TX0/TX0/shifter_6 ), 
+    .M0(\TX0/TX0/shifter_5 ), .CE(PIN11_c_enable_31), .LSR(n240), 
+    .CLK(PIN11_c), .F0(n36), .Q0(\TX0/TX0/shifter_4 ), .F1(n28), 
+    .Q1(\TX0/TX0/shifter_5 ));
+  SLICE_60 SLICE_60( .D1(counting_18), .C1(counting_6), .B1(counting_10), 
+    .A1(counting_3), .D0(counting_7), .C0(counting_11), .B0(n30), 
+    .A0(counting_14), .M1(\TX0/TX0/shifter_4 ), .M0(\TX0/TX0/shifter_3 ), 
+    .CE(PIN11_c_enable_31), .LSR(n240), .CLK(PIN11_c), .F0(n34), 
+    .Q0(\TX0/TX0/shifter_2 ), .F1(n30), .Q1(\TX0/TX0/shifter_3 ));
+  SLICE_61 SLICE_61( .D1(\TX0/TX0/BAUD0/divcounter_6 ), .C1(\TX0/TX0/baud_en ), 
+    .B1(\TX0/TX0/BAUD0/n743 ), .A1(\TX0/TX0/BAUD0/n727 ), .C0(clk_baud), 
+    .B0(load), .A0(resetline), .M1(\TX0/TX0/shifter_8 ), 
+    .M0(\TX0/TX0/shifter_7 ), .CE(PIN11_c_enable_31), .LSR(n240), 
+    .CLK(PIN11_c), .F0(PIN11_c_enable_31), .Q0(\TX0/TX0/shifter_6 ), 
+    .F1(clk_baud), .Q1(\TX0/TX0/shifter_7 ));
+  TX0_TX0_SLICE_62 \TX0/TX0/SLICE_62 ( .D1(\TX0/TX0/BAUD0/divcounter_3 ), 
+    .C1(\TX0/TX0/BAUD0/divcounter_4 ), .B1(\TX0/TX0/BAUD0/n785 ), 
+    .A1(\TX0/TX0/BAUD0/divcounter_2 ), .B0(\TX0/TX0/BAUD0/divcounter_0 ), 
+    .A0(\TX0/TX0/BAUD0/divcounter_1 ), .M0(\TX0/TX0/shifter_16 ), 
+    .CE(\TX0/TX0/PIN11_c_enable_30 ), .LSR(n240), .CLK(PIN11_c), 
+    .F0(\TX0/TX0/BAUD0/n785 ), .Q0(\TX0/TX0/shifter_15 ), 
+    .F1(\TX0/TX0/BAUD0/n778 ));
+  TX0_TX0_BAUD0_SLICE_63 \TX0/TX0/BAUD0/SLICE_63 ( 
+    .D1(\TX0/TX0/BAUD0/divcounter_4 ), .C1(\TX0/TX0/BAUD0/divcounter_5 ), 
+    .B1(\TX0/TX0/BAUD0/n781 ), .A1(\TX0/TX0/BAUD0/divcounter_3 ), 
+    .C0(\TX0/TX0/BAUD0/divcounter_2 ), .B0(\TX0/TX0/BAUD0/divcounter_0 ), 
+    .A0(\TX0/TX0/BAUD0/divcounter_1 ), .F0(\TX0/TX0/BAUD0/n781 ), 
+    .F1(\TX0/TX0/BAUD0/n319 ));
+  TX0_TX0_BAUD0_SLICE_64 \TX0/TX0/BAUD0/SLICE_64 ( .D1(\TX0/TX0/BAUD0/n731 ), 
+    .C1(\TX0/TX0/BAUD0/n785 ), .B1(\TX0/TX0/BAUD0/n727 ), 
+    .A1(\TX0/TX0/BAUD0/divcounter_6 ), .C0(\TX0/TX0/BAUD0/n13 ), 
+    .B0(resetline), .A0(\TX0/TX0/baud_en ), .F0(\TX0/TX0/BAUD0/n668 ), 
+    .F1(\TX0/TX0/BAUD0/n13 ));
+  TX0_TX0_SLICE_65 \TX0/TX0/SLICE_65 ( .D1(state_0), .C1(\TX0/char_count_2 ), 
+    .B1(state_1), .A1(\TX0/start ), .D0(state_0), .C0(\TX0/char_count_1 ), 
+    .B0(state_1), .A0(\TX0/start ), .F0(\TX0/TX0/n550 ), .F1(\TX0/TX0/n552 ));
+  TX0_TX0_SLICE_66 \TX0/TX0/SLICE_66 ( .B1(bitc_0), .A1(\TX0/TX0/bitc_1 ), 
+    .C0(\TX0/TX0/bitc_3 ), .B0(bitc_0), .A0(\TX0/TX0/bitc_1 ), 
+    .F0(\TX0/TX0/n745 ), .F1(\TX0/TX0/n783 ));
+  SLICE_67 SLICE_67( .D1(counting_8), .C1(counting_4), .B1(counting_0), 
+    .A1(counting_5), .B0(counting_16), .A0(counting_15), 
+    .M1(\TX0/TX0/shifter_10 ), .M0(\TX0/TX0/shifter_9 ), 
+    .CE(PIN11_c_enable_31), .LSR(n240), .CLK(PIN11_c), .F0(n24), 
+    .Q0(\TX0/TX0/shifter_8 ), .F1(n32), .Q1(\TX0/TX0/shifter_9 ));
+  TX0_TX0_SLICE_68 \TX0/TX0/SLICE_68 ( .B1(clk_baud), .A1(load), 
+    .B0(\TX0/TX0/BAUD0/divcounter_3 ), .A0(\TX0/TX0/BAUD0/divcounter_4 ), 
+    .F0(\TX0/TX0/BAUD0/n727 ), .F1(\TX0/TX0/PIN11_c_enable_30 ));
+  PIN8 PIN8_I( .PADDO(PIN8_c), .PIN8(PIN8));
+  PIN7 PIN7_I( .PADDO(GND_net), .PIN7(PIN7));
+  PIN9 PIN9_I( .PADDO(GND_net), .PIN9(PIN9));
+  PIN11 PIN11_I( .PADDO(PIN11_c), .PIN11(PIN11));
+  PIN12 PIN12_I( .PADDO(GND_net), .PIN12(PIN12));
+  PIN13 PIN13_I( .PADDO(GND_net), .PIN13(PIN13));
+  PIN14 PIN14_I( .PADDO(GND_net), .PIN14(PIN14));
+  PIN17 PIN17_I( .PADDO(GND_net), .PIN17(PIN17));
+  PIN18 PIN18_I( .PADDO(GND_net), .PIN18(PIN18));
+  PIN19 PIN19_I( .PADDO(GND_net), .PIN19(PIN19));
+  PIN20 PIN20_I( .PADDO(PIN20_c_19), .PIN20(PIN20));
+  LEDn LEDn_I( .PADDO(GND_net), .LEDn(LEDn));
+  PIN10 PIN10_I( .PADDI(PIN10_c), .PIN10(PIN10));
+  OSCH_inst OSCH_inst( .OSC(PIN11_c));
+  VHI VHI_INST( .Z(VCCI));
+  PUR PUR_INST( .PUR(VCCI));
+  GSR GSR_INST( .GSR(VCCI));
+endmodule
+
+module SLICE_0 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre counting_159__i12( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre counting_159__i11( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu2 counting_159_add_4_13( .A0(A0), .B0(GNDI), .C0(GNDI), .D0(GNDI), 
+    .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), .S1(F1), 
+    .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module vmuxregsre ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3DX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "DISABLED";
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module ccu2 ( input A0, B0, C0, D0, A1, B1, C1, D1, CI, output S0, S1, CO1 );
+
+  CCU2D inst1( .CIN(CI), .A0(A0), .B0(B0), .C0(C0), .D0(D0), .A1(A1), .B1(B1), 
+    .C1(C1), .D1(D1), .S0(S0), .S1(S1), .COUT(CO1));
+  defparam inst1.INIT0 = 16'hfaaa;
+  defparam inst1.INIT1 = 16'hfaaa;
+  defparam inst1.INJECT1_0 = "NO";
+  defparam inst1.INJECT1_1 = "NO";
+endmodule
+
+module SLICE_1 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre counting_159__i10( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre counting_159__i9( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu2 counting_159_add_4_11( .A0(A0), .B0(GNDI), .C0(GNDI), .D0(GNDI), 
+    .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), .S1(F1), 
+    .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_2 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre counting_159__i8( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre counting_159__i7( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu2 counting_159_add_4_9( .A0(A0), .B0(GNDI), .C0(GNDI), .D0(GNDI), .A1(A1), 
+    .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_3 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre counting_159__i6( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre counting_159__i5( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu2 counting_159_add_4_7( .A0(A0), .B0(GNDI), .C0(GNDI), .D0(GNDI), .A1(A1), 
+    .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_4 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre counting_159__i4( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre counting_159__i3( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu2 counting_159_add_4_5( .A0(A0), .B0(GNDI), .C0(GNDI), .D0(GNDI), .A1(A1), 
+    .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_5 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre counting_159__i2( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre counting_159__i1( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu2 counting_159_add_4_3( .A0(A0), .B0(GNDI), .C0(GNDI), .D0(GNDI), .A1(A1), 
+    .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_6 ( input A1, DI1, M0, CLK, output Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, M0_dly;
+
+  vmuxregsre counting_159__i0( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \TX0/TX0/tx_48 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu20001 counting_159_add_4_1( .A0(GNDI), .B0(GNDI), .C0(GNDI), .D0(GNDI), 
+    .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(GNDI), .S0(), .S1(F1), 
+    .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module ccu20001 ( input A0, B0, C0, D0, A1, B1, C1, D1, CI, output S0, S1, CO1 );
+
+  CCU2D inst1( .CIN(CI), .A0(A0), .B0(B0), .C0(C0), .D0(D0), .A1(A1), .B1(B1), 
+    .C1(C1), .D1(D1), .S0(S0), .S1(S1), .COUT(CO1));
+  defparam inst1.INIT0 = 16'hF000;
+  defparam inst1.INIT1 = 16'h0555;
+  defparam inst1.INJECT1_0 = "NO";
+  defparam inst1.INJECT1_1 = "NO";
+endmodule
+
+module SLICE_7 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, Q0, F1, Q1 );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre counting_159__i18( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre counting_159__i17( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu2 counting_159_add_4_19( .A0(A0), .B0(GNDI), .C0(GNDI), .D0(GNDI), 
+    .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), .S1(F1), 
+    .CO1());
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_8 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre counting_159__i16( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre counting_159__i15( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu2 counting_159_add_4_17( .A0(A0), .B0(GNDI), .C0(GNDI), .D0(GNDI), 
+    .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), .S1(F1), 
+    .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_9 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre counting_159__i14( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre counting_159__i13( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu2 counting_159_add_4_15( .A0(A0), .B0(GNDI), .C0(GNDI), .D0(GNDI), 
+    .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), .S1(F1), 
+    .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_10 ( input A0, DI0, LSR, CLK, FCI, output F0, 
+    Q0 );
+  wire   VCCI, GNDI, DI0_dly, CLK_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i19 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ccu20003 \FreqDiv20Bit_inst/count_160_add_4_21 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(GNDI), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(), .CO1());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module vmuxregsre0002 ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3IY INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "DISABLED";
+endmodule
+
+module ccu20003 ( input A0, B0, C0, D0, A1, B1, C1, D1, CI, output S0, S1, CO1 );
+
+  CCU2D inst1( .CIN(CI), .A0(A0), .B0(B0), .C0(C0), .D0(D0), .A1(A1), .B1(B1), 
+    .C1(C1), .D1(D1), .S0(S0), .S1(S1), .COUT(CO1));
+  defparam inst1.INIT0 = 16'hfaaa;
+  defparam inst1.INIT1 = 16'h0000;
+  defparam inst1.INJECT1_0 = "NO";
+  defparam inst1.INJECT1_1 = "NO";
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_11 ( input A1, A0, DI1, DI0, LSR, CLK, FCI, 
+    output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i18 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i17 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ccu2 \FreqDiv20Bit_inst/count_160_add_4_19 ( .A0(A0), .B0(GNDI), .C0(GNDI), 
+    .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), 
+    .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_12 ( input A1, A0, DI1, DI0, LSR, CLK, FCI, 
+    output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i16 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i15 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ccu2 \FreqDiv20Bit_inst/count_160_add_4_17 ( .A0(A0), .B0(GNDI), .C0(GNDI), 
+    .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), 
+    .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_13 ( input A1, A0, DI1, DI0, LSR, CLK, FCI, 
+    output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i14 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i13 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ccu2 \FreqDiv20Bit_inst/count_160_add_4_15 ( .A0(A0), .B0(GNDI), .C0(GNDI), 
+    .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), 
+    .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_14 ( input A1, A0, DI1, DI0, LSR, CLK, FCI, 
+    output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i12 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i11 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ccu2 \FreqDiv20Bit_inst/count_160_add_4_13 ( .A0(A0), .B0(GNDI), .C0(GNDI), 
+    .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), 
+    .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_15 ( input A1, A0, DI1, DI0, LSR, CLK, FCI, 
+    output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i10 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i9 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ccu2 \FreqDiv20Bit_inst/count_160_add_4_11 ( .A0(A0), .B0(GNDI), .C0(GNDI), 
+    .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), 
+    .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_16 ( input A1, A0, DI1, DI0, LSR, CLK, FCI, 
+    output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i8 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i7 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ccu2 \FreqDiv20Bit_inst/count_160_add_4_9 ( .A0(A0), .B0(GNDI), .C0(GNDI), 
+    .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), 
+    .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_17 ( input A1, A0, DI1, DI0, LSR, CLK, FCI, 
+    output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i6 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i5 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ccu2 \FreqDiv20Bit_inst/count_160_add_4_7 ( .A0(A0), .B0(GNDI), .C0(GNDI), 
+    .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), 
+    .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_18 ( input A1, A0, DI1, DI0, LSR, CLK, FCI, 
+    output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i4 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i3 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ccu2 \FreqDiv20Bit_inst/count_160_add_4_5 ( .A0(A0), .B0(GNDI), .C0(GNDI), 
+    .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), 
+    .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_19 ( input A1, A0, DI1, DI0, LSR, CLK, FCI, 
+    output F0, Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i2 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i1 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ccu2 \FreqDiv20Bit_inst/count_160_add_4_3 ( .A0(A0), .B0(GNDI), .C0(GNDI), 
+    .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), .S0(F0), 
+    .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module FreqDiv20Bit_inst_SLICE_20 ( input A1, DI1, LSR, CLK, output F1, Q1, 
+    FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, LSR_dly;
+
+  vmuxregsre0002 \FreqDiv20Bit_inst/count_160__i0 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ccu20001 \FreqDiv20Bit_inst/count_160_add_4_1 ( .A0(GNDI), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(GNDI), 
+    .S0(), .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module TX0_TX0_BAUD0_SLICE_22 ( input C1, B1, A1, B0, A0, DI1, DI0, LSR, CLK, 
+    output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, LSR_NOTIN, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut4 \TX0/TX0/BAUD0/i596_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40004 \TX0/TX0/BAUD0/i602_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre0002 \TX0/TX0/BAUD0/divcounter__i1 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+  vmuxregsre0002 \TX0/TX0/BAUD0/divcounter__i0 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h7D7D) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h7777) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module inverter ( input I, output Z );
+
+  INV INST1( .A(I), .Z(Z));
+endmodule
+
+module TX0_TX0_BAUD0_SLICE_23 ( input D1, C1, B1, A1, D0, C0, B0, A0, DI0, LSR, 
+    CLK, output F0, Q0, F1 );
+  wire   VCCI, LSR_NOTIN, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40005 \TX0/TX0/BAUD0/i589_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40006 \TX0/TX0/BAUD0/i599_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+  vmuxregsre0002 \TX0/TX0/BAUD0/divcounter__i2 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h78FF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_BAUD0_SLICE_24 ( input D1, C1, B1, A1, D0, C0, B0, A0, DI1, DI0, 
+    LSR, CLK, output F0, Q0, F1, Q1 );
+  wire   VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40007 \TX0/TX0/BAUD0/i232_2_lut_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40007 \TX0/TX0/BAUD0/i225_2_lut_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  vmuxregsre0002 \TX0/TX0/BAUD0/divcounter__i4 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \TX0/TX0/BAUD0/divcounter__i3 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h78F0) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_BAUD0_SLICE_25 ( input D1, C1, B1, A1, D0, C0, B0, A0, DI1, DI0, 
+    LSR, CLK, output F0, Q0, F1, Q1 );
+  wire   VCCI, LSR_NOTIN, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40008 \TX0/TX0/BAUD0/i471_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40008 \TX0/TX0/BAUD0/i472_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  vmuxregsre0002 \TX0/TX0/BAUD0/divcounter__i6 ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+  vmuxregsre0002 \TX0/TX0/BAUD0/divcounter__i5 ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40008 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h73B3) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_26 ( input B0, A0, DI0, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, CLK_NOTIN, DI0_dly, CLK_dly;
+
+  lut40009 \TX0/TX0/i264_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \TX0/TX0/ready_53_i1 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(VCCI), .CK(CLK_NOTIN), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter CLK_INVERTERIN( .I(CLK_dly), .Z(CLK_NOTIN));
+
+  specify
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+    $setuphold (negedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+  endspecify
+
+endmodule
+
+module lut40009 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h6666) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_27 ( input C1, B1, A1, B0, A0, DI1, DI0, CE, LSR, CLK, 
+    output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40010 \TX0/TX0/i182_2_lut_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40009 \TX0/TX0/i175_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  vmuxregsre0002 \TX0/TX0/bitc__i2 ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \TX0/TX0/bitc__i1 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40010 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h7878) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_28 ( input D1, C1, B1, A1, D0, C0, B0, A0, DI1, DI0, CE, 
+    LSR, CLK, output F0, Q0, F1, Q1 );
+  wire   VCCI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40011 \TX0/TX0/i196_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40007 \TX0/TX0/i189_2_lut_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+  vmuxregsre0002 \TX0/TX0/bitc__i4 ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \TX0/TX0/bitc__i3 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40011 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h7F80) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_SLICE_29 ( input B0, A0, DI0, CE, LSR, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40012 \TX0/i1_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0002 \TX0/TX0/data_r__i1 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40012 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hEEEE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_SLICE_30 ( input B0, A0, DI0, CE, LSR, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40013 \TX0/i1_2_lut_adj_5 ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0002 \TX0/TX0/data_r__i2 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40013 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hBBBB) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_SLICE_31 ( input C0, B0, A0, DI0, CE, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, CE_dly;
+
+  lut40014 \TX0/i1_2_lut_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \TX0/TX0/data_r__i3 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40014 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hF6F6) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_SLICE_32 ( input A0, DI0, CE, LSR, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40015 \TX0/i1_1_lut ( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0016 \TX0/TX0/data_r__i4 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40015 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h5555) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module vmuxregsre0016 ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3JY INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .PD(LSR), .Q(Q));
+  defparam INST01.GSR = "DISABLED";
+endmodule
+
+module TX0_SLICE_33 ( input C0, B0, A0, DI0, CE, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, CE_dly;
+
+  lut40017 \TX0/i2_2_lut_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \TX0/TX0/data_r__i5 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40017 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFEFE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_SLICE_34 ( input B0, A0, DI0, CE, LSR, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40018 \TX0/i606_2_lut_rep_11 ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0016 \TX0/TX0/data_r__i6 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40018 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h1111) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_35 ( input C1, B1, A1, C0, B0, A0, DI0, LSR, CLK, output 
+    F0, Q0, F1 );
+  wire   GNDI, VCCI, CLK_NOTIN, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40019 \TX0/TX0/i1_2_lut_rep_9_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40020 \TX0/TX0/i463_2_lut_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre0002 \TX0/TX0/next_state_i0 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(VCCI), .CK(CLK_NOTIN), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter CLK_INVERTERIN( .I(CLK_dly), .Z(CLK_NOTIN));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+    $setuphold (negedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (negedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40019 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0202) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40020 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hF2F2) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_36 ( input C0, B0, A0, DI0, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, CLK_NOTIN, DI0_dly, CLK_dly;
+
+  lut40021 \TX0/TX0/i493_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \TX0/TX0/next_state_i1 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(VCCI), .CK(CLK_NOTIN), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter CLK_INVERTERIN( .I(CLK_dly), .Z(CLK_NOTIN));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+    $setuphold (negedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+  endspecify
+
+endmodule
+
+module lut40021 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h3A3A) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_43 ( input C1, B1, A1, C0, B0, A0, DI1, DI0, CE, LSR, CLK, 
+    output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, LSR_NOTIN, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40022 \TX0/TX0/mux_14_i13_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40022 \TX0/TX0/mux_14_i12_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre0002 \TX0/TX0/shifter_i12 ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+  vmuxregsre0002 \TX0/TX0/shifter_i11 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40022 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hCACA) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_44 ( input C1, B1, A1, C0, B0, A0, DI1, DI0, CE, LSR, CLK, 
+    output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, LSR_NOTIN, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40022 \TX0/TX0/mux_14_i15_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40022 \TX0/TX0/mux_14_i14_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre0002 \TX0/TX0/shifter_i14 ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+  vmuxregsre0002 \TX0/TX0/shifter_i13 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module TX0_TX0_SLICE_46 ( input C1, B1, A1, C0, B0, A0, DI1, DI0, CE, LSR, CLK, 
+    output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, LSR_NOTIN, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40022 \TX0/TX0/mux_14_i18_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40022 \TX0/TX0/mux_14_i17_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre0002 \TX0/TX0/shifter_i17 ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+  vmuxregsre0002 \TX0/TX0/shifter_i16 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_47 ( input DI0, M1, CE, LSR, CLK, output F0, Q0, Q1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, M1_dly, CE_dly, LSR_dly;
+
+  lut40023 m1_lut( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0002 \TX0/TX0/shifter_i10 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0002 \TX0/TX0/shifter_i18 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40023 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_SLICE_48 ( input C1, B1, A1, B0, A0, DI1, DI0, CE, LSR, CLK, 
+    output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, LSR_NOTIN, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40024 \TX0/i424_3_lut_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40009 \TX0/i10_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  vmuxregsre0002 \TX0/char_count__i2 ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+  vmuxregsre0002 \TX0/char_count__i1 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40024 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h6A6A) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_SLICE_49 ( input C0, B0, A0, DI0, LSR, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, LSR_NOTIN, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40025 \TX0/i270_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0002 \TX0/state_FSM_i2 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40025 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hCECE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_50 ( input A0, DI0, M1, LSR, CLK, output F0, Q0, Q1 );
+  wire   GNDI, VCCI, CLK_NOTIN, DI0_dly, CLK_dly, M1_dly, LSR_dly;
+
+  lut40015 \TX0/TX0/i262_1_lut ( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0002 \TX0/TX0/ready_53_i0 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(VCCI), .CK(CLK_NOTIN), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter CLK_INVERTERIN( .I(CLK_dly), .Z(CLK_NOTIN));
+  vmuxregsre0002 \TX0/TX0/ready_53_i2 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(VCCI), .CK(CLK_NOTIN), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+    $setuphold (negedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (negedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (negedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module TX0_SLICE_51 ( input D0, C0, B0, A0, DI0, LSR, CLK, output F0, Q0 );
+  wire   VCCI, LSR_NOTIN, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40026 \TX0/i1_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  vmuxregsre0016 \TX0/state_FSM_i1 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40026 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h4CCC) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_52 ( input B1, A1, D0, C0, B0, A0, DI0, LSR, CLK, output F0, Q0, 
+    F1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40027 i285_2_lut_2_lut( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40028 i266_2_lut_4_lut_4_lut( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  vmuxregsre0002 \TX0/TX0/bitc__i0 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40027 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hDDDD) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40028 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h3339) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_SLICE_53 ( input B0, A0, DI0, LSR, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, LSR_NOTIN, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40029 \TX0/i44_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0002 \TX0/state_FSM_i3 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+
+  specify
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40029 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h8888) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_54 ( input B1, A1, C0, B0, A0, DI0, LSR, CLK, output F0, Q0, F1 );
+  wire   GNDI, VCCI, LSR_NOTIN, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40027 i162_2_lut_rep_7_2_lut( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40030 i15_2_lut_3_lut_3_lut( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  vmuxregsre0002 \TX0/char_count__i0 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
+    .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40030 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h3939) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_56 ( input B1, A1, D0, C0, B0, A0, DI0, CLK, output F0, Q0, F1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly;
+
+  lut40012 i4_2_lut( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40005 i18_4_lut( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  vmuxregsre resetline_10( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_57 ( input B0, A0, M1, M0, LSR, CLK, output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, LSR_NOTIN, M1_dly, CLK_dly, M0_dly, LSR_dly;
+
+  lut40031 i1( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40029 \TX0/TX0/BAUD0/i577_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre0002 \TX0/TX0/state__i1 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter LSR_INVERTERIN( .I(LSR_dly), .Z(LSR_NOTIN));
+  vmuxregsre0002 \TX0/TX0/state__i0 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(VCCI), .CK(CLK_dly), .LSR(LSR_NOTIN), .Q(Q0));
+
+  specify
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40031 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_58 ( input D1, C1, B1, A1, C0, B0, A0, M1, M0, CE, LSR, CLK, 
+    output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, M1_dly, CLK_dly, M0_dly, CE_dly, LSR_dly;
+
+  lut40032 \TX0/TX0/i3_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40022 i129_3_lut( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0016 \TX0/TX0/shifter_i1 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0016 \TX0/TX0/shifter_i0 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40032 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0040) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_59 ( input B1, A1, D0, C0, B0, A0, M1, M0, CE, LSR, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, M1_dly, CLK_dly, M0_dly, CE_dly, LSR_dly;
+
+  lut40012 i9_2_lut( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40005 i17_4_lut( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  vmuxregsre0016 \TX0/TX0/shifter_i5 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0016 \TX0/TX0/shifter_i4 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_60 ( input D1, C1, B1, A1, D0, C0, B0, A0, M1, M0, CE, LSR, CLK, 
+    output F0, Q0, F1, Q1 );
+  wire   VCCI, GNDI, M1_dly, CLK_dly, M0_dly, CE_dly, LSR_dly;
+
+  lut40005 i11_4_lut( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40005 i15_4_lut( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  vmuxregsre0016 \TX0/TX0/shifter_i3 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0016 \TX0/TX0/shifter_i2 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_61 ( input D1, C1, B1, A1, C0, B0, A0, M1, M0, CE, LSR, CLK, 
+    output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, M1_dly, CLK_dly, M0_dly, CE_dly, LSR_dly;
+
+  lut40033 \TX0/TX0/BAUD0/i6_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40034 i2_3_lut_rep_6_3_lut( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0016 \TX0/TX0/shifter_i7 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0016 \TX0/TX0/shifter_i6 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40033 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0010) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40034 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFDFD) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_62 ( input D1, C1, B1, A1, B0, A0, M0, CE, LSR, CLK, 
+    output F0, Q0, F1 );
+  wire   GNDI, VCCI, M0_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40035 \TX0/TX0/BAUD0/i234_2_lut_rep_5_3_lut_4_lut ( .A(A1), .B(B1), 
+    .C(C1), .D(D1), .Z(F1));
+  lut40029 \TX0/TX0/BAUD0/i213_2_lut_rep_12 ( .A(A0), .B(B0), .C(GNDI), 
+    .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0002 \TX0/TX0/shifter_i15 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40035 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h8000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_BAUD0_SLICE_63 ( input D1, C1, B1, A1, C0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40035 \TX0/TX0/BAUD0/i241_2_lut_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40036 \TX0/TX0/BAUD0/i220_2_lut_rep_8_3_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40036 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h8080) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_BAUD0_SLICE_64 ( input D1, C1, B1, A1, C0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40037 \TX0/TX0/BAUD0/i5_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40038 \TX0/TX0/BAUD0/i609_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40037 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hDFFF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40038 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h7F7F) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_65 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40039 \TX0/TX0/i1_2_lut_3_lut_4_lut_adj_4 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40040 \TX0/TX0/i1_2_lut_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40039 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0002) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40040 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0020) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module TX0_TX0_SLICE_66 ( input B1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40029 \TX0/TX0/i177_2_lut_rep_10 ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40017 \TX0/TX0/i591_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_67 ( input D1, C1, B1, A1, B0, A0, M1, M0, CE, LSR, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, M1_dly, CLK_dly, M0_dly, CE_dly, LSR_dly;
+
+  lut40005 i13_4_lut( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40012 i5_2_lut( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0016 \TX0/TX0/shifter_i9 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0016 \TX0/TX0/shifter_i8 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
+    .SP(CE_dly), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module TX0_TX0_SLICE_68 ( input B1, A1, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40041 \TX0/TX0/i13_2_lut ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40012 \TX0/TX0/BAUD0/i573_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40041 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h4444) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module PIN8 ( input PADDO, output PIN8 );
+  wire   GNDI;
+
+  xo2iobuf PIN8_pad( .I(PADDO), .T(GNDI), .PAD(PIN8));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN8) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf ( input I, T, output PAD );
+
+  OBZPD INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module PIN7 ( input PADDO, output PIN7 );
+  wire   GNDI;
+
+  xo2iobuf PIN7_pad( .I(PADDO), .T(GNDI), .PAD(PIN7));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN7) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module PIN9 ( input PADDO, output PIN9 );
+  wire   GNDI;
+
+  xo2iobuf PIN9_pad( .I(PADDO), .T(GNDI), .PAD(PIN9));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN9) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module PIN11 ( input PADDO, output PIN11 );
+  wire   GNDI;
+
+  xo2iobuf PIN11_pad( .I(PADDO), .T(GNDI), .PAD(PIN11));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN11) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module PIN12 ( input PADDO, output PIN12 );
+  wire   GNDI;
+
+  xo2iobuf PIN12_pad( .I(PADDO), .T(GNDI), .PAD(PIN12));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN12) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module PIN13 ( input PADDO, output PIN13 );
+  wire   GNDI;
+
+  xo2iobuf PIN13_pad( .I(PADDO), .T(GNDI), .PAD(PIN13));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN13) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module PIN14 ( input PADDO, output PIN14 );
+  wire   GNDI;
+
+  xo2iobuf PIN14_pad( .I(PADDO), .T(GNDI), .PAD(PIN14));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN14) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module PIN17 ( input PADDO, output PIN17 );
+  wire   GNDI;
+
+  xo2iobuf PIN17_pad( .I(PADDO), .T(GNDI), .PAD(PIN17));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN17) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module PIN18 ( input PADDO, output PIN18 );
+  wire   GNDI;
+
+  xo2iobuf PIN18_pad( .I(PADDO), .T(GNDI), .PAD(PIN18));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN18) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module PIN19 ( input PADDO, output PIN19 );
+  wire   GNDI;
+
+  xo2iobuf PIN19_pad( .I(PADDO), .T(GNDI), .PAD(PIN19));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN19) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module PIN20 ( input PADDO, output PIN20 );
+  wire   GNDI;
+
+  xo2iobuf PIN20_pad( .I(PADDO), .T(GNDI), .PAD(PIN20));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => PIN20) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module LEDn ( input PADDO, output LEDn );
+  wire   GNDI;
+
+  xo2iobuf0042 LEDn_pad( .I(PADDO), .T(GNDI), .PAD(LEDn));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => LEDn) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0042 ( input I, T, output PAD );
+
+  OBZPD INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module PIN10 ( output PADDI, input PIN10 );
+
+  xo2iobuf0043 PIN10_pad( .Z(PADDI), .PAD(PIN10));
+
+  specify
+    (PIN10 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIN10, 0:0:0);
+    $width (negedge PIN10, 0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0043 ( output Z, input PAD );
+
+  IBPD INST1( .I(PAD), .O(Z));
+endmodule
+
+module OSCH_inst ( output OSC );
+  wire   GNDI;
+
+  OSCH_B OSCH_inst_OSCH( .STDBY(GNDI), .OSC(OSC), .SEDSTDBY());
+  gnd DRIVEGND( .PWR0(GNDI));
+endmodule
+
+module OSCH_B ( input STDBY, output OSC, SEDSTDBY );
+
+  OSCH INST10( .STDBY(STDBY), .SEDSTDBY(SEDSTDBY), .OSC(OSC));
+  defparam INST10.NOM_FREQ = "12.09";
+endmodule

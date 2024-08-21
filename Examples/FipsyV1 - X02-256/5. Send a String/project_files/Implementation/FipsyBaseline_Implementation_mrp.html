@@ -16,19 +16,17 @@
 Command line:   map -a MachXO2 -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial
      FipsyBaseline_Implementation.ngd -o FipsyBaseline_Implementation_map.ncd
      -pr FipsyBaseline_Implementation.prf -mp FipsyBaseline_Implementation.mrp
-     -lpf
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5.
+     -lpf C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/5.
      Send a String/project_files/Implementation/FipsyBaseline_Implementation.lpf
-     -lpf
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5.
+     -lpf C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/5.
      Send a String/project_files/FipsyBaseline.lpf -c 0 -gui -msgset
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/5.
-     Send a String/project_files/promote.xml 
+     C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/5. Send a
+     String/project_files/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
-Mapped on:  03/14/18  15:16:22
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  08/20/24  23:45:12
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -46,14 +44,14 @@ Mapped on:  03/14/18  15:16:22
       Number used as shift registers:     0
    Number of PIO sites used: 13 + 4(JTAG) out of 22 (77%)
    Number of block RAMs:  0 out of 0
-   Number of GSRs:  0 out of 1 (0%)
-   EFB used :       No
-   JTAG used :      No
-   Readback used :  No
-   Oscillator used :  Yes
-   Startup used :   No
-   POR :            On
-   Bandgap :        On
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
    Number of Power Controller:  0 out of 1 (0%)
    Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
    Number of DCCA:  0 out of 8 (0%)
@@ -67,26 +65,26 @@ Mapped on:  03/14/18  15:16:22
      Net PIN11_c: 55 loads, 51 rising, 4 falling (Driver: OSCH_inst )
    Number of Clock Enables:  4
      Net PIN11_c_enable_31: 10 loads, 10 LSLICEs
-
      Net PIN11_c_enable_9: 1 loads, 1 LSLICEs
      Net TX0/TX0/PIN11_c_enable_30: 2 loads, 2 LSLICEs
+
      Net TX0/TX0/PIN11_c_enable_27: 6 loads, 6 LSLICEs
    Number of LSRs:  8
      Net state_1: 1 loads, 1 LSLICEs
-     Net n192: 1 loads, 1 LSLICEs
+     Net n188: 1 loads, 1 LSLICEs
      Net resetline: 12 loads, 12 LSLICEs
-     Net n244: 10 loads, 10 LSLICEs
+     Net n240: 10 loads, 10 LSLICEs
      Net PIN10_c: 11 loads, 11 LSLICEs
-     Net TX0/TX0/n556: 2 loads, 2 LSLICEs
-     Net TX0/TX0/n554: 2 loads, 2 LSLICEs
-     Net TX0/TX0/BAUD0/n671: 1 loads, 1 LSLICEs
+     Net TX0/TX0/n550: 2 loads, 2 LSLICEs
+     Net TX0/TX0/n552: 2 loads, 2 LSLICEs
+     Net TX0/TX0/BAUD0/n668: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net resetline: 18 loads
      Net PIN10_c: 11 loads
      Net char_count_0: 10 loads
      Net load: 10 loads
-     Net n244: 10 loads
+     Net n240: 10 loads
      Net PIN11_c_enable_31: 10 loads
      Net state_0: 10 loads
      Net state_1: 8 loads
@@ -127,9 +125,9 @@ Mapped on:  03/14/18  15:16:22
 +---------------------+-----------+-----------+------------+
 | PIN13               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | PIN14               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
 | PIN17               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PIN18               | OUTPUT    | LVCMOS33  |            |
@@ -150,26 +148,21 @@ Mapped on:  03/14/18  15:16:22
 Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal clk_N_114 was merged into signal PIN11_c
-Signal n759 was merged into signal resetline
+Signal n786 was merged into signal resetline
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal FreqDiv20Bit_inst/count_164_add_4_1/S0 undriven or does not drive
+Signal FreqDiv20Bit_inst/count_160_add_4_1/S0 undriven or does not drive
      anything - clipped.
-Signal FreqDiv20Bit_inst/count_164_add_4_1/CI undriven or does not drive
+Signal FreqDiv20Bit_inst/count_160_add_4_1/CI undriven or does not drive
      anything - clipped.
-Signal FreqDiv20Bit_inst/count_164_add_4_21/S1 undriven or does not drive
+Signal FreqDiv20Bit_inst/count_160_add_4_21/S1 undriven or does not drive
      anything - clipped.
-Signal FreqDiv20Bit_inst/count_164_add_4_21/CO undriven or does not drive
+Signal FreqDiv20Bit_inst/count_160_add_4_21/CO undriven or does not drive
      anything - clipped.
-Signal counting_163_add_4_19/CO undriven or does not drive anything - clipped.
-Signal counting_163_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal counting_163_add_4_1/CI undriven or does not drive anything - clipped.
-Block i578 was optimized away.
-Block i88_1_lut_rep_16 was optimized away.
-
-
-
-<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
-
+Signal counting_159_add_4_19/CO undriven or does not drive anything - clipped.
+Signal counting_159_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal counting_159_add_4_1/CI undriven or does not drive anything - clipped.
+Block i612 was optimized away.
+Block i88_1_lut_rep_13 was optimized away.
 
      
 
@@ -185,10 +178,6 @@ OSC 1:                                     Pin/Node Value
 
 
 
-
-
-
-
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
@@ -197,13 +186,23 @@ Instance Name: OSCH_inst
 
 
 
+
+
+
+
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 -------------------------
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 31 MB
+   Peak Memory Usage: 32 MB
         
+
+
+
+
+
+
 
 
 
@@ -256,7 +255,7 @@ Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
      Copyright (c) 1995 AT&T Corp.   All rights reserved.
      Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
      Copyright (c) 2001 Agere Systems   All rights reserved.
-     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
      reserved.
 
 

@@ -1,14 +1,14 @@
-synthesis:  version Diamond (64-bit) 3.9.1.119
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Oct 27 22:44:58 2017
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Aug 20 23:45:42 2024
 
 
-Command Line:  synthesis -f MakeFPGA_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/promote.xml 
+Command Line:  synthesis -f MakeFPGA_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -36,7 +36,7 @@ Using performance grade 4.
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Balanced
 Top-level module name = MakeFPGA_Top.
-Target frequency = 1.000000 MHz.
+Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
 BRAM utilization = 100.000000 %
@@ -61,16 +61,16 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project (searchpath added)
--p D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Implementation (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project (searchpath added)
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/MakeFPGA_Top.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/AppModules/FreqDiv20Bit.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/uart_tx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/baudgen_tx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/baudgen_rx.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/Source/uart_rx.v
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files (searchpath added)
+-p C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Implementation (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files (searchpath added)
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/MakeFPGA_Top.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/AppModules/FreqDiv20Bit.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/uart_tx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/baudgen_tx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/baudgen_rx.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/Source/uart_rx.v
 NGD file = MakeFPGA_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -78,43 +78,43 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v(46): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh. VERI-1328
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v. VERI-1482
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(19): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh. VERI-1328
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(57): identifier state is used before its declaration. VERI-1875
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(57): identifier IDLE is used before its declaration. VERI-1875
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(12): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh. VERI-1328
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(13): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh. VERI-1328
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v. VERI-1482
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v(18): analyzing included file d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen.vh. VERI-1328
-Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v(46): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(19): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh. VERI-1328
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(57): identifier state is used before its declaration. VERI-1875
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(57): identifier IDLE is used before its declaration. VERI-1875
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(12): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(13): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v. VERI-1482
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v(18): analyzing included file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen.vh. VERI-1328
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): MakeFPGA_Top
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v(49): compiling module MakeFPGA_Top. VERI-1018
-INFO - synthesis: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH. VERI-1018
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/appmodules/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v(21): compiling module uart_rx. VERI-1018
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(32): compiling module baudgen_rx. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(59): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_rx.v(67): expression size 32 truncated to fit in target size 1. VERI-1209
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_rx.v(67): expression size 32 truncated to fit in target size 4. VERI-1209
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(23): compiling module uart_tx. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/uart_tx.v(92): expression size 32 truncated to fit in target size 5. VERI-1209
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(30): compiling module baudgen_tx. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(53): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/baudgen_tx.v(61): expression size 32 truncated to fit in target size 1. VERI-1209
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy midi merger/project/echo_project/source/makefpga_top.v(217): Register rstn_18 is stuck at One. VDB-5014
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v(49): compiling module MakeFPGA_Top. VERI-1018
+INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH. VERI-1018
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/appmodules/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v(21): compiling module uart_rx. VERI-1018
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(32): compiling module baudgen_rx. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(59): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_rx.v(67): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_rx.v(67): expression size 32 truncated to fit in target size 4. VERI-1209
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(23): compiling module uart_tx. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/uart_tx.v(92): expression size 32 truncated to fit in target size 5. VERI-1209
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(30): compiling module baudgen_tx. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(53): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/baudgen_tx.v(61): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/6. echo/project_files/source/makefpga_top.v(217): Register rstn_18 is stuck at One. VDB-5014
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
 Package Status:                     Final          Version 1.41.
 Top-level module name = MakeFPGA_Top.
 WARNING - synthesis: Initial value found on net pwr will be ignored due to unrecognized driver type
@@ -146,13 +146,13 @@ WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i2 wi
 WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i4 will be ignored.
 WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i6 will be ignored.
 WARNING - synthesis: Initial value found on instance \TX0/BAUD0/divcounter_i7 will be ignored.
-Applying 1.000000 MHz constraint to all clocks
+Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in MakeFPGA_Top_drc.log.
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file MakeFPGA_Implementation.ngd.
 
@@ -185,23 +185,25 @@ Number of Clocks: 1
 Clock Enable Nets
 Number of Clock Enables: 8
 Top 8 highest fanout Clock Enables:
-  Net : PIN11_c_enable_56, loads : 22
+  Net : TX0/PIN11_c_enable_39, loads : 22
+  Net : PIN11_c_enable_48, loads : 22
   Net : RX0/load, loads : 8
-  Net : TX0/PIN11_c_enable_41, loads : 8
-  Net : PIN11_c_enable_34, loads : 1
-  Net : PIN11_c_enable_23, loads : 1
+  Net : TX0/data_r_7__N_194, loads : 8
+  Net : TX0/PIN11_c_enable_30, loads : 2
+  Net : PIN11_c_enable_22, loads : 1
+  Net : PIN11_c_enable_33, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : TX0/load, loads : 26
-  Net : PIN11_c_enable_56, loads : 22
-  Net : n584, loads : 21
-  Net : TX0/BAUD0/PIN11_c_enable_48, loads : 21
+  Net : PIN11_c_enable_48, loads : 22
+  Net : TX0/PIN11_c_enable_39, loads : 22
+  Net : n591, loads : 21
   Net : TX0/PIN10_c_2, loads : 20
   Net : RX0/baudgen0/clk_baud, loads : 9
+  Net : RX0/load, loads : 8
   Net : RX0/baudgen0/divcounter_3, loads : 8
   Net : RX0/baudgen0/divcounter_5, loads : 8
-  Net : RX0/load, loads : 8
-  Net : TX0/PIN11_c_enable_41, loads : 8
+  Net : TX0/data_r_7__N_194, loads : 8
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -210,17 +212,17 @@ Timing Report Summary
 Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
-create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets PIN11_c]                 |    1.000 MHz|   75.517 MHz|     4  
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets PIN11_c]                 |  200.000 MHz|   75.517 MHz|     4 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraints not met.
 
 
-Peak Memory Usage: 53.906  MB
+Peak Memory Usage: 55.211  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.563  secs
+Elapsed CPU time for LSE flow : 0.109  secs
 --------------------------------------------------------------

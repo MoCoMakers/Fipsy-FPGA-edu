@@ -8,20 +8,18 @@ Design Information
 Command line:   map -a MachXO2 -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial
      FipsyBaseline_Implementation.ngd -o FipsyBaseline_Implementation_map.ncd
      -pr FipsyBaseline_Implementation.prf -mp FipsyBaseline_Implementation.mrp
-     -lpf
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4.
+     -lpf C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4.
      Send a
      Character/project_files/Implementation/FipsyBaseline_Implementation.lpf
-     -lpf
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4.
+     -lpf C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4.
      Send a Character/project_files/FipsyBaseline.lpf -c 0 -gui -msgset
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4.
-     Send a Character/project_files/promote.xml 
+     C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/4. Send a
+     Character/project_files/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
-Mapped on:  03/12/18  22:16:05
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  08/20/24  23:44:42
 
 Design Summary
 --------------
@@ -40,14 +38,14 @@ Design Summary
       Number used as shift registers:     0
    Number of PIO sites used: 13 + 4(JTAG) out of 22 (77%)
    Number of block RAMs:  0 out of 0
-   Number of GSRs:  0 out of 1 (0%)
-   EFB used :       No
-   JTAG used :      No
-   Readback used :  No
-   Oscillator used :  Yes
-   Startup used :   No
-   POR :            On
-   Bandgap :        On
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
    Number of Power Controller:  0 out of 1 (0%)
    Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
    Number of DCCA:  0 out of 8 (0%)
@@ -60,36 +58,36 @@ Design Summary
    Number of clocks:  1
      Net PIN11_c: 44 loads, 41 rising, 3 falling (Driver: OSCH_inst )
    Number of Clock Enables:  2
+     Net PIN11_c_enable_23: 9 loads, 9 LSLICEs
+     Net TX0/TX0/PIN11_c_enable_19: 4 loads, 4 LSLICEs
 
                                     Page 1
 
 
 
 
-Design:  MakeFPGA_Top                                  Date:  03/12/18  22:16:05
+Design:  MakeFPGA_Top                                  Date:  08/20/24  23:44:42
 
 Design Summary (cont)
 ---------------------
-     Net PIN11_c_enable_23: 9 loads, 9 LSLICEs
-     Net TX0/TX0/PIN11_c_enable_19: 4 loads, 4 LSLICEs
    Number of LSRs:  5
      Net resetline: 6 loads, 6 LSLICEs
      Net PIN10_c: 11 loads, 11 LSLICEs
-     Net TX0/TX0/n152: 12 loads, 12 LSLICEs
+     Net TX0/TX0/n150: 12 loads, 12 LSLICEs
      Net TX0/TX0/state_1: 1 loads, 1 LSLICEs
-     Net TX0/TX0/BAUD0/n495: 1 loads, 1 LSLICEs
+     Net TX0/TX0/BAUD0/n493: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net TX0/TX0/n152: 12 loads
+     Net TX0/TX0/n150: 12 loads
      Net PIN10_c: 11 loads
      Net resetline: 10 loads
      Net PIN11_c_enable_23: 9 loads
+     Net TX0/TX0/BAUD0/divcounter_0: 7 loads
      Net TX0/TX0/BAUD0/divcounter_2: 7 loads
      Net TX0/TX0/baud_en: 7 loads
      Net bitc_0: 6 loads
      Net load: 6 loads
-     Net TX0/TX0/BAUD0/divcounter_0: 6 loads
-     Net TX0/TX0/BAUD0/n13: 6 loads
+     Net TX0/TX0/BAUD0/divcounter_1: 6 loads
 
 
 
@@ -126,18 +124,18 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | PIN17               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| PIN18               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 
                                     Page 2
 
 
 
 
-Design:  MakeFPGA_Top                                  Date:  03/12/18  22:16:05
+Design:  MakeFPGA_Top                                  Date:  08/20/24  23:44:42
 
 IO (PIO) Attributes (cont)
 --------------------------
-| PIN18               | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | PIN19               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PIN20               | OUTPUT    | LVCMOS33  |            |
@@ -153,25 +151,21 @@ Removed logic
 Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal clk_N_99 was merged into signal PIN11_c
-Signal n567 was merged into signal resetline
+Signal n600 was merged into signal resetline
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal counting_98_add_4_19/CO undriven or does not drive anything - clipped.
-Signal FreqDiv20Bit_inst/count_99_add_4_1/S0 undriven or does not drive anything
+Signal counting_96_add_4_19/CO undriven or does not drive anything - clipped.
+Signal FreqDiv20Bit_inst/count_97_add_4_1/S0 undriven or does not drive anything
      - clipped.
-Signal FreqDiv20Bit_inst/count_99_add_4_1/CI undriven or does not drive anything
+Signal FreqDiv20Bit_inst/count_97_add_4_1/CI undriven or does not drive anything
      - clipped.
-Signal FreqDiv20Bit_inst/count_99_add_4_21/S1 undriven or does not drive
+Signal FreqDiv20Bit_inst/count_97_add_4_21/S1 undriven or does not drive
      anything - clipped.
-Signal FreqDiv20Bit_inst/count_99_add_4_21/CO undriven or does not drive
+Signal FreqDiv20Bit_inst/count_97_add_4_21/CO undriven or does not drive
      anything - clipped.
-Signal counting_98_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal counting_98_add_4_1/CI undriven or does not drive anything - clipped.
-Block i412 was optimized away.
-Block i68_1_lut_rep_11 was optimized away.
-
-Memory Usage
-------------
-
+Signal counting_96_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal counting_96_add_4_1/CI undriven or does not drive anything - clipped.
+Block i452 was optimized away.
+Block i68_1_lut_rep_8 was optimized away.
 
      
 
@@ -191,80 +185,20 @@ ASIC Components
 Instance Name: OSCH_inst
          Type: OSCH
 
-
-
-                                    Page 3
-
-
-
-
-Design:  MakeFPGA_Top                                  Date:  03/12/18  22:16:05
-
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 31 MB
+   Peak Memory Usage: 32 MB
         
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    Page 4
+                                    Page 3
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
      Copyright (c) 1995 AT&T Corp.   All rights reserved.
      Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
      Copyright (c) 2001 Agere Systems   All rights reserved.
-     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
      reserved.

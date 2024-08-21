@@ -1,14 +1,14 @@
-synthesis:  version Diamond (64-bit) 3.9.1.119
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Mar 14 15:07:56 2018
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Aug 20 23:02:01 2024
 
 
-Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/promote.xml 
+Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -36,7 +36,7 @@ Using performance grade 4.
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Balanced
 Top-level module name = MakeFPGA_Top.
-Target frequency = 1.000000 MHz.
+Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
 BRAM utilization = 100.000000 %
@@ -61,12 +61,12 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files (searchpath added)
--p D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/Implementation (searchpath added)
--p D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files (searchpath added)
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/Source/Blinky_Rate_Divider.v
-Verilog design file = D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/2. Blinky 2HZ/project_files/Source/FreqDiv20Bit.v
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files (searchpath added)
+-p C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files/Implementation (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files (searchpath added)
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files/Source/Blinky_Rate_Divider.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files/Source/FreqDiv20Bit.v
 NGD file = FipsyBaseline_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -74,21 +74,21 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/blinky_rate_divider.v. VERI-1482
-Analyzing Verilog file d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/freqdiv20bit.v. VERI-1482
-Analyzing Verilog file D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/2. blinky 2hz/project_files/source/blinky_rate_divider.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/2. blinky 2hz/project_files/source/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): MakeFPGA_Top
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/blinky_rate_divider.v(4): compiling module MakeFPGA_Top. VERI-1018
-INFO - synthesis: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH. VERI-1018
-INFO - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
-WARNING - synthesis: d:/programs/hubic/maker/business/fpga/education/fipsy-fpga-edu/examples/2. blinky 2hz/project_files/source/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/2. blinky 2hz/project_files/source/blinky_rate_divider.v(4): compiling module MakeFPGA_Top. VERI-1018
+INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH. VERI-1018
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/2. blinky 2hz/project_files/source/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/examples/fipsyv1 - x02-256/2. blinky 2hz/project_files/source/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c256.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
 Package Status:                     Final          Version 1.41.
 Top-level module name = MakeFPGA_Top.
 ######## Converting I/O port PIN7 to output.
@@ -107,13 +107,13 @@ Top-level module name = MakeFPGA_Top.
 
 
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-Applying 1.000000 MHz constraint to all clocks
+Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in MakeFPGA_Top_drc.log.
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FipsyBaseline_Implementation.ngd.
 
@@ -161,20 +161,20 @@ Timing Report Summary
 Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
-create_clock -period 1000.000000 -name  |             |             |
-clk1 [get_nets PIN11_c]                 |    1.000 MHz|  181.028 MHz|    12  
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets PIN11_c]                 |  200.000 MHz|  181.028 MHz|    12 *
                                         |             |             |
-create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets PIN20_c_19]              |    1.000 MHz|  554.939 MHz|     1  
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets PIN20_c_19]              |  200.000 MHz|  554.939 MHz|     1  
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraints not met.
 
 
-Peak Memory Usage: 49.055  MB
+Peak Memory Usage: 50.168  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.469  secs
+Elapsed CPU time for LSE flow : 0.063  secs
 --------------------------------------------------------------

@@ -16,17 +16,17 @@
 Command line:   map -a MachXO2 -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial
      MakeFPGA_Implementation.ngd -o MakeFPGA_Implementation_map.ncd -pr
      MakeFPGA_Implementation.prf -mp MakeFPGA_Implementation.mrp -lpf
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI
-     Merger/Project/ECHO_Project/Implementation/MakeFPGA_Implementation.lpf -lpf
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI
-     Merger/Project/ECHO_Project/MakeFPGA.lpf -c 0 -gui -msgset
-     D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI
-     Merger/Project/ECHO_Project/promote.xml 
+     C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6.
+     Echo/project_files/Implementation/MakeFPGA_Implementation.lpf -lpf
+     C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6.
+     Echo/project_files/MakeFPGA.lpf -c 0 -gui -msgset
+     C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6.
+     Echo/project_files/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
-Mapped on:  10/27/17  22:44:59
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  08/20/24  23:45:42
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -44,14 +44,14 @@ Mapped on:  10/27/17  22:44:59
       Number used as shift registers:     0
    Number of PIO sites used: 13 + 4(JTAG) out of 22 (77%)
    Number of block RAMs:  0 out of 0
-   Number of GSRs:  0 out of 1 (0%)
-   EFB used :       No
-   JTAG used :      No
-   Readback used :  No
-   Oscillator used :  Yes
-   Startup used :   No
-   POR :            On
-   Bandgap :        On
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
    Number of Power Controller:  0 out of 1 (0%)
    Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
    Number of DCCA:  0 out of 8 (0%)
@@ -65,39 +65,39 @@ Mapped on:  10/27/17  22:44:59
      Net PIN11_c: 75 loads, 71 rising, 4 falling (Driver: OSCH_inst )
    Number of Clock Enables:  8
      Net rcv: 11 loads, 11 LSLICEs
+     Net PIN11_c_enable_22: 1 loads, 1 LSLICEs
      Net clk_baud: 5 loads, 5 LSLICEs
-     Net PIN11_c_enable_34: 2 loads, 2 LSLICEs
 
-     Net PIN11_c_enable_23: 1 loads, 1 LSLICEs
+     Net PIN11_c_enable_33: 2 loads, 2 LSLICEs
      Net RX0/load: 4 loads, 4 LSLICEs
-     Net TX0/PIN11_c_enable_48: 12 loads, 12 LSLICEs
-     Net TX0/PIN11_c_enable_41: 4 loads, 4 LSLICEs
-     Net TX0/PIN11_c_enable_31: 1 loads, 1 LSLICEs
+     Net TX0/data_r_7__N_194: 4 loads, 4 LSLICEs
+     Net TX0/PIN11_c_enable_39: 12 loads, 12 LSLICEs
+     Net TX0/PIN11_c_enable_30: 1 loads, 1 LSLICEs
    Number of LSRs:  12
-     Net n584: 11 loads, 11 LSLICEs
+     Net n591: 11 loads, 11 LSLICEs
      Net PIN10_c_2: 11 loads, 11 LSLICEs
-     Net clear: 3 loads, 3 LSLICEs
      Net state_1: 1 loads, 1 LSLICEs
-     Net n232: 1 loads, 1 LSLICEs
+     Net n225: 1 loads, 1 LSLICEs
+     Net clear: 3 loads, 3 LSLICEs
      Net RX0/state_1: 3 loads, 3 LSLICEs
      Net RX0/bauden: 3 loads, 3 LSLICEs
-     Net RX0/n618: 2 loads, 2 LSLICEs
+     Net RX0/n611: 2 loads, 2 LSLICEs
      Net TX0/load: 9 loads, 9 LSLICEs
      Net TX0/baud_en: 3 loads, 3 LSLICEs
      Net TX0/n29: 2 loads, 2 LSLICEs
-     Net TX0/PIN11_c_enable_31: 1 loads, 1 LSLICEs
+     Net TX0/PIN11_c_enable_30: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net TX0/load: 19 loads
      Net rcv: 16 loads
      Net PIN10_c_2: 12 loads
-     Net TX0/PIN11_c_enable_48: 12 loads
-     Net n584: 11 loads
+     Net TX0/PIN11_c_enable_39: 12 loads
+     Net n591: 11 loads
      Net RX0/divcounter_3: 9 loads
      Net RX0/divcounter_5: 9 loads
+     Net state_0: 8 loads
      Net clk_baud: 7 loads
-     Net RX0/n42: 7 loads
-     Net state_0: 7 loads
+     Net RX0/n39: 7 loads
 
 
 
@@ -111,10 +111,10 @@ Mapped on:  10/27/17  22:44:59
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI
-     Merger/Project/ECHO_Project/MakeFPGA.lpf(39): Semantic error in "FREQUENCY
-     PORT "MCLK" 120.000000 MHz ;": "MCLK" matches no ports in the design.  This
-     preference has been disabled.
+WARNING - map: C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 -
+     X02-256/6. Echo/project_files/MakeFPGA.lpf(39): Semantic error in
+     "FREQUENCY PORT "MCLK" 120.000000 MHz ;": "MCLK" matches no ports in the
+     design.  This preference has been disabled.
 
 
 
@@ -124,9 +124,9 @@ WARNING - map: D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| PIN8                | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | PIN10               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PIN8                | OUTPUT    | LVCMOS33  |            |
 
 +---------------------+-----------+-----------+------------+
 | PIN7                | OUTPUT    | LVCMOS33  |            |
@@ -159,42 +159,37 @@ WARNING - map: D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI
 Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal clk_N_193 was merged into signal PIN11_c
-Signal TX0/n590 was merged into signal TX0/baud_en
-Signal RX0/n1163 was merged into signal RX0/state_1
-Signal RX0/n1162 was merged into signal RX0/bauden
+Signal TX0/n579 was merged into signal TX0/baud_en
+Signal RX0/n1142 was merged into signal RX0/bauden
+Signal RX0/n1146 was merged into signal RX0/state_1
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal FreqDiv20Bit_inst/count_153_add_4_1/S0 undriven or does not drive
+Signal FreqDiv20Bit_inst/count_146_add_4_1/S0 undriven or does not drive
      anything - clipped.
-Signal FreqDiv20Bit_inst/count_153_add_4_1/CI undriven or does not drive
+Signal FreqDiv20Bit_inst/count_146_add_4_1/CI undriven or does not drive
      anything - clipped.
-Signal FreqDiv20Bit_inst/count_153_add_4_21/S1 undriven or does not drive
+Signal FreqDiv20Bit_inst/count_146_add_4_21/S1 undriven or does not drive
      anything - clipped.
-Signal FreqDiv20Bit_inst/count_153_add_4_21/CO undriven or does not drive
+Signal FreqDiv20Bit_inst/count_146_add_4_21/CO undriven or does not drive
      anything - clipped.
 Signal TX0/BAUD0/add_16_9/S1 undriven or does not drive anything - clipped.
 Signal TX0/BAUD0/add_16_9/CO undriven or does not drive anything - clipped.
 Signal TX0/BAUD0/add_16_1/S0 undriven or does not drive anything - clipped.
 Signal TX0/BAUD0/add_16_1/CI undriven or does not drive anything - clipped.
-Signal counter_register_152_add_4_1/S0 undriven or does not drive anything -
+Signal counter_register_145_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal counter_register_152_add_4_1/CI undriven or does not drive anything -
+Signal counter_register_145_add_4_1/CI undriven or does not drive anything -
      clipped.
 Signal RX0/baudgen0/add_16_9/S1 undriven or does not drive anything - clipped.
 Signal RX0/baudgen0/add_16_9/CO undriven or does not drive anything - clipped.
 Signal RX0/baudgen0/add_16_1/S0 undriven or does not drive anything - clipped.
 Signal RX0/baudgen0/add_16_1/CI undriven or does not drive anything - clipped.
-Signal counter_register_152_add_4_21/CO undriven or does not drive anything -
+Signal counter_register_145_add_4_21/CO undriven or does not drive anything -
      clipped.
 
-Block i918 was optimized away.
-Block TX0/i378_1_lut was optimized away.
-Block RX0/i1_1_lut_rep_13 was optimized away.
-Block RX0/i377_1_lut_rep_12 was optimized away.
-
-
-
-<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
-
+Block i904 was optimized away.
+Block TX0/i367_1_lut was optimized away.
+Block RX0/i366_1_lut_rep_5 was optimized away.
+Block RX0/i1_1_lut_rep_9 was optimized away.
 
      
 
@@ -223,8 +218,12 @@ Instance Name: OSCH_inst
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 31 MB
+   Peak Memory Usage: 32 MB
         
+
+
+
+
 
 
 
@@ -254,7 +253,7 @@ Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
      Copyright (c) 1995 AT&T Corp.   All rights reserved.
      Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
      Copyright (c) 2001 Agere Systems   All rights reserved.
-     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
      reserved.
 
 
