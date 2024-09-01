@@ -1,5 +1,0 @@
-#Start recording tcl command: 8/12/2024 22:36:21
-#Project Location: C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files; Project name: FipsyBaseline
-prj_project open "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/FipsyBaseline.ldf"
-prj_project close
-#Stop recording: 8/12/2024 22:37:51

@@ -1,5 +1,0 @@
-#Start recording tcl command: 8/20/2024 23:45:32
-#Project Location: C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files; Project name: MakeFPGA
-prj_project open "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/6. Echo/project_files/MakeFPGA.ldf"
-prj_run Export -impl Implementation -task Jedecgen -forceAll
-#Stop recording: 8/20/2024 23:45:56

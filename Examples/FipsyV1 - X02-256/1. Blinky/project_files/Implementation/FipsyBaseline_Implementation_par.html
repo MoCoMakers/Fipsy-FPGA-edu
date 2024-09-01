@@ -12,7 +12,7 @@ Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Aug 19 22:33:53 2024
+Sat Aug 31 21:18:47 2024
 
 C:/Program Files/Lattice/diamond/3.13/ispfpga\bin\nt64\par -f
 FipsyBaseline_Implementation.p2t FipsyBaseline_Implementation_map.ncd
@@ -26,17 +26,17 @@ Preference file: FipsyBaseline_Implementation.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            476.563      0            0.377        0            04           Completed
+5_1   *      0            476.563      0            0.377        0            03           Completed
 * : Design saved.
 
-Total (real) run time for 1-seed: 4 secs 
+Total (real) run time for 1-seed: 3 secs 
 
 par done!
 
 Note: user must run &apos;Trace&apos; for timing closure signoff.
 
 Lattice Place and Route Report for Design &quot;FipsyBaseline_Implementation_map.ncd&quot;
-Mon Aug 19 22:33:53 2024
+Sat Aug 31 21:18:47 2024
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -94,12 +94,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 Starting Placer Phase 1.
 ..................
 Placer score = 1571.
-Finished Placer Phase 1.  REAL time: 4 secs 
+Finished Placer Phase 1.  REAL time: 2 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  1571
-Finished Placer Phase 2.  REAL time: 4 secs 
+Finished Placer Phase 2.  REAL time: 2 secs 
 
 
 
@@ -144,9 +144,9 @@ Dumping design to file FipsyBaseline_Implementation.dir/5_1.ncd.
 0 connections routed; 85 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 4 secs 
+Completed router resource preassignment. Real time: 3 secs 
 
-Start NBR router at 22:33:57 08/19/24
+Start NBR router at 21:18:50 08/31/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -161,29 +161,29 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 22:33:57 08/19/24
+Start NBR special constraint process at 21:18:50 08/31/24
 
-Start NBR section for initial routing at 22:33:57 08/19/24
+Start NBR section for initial routing at 21:18:50 08/31/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 3 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:33:57 08/19/24
+Start NBR section for normal routing at 21:18:50 08/31/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 3 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 22:33:57 08/19/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 21:18:50 08/31/24
 
-Start NBR section for re-routing at 22:33:57 08/19/24
+Start NBR section for re-routing at 21:18:50 08/31/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 3 secs 
 
-Start NBR section for post-routing at 22:33:57 08/19/24
+Start NBR section for post-routing at 21:18:50 08/31/24
 
 End NBR router with 0 unrouted connection
 
@@ -199,7 +199,7 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 Total CPU time 2 secs 
-Total REAL time: 4 secs 
+Total REAL time: 3 secs 
 Completely routed.
 End of route.  85 routed (100.00%); 0 unrouted.
 
@@ -222,7 +222,7 @@ PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Number of errors = 0
 
 Total CPU  time to completion: 2 secs 
-Total REAL time to completion: 4 secs 
+Total REAL time to completion: 3 secs 
 
 par done!
 

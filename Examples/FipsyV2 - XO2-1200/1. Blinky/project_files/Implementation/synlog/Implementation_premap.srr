@@ -1,0 +1,145 @@
+# Tue Aug 27 19:00:09 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\Program Files\Lattice\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: GLEN
+
+Implementation : Implementation
+Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 132R, Built Aug 31 2023 04:16:35, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 123MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 137MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Implementation\Implementation_scck.rpt 
+See clock summary report "C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Implementation\Implementation_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 137MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 137MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+NConnInternalConnection caching is on
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 195MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 195MB)
+
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 195MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 195MB)
+
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 195MB peak: 195MB)
+
+
+mixed edge conversion for GCC is OFF
+@W: BZ204 :"c:\users\enact\projects\fipsy-fpga-edu\examples\fipsyv2 - xo2-1200\1. blinky\project_files\source\fipsy_top.v":81:5:81:13|GCC unable to propagate clocks through gate OSCH_inst; all outputs will be treated as enables regardless of whether any inputs are clocks
+@W: BZ240 :|GCC encountered Inferred Clock constraint on net GCC considers to be data PIN11; this will likely lead to failure to convert
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 196MB peak: 196MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 196MB peak: 197MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 196MB peak: 197MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=7 on top level netlist Fipsy_Top 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 196MB peak: 197MB)
+
+
+
+Clock Summary
+******************
+
+          Start                              Requested     Requested     Clock        Clock          Clock
+Level     Clock                              Frequency     Period        Type         Group          Load 
+----------------------------------------------------------------------------------------------------------
+0 -       Fipsy_Top|PIN11_inferred_clock     2.1 MHz       480.769       inferred     (multiple)     20   
+==========================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                   Clock     Source                  Clock Pin                           Non-clock Pin     Non-clock Pin
+Clock                              Load      Pin                     Seq Example                         Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------------------------------------------------
+Fipsy_Top|PIN11_inferred_clock     20        OSCH_inst.OSC(OSCH)     FreqDiv20Bit_inst.count[19:0].C     -                 -            
+========================================================================================================================================
+
+@W: MT529 :"c:\users\enact\projects\fipsy-fpga-edu\examples\fipsyv2 - xo2-1200\1. blinky\project_files\source\appmodules\freqdiv20bit.v":50:0:50:5|Found inferred clock Fipsy_Top|PIN11_inferred_clock which controls 20 sequential elements including FreqDiv20Bit_inst.count[19:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 20 clock pin(s) of sequential element(s)
+0 instances converted, 20 sequential instances remain driven by gated/generated clocks
+
+==================================================================== Gated/Generated Clocks ====================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Unconverted Fanout     Sample Instance                   Explanation                               
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       OSCH_inst.OSC       OSCH                   20                     FreqDiv20Bit_inst.count[19:0]     Derived clock on input (not legal for GCC)
+================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 198MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 198MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 199MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Aug 27 19:00:11 2024
+
+###########################################################]

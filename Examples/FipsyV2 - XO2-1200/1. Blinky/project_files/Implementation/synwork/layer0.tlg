@@ -1,0 +1,22 @@
+Selecting top level module Fipsy_Top
+@N: CG364 :"C:\Program Files\Lattice\diamond\3.13\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
+Running optimization stage 1 on OSCH .......
+Finished optimization stage 1 on OSCH (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Source\AppModules\FreqDiv20Bit.v":20:7:20:18|Synthesizing module FreqDiv20Bit in library work.
+Running optimization stage 1 on FreqDiv20Bit .......
+Finished optimization stage 1 on FreqDiv20Bit (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Source\Fipsy_Top.v":45:7:45:15|Synthesizing module Fipsy_Top in library work.
+Running optimization stage 1 on Fipsy_Top .......
+Finished optimization stage 1 on Fipsy_Top (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on Fipsy_Top .......
+Finished optimization stage 2 on Fipsy_Top (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on FreqDiv20Bit .......
+Finished optimization stage 2 on FreqDiv20Bit (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on OSCH .......
+Finished optimization stage 2 on OSCH (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Implementation\synwork\layer0.duruntime
+
+

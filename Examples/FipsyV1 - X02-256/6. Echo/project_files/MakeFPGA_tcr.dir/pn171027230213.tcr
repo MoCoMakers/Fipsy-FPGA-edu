@@ -1,7 +1,0 @@
-#Start recording tcl command: 10/27/2017 22:32:46
-#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project; Project name: MakeFPGA
-prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/FIPSY MIDI Merger/Project/ECHO_Project/MakeFPGA.ldf"
-prj_run Export -impl Implementation -task Jedecgen
-prj_project save
-prj_project close
-#Stop recording: 10/27/2017 23:02:13

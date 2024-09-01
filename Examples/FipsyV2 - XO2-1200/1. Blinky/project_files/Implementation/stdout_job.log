@@ -1,0 +1,80 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "19:00:13    27-Aug-2024",
+	"Working Directory" : "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/Implementation",
+	"Install" : "C:/Program Files/Lattice/diamond/3.13/synpbase"
+},
+"Implementation" :{
+   "Start Time" : "19:00:06",
+   "Runtime" : "07s",
+   "Executable Run Time" : "06s",
+   "synthesis" : {
+      "Start Time" : "19:00:06",
+      "Runtime" : "07s",
+      "Executable Run Time" : "06s",
+      "compile" : {
+         "Start Time" : "19:00:06",
+         "Runtime" : "05s",
+         "Executable Run Time" : "04s",
+         "compile_flow" : {
+            "Start Time" : "19:00:06",
+            "Runtime" : "03s",
+            "Executable Run Time" : "02s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/Implementation",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "19:00:06",
+               "Run Time" : "03s",
+               "Exe Run Time" : "02s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/Implementation",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "19:00:09",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/Implementation",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "19:00:09",
+            "Run Time" : "02s",
+            "Exe Run Time" : "02s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Start Time" : "19:00:11",
+         "Runtime" : "02s",
+         "Executable Run Time" : "02s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/Implementation",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "19:00:11",
+            "Run Time" : "02s",
+            "Exe Run Time" : "02s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

@@ -1,5 +1,0 @@
-#Start recording tcl command: 8/19/2024 20:32:42
-#Project Location: C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/2. Blinky 2HZ/project_files; Project name: FipsyBaseline
-prj_project open "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/2. Blinky 2HZ/project_files/FipsyBaseline.ldf"
-prj_run Export -impl Implementation -task Jedecgen -forceOne
-#Stop recording: 8/19/2024 22:24:27

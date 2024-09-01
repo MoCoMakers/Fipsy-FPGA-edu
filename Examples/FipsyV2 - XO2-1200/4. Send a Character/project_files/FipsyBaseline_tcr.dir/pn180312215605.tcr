@@ -1,9 +1,0 @@
-#Start recording tcl command: 3/12/2018 21:28:55
-#Project Location: D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files; Project name: FipsyBaseline
-prj_project open "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/FipsyBaseline.ldf"
-prj_src remove "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/AppModules/FreqDiv20Bit.v"
-prj_src add "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/baudgen_tx.v" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/Fipsy_Top.v" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/FreqDiv20Bit.v" "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/uart_tx.v"
-prj_src add "D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/Source/txchar.v"
-prj_project save
-prj_run Export -impl Implementation -task Jedecgen
-#Stop recording: 3/12/2018 21:56:05

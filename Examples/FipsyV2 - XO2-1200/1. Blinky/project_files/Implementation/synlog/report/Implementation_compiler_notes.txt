@@ -1,0 +1,11 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\Program Files\Lattice\diamond\3.13\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
+@N: CG364 :"C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Source\AppModules\FreqDiv20Bit.v":20:7:20:18|Synthesizing module FreqDiv20Bit in library work.
+@N: CG364 :"C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Source\Fipsy_Top.v":45:7:45:15|Synthesizing module Fipsy_Top in library work.
+@N|Running in 64-bit mode
+@N: NF107 :"c:\users\enact\projects\fipsy-fpga-edu\examples\fipsyv2 - xo2-1200\1. blinky\project_files\source\fipsy_top.v":45:7:45:15|Selected library: work cell: Fipsy_Top view verilog as top level
+@N: NF107 :"c:\users\enact\projects\fipsy-fpga-edu\examples\fipsyv2 - xo2-1200\1. blinky\project_files\source\fipsy_top.v":45:7:45:15|Selected library: work cell: Fipsy_Top view verilog as top level
+

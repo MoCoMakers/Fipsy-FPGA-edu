@@ -1,0 +1,9 @@
+i PIN11_i
+m 0 0
+u 1 20
+n ckid0_0 {t:FreqDiv20Bit_inst.count[19:0].C} Derived clock on input (not legal for GCC)
+p {t:OSCH_inst.OSC}{t:PIN11_inferred_clock.I[0]}{t:PIN11_inferred_clock.OUT[0]}{t:FreqDiv20Bit_inst.CLOCK}{p:FreqDiv20Bit_inst.CLOCK}{t:FreqDiv20Bit_inst.count[19:0].C}
+e ckid0_0 {t:FreqDiv20Bit_inst.count[19:0].C} sdffr
+d ckid0_1 {t:OSCH_inst.OSC} OSCH Derived clock on input (not legal for GCC)
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0
