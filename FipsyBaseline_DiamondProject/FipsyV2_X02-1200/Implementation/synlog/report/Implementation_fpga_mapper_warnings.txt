@@ -1,0 +1,1 @@
+@W: MT420 |Found inferred clock Fipsy_Top|PIN11_inferred_clock with period 480.77ns. Please declare a user-defined clock on net PIN11z.

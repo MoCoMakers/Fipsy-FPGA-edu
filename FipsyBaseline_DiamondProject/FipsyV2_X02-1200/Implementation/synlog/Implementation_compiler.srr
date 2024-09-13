@@ -1,0 +1,119 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\Program Files\Lattice\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: GLEN
+
+Implementation : Implementation
+Synopsys HDL Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\Program Files\Lattice\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: GLEN
+
+Implementation : Implementation
+Synopsys Verilog Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+
+@I::"C:\Program Files\Lattice\diamond\3.13\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files\Lattice\diamond\3.13\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files\Lattice\diamond\3.13\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files\Lattice\diamond\3.13\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files\Lattice\diamond\3.13\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Source\Fipsy_Top.v" (library work)
+@I::"C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Source\AppModules\FreqDiv20Bit.v" (library work)
+Verilog syntax check successful!
+Selecting top level module Fipsy_Top
+@N: CG364 :"C:\Program Files\Lattice\diamond\3.13\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
+Running optimization stage 1 on OSCH .......
+Finished optimization stage 1 on OSCH (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Source\AppModules\FreqDiv20Bit.v":20:7:20:18|Synthesizing module FreqDiv20Bit in library work.
+Running optimization stage 1 on FreqDiv20Bit .......
+Finished optimization stage 1 on FreqDiv20Bit (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Source\Fipsy_Top.v":45:7:45:15|Synthesizing module Fipsy_Top in library work.
+Running optimization stage 1 on Fipsy_Top .......
+Finished optimization stage 1 on Fipsy_Top (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on Fipsy_Top .......
+Finished optimization stage 2 on Fipsy_Top (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on FreqDiv20Bit .......
+Finished optimization stage 2 on FreqDiv20Bit (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on OSCH .......
+Finished optimization stage 2 on OSCH (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Implementation\synwork\layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Aug 27 19:00:07 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\Program Files\Lattice\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: GLEN
+
+Implementation : Implementation
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+@N: NF107 :"c:\users\enact\projects\fipsy-fpga-edu\examples\fipsyv2 - xo2-1200\1. blinky\project_files\source\fipsy_top.v":45:7:45:15|Selected library: work cell: Fipsy_Top view verilog as top level
+@N: NF107 :"c:\users\enact\projects\fipsy-fpga-edu\examples\fipsyv2 - xo2-1200\1. blinky\project_files\source\fipsy_top.v":45:7:45:15|Selected library: work cell: Fipsy_Top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Aug 27 19:00:08 2024
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\enact\Projects\Fipsy-FPGA-edu\Examples\FipsyV2 - XO2-1200\1. Blinky\project_files\Implementation\synwork\Implementation_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 31MB peak: 31MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Aug 27 19:00:08 2024
+
+###########################################################]

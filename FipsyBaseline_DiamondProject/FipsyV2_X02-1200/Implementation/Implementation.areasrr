@@ -1,0 +1,34 @@
+----------------------------------------------------------------------
+Report for cell Fipsy_Top.verilog
+
+Register bits: 20 of 1280 (2%)
+PIC Latch:       0
+I/O cells:       13
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       11       100.0
+                            FD1S3IX       20       100.0
+                                GSR        1       100.0
+                                 IB        1       100.0
+                                INV        2       100.0
+                                 OB       12       100.0
+                               OSCH        1       100.0
+                                PUR        1       100.0
+                                VHI        2       100.0
+                                VLO        2       100.0
+SUB MODULES 
+                       FreqDiv20Bit        1       100.0
+                            
+                         TOTAL            54           
+----------------------------------------------------------------------
+Report for cell FreqDiv20Bit.netlist
+     Instance path:  FreqDiv20Bit_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       11       100.0
+                            FD1S3IX       20       100.0
+                                INV        2       100.0
+                                VHI        1        50.0
+                                VLO        1        50.0
+                            
+                         TOTAL            35           

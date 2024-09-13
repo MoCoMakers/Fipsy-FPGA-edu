@@ -1,0 +1,9 @@
+#Start recording tcl command: 9/5/2024 18:43:52
+#Project Location: C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject; Project name: FipsyBaseline
+prj_project open "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyBaseline.ldf"
+prj_dev set -part LCMXO2-1200HC-4SG32C
+prj_dev set -part LCMXO2-256HC-4SG32C
+prj_run Export -impl Implementation -task Jedecgen -forceAll
+prj_project save
+prj_project close
+#Stop recording: 9/5/2024 19:53:52

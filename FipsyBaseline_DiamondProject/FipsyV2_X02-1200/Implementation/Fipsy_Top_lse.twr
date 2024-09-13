@@ -1,0 +1,223 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Sep 13 13:38:31 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     Fipsy_Top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets PIN11_c]
+            219 items scored, 13 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 0.524ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \FreqDiv20Bit_inst/count_8__i0  (from PIN11_c +)
+   Destination:    FD1S3IX    D              \FreqDiv20Bit_inst/count_8__i19  (to PIN11_c +)
+
+   Delay:                   5.364ns  (61.2% logic, 38.8% route), 12 logic levels.
+
+ Constraint Details:
+
+      5.364ns data_path \FreqDiv20Bit_inst/count_8__i0 to \FreqDiv20Bit_inst/count_8__i19 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.524ns
+
+ Path Details: \FreqDiv20Bit_inst/count_8__i0 to \FreqDiv20Bit_inst/count_8__i19
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \FreqDiv20Bit_inst/count_8__i0 (from PIN11_c)
+Route         1   e 0.941                                  \FreqDiv20Bit_inst/n20
+A1_TO_FCO   ---     0.827           A[2] to COUT           \FreqDiv20Bit_inst/count_8_add_4_1
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n28
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_3
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n29
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_5
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n30
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_7
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n31
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_9
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n32
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_11
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n33
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_13
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n34
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_15
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n35
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_17
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n36
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_19
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n37
+FCI_TO_F    ---     0.598            CIN to S[2]           \FreqDiv20Bit_inst/count_8_add_4_21
+Route         1   e 0.941                                  \FreqDiv20Bit_inst/n86
+                  --------
+                    5.364  (61.2% logic, 38.8% route), 12 logic levels.
+
+
+Error:  The following path violates requirements by 0.347ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \FreqDiv20Bit_inst/count_8__i0  (from PIN11_c +)
+   Destination:    FD1S3IX    D              \FreqDiv20Bit_inst/count_8__i18  (to PIN11_c +)
+
+   Delay:                   5.187ns  (60.2% logic, 39.8% route), 11 logic levels.
+
+ Constraint Details:
+
+      5.187ns data_path \FreqDiv20Bit_inst/count_8__i0 to \FreqDiv20Bit_inst/count_8__i18 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.347ns
+
+ Path Details: \FreqDiv20Bit_inst/count_8__i0 to \FreqDiv20Bit_inst/count_8__i18
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \FreqDiv20Bit_inst/count_8__i0 (from PIN11_c)
+Route         1   e 0.941                                  \FreqDiv20Bit_inst/n20
+A1_TO_FCO   ---     0.827           A[2] to COUT           \FreqDiv20Bit_inst/count_8_add_4_1
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n28
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_3
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n29
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_5
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n30
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_7
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n31
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_9
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n32
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_11
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n33
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_13
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n34
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_15
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n35
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_17
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n36
+FCI_TO_F    ---     0.598            CIN to S[2]           \FreqDiv20Bit_inst/count_8_add_4_19
+Route         1   e 0.941                                  \FreqDiv20Bit_inst/n87
+                  --------
+                    5.187  (60.2% logic, 39.8% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 0.347ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \FreqDiv20Bit_inst/count_8__i0  (from PIN11_c +)
+   Destination:    FD1S3IX    D              \FreqDiv20Bit_inst/count_8__i17  (to PIN11_c +)
+
+   Delay:                   5.187ns  (60.2% logic, 39.8% route), 11 logic levels.
+
+ Constraint Details:
+
+      5.187ns data_path \FreqDiv20Bit_inst/count_8__i0 to \FreqDiv20Bit_inst/count_8__i17 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.347ns
+
+ Path Details: \FreqDiv20Bit_inst/count_8__i0 to \FreqDiv20Bit_inst/count_8__i17
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \FreqDiv20Bit_inst/count_8__i0 (from PIN11_c)
+Route         1   e 0.941                                  \FreqDiv20Bit_inst/n20
+A1_TO_FCO   ---     0.827           A[2] to COUT           \FreqDiv20Bit_inst/count_8_add_4_1
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n28
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_3
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n29
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_5
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n30
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_7
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n31
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_9
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n32
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_11
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n33
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_13
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n34
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_15
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n35
+FCI_TO_FCO  ---     0.157            CIN to COUT           \FreqDiv20Bit_inst/count_8_add_4_17
+Route         1   e 0.020                                  \FreqDiv20Bit_inst/n36
+FCI_TO_F    ---     0.598            CIN to S[2]           \FreqDiv20Bit_inst/count_8_add_4_19
+Route         1   e 0.941                                  \FreqDiv20Bit_inst/n88
+                  --------
+                    5.187  (60.2% logic, 39.8% route), 11 logic levels.
+
+Warning: 5.524 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets PIN11_c]                 |     5.000 ns|     5.524 ns|    12 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\FreqDiv20Bit_inst/n30                  |       1|      13|     99.00%
+                                        |        |        |
+\FreqDiv20Bit_inst/n31                  |       1|      13|     99.00%
+                                        |        |        |
+\FreqDiv20Bit_inst/n32                  |       1|      13|     99.00%
+                                        |        |        |
+\FreqDiv20Bit_inst/n33                  |       1|      13|     99.00%
+                                        |        |        |
+\FreqDiv20Bit_inst/n34                  |       1|      13|     99.00%
+                                        |        |        |
+\FreqDiv20Bit_inst/n35                  |       1|      13|     99.00%
+                                        |        |        |
+\FreqDiv20Bit_inst/n29                  |       1|      11|     84.62%
+                                        |        |        |
+\FreqDiv20Bit_inst/n36                  |       1|      11|     84.62%
+                                        |        |        |
+\FreqDiv20Bit_inst/n20                  |       1|       5|     38.46%
+                                        |        |        |
+\FreqDiv20Bit_inst/n28                  |       1|       5|     38.46%
+                                        |        |        |
+\FreqDiv20Bit_inst/n37                  |       1|       5|     38.46%
+                                        |        |        |
+\FreqDiv20Bit_inst/n86                  |       1|       5|     38.46%
+                                        |        |        |
+\FreqDiv20Bit_inst/n18                  |       1|       3|     23.08%
+                                        |        |        |
+\FreqDiv20Bit_inst/n19                  |       1|       3|     23.08%
+                                        |        |        |
+\FreqDiv20Bit_inst/n87                  |       1|       3|     23.08%
+                                        |        |        |
+\FreqDiv20Bit_inst/n88                  |       1|       3|     23.08%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 13  Score: 3272
+
+Constraints cover  219 paths, 51 nets, and 70 connections (74.5% coverage)
+
+
+Peak memory: 53985280 bytes, TRCE: 1564672 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
