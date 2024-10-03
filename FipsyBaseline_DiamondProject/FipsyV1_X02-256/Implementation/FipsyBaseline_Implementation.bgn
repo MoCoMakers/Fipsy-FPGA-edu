@@ -4,10 +4,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Sep 13 13:35:28 2024
+Thu Oct 03 17:12:35 2024
 
 
-Command: bitgen -g RamCfg:Reset -path C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250 -w -jedec -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
+Command: bitgen -g RamCfg:Reset -path C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256 -w -jedec -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
 
 Loading design for application Bitgen from file FipsyBaseline_Implementation.ncd.
 Design name: Fipsy_Top
@@ -80,5 +80,5 @@ Padded 59136 bits for this design
 
 
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 2 secs 
 Peak Memory Usage: 240 MB

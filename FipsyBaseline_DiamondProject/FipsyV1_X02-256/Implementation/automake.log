@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Sep 13 13:35:22 2024
+Thu Oct 03 17:12:29 2024
 
 
-Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/promote.xml 
+Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -64,12 +64,12 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250 (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256 (searchpath added)
 -p C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
--p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Implementation (searchpath added)
--p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250 (searchpath added)
-Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Source/Fipsy_Top.v
-Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Source/AppModules/FreqDiv20Bit.v
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Implementation (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256 (searchpath added)
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Source/Fipsy_Top.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Source/AppModules/FreqDiv20Bit.v
 NGD file = FipsyBaseline_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -80,14 +80,14 @@ Technology check ok...
 Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/fipsy_top.v. VERI-1482
-Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/appmodules/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/fipsy_top.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/appmodules/freqdiv20bit.v. VERI-1482
 Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): Fipsy_Top
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/fipsy_top.v(45): " arg1="Fipsy_Top" arg2="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/fipsy_top.v" arg3="45"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/fipsy_top.v(45): " arg1="Fipsy_Top" arg2="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/fipsy_top.v" arg3="45"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH" arg2="C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/appmodules/freqdiv20bit.v(20): " arg1="FreqDiv20Bit" arg2="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/appmodules/freqdiv20bit.v" arg3="20"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/appmodules/freqdiv20bit.v(55): " arg1="32" arg2="20" arg3="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/appmodules/freqdiv20bit.v" arg4="55"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/appmodules/freqdiv20bit.v(20): " arg1="FreqDiv20Bit" arg2="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/appmodules/freqdiv20bit.v" arg3="20"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/appmodules/freqdiv20bit.v(55): " arg1="32" arg2="20" arg3="c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/appmodules/freqdiv20bit.v" arg4="55"  />
 Last elaborated design is Fipsy_Top()
 Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -181,13 +181,13 @@ clk0 [get_nets PIN11_c]                 |  200.000 MHz|  181.028 MHz|    12 *
 1 constraints not met.
 
 
-Peak Memory Usage: 49.406  MB
+Peak Memory Usage: 49.762  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.078  secs
+Elapsed CPU time for LSE flow : 0.094  secs
 --------------------------------------------------------------
 
-map -a "MachXO2" -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial   "FipsyBaseline_Implementation.ngd" -o "FipsyBaseline_Implementation_map.ncd" -pr "FipsyBaseline_Implementation.prf" -mp "FipsyBaseline_Implementation.mrp" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Implementation/FipsyBaseline_Implementation.lpf" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/FipsyBaseline.lpf"  -c 0           
+map -a "MachXO2" -p LCMXO2-256HC -t QFN32 -s 4 -oc Commercial   "FipsyBaseline_Implementation.ngd" -o "FipsyBaseline_Implementation_map.ncd" -pr "FipsyBaseline_Implementation.prf" -mp "FipsyBaseline_Implementation.mrp" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Implementation/FipsyBaseline_Implementation.lpf" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/FipsyBaseline.lpf"  -c 0           
 map:  version Diamond (64-bit) 3.13.0.56.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -291,10 +291,10 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "FipsyBaseline_Implementation_map.ncd"
-Fri Sep 13 13:35:23 2024
+Thu Oct 03 17:12:31 2024
 
 PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.dir/5_1.ncd FipsyBaseline_Implementation.prf
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.dir/5_1.ncd FipsyBaseline_Implementation.prf
 Preference file: FipsyBaseline_Implementation.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
@@ -346,12 +346,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 Starting Placer Phase 1.
 ..................
 Placer score = 1571.
-Finished Placer Phase 1.  REAL time: 4 secs 
+Finished Placer Phase 1.  REAL time: 3 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  1571
-Finished Placer Phase 2.  REAL time: 4 secs 
+Finished Placer Phase 2.  REAL time: 3 secs 
 
 
 ------------------ Clock Report ------------------
@@ -397,7 +397,7 @@ Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 4 secs 
 
-Start NBR router at 13:35:27 09/13/24
+Start NBR router at 17:12:35 10/03/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -412,9 +412,9 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 13:35:27 09/13/24
+Start NBR special constraint process at 17:12:35 10/03/24
 
-Start NBR section for initial routing at 13:35:27 09/13/24
+Start NBR section for initial routing at 17:12:35 10/03/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 4 secs 
@@ -422,19 +422,19 @@ Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time:
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 13:35:27 09/13/24
+Start NBR section for normal routing at 17:12:35 10/03/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 4 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 13:35:27 09/13/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 17:12:35 10/03/24
 
-Start NBR section for re-routing at 13:35:27 09/13/24
+Start NBR section for re-routing at 17:12:35 10/03/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 4 secs 
 
-Start NBR section for post-routing at 13:35:27 09/13/24
+Start NBR section for post-routing at 17:12:35 10/03/24
 
 End NBR router with 0 unrouted connection
 
@@ -507,7 +507,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Fri Sep 13 13:35:28 2024
+Thu Oct 03 17:12:35 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -517,7 +517,7 @@ Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
 Design file:     fipsybaseline_implementation.ncd
 Preference file: fipsybaseline_implementation.prf
 Device,speed:    LCMXO2-256HC,4
@@ -551,7 +551,7 @@ Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Fri Sep 13 13:35:28 2024
+Thu Oct 03 17:12:35 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -561,7 +561,7 @@ Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
 Design file:     fipsybaseline_implementation.ncd
 Preference file: fipsybaseline_implementation.prf
 Device,speed:    LCMXO2-256HC,m
@@ -694,5 +694,5 @@ Padded 59136 bits for this design
 
 
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 2 secs 
 Peak Memory Usage: 240 MB

@@ -31,13 +31,13 @@
 
 
 -lpf 1
--p "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250"
--ver "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Source/Fipsy_Top.v"
-"C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Source/AppModules/FreqDiv20Bit.v"
+-p "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256"
+-ver "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Source/Fipsy_Top.v"
+"C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Source/AppModules/FreqDiv20Bit.v"
 -top Fipsy_Top
 
 
--p "C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data" "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Implementation" "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250"
+-p "C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data" "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Implementation" "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256"
 
 -ngd "FipsyBaseline_Implementation.ngd"
 

@@ -4,12 +4,12 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Sep 13 13:35:23 2024
+Thu Oct 03 17:12:31 2024
 
 C:/Program Files/Lattice/diamond/3.13/ispfpga\bin\nt64\par -f
 FipsyBaseline_Implementation.p2t FipsyBaseline_Implementation_map.ncd
 FipsyBaseline_Implementation.dir FipsyBaseline_Implementation.prf -gui -msgset
-C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/promote.xml
+C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/promote.xml
 
 
 Preference file: FipsyBaseline_Implementation.prf.

@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Sep 13 13:35:22 2024
+Thu Oct 03 17:12:29 2024
 
 
-Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/promote.xml 
+Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -61,12 +61,12 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250 (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256 (searchpath added)
 -p C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
--p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Implementation (searchpath added)
--p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250 (searchpath added)
-Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Source/Fipsy_Top.v
-Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_250/Source/AppModules/FreqDiv20Bit.v
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Implementation (searchpath added)
+-p C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256 (searchpath added)
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Source/Fipsy_Top.v
+Verilog design file = C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV1_X02-256/Source/AppModules/FreqDiv20Bit.v
 NGD file = FipsyBaseline_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -77,14 +77,14 @@ Technology check ok...
 Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/fipsy_top.v. VERI-1482
-Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/appmodules/freqdiv20bit.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/fipsy_top.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/appmodules/freqdiv20bit.v. VERI-1482
 Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): Fipsy_Top
-INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/fipsy_top.v(45): compiling module Fipsy_Top. VERI-1018
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/fipsy_top.v(45): compiling module Fipsy_Top. VERI-1018
 INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH. VERI-1018
-INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/appmodules/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
-WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_250/source/appmodules/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
+INFO - synthesis: c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/appmodules/freqdiv20bit.v(20): compiling module FreqDiv20Bit. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/fipsy-fpga-edu/fipsybaseline_diamondproject/fipsyv1_x02-256/source/appmodules/freqdiv20bit.v(55): expression size 32 truncated to fit in target size 20. VERI-1209
 Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
@@ -168,8 +168,8 @@ clk0 [get_nets PIN11_c]                 |  200.000 MHz|  181.028 MHz|    12 *
 1 constraints not met.
 
 
-Peak Memory Usage: 49.406  MB
+Peak Memory Usage: 49.762  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.078  secs
+Elapsed CPU time for LSE flow : 0.094  secs
 --------------------------------------------------------------

@@ -2,8 +2,8 @@
 // Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.13.0.56.2
 
 // ldbanno -n Verilog -o FipsyBaseline_Implementation_mapvo.vo -w -neg -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV2_X02-1200/promote.xml FipsyBaseline_Implementation_map.ncd 
-// Netlist created on Fri Sep 13 13:38:31 2024
-// Netlist written on Fri Sep 13 13:38:33 2024
+// Netlist created on Thu Oct 03 17:13:00 2024
+// Netlist written on Thu Oct 03 17:13:02 2024
 // Design is for device LCMXO2-1200HC
 // Design is for package QFN32
 // Design is for performance grade 4
