@@ -1,0 +1,161 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sun Dec 22 12:02:16 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     ClockDivider
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets INTERNAL_OSC_c]
+            88 items scored, 35 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 1.703ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             counter_20__i3  (from INTERNAL_OSC_c +)
+   Destination:    FD1S3AX    D              clk_out_25mhz_12  (to INTERNAL_OSC_c +)
+
+   Delay:                   6.543ns  (29.4% logic, 70.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.543ns data_path counter_20__i3 to clk_out_25mhz_12 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 1.703ns
+
+ Path Details: counter_20__i3 to clk_out_25mhz_12
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              counter_20__i3 (from INTERNAL_OSC_c)
+Route         2   e 1.198                                  counter[3]
+LUT4        ---     0.493              D to Z              i5_4_lut
+Route         1   e 0.941                                  n12
+LUT4        ---     0.493              B to Z              i32_4_lut
+Route         8   e 1.540                                  n83
+LUT4        ---     0.493              B to Z              i1_2_lut
+Route         1   e 0.941                                  clk_out_25mhz_N_16
+                  --------
+                    6.543  (29.4% logic, 70.6% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 1.703ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             counter_20__i4  (from INTERNAL_OSC_c +)
+   Destination:    FD1S3AX    D              clk_out_25mhz_12  (to INTERNAL_OSC_c +)
+
+   Delay:                   6.543ns  (29.4% logic, 70.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.543ns data_path counter_20__i4 to clk_out_25mhz_12 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 1.703ns
+
+ Path Details: counter_20__i4 to clk_out_25mhz_12
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              counter_20__i4 (from INTERNAL_OSC_c)
+Route         2   e 1.198                                  counter[4]
+LUT4        ---     0.493              C to Z              i5_4_lut
+Route         1   e 0.941                                  n12
+LUT4        ---     0.493              B to Z              i32_4_lut
+Route         8   e 1.540                                  n83
+LUT4        ---     0.493              B to Z              i1_2_lut
+Route         1   e 0.941                                  clk_out_25mhz_N_16
+                  --------
+                    6.543  (29.4% logic, 70.6% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 1.703ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             counter_20__i5  (from INTERNAL_OSC_c +)
+   Destination:    FD1S3AX    D              clk_out_25mhz_12  (to INTERNAL_OSC_c +)
+
+   Delay:                   6.543ns  (29.4% logic, 70.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.543ns data_path counter_20__i5 to clk_out_25mhz_12 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 1.703ns
+
+ Path Details: counter_20__i5 to clk_out_25mhz_12
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              counter_20__i5 (from INTERNAL_OSC_c)
+Route         2   e 1.198                                  counter[5]
+LUT4        ---     0.493              B to Z              i5_4_lut
+Route         1   e 0.941                                  n12
+LUT4        ---     0.493              B to Z              i32_4_lut
+Route         8   e 1.540                                  n83
+LUT4        ---     0.493              B to Z              i1_2_lut
+Route         1   e 0.941                                  clk_out_25mhz_N_16
+                  --------
+                    6.543  (29.4% logic, 70.6% route), 4 logic levels.
+
+Warning: 6.703 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets INTERNAL_OSC_c]          |     5.000 ns|     6.703 ns|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n83                                     |       8|      35|     99.00%
+                                        |        |        |
+n12                                     |       1|      32|     91.43%
+                                        |        |        |
+counter[0]                              |       2|       8|     22.86%
+                                        |        |        |
+counter[3]                              |       2|       8|     22.86%
+                                        |        |        |
+counter[4]                              |       2|       8|     22.86%
+                                        |        |        |
+counter[5]                              |       2|       8|     22.86%
+                                        |        |        |
+clk_out_25mhz_N_16                      |       1|       7|     20.00%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 35  Score: 15151
+
+Constraints cover  88 paths, 22 nets, and 43 connections (97.7% coverage)
+
+
+Peak memory: 54067200 bytes, TRCE: 1392640 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

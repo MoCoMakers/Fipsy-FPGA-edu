@@ -1,0 +1,420 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sun Dec 22 12:11:14 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     Fipsy_Top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets clk]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 12.891ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3JX    CK             \vga_inst/ball_y_i0  (from clk +)
+   Destination:    FD1P3AY    SP             \vga_inst/ball_dx_i0  (to clk +)
+
+   Delay:                  17.606ns  (36.4% logic, 63.6% route), 12 logic levels.
+
+ Constraint Details:
+
+     17.606ns data_path \vga_inst/ball_y_i0 to \vga_inst/ball_dx_i0 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 12.891ns
+
+ Path Details: \vga_inst/ball_y_i0 to \vga_inst/ball_dx_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \vga_inst/ball_y_i0 (from clk)
+Route         6   e 1.515                                  \vga_inst/ball_y[0]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \vga_inst/sub_71_add_2_1
+Route         1   e 0.020                                  \vga_inst/n2082
+FCI_TO_FCO  ---     0.157            CIN to COUT           \vga_inst/sub_71_add_2_3
+Route         1   e 0.020                                  \vga_inst/n2083
+FCI_TO_F    ---     0.598            CIN to S[2]           \vga_inst/sub_71_add_2_5
+Route         2   e 1.486                                  \vga_inst/n475
+A1_TO_FCO   ---     0.827           A[2] to COUT           \vga_inst/add_1606_3
+Route         1   e 0.020                                  \vga_inst/n2093
+FCI_TO_F    ---     0.598            CIN to S[2]           \vga_inst/add_1606_5
+Route         1   e 0.941                                  \vga_inst/n379
+LUT4        ---     0.493              B to Z              \vga_inst/i2_2_lut_adj_19
+Route         1   e 0.941                                  \vga_inst/n6_adj_318
+LUT4        ---     0.493              C to Z              \vga_inst/i1_4_lut_adj_82
+Route         1   e 0.941                                  \vga_inst/n7_adj_357
+LUT4        ---     0.493              B to Z              \vga_inst/i5_4_lut_adj_63
+Route         1   e 0.941                                  \vga_inst/n43_adj_354
+LUT4        ---     0.493              B to Z              \vga_inst/i1358_4_lut
+Route         9   e 1.574                                  \vga_inst/n1723
+LUT4        ---     0.493              D to Z              \vga_inst/i1806_2_lut_rep_15_4_lut
+Route         2   e 1.141                                  \vga_inst/n2536
+LUT4        ---     0.493              B to Z              \vga_inst/i1855_3_lut_4_lut_4_lut
+Route        12   e 1.657                                  \vga_inst/clk_enable_13
+                  --------
+                   17.606  (36.4% logic, 63.6% route), 12 logic levels.
+
+
+Error:  The following path violates requirements by 12.891ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3JX    CK             \vga_inst/ball_y_i0  (from clk +)
+   Destination:    FD1P3AY    SP             \vga_inst/ball_dx_i0  (to clk +)
+
+   Delay:                  17.606ns  (36.4% logic, 63.6% route), 12 logic levels.
+
+ Constraint Details:
+
+     17.606ns data_path \vga_inst/ball_y_i0 to \vga_inst/ball_dx_i0 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 12.891ns
+
+ Path Details: \vga_inst/ball_y_i0 to \vga_inst/ball_dx_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \vga_inst/ball_y_i0 (from clk)
+Route         6   e 1.515                                  \vga_inst/ball_y[0]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \vga_inst/sub_71_add_2_1
+Route         1   e 0.020                                  \vga_inst/n2082
+FCI_TO_F    ---     0.598            CIN to S[2]           \vga_inst/sub_71_add_2_3
+Route         2   e 1.486                                  \vga_inst/n477
+A1_TO_FCO   ---     0.827           B[2] to COUT           \vga_inst/add_1606_1
+Route         1   e 0.020                                  \vga_inst/n2092
+FCI_TO_FCO  ---     0.157            CIN to COUT           \vga_inst/add_1606_3
+Route         1   e 0.020                                  \vga_inst/n2093
+FCI_TO_F    ---     0.598            CIN to S[2]           \vga_inst/add_1606_5
+Route         1   e 0.941                                  \vga_inst/n379
+LUT4        ---     0.493              B to Z              \vga_inst/i2_2_lut_adj_19
+Route         1   e 0.941                                  \vga_inst/n6_adj_318
+LUT4        ---     0.493              C to Z              \vga_inst/i1_4_lut_adj_82
+Route         1   e 0.941                                  \vga_inst/n7_adj_357
+LUT4        ---     0.493              B to Z              \vga_inst/i5_4_lut_adj_63
+Route         1   e 0.941                                  \vga_inst/n43_adj_354
+LUT4        ---     0.493              B to Z              \vga_inst/i1358_4_lut
+Route         9   e 1.574                                  \vga_inst/n1723
+LUT4        ---     0.493              D to Z              \vga_inst/i1806_2_lut_rep_15_4_lut
+Route         2   e 1.141                                  \vga_inst/n2536
+LUT4        ---     0.493              B to Z              \vga_inst/i1855_3_lut_4_lut_4_lut
+Route        12   e 1.657                                  \vga_inst/clk_enable_13
+                  --------
+                   17.606  (36.4% logic, 63.6% route), 12 logic levels.
+
+
+Error:  The following path violates requirements by 12.891ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3JX    CK             \vga_inst/ball_y_i0  (from clk +)
+   Destination:    FD1P3AX    SP             \vga_inst/ball_dx_i1  (to clk +)
+
+   Delay:                  17.606ns  (36.4% logic, 63.6% route), 12 logic levels.
+
+ Constraint Details:
+
+     17.606ns data_path \vga_inst/ball_y_i0 to \vga_inst/ball_dx_i1 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 12.891ns
+
+ Path Details: \vga_inst/ball_y_i0 to \vga_inst/ball_dx_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \vga_inst/ball_y_i0 (from clk)
+Route         6   e 1.515                                  \vga_inst/ball_y[0]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \vga_inst/sub_71_add_2_1
+Route         1   e 0.020                                  \vga_inst/n2082
+FCI_TO_FCO  ---     0.157            CIN to COUT           \vga_inst/sub_71_add_2_3
+Route         1   e 0.020                                  \vga_inst/n2083
+FCI_TO_F    ---     0.598            CIN to S[2]           \vga_inst/sub_71_add_2_5
+Route         2   e 1.486                                  \vga_inst/n475
+A1_TO_FCO   ---     0.827           A[2] to COUT           \vga_inst/add_1606_3
+Route         1   e 0.020                                  \vga_inst/n2093
+FCI_TO_F    ---     0.598            CIN to S[2]           \vga_inst/add_1606_5
+Route         1   e 0.941                                  \vga_inst/n379
+LUT4        ---     0.493              B to Z              \vga_inst/i2_2_lut_adj_19
+Route         1   e 0.941                                  \vga_inst/n6_adj_318
+LUT4        ---     0.493              C to Z              \vga_inst/i1_4_lut_adj_82
+Route         1   e 0.941                                  \vga_inst/n7_adj_357
+LUT4        ---     0.493              B to Z              \vga_inst/i5_4_lut_adj_63
+Route         1   e 0.941                                  \vga_inst/n43_adj_354
+LUT4        ---     0.493              B to Z              \vga_inst/i1358_4_lut
+Route         9   e 1.574                                  \vga_inst/n1723
+LUT4        ---     0.493              D to Z              \vga_inst/i1806_2_lut_rep_15_4_lut
+Route         2   e 1.141                                  \vga_inst/n2536
+LUT4        ---     0.493              B to Z              \vga_inst/i1855_3_lut_4_lut_4_lut
+Route        12   e 1.657                                  \vga_inst/clk_enable_13
+                  --------
+                   17.606  (36.4% logic, 63.6% route), 12 logic levels.
+
+Warning: 17.891 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets INTERNAL_OSC]
+            1294 items scored, 1009 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 7.263ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \Clk_25MHz_inst/counter_272__i0  (from INTERNAL_OSC +)
+   Destination:    FD1P3IX    CD             \vga_inst/row_273__i1  (to INTERNAL_OSC +)
+
+   Delay:                  12.103ns  (24.0% logic, 76.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     12.103ns data_path \Clk_25MHz_inst/counter_272__i0 to \vga_inst/row_273__i1 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 7.263ns
+
+ Path Details: \Clk_25MHz_inst/counter_272__i0 to \vga_inst/row_273__i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \Clk_25MHz_inst/counter_272__i0 (from INTERNAL_OSC)
+Route         2   e 1.198                                  \Clk_25MHz_inst/counter[0]
+LUT4        ---     0.493              A to Z              \Clk_25MHz_inst/i5_4_lut
+Route         1   e 0.941                                  \Clk_25MHz_inst/n12
+LUT4        ---     0.493              B to Z              \Clk_25MHz_inst/i1821_4_lut
+Route         9   e 1.574                                  n1173
+LUT4        ---     0.493              B to Z              i1845_2_lut_rep_23
+Route        36   e 2.046                                  INTERNAL_OSC_enable_44
+LUT4        ---     0.493              A to Z              \vga_inst/i1838_4_lut
+Route        21   e 1.831                                  \vga_inst/INTERNAL_OSC_enable_45
+LUT4        ---     0.493              D to Z              \vga_inst/i1816_2_lut_4_lut
+Route        10   e 1.604                                  \vga_inst/n1200
+                  --------
+                   12.103  (24.0% logic, 76.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 7.263ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \Clk_25MHz_inst/counter_272__i0  (from INTERNAL_OSC +)
+   Destination:    FD1P3IX    CD             \vga_inst/row_273__i2  (to INTERNAL_OSC +)
+
+   Delay:                  12.103ns  (24.0% logic, 76.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     12.103ns data_path \Clk_25MHz_inst/counter_272__i0 to \vga_inst/row_273__i2 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 7.263ns
+
+ Path Details: \Clk_25MHz_inst/counter_272__i0 to \vga_inst/row_273__i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \Clk_25MHz_inst/counter_272__i0 (from INTERNAL_OSC)
+Route         2   e 1.198                                  \Clk_25MHz_inst/counter[0]
+LUT4        ---     0.493              A to Z              \Clk_25MHz_inst/i5_4_lut
+Route         1   e 0.941                                  \Clk_25MHz_inst/n12
+LUT4        ---     0.493              B to Z              \Clk_25MHz_inst/i1821_4_lut
+Route         9   e 1.574                                  n1173
+LUT4        ---     0.493              B to Z              i1845_2_lut_rep_23
+Route        36   e 2.046                                  INTERNAL_OSC_enable_44
+LUT4        ---     0.493              A to Z              \vga_inst/i1838_4_lut
+Route        21   e 1.831                                  \vga_inst/INTERNAL_OSC_enable_45
+LUT4        ---     0.493              D to Z              \vga_inst/i1816_2_lut_4_lut
+Route        10   e 1.604                                  \vga_inst/n1200
+                  --------
+                   12.103  (24.0% logic, 76.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 7.263ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \Clk_25MHz_inst/counter_272__i0  (from INTERNAL_OSC +)
+   Destination:    FD1P3IX    CD             \vga_inst/row_273__i3  (to INTERNAL_OSC +)
+
+   Delay:                  12.103ns  (24.0% logic, 76.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     12.103ns data_path \Clk_25MHz_inst/counter_272__i0 to \vga_inst/row_273__i3 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 7.263ns
+
+ Path Details: \Clk_25MHz_inst/counter_272__i0 to \vga_inst/row_273__i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \Clk_25MHz_inst/counter_272__i0 (from INTERNAL_OSC)
+Route         2   e 1.198                                  \Clk_25MHz_inst/counter[0]
+LUT4        ---     0.493              A to Z              \Clk_25MHz_inst/i5_4_lut
+Route         1   e 0.941                                  \Clk_25MHz_inst/n12
+LUT4        ---     0.493              B to Z              \Clk_25MHz_inst/i1821_4_lut
+Route         9   e 1.574                                  n1173
+LUT4        ---     0.493              B to Z              i1845_2_lut_rep_23
+Route        36   e 2.046                                  INTERNAL_OSC_enable_44
+LUT4        ---     0.493              A to Z              \vga_inst/i1838_4_lut
+Route        21   e 1.831                                  \vga_inst/INTERNAL_OSC_enable_45
+LUT4        ---     0.493              D to Z              \vga_inst/i1816_2_lut_4_lut
+Route        10   e 1.604                                  \vga_inst/n1200
+                  --------
+                   12.103  (24.0% logic, 76.0% route), 6 logic levels.
+
+Warning: 12.263 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk]                     |     5.000 ns|    17.891 ns|    12 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets INTERNAL_OSC]            |     5.000 ns|    12.263 ns|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\vga_inst/n43_adj_354                   |       1|    3787|     74.18%
+                                        |        |        |
+\vga_inst/n1723                         |       9|    3787|     74.18%
+                                        |        |        |
+\vga_inst/n2536                         |       2|    3759|     73.63%
+                                        |        |        |
+\vga_inst/clk_enable_13                 |      12|    3747|     73.40%
+                                        |        |        |
+\vga_inst/n9_adj_356                    |       1|    2013|     39.43%
+                                        |        |        |
+\vga_inst/n7_adj_357                    |       1|    1734|     33.97%
+                                        |        |        |
+\vga_inst/n2083                         |       1|    1672|     32.75%
+                                        |        |        |
+\vga_inst/n2094                         |       1|    1622|     31.77%
+                                        |        |        |
+\vga_inst/n2084                         |       1|    1428|     27.97%
+                                        |        |        |
+\vga_inst/n19_adj_326                   |       1|    1295|     25.37%
+                                        |        |        |
+\vga_inst/n2093                         |       1|    1178|     23.08%
+                                        |        |        |
+\vga_inst/n2095                         |       1|     997|     19.53%
+                                        |        |        |
+\vga_inst/n2082                         |       1|     930|     18.22%
+                                        |        |        |
+\vga_inst/n6_adj_318                    |       1|     928|     18.18%
+                                        |        |        |
+\vga_inst/n2085                         |       1|     790|     15.48%
+                                        |        |        |
+\vga_inst/n13_adj_327                   |       1|     730|     14.30%
+                                        |        |        |
+\vga_inst/n15_adj_328                   |       1|     718|     14.06%
+                                        |        |        |
+\vga_inst/n475                          |       2|     684|     13.40%
+                                        |        |        |
+\vga_inst/n473                          |       2|     672|     13.16%
+                                        |        |        |
+\vga_inst/n379                          |       1|     640|     12.54%
+                                        |        |        |
+\vga_inst/ball_y[0]                     |       6|     615|     12.05%
+                                        |        |        |
+\vga_inst/n471                          |       2|     521|     10.21%
+                                        |        |        |
+\vga_inst/INTERNAL_OSC_enable_45        |      21|     520|     10.19%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 5105  Score: 47993209
+
+Constraints cover  30737 paths, 424 nets, and 897 connections (68.0% coverage)
+
+
+Peak memory: 65966080 bytes, TRCE: 7299072 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

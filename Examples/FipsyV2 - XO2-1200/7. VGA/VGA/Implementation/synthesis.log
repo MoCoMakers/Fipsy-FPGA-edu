@@ -1,0 +1,223 @@
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Dec 22 12:11:13 2024
+
+
+Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is QFN32.
+The -d option is LCMXO2-1200HC.
+Using package QFN32.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-1200HC
+
+### Package : QFN32
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = Fipsy_Top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/enact/Projects/VGA (searchpath added)
+-p C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/enact/Projects/VGA/Implementation (searchpath added)
+-p C:/Users/enact/Projects/VGA (searchpath added)
+Verilog design file = C:/Users/enact/Projects/VGA/Source/Fipsy_Top.v
+Verilog design file = C:/Users/enact/Projects/VGA/VGA.v
+Verilog design file = C:/Users/enact/Projects/VGA/clock_divider.v
+NGD file = FipsyBaseline_Implementation.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/enact/projects/vga/source/fipsy_top.v. VERI-1482
+WARNING - synthesis: c:/users/enact/projects/vga/source/fipsy_top.v(55): PIN19 is already declared. VERI-1116
+WARNING - synthesis: c:/users/enact/projects/vga/source/fipsy_top.v(55): second declaration of PIN19 ignored. VERI-1329
+Analyzing Verilog file c:/users/enact/projects/vga/vga.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/vga/clock_divider.v. VERI-1482
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): Fipsy_Top
+INFO - synthesis: c:/users/enact/projects/vga/source/fipsy_top.v(45): compiling module Fipsy_Top. VERI-1018
+INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="38"). VERI-1018
+INFO - synthesis: c:/users/enact/projects/vga/clock_divider.v(1): compiling module ClockDivider. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/vga/clock_divider.v(9): expression size 32 truncated to fit in target size 7. VERI-1209
+INFO - synthesis: c:/users/enact/projects/vga/vga.v(2): compiling module VGA. VERI-1018
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(89): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(90): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(91): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(114): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(117): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(127): expression size 32 truncated to fit in target size 24. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(143): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(146): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(153): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(156): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(162): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(166): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(169): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(170): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(171): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/enact/projects/vga/vga.v(172): expression size 32 truncated to fit in target size 10. VERI-1209
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c1200.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = Fipsy_Top.
+WARNING - synthesis: Initial value found on net red[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net red[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net red[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net green[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net green[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net green[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net blue[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net blue[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net blue[0] will be ignored due to unrecognized driver type
+
+
+
+WARNING - synthesis: Bit 1 of Register \vga_inst/game_state is stuck at Zero
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: Initial value found on instance \vga_inst/ball_y_i0 will be ignored.
+WARNING - synthesis: Initial value found on instance \vga_inst/ball_x_i0 will be ignored.
+WARNING - synthesis: Initial value found on instance \vga_inst/ball_x_i6 will be ignored.
+WARNING - synthesis: Initial value found on instance \vga_inst/ball_x_i8 will be ignored.
+WARNING - synthesis: Initial value found on instance \vga_inst/ball_y_i4 will be ignored.
+WARNING - synthesis: Initial value found on instance \vga_inst/ball_y_i5 will be ignored.
+WARNING - synthesis: Initial value found on instance \vga_inst/ball_y_i6 will be ignored.
+WARNING - synthesis: Initial value found on instance \vga_inst/ball_y_i7 will be ignored.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in Fipsy_Top_drc.log.
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FipsyBaseline_Implementation.ngd.
+
+################### Begin Area Report (Fipsy_Top)######################
+Number of register bits => 115 of 1346 (8 % )
+CCU2D => 132
+FD1P3AX => 45
+FD1P3AY => 4
+FD1P3IX => 36
+FD1P3JX => 2
+FD1S3AX => 13
+FD1S3AY => 8
+FD1S3IX => 7
+GSR => 1
+IB => 4
+LUT4 => 144
+OB => 6
+OSCH => 1
+PFUMX => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : Clk_25MHz_inst/clk, loads : 64
+  Net : INTERNAL_OSC, loads : 53
+Clock Enable Nets
+Number of Clock Enables: 8
+Top 8 highest fanout Clock Enables:
+  Net : vga_inst/ball_x_9__N_222, loads : 22
+  Net : vga_inst/INTERNAL_OSC_enable_45, loads : 21
+  Net : vga_inst/clk_enable_22, loads : 12
+  Net : vga_inst/clk_enable_13, loads : 12
+  Net : INTERNAL_OSC_enable_44, loads : 2
+  Net : vga_inst/clk_enable_2, loads : 1
+  Net : vga_inst/clk_enable_1, loads : 1
+  Net : INTERNAL_OSC_enable_43, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : INTERNAL_OSC_enable_44, loads : 36
+  Net : vga_inst/n2543, loads : 24
+  Net : vga_inst/ball_x_9__N_222, loads : 22
+  Net : vga_inst/game_state_0, loads : 22
+  Net : vga_inst/INTERNAL_OSC_enable_45, loads : 21
+  Net : vga_inst/clk_enable_13, loads : 12
+  Net : vga_inst/clk_enable_22, loads : 12
+  Net : vga_inst/n1119, loads : 11
+  Net : vga_inst/n1047, loads : 11
+  Net : vga_inst/n1200, loads : 10
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk]                     |  200.000 MHz|   55.894 MHz|    12 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets INTERNAL_OSC]            |  200.000 MHz|   81.546 MHz|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 63.160  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.578  secs
+--------------------------------------------------------------

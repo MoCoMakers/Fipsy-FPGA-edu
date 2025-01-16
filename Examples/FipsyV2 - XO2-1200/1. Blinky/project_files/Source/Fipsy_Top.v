@@ -164,7 +164,7 @@ assign LEDn = !Out2Hz;
 // View the signal on a chosen pin
 assign PIN20 = Out2Hz;
 // Also put the oscillator signal itself on a pin
-assign PIN11 = INTERNAL_OSC;
+assign PIN11 = Out2Hz;
 
 //-----------------------------------------------------------------------------------------------
 // End of module  	

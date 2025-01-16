@@ -1,7 +1,7 @@
 <top name = "Fipsy_Top"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "PIN11"  type = "net" />
+    <clockitem name = "INTERNAL_OSC"  type = "net" />
 </clocks>
 
 <!--
@@ -134,7 +134,7 @@
         <nets>
         <nitem  name = "FreqDiv20Bit_inst/gnd"  />
         <nitem  name = "FreqDiv20Bit_inst/pwr"  />
-        <nitem  name = "PIN20"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "FreqDiv20Bit_inst/count[18]"  />
         <nitem  name = "FreqDiv20Bit_inst/count[17]"  />
         <nitem  name = "FreqDiv20Bit_inst/count[16]"  />
@@ -185,19 +185,19 @@
 
         <nets>
         <nitem  name = "gnd"  />
-        <nitem  name = "PIN11"  />
+        <nitem  name = "INTERNAL_OSC"  />
         </nets>
     </instance>
 
-    <instance  name = "PIN20_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "PIN11_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "PIN20"  />
-        <nitem  name = "PIN20_N_1"  />
+        <nitem  name = "PIN11"  />
+        <nitem  name = "PIN11_N_1"  />
         </nets>
     </instance>
 
@@ -399,8 +399,8 @@
 
         <nets>
         <nitem  name = "FreqDiv20Bit_inst/gnd"  />
+        <nitem  name = "INTERNAL_OSC"  />
         <nitem  name = "PIN11"  />
-        <nitem  name = "PIN20"  />
         <nitem  name = "FreqDiv20Bit_inst/count[18]"  />
         <nitem  name = "FreqDiv20Bit_inst/count[17]"  />
         <nitem  name = "FreqDiv20Bit_inst/count[16]"  />

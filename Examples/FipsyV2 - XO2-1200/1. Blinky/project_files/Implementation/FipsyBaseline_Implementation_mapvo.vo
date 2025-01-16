@@ -2,8 +2,8 @@
 // Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.13.0.56.2
 
 // ldbanno -n Verilog -o FipsyBaseline_Implementation_mapvo.vo -w -neg -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/promote.xml FipsyBaseline_Implementation_map.ncd 
-// Netlist created on Sat Aug 31 21:22:33 2024
-// Netlist written on Sat Aug 31 21:22:34 2024
+// Netlist created on Thu Nov 14 19:46:21 2024
+// Netlist written on Thu Nov 14 19:46:22 2024
 // Design is for device LCMXO2-1200HC
 // Design is for package QFN32
 // Design is for performance grade 4
@@ -15,7 +15,7 @@ module Fipsy_Top ( PIN7, PIN8, PIN9, PIN10, PIN11, PIN12, PIN13, PIN14, PIN17,
   input  PIN10;
   output PIN7, PIN8, PIN9, PIN11, PIN12, PIN13, PIN14, PIN17, PIN18, PIN19, 
          PIN20, LEDn;
-  wire   PIN20_c_19, \FreqDiv20Bit_inst/n86 , PIN10_c, PIN11_c, 
+  wire   PIN20_c, \FreqDiv20Bit_inst/n86 , PIN10_c, INTERNAL_OSC, 
          \FreqDiv20Bit_inst/n37 , \FreqDiv20Bit_inst/n2 , 
          \FreqDiv20Bit_inst/n3 , \FreqDiv20Bit_inst/n87 , 
          \FreqDiv20Bit_inst/n88 , \FreqDiv20Bit_inst/n36 , 
@@ -42,92 +42,91 @@ module Fipsy_Top ( PIN7, PIN8, PIN9, PIN10, PIN11, PIN12, PIN13, PIN14, PIN17,
          \FreqDiv20Bit_inst/n20 , \FreqDiv20Bit_inst/n105 , LEDn_c, GND_net, 
          VCCI;
 
-  FreqDiv20Bit_inst_SLICE_0 \FreqDiv20Bit_inst/SLICE_0 ( .A0(PIN20_c_19), 
-    .DI0(\FreqDiv20Bit_inst/n86 ), .LSR(PIN10_c), .CLK(PIN11_c), 
-    .FCI(\FreqDiv20Bit_inst/n37 ), .F0(\FreqDiv20Bit_inst/n86 ), 
-    .Q0(PIN20_c_19));
+  FreqDiv20Bit_inst_SLICE_0 \FreqDiv20Bit_inst/SLICE_0 ( .A0(PIN20_c), 
+    .DI0(\FreqDiv20Bit_inst/n86 ), .LSR(PIN10_c), .CLK(INTERNAL_OSC), 
+    .FCI(\FreqDiv20Bit_inst/n37 ), .F0(\FreqDiv20Bit_inst/n86 ), .Q0(PIN20_c));
   FreqDiv20Bit_inst_SLICE_1 \FreqDiv20Bit_inst/SLICE_1 ( 
     .A1(\FreqDiv20Bit_inst/n2 ), .A0(\FreqDiv20Bit_inst/n3 ), 
     .DI1(\FreqDiv20Bit_inst/n87 ), .DI0(\FreqDiv20Bit_inst/n88 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n36 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .FCI(\FreqDiv20Bit_inst/n36 ), 
     .F0(\FreqDiv20Bit_inst/n88 ), .Q0(\FreqDiv20Bit_inst/n3 ), 
     .F1(\FreqDiv20Bit_inst/n87 ), .Q1(\FreqDiv20Bit_inst/n2 ), 
     .FCO(\FreqDiv20Bit_inst/n37 ));
   FreqDiv20Bit_inst_SLICE_2 \FreqDiv20Bit_inst/SLICE_2 ( 
     .A1(\FreqDiv20Bit_inst/n4 ), .A0(\FreqDiv20Bit_inst/n5 ), 
     .DI1(\FreqDiv20Bit_inst/n89 ), .DI0(\FreqDiv20Bit_inst/n90 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n35 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .FCI(\FreqDiv20Bit_inst/n35 ), 
     .F0(\FreqDiv20Bit_inst/n90 ), .Q0(\FreqDiv20Bit_inst/n5 ), 
     .F1(\FreqDiv20Bit_inst/n89 ), .Q1(\FreqDiv20Bit_inst/n4 ), 
     .FCO(\FreqDiv20Bit_inst/n36 ));
   FreqDiv20Bit_inst_SLICE_3 \FreqDiv20Bit_inst/SLICE_3 ( 
     .A1(\FreqDiv20Bit_inst/n6 ), .A0(\FreqDiv20Bit_inst/n7 ), 
     .DI1(\FreqDiv20Bit_inst/n91 ), .DI0(\FreqDiv20Bit_inst/n92 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n34 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .FCI(\FreqDiv20Bit_inst/n34 ), 
     .F0(\FreqDiv20Bit_inst/n92 ), .Q0(\FreqDiv20Bit_inst/n7 ), 
     .F1(\FreqDiv20Bit_inst/n91 ), .Q1(\FreqDiv20Bit_inst/n6 ), 
     .FCO(\FreqDiv20Bit_inst/n35 ));
   FreqDiv20Bit_inst_SLICE_4 \FreqDiv20Bit_inst/SLICE_4 ( 
     .A1(\FreqDiv20Bit_inst/n8 ), .A0(\FreqDiv20Bit_inst/n9 ), 
     .DI1(\FreqDiv20Bit_inst/n93 ), .DI0(\FreqDiv20Bit_inst/n94 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n33 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .FCI(\FreqDiv20Bit_inst/n33 ), 
     .F0(\FreqDiv20Bit_inst/n94 ), .Q0(\FreqDiv20Bit_inst/n9 ), 
     .F1(\FreqDiv20Bit_inst/n93 ), .Q1(\FreqDiv20Bit_inst/n8 ), 
     .FCO(\FreqDiv20Bit_inst/n34 ));
   FreqDiv20Bit_inst_SLICE_5 \FreqDiv20Bit_inst/SLICE_5 ( 
     .A1(\FreqDiv20Bit_inst/n10 ), .A0(\FreqDiv20Bit_inst/n11 ), 
     .DI1(\FreqDiv20Bit_inst/n95 ), .DI0(\FreqDiv20Bit_inst/n96 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n32 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .FCI(\FreqDiv20Bit_inst/n32 ), 
     .F0(\FreqDiv20Bit_inst/n96 ), .Q0(\FreqDiv20Bit_inst/n11 ), 
     .F1(\FreqDiv20Bit_inst/n95 ), .Q1(\FreqDiv20Bit_inst/n10 ), 
     .FCO(\FreqDiv20Bit_inst/n33 ));
   FreqDiv20Bit_inst_SLICE_6 \FreqDiv20Bit_inst/SLICE_6 ( 
     .A1(\FreqDiv20Bit_inst/n12 ), .A0(\FreqDiv20Bit_inst/n13 ), 
     .DI1(\FreqDiv20Bit_inst/n97 ), .DI0(\FreqDiv20Bit_inst/n98 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n31 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .FCI(\FreqDiv20Bit_inst/n31 ), 
     .F0(\FreqDiv20Bit_inst/n98 ), .Q0(\FreqDiv20Bit_inst/n13 ), 
     .F1(\FreqDiv20Bit_inst/n97 ), .Q1(\FreqDiv20Bit_inst/n12 ), 
     .FCO(\FreqDiv20Bit_inst/n32 ));
   FreqDiv20Bit_inst_SLICE_7 \FreqDiv20Bit_inst/SLICE_7 ( 
     .A1(\FreqDiv20Bit_inst/n14 ), .A0(\FreqDiv20Bit_inst/n15 ), 
     .DI1(\FreqDiv20Bit_inst/n99 ), .DI0(\FreqDiv20Bit_inst/n100 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n30 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .FCI(\FreqDiv20Bit_inst/n30 ), 
     .F0(\FreqDiv20Bit_inst/n100 ), .Q0(\FreqDiv20Bit_inst/n15 ), 
     .F1(\FreqDiv20Bit_inst/n99 ), .Q1(\FreqDiv20Bit_inst/n14 ), 
     .FCO(\FreqDiv20Bit_inst/n31 ));
   FreqDiv20Bit_inst_SLICE_8 \FreqDiv20Bit_inst/SLICE_8 ( 
     .A1(\FreqDiv20Bit_inst/n16 ), .A0(\FreqDiv20Bit_inst/n17 ), 
     .DI1(\FreqDiv20Bit_inst/n101 ), .DI0(\FreqDiv20Bit_inst/n102 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n29 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .FCI(\FreqDiv20Bit_inst/n29 ), 
     .F0(\FreqDiv20Bit_inst/n102 ), .Q0(\FreqDiv20Bit_inst/n17 ), 
     .F1(\FreqDiv20Bit_inst/n101 ), .Q1(\FreqDiv20Bit_inst/n16 ), 
     .FCO(\FreqDiv20Bit_inst/n30 ));
   FreqDiv20Bit_inst_SLICE_9 \FreqDiv20Bit_inst/SLICE_9 ( 
     .A1(\FreqDiv20Bit_inst/n18 ), .A0(\FreqDiv20Bit_inst/n19 ), 
     .DI1(\FreqDiv20Bit_inst/n103 ), .DI0(\FreqDiv20Bit_inst/n104 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .FCI(\FreqDiv20Bit_inst/n28 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .FCI(\FreqDiv20Bit_inst/n28 ), 
     .F0(\FreqDiv20Bit_inst/n104 ), .Q0(\FreqDiv20Bit_inst/n19 ), 
     .F1(\FreqDiv20Bit_inst/n103 ), .Q1(\FreqDiv20Bit_inst/n18 ), 
     .FCO(\FreqDiv20Bit_inst/n29 ));
   FreqDiv20Bit_inst_SLICE_10 \FreqDiv20Bit_inst/SLICE_10 ( 
     .A1(\FreqDiv20Bit_inst/n20 ), .DI1(\FreqDiv20Bit_inst/n105 ), 
-    .LSR(PIN10_c), .CLK(PIN11_c), .F1(\FreqDiv20Bit_inst/n105 ), 
+    .LSR(PIN10_c), .CLK(INTERNAL_OSC), .F1(\FreqDiv20Bit_inst/n105 ), 
     .Q1(\FreqDiv20Bit_inst/n20 ), .FCO(\FreqDiv20Bit_inst/n28 ));
-  SLICE_11 SLICE_11( .A0(PIN20_c_19), .F0(LEDn_c), .F1(GND_net));
+  SLICE_11 SLICE_11( .A0(PIN20_c), .F0(LEDn_c), .F1(GND_net));
   PIN8 PIN8_I( .PADDO(GND_net), .PIN8(PIN8));
   PIN7 PIN7_I( .PADDO(GND_net), .PIN7(PIN7));
   PIN9 PIN9_I( .PADDO(GND_net), .PIN9(PIN9));
-  PIN11 PIN11_I( .PADDO(PIN11_c), .PIN11(PIN11));
+  PIN11 PIN11_I( .PADDO(PIN20_c), .PIN11(PIN11));
   PIN12 PIN12_I( .PADDO(GND_net), .PIN12(PIN12));
   PIN13 PIN13_I( .PADDO(GND_net), .PIN13(PIN13));
   PIN14 PIN14_I( .PADDO(GND_net), .PIN14(PIN14));
   PIN17 PIN17_I( .PADDO(GND_net), .PIN17(PIN17));
   PIN18 PIN18_I( .PADDO(GND_net), .PIN18(PIN18));
   PIN19 PIN19_I( .PADDO(GND_net), .PIN19(PIN19));
-  PIN20 PIN20_I( .PADDO(PIN20_c_19), .PIN20(PIN20));
+  PIN20 PIN20_I( .PADDO(PIN20_c), .PIN20(PIN20));
   LEDn LEDn_I( .PADDO(LEDn_c), .LEDn(LEDn));
   PIN10 PIN10_I( .PADDI(PIN10_c), .PIN10(PIN10));
-  OSCH_inst OSCH_inst( .OSC(PIN11_c));
+  OSCH_inst OSCH_inst( .OSC(INTERNAL_OSC));
   VHI VHI_INST( .Z(VCCI));
   PUR PUR_INST( .PUR(VCCI));
   GSR GSR_INST( .GSR(VCCI));
@@ -559,7 +558,7 @@ module SLICE_11 ( input A0, output F0, F1 );
 
   lut4 i1( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40003 PIN20_I_0_1_lut( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  lut40003 PIN11_I_0_1_lut( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
 
   specify
     (A0 => F0) = (0:0:0,0:0:0);

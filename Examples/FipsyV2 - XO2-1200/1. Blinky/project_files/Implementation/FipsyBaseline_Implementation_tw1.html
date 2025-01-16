@@ -22,7 +22,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
-Sat Aug 31 21:22:34 2024
+Thu Nov 14 19:46:21 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -41,7 +41,7 @@ Report level:    verbose report, limited to 1 item per preference
 
 <A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "PIN11_c" 2.080000 MHz (0 errors)</A></LI>            210 items scored, 0 timing errors detected.
+<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz (0 errors)</A></LI>            210 items scored, 0 timing errors detected.
 Report:  247.463MHz is the maximum frequency for this preference.
 
 <LI><A href='#map_twr_pref_0_1' Target='right'>FREQUENCY 20.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
@@ -65,7 +65,7 @@ VCCIO Voltage:
 
 
 ================================================================================
-<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz ;
             210 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -74,8 +74,8 @@ Passed: The following path meets requirements by 476.728ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to INTERNAL_OSC +)
 
    Delay:               3.875ns  (87.3% logic, 12.7% route), 12 logic levels.
 
@@ -90,7 +90,7 @@ Passed: The following path meets requirements by 476.728ns
       Data path FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452 */SLICE_10.CLK to *t/SLICE_10.Q1 FreqDiv20Bit_inst/SLICE_10 (from PIN11_c)
+REG_DEL     ---     0.452 */SLICE_10.CLK to *t/SLICE_10.Q1 FreqDiv20Bit_inst/SLICE_10 (from INTERNAL_OSC)
 ROUTE         1   e 0.480 *t/SLICE_10.Q1 to *t/SLICE_10.A1 FreqDiv20Bit_inst/n20
 C1TOFCO_DE  ---     0.889 *t/SLICE_10.A1 to */SLICE_10.FCO FreqDiv20Bit_inst/SLICE_10
 ROUTE         1   e 0.001 */SLICE_10.FCO to *t/SLICE_9.FCI FreqDiv20Bit_inst/n28
@@ -113,7 +113,7 @@ ROUTE         1   e 0.001 *t/SLICE_2.FCO to *t/SLICE_1.FCI FreqDiv20Bit_inst/n36
 FCITOFCO_D  ---     0.162 *t/SLICE_1.FCI to *t/SLICE_1.FCO FreqDiv20Bit_inst/SLICE_1
 ROUTE         1   e 0.001 *t/SLICE_1.FCO to *t/SLICE_0.FCI FreqDiv20Bit_inst/n37
 FCITOF0_DE  ---     0.585 *t/SLICE_0.FCI to *st/SLICE_0.F0 FreqDiv20Bit_inst/SLICE_0
-ROUTE         1   e 0.001 *st/SLICE_0.F0 to *t/SLICE_0.DI0 FreqDiv20Bit_inst/n86 (to PIN11_c)
+ROUTE         1   e 0.001 *st/SLICE_0.F0 to *t/SLICE_0.DI0 FreqDiv20Bit_inst/n86 (to INTERNAL_OSC)
                   --------
                     3.875   (87.3% logic, 12.7% route), 12 logic levels.
 
@@ -143,7 +143,8 @@ Report:  400.000MHz is the maximum frequency for this preference.
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "PIN11_c" 2.080000 MHz ;  |    2.080 MHz|  247.463 MHz|  12  
+FREQUENCY NET "INTERNAL_OSC" 2.080000   |             |             |
+MHz ;                                   |    2.080 MHz|  247.463 MHz|  12  
                                         |             |             |
 FREQUENCY 20.000000 MHz ;               |   20.000 MHz|  400.000 MHz|   0  
                                         |             |             |
@@ -158,8 +159,8 @@ All preferences were met.
 
 Found 1 clocks:
 
-Clock Domain: PIN11_c   Source: OSCH_inst.OSC   Loads: 12
-   Covered under: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 11
+   Covered under: FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz ;
 
 
 <A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
@@ -172,7 +173,7 @@ Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
-Sat Aug 31 21:22:34 2024
+Thu Nov 14 19:46:21 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -191,7 +192,7 @@ Report level:    verbose report, limited to 1 item per preference
 
 <A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "PIN11_c" 2.080000 MHz (0 errors)</A></LI>            210 items scored, 0 timing errors detected.
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz (0 errors)</A></LI>            210 items scored, 0 timing errors detected.
 
 <LI><A href='#map_twr_pref_1_1' Target='right'>FREQUENCY 20.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
 
@@ -213,7 +214,7 @@ VCCIO Voltage:
 
 
 ================================================================================
-<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz ;
             210 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -222,8 +223,8 @@ Passed: The following path meets requirements by 0.447ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i17  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i17  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i17  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i17  (to INTERNAL_OSC +)
 
    Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
 
@@ -238,10 +239,10 @@ Passed: The following path meets requirements by 0.447ns
       Data path FreqDiv20Bit_inst/SLICE_1 to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133 *t/SLICE_1.CLK to *st/SLICE_1.Q0 FreqDiv20Bit_inst/SLICE_1 (from PIN11_c)
+REG_DEL     ---     0.133 *t/SLICE_1.CLK to *st/SLICE_1.Q0 FreqDiv20Bit_inst/SLICE_1 (from INTERNAL_OSC)
 ROUTE         1   e 0.199 *st/SLICE_1.Q0 to *st/SLICE_1.A0 FreqDiv20Bit_inst/n3
 CTOF_DEL    ---     0.101 *st/SLICE_1.A0 to *st/SLICE_1.F0 FreqDiv20Bit_inst/SLICE_1
-ROUTE         1   e 0.001 *st/SLICE_1.F0 to *t/SLICE_1.DI0 FreqDiv20Bit_inst/n88 (to PIN11_c)
+ROUTE         1   e 0.001 *st/SLICE_1.F0 to *t/SLICE_1.DI0 FreqDiv20Bit_inst/n88 (to INTERNAL_OSC)
                   --------
                     0.434   (53.9% logic, 46.1% route), 2 logic levels.
 
@@ -257,7 +258,8 @@ ROUTE         1   e 0.001 *st/SLICE_1.F0 to *t/SLICE_1.DI0 FreqDiv20Bit_inst/n88
 Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "PIN11_c" 2.080000 MHz ;  |     0.000 ns|     0.447 ns|   2  
+FREQUENCY NET "INTERNAL_OSC" 2.080000   |             |             |
+MHz ;                                   |     0.000 ns|     0.447 ns|   2  
                                         |             |             |
 FREQUENCY 20.000000 MHz ;               |            -|            -|   0  
                                         |             |             |
@@ -272,8 +274,8 @@ All preferences were met.
 
 Found 1 clocks:
 
-Clock Domain: PIN11_c   Source: OSCH_inst.OSC   Loads: 12
-   Covered under: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 11
+   Covered under: FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz ;
 
 
 <A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>

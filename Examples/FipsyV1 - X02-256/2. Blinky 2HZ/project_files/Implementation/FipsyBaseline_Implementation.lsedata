@@ -1,8 +1,8 @@
 <top name = "MakeFPGA_Top"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "PIN20"  type = "net" />
     <clockitem name = "PIN11"  type = "net" />
+    <clockitem name = "PIN20"  type = "net" />
 </clocks>
 
 <!--

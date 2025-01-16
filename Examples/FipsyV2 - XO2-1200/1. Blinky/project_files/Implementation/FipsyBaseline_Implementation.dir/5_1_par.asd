@@ -2,7 +2,7 @@
 ; Global primary clocks
 GLOBAL_PRIMARY_USED = 1;
 ; Global primary clock #0
-GLOBAL_PRIMARY_0_SIGNALNAME = PIN11_c;
+GLOBAL_PRIMARY_0_SIGNALNAME = INTERNAL_OSC;
 GLOBAL_PRIMARY_0_DRIVERTYPE = OSC;
 GLOBAL_PRIMARY_0_LOADNUM = 11;
 ; # of global secondary clocks

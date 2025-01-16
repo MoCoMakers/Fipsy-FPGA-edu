@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Aug 31 21:22:33 2024
+Thu Nov 14 19:46:20 2024
 
 
 Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/promote.xml 
@@ -150,14 +150,14 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : PIN11_c, loads : 21
+  Net : INTERNAL_OSC, loads : 20
 Clock Enable Nets
 Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : PIN10_c, loads : 20
-  Net : FreqDiv20Bit_inst/PIN20_c_19, loads : 2
+  Net : FreqDiv20Bit_inst/PIN20_c, loads : 3
   Net : LEDn_c, loads : 1
   Net : FreqDiv20Bit_inst/n86, loads : 1
   Net : FreqDiv20Bit_inst/n20, loads : 1
@@ -175,7 +175,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets PIN11_c]                 |  200.000 MHz|  181.028 MHz|    12 *
+clk0 [get_nets INTERNAL_OSC]            |  200.000 MHz|  181.028 MHz|    12 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -183,10 +183,10 @@ clk0 [get_nets PIN11_c]                 |  200.000 MHz|  181.028 MHz|    12 *
 1 constraints not met.
 
 
-Peak Memory Usage: 51.551  MB
+Peak Memory Usage: 51.758  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.125  secs
+Elapsed CPU time for LSE flow : 0.094  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-1200HC -t QFN32 -s 4 -oc Commercial   "FipsyBaseline_Implementation.ngd" -o "FipsyBaseline_Implementation_map.ncd" -pr "FipsyBaseline_Implementation.prf" -mp "FipsyBaseline_Implementation.mrp" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/Implementation/FipsyBaseline_Implementation.lpf" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/FipsyBaseline.lpf"  -c 0           
@@ -259,14 +259,14 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  1
-     Net PIN11_c: 11 loads, 11 rising, 0 falling (Driver: OSCH_inst )
+     Net INTERNAL_OSC: 11 loads, 11 rising, 0 falling (Driver: OSCH_inst )
    Number of Clock Enables:  0
    Number of LSRs:  1
      Net PIN10_c: 11 loads, 11 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net PIN10_c: 11 loads
-     Net PIN20_c_19: 3 loads
+     Net PIN20_c: 4 loads
      Net FreqDiv20Bit_inst/n105: 1 loads
      Net FreqDiv20Bit_inst/n2: 1 loads
      Net FreqDiv20Bit_inst/n20: 1 loads
@@ -315,7 +315,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Sat Aug 31 21:22:34 2024
+Thu Nov 14 19:46:21 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -359,7 +359,7 @@ Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Sat Aug 31 21:22:34 2024
+Thu Nov 14 19:46:21 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -485,7 +485,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "FipsyBaseline_Implementation_map.ncd"
-Sat Aug 31 21:22:35 2024
+Thu Nov 14 19:46:23 2024
 
 PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.dir/5_1.ncd FipsyBaseline_Implementation.prf
@@ -525,7 +525,7 @@ Pin Constraint Summary:
    13 out of 13 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    PIN11_c (driver: OSCH_inst, clk load #: 11)
+    INTERNAL_OSC (driver: OSCH_inst, clk load #: 11)
 
 
 The following 1 signal is selected to use the secondary clock routing resources:
@@ -538,13 +538,13 @@ Starting Placer Phase 0.
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-..................
-Placer score = 2888.
+....................
+Placer score = 4045.
 Finished Placer Phase 1.  REAL time: 2 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  2888
+Placer score =  4045
 Finished Placer Phase 2.  REAL time: 2 secs 
 
 
@@ -558,7 +558,7 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Global Clocks:
-  PRIMARY "PIN11_c" from OSC on comp "OSCH_inst" on site "OSC", clk load = 11
+  PRIMARY "INTERNAL_OSC" from OSC on comp "OSCH_inst" on site "OSC", clk load = 11
   SECONDARY "PIN10_c" from comp "PIN10" on PIO site "14 (PB11B)", clk load = 0, ce load = 0, sr load = 11
 
   PRIMARY  : 1 out of 8 (12%)
@@ -593,9 +593,9 @@ Dumping design to file FipsyBaseline_Implementation.dir/5_1.ncd.
 0 connections routed; 85 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 3 secs 
+Completed router resource preassignment. Real time: 2 secs 
 
-Start NBR router at 21:22:38 08/31/24
+Start NBR router at 19:46:25 11/14/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -610,29 +610,29 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 21:22:38 08/31/24
+Start NBR special constraint process at 19:46:25 11/14/24
 
-Start NBR section for initial routing at 21:22:38 08/31/24
+Start NBR section for initial routing at 19:46:25 11/14/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 2 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 21:22:38 08/31/24
+Start NBR section for normal routing at 19:46:25 11/14/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 2 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 21:22:38 08/31/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 19:46:25 11/14/24
 
-Start NBR section for re-routing at 21:22:38 08/31/24
+Start NBR section for re-routing at 19:46:25 11/14/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 476.563ns/0.000ns; real time: 2 secs 
 
-Start NBR section for post-routing at 21:22:38 08/31/24
+Start NBR section for post-routing at 19:46:25 11/14/24
 
 End NBR router with 0 unrouted connection
 
@@ -705,7 +705,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Sat Aug 31 21:22:38 2024
+Thu Nov 14 19:46:26 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -749,7 +749,7 @@ Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Sat Aug 31 21:22:38 2024
+Thu Nov 14 19:46:26 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -970,7 +970,7 @@ Initialized UFM Pages:                     0 Page.
 =========
 Padding summary
 =========
-Padded 296192 bits for this design
+Padded 296064 bits for this design
 
 
 Total CPU Time: 1 secs 

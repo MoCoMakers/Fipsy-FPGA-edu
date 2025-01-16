@@ -1,0 +1,9 @@
+#Start recording tcl command: 12/22/2024 11:19:59
+#Project Location: C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV2_X02-1200; Project name: FipsyBaseline
+C:/Users/enact/Projects/VGA
+FipsyBaseline
+#Start recording tcl command: 12/22/2024 11:20:22
+#Project Location: C:/Users/enact/Projects/VGA; Project name: FipsyBaseline
+prj_project open "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV2_X02-1200/FipsyBaseline.ldf"
+prj_project saveas -name "FipsyBaseline" -dir "C:/Users/enact/Projects/VGA"
+#Stop recording: 12/22/2024 11:20:23

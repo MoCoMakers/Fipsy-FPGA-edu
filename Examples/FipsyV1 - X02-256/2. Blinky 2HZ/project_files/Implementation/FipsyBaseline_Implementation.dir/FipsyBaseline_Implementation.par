@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Aug 20 23:02:04 2024
+Wed Oct 30 20:46:50 2024
 
 C:/Program Files/Lattice/diamond/3.13/ispfpga\bin\nt64\par -f
 FipsyBaseline_Implementation.p2t FipsyBaseline_Implementation_map.ncd
@@ -17,11 +17,11 @@ Preference file: FipsyBaseline_Implementation.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            48.625       0            0.304        0            03           Completed
+5_1   *      0            48.625       0            0.304        0            04           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 3 secs 
+Total (real) run time for 1-seed: 4 secs 
 
 par done!
 

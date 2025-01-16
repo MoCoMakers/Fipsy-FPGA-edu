@@ -38,7 +38,7 @@ Performance Hardware Data Status:   Final          Version 34.4.
 // Package: QFN32
 // ncd File: fipsybaseline_implementation.ncd
 // Version: Diamond (64-bit) 3.13.0.56.2
-// Written on Sat Aug 31 21:22:39 2024
+// Written on Thu Nov 14 19:46:26 2024
 // M: Minimum Performance Grade
 // iotiming FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/promote.xml
 
@@ -64,15 +64,16 @@ Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 
 Port  Internal_Clock
 --------------------------------------------------------
-PIN10 PIN11_c       
+PIN10 INTERNAL_OSC  
 
 
 // Internal_Clock to Output
 
 Port  Internal_Clock
 --------------------------------------------------------
-LEDn  PIN11_c       
-PIN20 PIN11_c       
+LEDn  INTERNAL_OSC  
+PIN11 INTERNAL_OSC  
+PIN20 INTERNAL_OSC  
 
 
 

@@ -18,7 +18,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCQFN32
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
-Mapped on:  08/20/24  23:02:02
+Mapped on:  10/30/24  20:46:47
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  MakeFPGA_Top                                  Date:  08/20/24  23:02:02
+Design:  MakeFPGA_Top                                  Date:  10/30/24  20:46:47
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  MakeFPGA_Top                                  Date:  08/20/24  23:02:02
+Design:  MakeFPGA_Top                                  Date:  10/30/24  20:46:47
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -178,7 +178,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 31 MB
+   Peak Memory Usage: 32 MB
         
 
 

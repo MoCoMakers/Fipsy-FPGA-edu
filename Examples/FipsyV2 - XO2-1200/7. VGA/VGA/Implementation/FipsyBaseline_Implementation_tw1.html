@@ -1,0 +1,464 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file fipsybaseline_implementation_map.ncd.
+Design name: Fipsy_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-1200HC
+Package:     QFN32
+Performance: 4
+Loading device for application trce from file 'xo2c1200.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Sun Dec 22 12:11:15 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FipsyBaseline_Implementation.tw1 -gui FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.prf 
+Design file:     fipsybaseline_implementation_map.ncd
+Preference file: fipsybaseline_implementation.prf
+Device,speed:    LCMXO2-1200HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz (2224 errors)</FONT></A></LI>
+</FONT>            3261 items scored, 2224 timing errors detected.
+Warning:   6.982MHz is the maximum frequency for this preference.
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_1' Target='right'><FONT COLOR=red>FREQUENCY 50.000000 MHz (2915 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 2915 timing errors detected.
+Warning:   4.960MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3)
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;
+            3261 items scored, 2224 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 14.038ns (weighted slack = -116.906ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              vga_inst/paddle_right_y_i0  (from clk +)
+   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+
+   Delay:              16.916ns  (38.8% logic, 61.2% route), 11 logic levels.
+
+ Constraint Details:
+
+     16.916ns physical path delay vga_inst/SLICE_15 to vga_inst/SLICE_149 exceeds
+      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
+      3.160ns delay constraint less
+      0.282ns CE_SET requirement (totaling 2.878ns) by 14.038ns
+
+ Physical Path Details:
+
+      Data path vga_inst/SLICE_15 to vga_inst/SLICE_149:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 */SLICE_15.CLK to *t/SLICE_15.Q0 vga_inst/SLICE_15 (from clk)
+ROUTE         4   e 1.234 *t/SLICE_15.Q0 to */SLICE_100.B1 vga_inst/paddle_right_y_0
+C1TOFCO_DE  ---     0.889 */SLICE_100.B1 to *SLICE_100.FCO vga_inst/SLICE_100
+ROUTE         1   e 0.001 *SLICE_100.FCO to */SLICE_99.FCI vga_inst/n2082
+FCITOF1_DE  ---     0.643 */SLICE_99.FCI to *t/SLICE_99.F1 vga_inst/SLICE_99
+ROUTE         2   e 1.234 *t/SLICE_99.F1 to *t/SLICE_60.A0 vga_inst/n476
+C0TOFCO_DE  ---     1.023 *t/SLICE_60.A0 to */SLICE_60.FCO vga_inst/SLICE_60
+ROUTE         1   e 0.001 */SLICE_60.FCO to */SLICE_59.FCI vga_inst/n2093
+FCITOF0_DE  ---     0.585 */SLICE_59.FCI to *t/SLICE_59.F0 vga_inst/SLICE_59
+ROUTE         1   e 1.234 *t/SLICE_59.F0 to */SLICE_168.B0 vga_inst/n379
+CTOF_DEL    ---     0.495 */SLICE_168.B0 to */SLICE_168.F0 vga_inst/SLICE_168
+ROUTE         1   e 0.480 */SLICE_168.F0 to */SLICE_168.C1 vga_inst/n6_adj_318
+CTOF_DEL    ---     0.495 */SLICE_168.C1 to */SLICE_168.F1 vga_inst/SLICE_168
+ROUTE         1   e 1.234 */SLICE_168.F1 to */SLICE_188.B0 vga_inst/n7_adj_357
+CTOF_DEL    ---     0.495 */SLICE_188.B0 to */SLICE_188.F0 vga_inst/SLICE_188
+ROUTE         1   e 1.234 */SLICE_188.F0 to */SLICE_141.B1 vga_inst/n43_adj_354
+CTOF_DEL    ---     0.495 */SLICE_141.B1 to */SLICE_141.F1 vga_inst/SLICE_141
+ROUTE         9   e 1.234 */SLICE_141.F1 to */SLICE_149.C1 vga_inst/n1723
+CTOF_DEL    ---     0.495 */SLICE_149.C1 to */SLICE_149.F1 vga_inst/SLICE_149
+ROUTE         2   e 1.234 */SLICE_149.F1 to   SLICE_162.B1 n2258
+CTOF_DEL    ---     0.495   SLICE_162.B1 to   SLICE_162.F1 SLICE_162
+ROUTE         1   e 1.234   SLICE_162.F1 to */SLICE_149.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+                  --------
+                   16.916   (38.8% logic, 61.2% route), 11 logic levels.
+
+Warning:   6.982MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_1"></A>Preference: FREQUENCY 50.000000 MHz ;
+            4096 items scored, 2915 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 9.553ns (weighted slack = -181.616ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              vga_inst/led_count_274__i8  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        vga_inst/ball_y_i4  (to clk +)
+                   FF                        vga_inst/ball_y_i3
+
+   Delay:              10.331ns  (28.3% logic, 71.7% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.331ns physical path delay vga_inst/SLICE_91 to vga_inst/SLICE_144 exceeds
+      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
+      1.052ns delay constraint less
+      0.274ns LSR_SET requirement (totaling 0.778ns) by 9.553ns
+
+ Physical Path Details:
+
+      Data path vga_inst/SLICE_91 to vga_inst/SLICE_144:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 */SLICE_91.CLK to *t/SLICE_91.Q1 vga_inst/SLICE_91 (from INTERNAL_OSC)
+ROUTE         2   e 1.234 *t/SLICE_91.Q1 to */SLICE_145.A1 vga_inst/led_count_8
+CTOF_DEL    ---     0.495 */SLICE_145.A1 to */SLICE_145.F1 vga_inst/SLICE_145
+ROUTE         1   e 1.234 */SLICE_145.F1 to */SLICE_153.C1 vga_inst/n26
+CTOF_DEL    ---     0.495 */SLICE_153.C1 to */SLICE_153.F1 vga_inst/SLICE_153
+ROUTE         2   e 1.234 */SLICE_153.F1 to   SLICE_162.B0 vga_inst/n32
+CTOF_DEL    ---     0.495   SLICE_162.B0 to   SLICE_162.F0 SLICE_162
+ROUTE        25   e 1.234   SLICE_162.F0 to */SLICE_193.A1 n2543
+CTOF_DEL    ---     0.495 */SLICE_193.A1 to */SLICE_193.F1 vga_inst/SLICE_193
+ROUTE         1   e 1.234 */SLICE_193.F1 to */SLICE_156.B1 vga_inst/n10_adj_324
+CTOF_DEL    ---     0.495 */SLICE_156.B1 to */SLICE_156.F1 vga_inst/SLICE_156
+ROUTE         4   e 1.234 */SLICE_156.F1 to *SLICE_144.LSR vga_inst/n1295 (to clk)
+                  --------
+                   10.331   (28.3% logic, 71.7% route), 6 logic levels.
+
+Warning:   4.960MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "INTERNAL_OSC" 38.000000  |             |             |
+MHz ;                                   |   38.000 MHz|    6.982 MHz|  11 *
+                                        |             |             |
+FREQUENCY 50.000000 MHz ;               |   50.000 MHz|    4.960 MHz|   6 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+2 preferences(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+n2543                                   |      25|    2278|     44.33%
+                                        |        |        |
+n2258                                   |       2|    2224|     43.28%
+                                        |        |        |
+vga_inst/n32                            |       2|    1512|     29.42%
+                                        |        |        |
+INTERNAL_OSC_enable_43                  |       1|    1112|     21.64%
+                                        |        |        |
+vga_inst/game_state_1_N_233_0           |       1|    1112|     21.64%
+                                        |        |        |
+vga_inst/n1723                          |       9|    1092|     21.25%
+                                        |        |        |
+vga_inst/n1729                          |       4|    1092|     21.25%
+                                        |        |        |
+vga_inst/n43_adj_354                    |       1|     876|     17.05%
+                                        |        |        |
+vga_inst/n2152                          |       1|     876|     17.05%
+                                        |        |        |
+vga_inst/n28                            |       2|     672|     13.08%
+                                        |        |        |
+vga_inst/n29                            |       1|     672|     13.08%
+                                        |        |        |
+vga_inst/ball_x_9__N_222                |      16|     578|     11.25%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: clk   Source: SLICE_134.Q0   Loads: 40
+   Covered under: FREQUENCY 50.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC
+      Covered under: FREQUENCY 50.000000 MHz ;   Transfers: 38
+
+Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 31
+   Covered under: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: clk   Source: SLICE_134.Q0
+      Covered under: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;   Transfers: 40
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 5139  Score: 526427585
+Cumulative negative slack: 526427585
+
+Constraints cover 26615 paths, 2 nets, and 1216 connections (99.51% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Sun Dec 22 12:11:15 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FipsyBaseline_Implementation.tw1 -gui FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.prf 
+Design file:     fipsybaseline_implementation_map.ncd
+Preference file: fipsybaseline_implementation.prf
+Device,speed:    LCMXO2-1200HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz (0 errors)</A></LI>            3261 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_1' Target='right'>FREQUENCY 50.000000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    3.300 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3)
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;
+            3261 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              vga_inst/led_count_274__i21  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        vga_inst/led_count_274__i21  (to INTERNAL_OSC +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay vga_inst/SLICE_33 to vga_inst/SLICE_33 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path vga_inst/SLICE_33 to vga_inst/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_33.CLK to *t/SLICE_33.Q0 vga_inst/SLICE_33 (from INTERNAL_OSC)
+ROUTE         1   e 0.199 *t/SLICE_33.Q0 to *t/SLICE_33.A0 vga_inst/n3
+CTOF_DEL    ---     0.101 *t/SLICE_33.A0 to *t/SLICE_33.F0 vga_inst/SLICE_33
+ROUTE         1   e 0.001 *t/SLICE_33.F0 to */SLICE_33.DI0 vga_inst/n104 (to INTERNAL_OSC)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_1"></A>Preference: FREQUENCY 50.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              vga_inst/ball_dy_i7  (from clk +)
+   Destination:    FF         Data in        vga_inst/ball_dy_i7  (to clk +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay vga_inst/SLICE_22 to vga_inst/SLICE_22 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path vga_inst/SLICE_22 to vga_inst/SLICE_22:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_22.CLK to *t/SLICE_22.Q0 vga_inst/SLICE_22 (from clk)
+ROUTE         2   e 0.199 *t/SLICE_22.Q0 to *t/SLICE_22.A0 vga_inst/ball_dy_7
+CTOF_DEL    ---     0.101 *t/SLICE_22.A0 to *t/SLICE_22.F0 vga_inst/SLICE_22
+ROUTE         1   e 0.001 *t/SLICE_22.F0 to */SLICE_22.DI0 vga_inst/n901 (to clk)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "INTERNAL_OSC" 38.000000  |             |             |
+MHz ;                                   |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+FREQUENCY 50.000000 MHz ;               |            -|            -|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: clk   Source: SLICE_134.Q0   Loads: 40
+   Covered under: FREQUENCY 50.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC
+      Covered under: FREQUENCY 50.000000 MHz ;   Transfers: 38
+
+Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 31
+   Covered under: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: clk   Source: SLICE_134.Q0
+      Covered under: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;   Transfers: 40
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 26615 paths, 2 nets, and 1216 connections (99.51% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 5139 (setup), 0 (hold)
+Score: 526427585 (setup), 0 (hold)
+Cumulative negative slack: 526427585 (526427585+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

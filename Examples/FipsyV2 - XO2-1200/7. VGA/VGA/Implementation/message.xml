@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DEFAULT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ASSERT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(14): Semantic error in &quot;LOCATE COMP &quot;PIN11&quot; SITE &quot;5&quot; ;&quot;: </Dynamic>
+            <Dynamic>PIN11</Dynamic>
+            <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(15): Semantic error in &quot;LOCATE COMP &quot;PIN12&quot; SITE &quot;4&quot; ;&quot;: </Dynamic>
+            <Dynamic>PIN12</Dynamic>
+            <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(16): Semantic error in &quot;LOCATE COMP &quot;PIN13&quot; SITE &quot;20&quot; ;&quot;: </Dynamic>
+            <Dynamic>PIN13</Dynamic>
+            <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(27): Semantic error in &quot;IOBUF PORT &quot;PIN11&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>PIN11</Dynamic>
+            <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
+            <Navigation>27</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(28): Semantic error in &quot;IOBUF PORT &quot;PIN12&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>PIN12</Dynamic>
+            <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(29): Semantic error in &quot;IOBUF PORT &quot;PIN13&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>PIN13</Dynamic>
+            <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901116</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/source/fipsy_top.v(55): </Dynamic>
+            <Dynamic>PIN19</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/source/fipsy_top.v</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35901329</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/source/fipsy_top.v(55): </Dynamic>
+            <Dynamic>PIN19</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/source/fipsy_top.v</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/enact/projects/vga/source/fipsy_top.v(45): </Dynamic>
+            <Dynamic>Fipsy_Top</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/source/fipsy_top.v</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;38&quot;)</Dynamic>
+            <Navigation>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1793</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/enact/projects/vga/clock_divider.v(1): </Dynamic>
+            <Dynamic>ClockDivider</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/clock_divider.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/clock_divider.v(9): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/clock_divider.v</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(2): </Dynamic>
+            <Dynamic>VGA</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(89): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(90): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>90</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(91): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>91</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(114): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>114</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(117): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>117</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(127): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>127</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(143): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>143</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(146): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>146</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(153): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>153</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(156): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>156</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(162): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>162</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(166): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>166</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(169): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>169</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(170): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>170</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(171): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>171</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/enact/projects/vga/vga.v(172): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/vga.v</Navigation>
+            <Navigation>172</Navigation>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>red[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>red[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>red[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>green[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>green[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>green[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>blue[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>blue[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>blue[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\vga_inst/game_state</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\vga_inst/ball_y_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\vga_inst/ball_x_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\vga_inst/ball_x_i6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\vga_inst/ball_x_i8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\vga_inst/ball_y_i4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\vga_inst/ball_y_i5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\vga_inst/ball_y_i6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\vga_inst/ball_y_i7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061045</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

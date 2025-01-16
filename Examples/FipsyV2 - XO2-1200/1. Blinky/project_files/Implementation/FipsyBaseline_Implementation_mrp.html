@@ -26,7 +26,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-1200HCQFN32
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
-Mapped on:  08/31/24  21:22:33
+Mapped on:  11/14/24  19:46:21
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -69,14 +69,14 @@ Mapped on:  08/31/24  21:22:33
      ripple logic.
 
    Number of clocks:  1
-     Net PIN11_c: 11 loads, 11 rising, 0 falling (Driver: OSCH_inst )
+     Net INTERNAL_OSC: 11 loads, 11 rising, 0 falling (Driver: OSCH_inst )
    Number of Clock Enables:  0
    Number of LSRs:  1
      Net PIN10_c: 11 loads, 11 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net PIN10_c: 11 loads
-     Net PIN20_c_19: 3 loads
+     Net PIN20_c: 4 loads
      Net FreqDiv20Bit_inst/n105: 1 loads
      Net FreqDiv20Bit_inst/n2: 1 loads
      Net FreqDiv20Bit_inst/n20: 1 loads
@@ -161,7 +161,7 @@ OSC 1:                                     Pin/Node Value
   OSC Instance Name:                                OSCH_inst
   OSC Type:                                         OSCH
   STDBY Input:                                      NONE
-  OSC Output:                              PIN,NODE PIN11_c
+  OSC Output:                              NODE     INTERNAL_OSC
   OSC Nominal Frequency (MHz):                      2.08
 
 

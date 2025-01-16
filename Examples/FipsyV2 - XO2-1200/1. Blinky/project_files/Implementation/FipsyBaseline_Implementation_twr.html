@@ -22,7 +22,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 <A name="Par_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
-Sat Aug 31 21:22:38 2024
+Thu Nov 14 19:46:26 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -41,7 +41,7 @@ Report level:    verbose report, limited to 10 items per preference
 
 <A name="ptwr_set_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<LI><A href='#par_twr_pref_0_0' Target='right'>FREQUENCY NET "PIN11_c" 2.080000 MHz (0 errors)</A></LI>            210 items scored, 0 timing errors detected.
+<LI><A href='#par_twr_pref_0_0' Target='right'>FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz (0 errors)</A></LI>            210 items scored, 0 timing errors detected.
 Report:  237.756MHz is the maximum frequency for this preference.
 
 <LI><A href='#par_twr_pref_0_1' Target='right'>FREQUENCY 20.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
@@ -65,7 +65,7 @@ VCCIO Voltage:
 
 
 ================================================================================
-<A name="par_twr_pref_0_0"></A>Preference: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+<A name="par_twr_pref_0_0"></A>Preference: FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz ;
             210 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -74,8 +74,8 @@ Passed: The following path meets requirements by 476.563ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to INTERNAL_OSC +)
 
    Delay:               4.040ns  (83.8% logic, 16.2% route), 12 logic levels.
 
@@ -91,30 +91,30 @@ Passed: The following path meets requirements by 476.563ns
       Data path FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14A.CLK to      R2C14A.Q1 FreqDiv20Bit_inst/SLICE_10 (from PIN11_c)
-ROUTE         1     0.656      R2C14A.Q1 to      R2C14A.A1 FreqDiv20Bit_inst/n20
-C1TOFCO_DE  ---     0.889      R2C14A.A1 to     R2C14A.FCO FreqDiv20Bit_inst/SLICE_10
-ROUTE         1     0.000     R2C14A.FCO to     R2C14B.FCI FreqDiv20Bit_inst/n28
-FCITOFCO_D  ---     0.162     R2C14B.FCI to     R2C14B.FCO FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000     R2C14B.FCO to     R2C14C.FCI FreqDiv20Bit_inst/n29
-FCITOFCO_D  ---     0.162     R2C14C.FCI to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOFCO_D  ---     0.162     R2C16A.FCI to     R2C16A.FCO FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000     R2C16A.FCO to     R2C16B.FCI FreqDiv20Bit_inst/n36
-FCITOFCO_D  ---     0.162     R2C16B.FCI to     R2C16B.FCO FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000     R2C16B.FCO to     R2C16C.FCI FreqDiv20Bit_inst/n37
-FCITOF0_DE  ---     0.585     R2C16C.FCI to      R2C16C.F0 FreqDiv20Bit_inst/SLICE_0
-ROUTE         1     0.000      R2C16C.F0 to     R2C16C.DI0 FreqDiv20Bit_inst/n86 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9A.CLK to       R4C9A.Q1 FreqDiv20Bit_inst/SLICE_10 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9A.Q1 to       R4C9A.A1 FreqDiv20Bit_inst/n20
+C1TOFCO_DE  ---     0.889       R4C9A.A1 to      R4C9A.FCO FreqDiv20Bit_inst/SLICE_10
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI FreqDiv20Bit_inst/n28
+FCITOFCO_D  ---     0.162      R4C9B.FCI to      R4C9B.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI FreqDiv20Bit_inst/n29
+FCITOFCO_D  ---     0.162      R4C9C.FCI to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162     R4C11A.FCI to     R4C11A.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000     R4C11A.FCO to     R4C11B.FCI FreqDiv20Bit_inst/n36
+FCITOFCO_D  ---     0.162     R4C11B.FCI to     R4C11B.FCO FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000     R4C11B.FCO to     R4C11C.FCI FreqDiv20Bit_inst/n37
+FCITOF0_DE  ---     0.585     R4C11C.FCI to      R4C11C.F0 FreqDiv20Bit_inst/SLICE_0
+ROUTE         1     0.000      R4C11C.F0 to     R4C11C.DI0 FreqDiv20Bit_inst/n86 (to INTERNAL_OSC)
                   --------
                     4.040   (83.8% logic, 16.2% route), 12 logic levels.
 
@@ -123,14 +123,14 @@ ROUTE         1     0.000      R2C16C.F0 to     R2C16C.DI0 FreqDiv20Bit_inst/n86
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14A.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9A.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16C.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11C.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -139,8 +139,8 @@ Passed: The following path meets requirements by 476.591ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i1  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i1  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to INTERNAL_OSC +)
 
    Delay:               4.012ns  (83.6% logic, 16.4% route), 11 logic levels.
 
@@ -156,28 +156,28 @@ Passed: The following path meets requirements by 476.591ns
       Data path FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14B.CLK to      R2C14B.Q0 FreqDiv20Bit_inst/SLICE_9 (from PIN11_c)
-ROUTE         1     0.656      R2C14B.Q0 to      R2C14B.A0 FreqDiv20Bit_inst/n19
-C0TOFCO_DE  ---     1.023      R2C14B.A0 to     R2C14B.FCO FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000     R2C14B.FCO to     R2C14C.FCI FreqDiv20Bit_inst/n29
-FCITOFCO_D  ---     0.162     R2C14C.FCI to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOFCO_D  ---     0.162     R2C16A.FCI to     R2C16A.FCO FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000     R2C16A.FCO to     R2C16B.FCI FreqDiv20Bit_inst/n36
-FCITOFCO_D  ---     0.162     R2C16B.FCI to     R2C16B.FCO FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000     R2C16B.FCO to     R2C16C.FCI FreqDiv20Bit_inst/n37
-FCITOF0_DE  ---     0.585     R2C16C.FCI to      R2C16C.F0 FreqDiv20Bit_inst/SLICE_0
-ROUTE         1     0.000      R2C16C.F0 to     R2C16C.DI0 FreqDiv20Bit_inst/n86 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9B.CLK to       R4C9B.Q0 FreqDiv20Bit_inst/SLICE_9 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9B.Q0 to       R4C9B.A0 FreqDiv20Bit_inst/n19
+C0TOFCO_DE  ---     1.023       R4C9B.A0 to      R4C9B.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI FreqDiv20Bit_inst/n29
+FCITOFCO_D  ---     0.162      R4C9C.FCI to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162     R4C11A.FCI to     R4C11A.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000     R4C11A.FCO to     R4C11B.FCI FreqDiv20Bit_inst/n36
+FCITOFCO_D  ---     0.162     R4C11B.FCI to     R4C11B.FCO FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000     R4C11B.FCO to     R4C11C.FCI FreqDiv20Bit_inst/n37
+FCITOF0_DE  ---     0.585     R4C11C.FCI to      R4C11C.F0 FreqDiv20Bit_inst/SLICE_0
+ROUTE         1     0.000      R4C11C.F0 to     R4C11C.DI0 FreqDiv20Bit_inst/n86 (to INTERNAL_OSC)
                   --------
                     4.012   (83.6% logic, 16.4% route), 11 logic levels.
 
@@ -186,14 +186,14 @@ ROUTE         1     0.000      R2C16C.F0 to     R2C16C.DI0 FreqDiv20Bit_inst/n86
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16C.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11C.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -202,8 +202,8 @@ Passed: The following path meets requirements by 476.667ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i18  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i18  (to INTERNAL_OSC +)
 
    Delay:               3.936ns  (83.3% logic, 16.7% route), 11 logic levels.
 
@@ -219,28 +219,28 @@ Passed: The following path meets requirements by 476.667ns
       Data path FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14A.CLK to      R2C14A.Q1 FreqDiv20Bit_inst/SLICE_10 (from PIN11_c)
-ROUTE         1     0.656      R2C14A.Q1 to      R2C14A.A1 FreqDiv20Bit_inst/n20
-C1TOFCO_DE  ---     0.889      R2C14A.A1 to     R2C14A.FCO FreqDiv20Bit_inst/SLICE_10
-ROUTE         1     0.000     R2C14A.FCO to     R2C14B.FCI FreqDiv20Bit_inst/n28
-FCITOFCO_D  ---     0.162     R2C14B.FCI to     R2C14B.FCO FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000     R2C14B.FCO to     R2C14C.FCI FreqDiv20Bit_inst/n29
-FCITOFCO_D  ---     0.162     R2C14C.FCI to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOFCO_D  ---     0.162     R2C16A.FCI to     R2C16A.FCO FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000     R2C16A.FCO to     R2C16B.FCI FreqDiv20Bit_inst/n36
-FCITOF1_DE  ---     0.643     R2C16B.FCI to      R2C16B.F1 FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000      R2C16B.F1 to     R2C16B.DI1 FreqDiv20Bit_inst/n87 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9A.CLK to       R4C9A.Q1 FreqDiv20Bit_inst/SLICE_10 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9A.Q1 to       R4C9A.A1 FreqDiv20Bit_inst/n20
+C1TOFCO_DE  ---     0.889       R4C9A.A1 to      R4C9A.FCO FreqDiv20Bit_inst/SLICE_10
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI FreqDiv20Bit_inst/n28
+FCITOFCO_D  ---     0.162      R4C9B.FCI to      R4C9B.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI FreqDiv20Bit_inst/n29
+FCITOFCO_D  ---     0.162      R4C9C.FCI to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162     R4C11A.FCI to     R4C11A.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000     R4C11A.FCO to     R4C11B.FCI FreqDiv20Bit_inst/n36
+FCITOF1_DE  ---     0.643     R4C11B.FCI to      R4C11B.F1 FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000      R4C11B.F1 to     R4C11B.DI1 FreqDiv20Bit_inst/n87 (to INTERNAL_OSC)
                   --------
                     3.936   (83.3% logic, 16.7% route), 11 logic levels.
 
@@ -249,14 +249,14 @@ ROUTE         1     0.000      R2C16B.F1 to     R2C16B.DI1 FreqDiv20Bit_inst/n87
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14A.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9A.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -265,8 +265,8 @@ Passed: The following path meets requirements by 476.695ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i1  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i18  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i1  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i18  (to INTERNAL_OSC +)
 
    Delay:               3.908ns  (83.2% logic, 16.8% route), 10 logic levels.
 
@@ -282,26 +282,26 @@ Passed: The following path meets requirements by 476.695ns
       Data path FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14B.CLK to      R2C14B.Q0 FreqDiv20Bit_inst/SLICE_9 (from PIN11_c)
-ROUTE         1     0.656      R2C14B.Q0 to      R2C14B.A0 FreqDiv20Bit_inst/n19
-C0TOFCO_DE  ---     1.023      R2C14B.A0 to     R2C14B.FCO FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000     R2C14B.FCO to     R2C14C.FCI FreqDiv20Bit_inst/n29
-FCITOFCO_D  ---     0.162     R2C14C.FCI to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOFCO_D  ---     0.162     R2C16A.FCI to     R2C16A.FCO FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000     R2C16A.FCO to     R2C16B.FCI FreqDiv20Bit_inst/n36
-FCITOF1_DE  ---     0.643     R2C16B.FCI to      R2C16B.F1 FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000      R2C16B.F1 to     R2C16B.DI1 FreqDiv20Bit_inst/n87 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9B.CLK to       R4C9B.Q0 FreqDiv20Bit_inst/SLICE_9 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9B.Q0 to       R4C9B.A0 FreqDiv20Bit_inst/n19
+C0TOFCO_DE  ---     1.023       R4C9B.A0 to      R4C9B.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI FreqDiv20Bit_inst/n29
+FCITOFCO_D  ---     0.162      R4C9C.FCI to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162     R4C11A.FCI to     R4C11A.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000     R4C11A.FCO to     R4C11B.FCI FreqDiv20Bit_inst/n36
+FCITOF1_DE  ---     0.643     R4C11B.FCI to      R4C11B.F1 FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000      R4C11B.F1 to     R4C11B.DI1 FreqDiv20Bit_inst/n87 (to INTERNAL_OSC)
                   --------
                     3.908   (83.2% logic, 16.8% route), 10 logic levels.
 
@@ -310,14 +310,14 @@ ROUTE         1     0.000      R2C16B.F1 to     R2C16B.DI1 FreqDiv20Bit_inst/n87
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -326,8 +326,8 @@ Passed: The following path meets requirements by 476.725ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i2  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i2  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to INTERNAL_OSC +)
 
    Delay:               3.878ns  (83.1% logic, 16.9% route), 11 logic levels.
 
@@ -343,28 +343,28 @@ Passed: The following path meets requirements by 476.725ns
       Data path FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14B.CLK to      R2C14B.Q1 FreqDiv20Bit_inst/SLICE_9 (from PIN11_c)
-ROUTE         1     0.656      R2C14B.Q1 to      R2C14B.A1 FreqDiv20Bit_inst/n18
-C1TOFCO_DE  ---     0.889      R2C14B.A1 to     R2C14B.FCO FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000     R2C14B.FCO to     R2C14C.FCI FreqDiv20Bit_inst/n29
-FCITOFCO_D  ---     0.162     R2C14C.FCI to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOFCO_D  ---     0.162     R2C16A.FCI to     R2C16A.FCO FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000     R2C16A.FCO to     R2C16B.FCI FreqDiv20Bit_inst/n36
-FCITOFCO_D  ---     0.162     R2C16B.FCI to     R2C16B.FCO FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000     R2C16B.FCO to     R2C16C.FCI FreqDiv20Bit_inst/n37
-FCITOF0_DE  ---     0.585     R2C16C.FCI to      R2C16C.F0 FreqDiv20Bit_inst/SLICE_0
-ROUTE         1     0.000      R2C16C.F0 to     R2C16C.DI0 FreqDiv20Bit_inst/n86 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9B.CLK to       R4C9B.Q1 FreqDiv20Bit_inst/SLICE_9 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9B.Q1 to       R4C9B.A1 FreqDiv20Bit_inst/n18
+C1TOFCO_DE  ---     0.889       R4C9B.A1 to      R4C9B.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI FreqDiv20Bit_inst/n29
+FCITOFCO_D  ---     0.162      R4C9C.FCI to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162     R4C11A.FCI to     R4C11A.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000     R4C11A.FCO to     R4C11B.FCI FreqDiv20Bit_inst/n36
+FCITOFCO_D  ---     0.162     R4C11B.FCI to     R4C11B.FCO FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000     R4C11B.FCO to     R4C11C.FCI FreqDiv20Bit_inst/n37
+FCITOF0_DE  ---     0.585     R4C11C.FCI to      R4C11C.F0 FreqDiv20Bit_inst/SLICE_0
+ROUTE         1     0.000      R4C11C.F0 to     R4C11C.DI0 FreqDiv20Bit_inst/n86 (to INTERNAL_OSC)
                   --------
                     3.878   (83.1% logic, 16.9% route), 11 logic levels.
 
@@ -373,14 +373,14 @@ ROUTE         1     0.000      R2C16C.F0 to     R2C16C.DI0 FreqDiv20Bit_inst/n86
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16C.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11C.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -389,8 +389,8 @@ Passed: The following path meets requirements by 476.725ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i17  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i17  (to INTERNAL_OSC +)
 
    Delay:               3.878ns  (83.1% logic, 16.9% route), 11 logic levels.
 
@@ -406,28 +406,28 @@ Passed: The following path meets requirements by 476.725ns
       Data path FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14A.CLK to      R2C14A.Q1 FreqDiv20Bit_inst/SLICE_10 (from PIN11_c)
-ROUTE         1     0.656      R2C14A.Q1 to      R2C14A.A1 FreqDiv20Bit_inst/n20
-C1TOFCO_DE  ---     0.889      R2C14A.A1 to     R2C14A.FCO FreqDiv20Bit_inst/SLICE_10
-ROUTE         1     0.000     R2C14A.FCO to     R2C14B.FCI FreqDiv20Bit_inst/n28
-FCITOFCO_D  ---     0.162     R2C14B.FCI to     R2C14B.FCO FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000     R2C14B.FCO to     R2C14C.FCI FreqDiv20Bit_inst/n29
-FCITOFCO_D  ---     0.162     R2C14C.FCI to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOFCO_D  ---     0.162     R2C16A.FCI to     R2C16A.FCO FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000     R2C16A.FCO to     R2C16B.FCI FreqDiv20Bit_inst/n36
-FCITOF0_DE  ---     0.585     R2C16B.FCI to      R2C16B.F0 FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000      R2C16B.F0 to     R2C16B.DI0 FreqDiv20Bit_inst/n88 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9A.CLK to       R4C9A.Q1 FreqDiv20Bit_inst/SLICE_10 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9A.Q1 to       R4C9A.A1 FreqDiv20Bit_inst/n20
+C1TOFCO_DE  ---     0.889       R4C9A.A1 to      R4C9A.FCO FreqDiv20Bit_inst/SLICE_10
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI FreqDiv20Bit_inst/n28
+FCITOFCO_D  ---     0.162      R4C9B.FCI to      R4C9B.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI FreqDiv20Bit_inst/n29
+FCITOFCO_D  ---     0.162      R4C9C.FCI to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162     R4C11A.FCI to     R4C11A.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000     R4C11A.FCO to     R4C11B.FCI FreqDiv20Bit_inst/n36
+FCITOF0_DE  ---     0.585     R4C11B.FCI to      R4C11B.F0 FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000      R4C11B.F0 to     R4C11B.DI0 FreqDiv20Bit_inst/n88 (to INTERNAL_OSC)
                   --------
                     3.878   (83.1% logic, 16.9% route), 11 logic levels.
 
@@ -436,14 +436,14 @@ ROUTE         1     0.000      R2C16B.F0 to     R2C16B.DI0 FreqDiv20Bit_inst/n88
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14A.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9A.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -452,8 +452,8 @@ Passed: The following path meets requirements by 476.753ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i3  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i3  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i19  (to INTERNAL_OSC +)
 
    Delay:               3.850ns  (83.0% logic, 17.0% route), 10 logic levels.
 
@@ -469,26 +469,26 @@ Passed: The following path meets requirements by 476.753ns
       Data path FreqDiv20Bit_inst/SLICE_8 to FreqDiv20Bit_inst/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14C.CLK to      R2C14C.Q0 FreqDiv20Bit_inst/SLICE_8 (from PIN11_c)
-ROUTE         1     0.656      R2C14C.Q0 to      R2C14C.A0 FreqDiv20Bit_inst/n17
-C0TOFCO_DE  ---     1.023      R2C14C.A0 to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOFCO_D  ---     0.162     R2C16A.FCI to     R2C16A.FCO FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000     R2C16A.FCO to     R2C16B.FCI FreqDiv20Bit_inst/n36
-FCITOFCO_D  ---     0.162     R2C16B.FCI to     R2C16B.FCO FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000     R2C16B.FCO to     R2C16C.FCI FreqDiv20Bit_inst/n37
-FCITOF0_DE  ---     0.585     R2C16C.FCI to      R2C16C.F0 FreqDiv20Bit_inst/SLICE_0
-ROUTE         1     0.000      R2C16C.F0 to     R2C16C.DI0 FreqDiv20Bit_inst/n86 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9C.CLK to       R4C9C.Q0 FreqDiv20Bit_inst/SLICE_8 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9C.Q0 to       R4C9C.A0 FreqDiv20Bit_inst/n17
+C0TOFCO_DE  ---     1.023       R4C9C.A0 to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162     R4C11A.FCI to     R4C11A.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000     R4C11A.FCO to     R4C11B.FCI FreqDiv20Bit_inst/n36
+FCITOFCO_D  ---     0.162     R4C11B.FCI to     R4C11B.FCO FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000     R4C11B.FCO to     R4C11C.FCI FreqDiv20Bit_inst/n37
+FCITOF0_DE  ---     0.585     R4C11C.FCI to      R4C11C.F0 FreqDiv20Bit_inst/SLICE_0
+ROUTE         1     0.000      R4C11C.F0 to     R4C11C.DI0 FreqDiv20Bit_inst/n86 (to INTERNAL_OSC)
                   --------
                     3.850   (83.0% logic, 17.0% route), 10 logic levels.
 
@@ -497,14 +497,14 @@ ROUTE         1     0.000      R2C16C.F0 to     R2C16C.DI0 FreqDiv20Bit_inst/n86
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_8:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14C.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9C.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_0:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16C.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11C.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -513,8 +513,8 @@ Passed: The following path meets requirements by 476.753ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i1  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i17  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i1  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i17  (to INTERNAL_OSC +)
 
    Delay:               3.850ns  (83.0% logic, 17.0% route), 10 logic levels.
 
@@ -530,26 +530,26 @@ Passed: The following path meets requirements by 476.753ns
       Data path FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14B.CLK to      R2C14B.Q0 FreqDiv20Bit_inst/SLICE_9 (from PIN11_c)
-ROUTE         1     0.656      R2C14B.Q0 to      R2C14B.A0 FreqDiv20Bit_inst/n19
-C0TOFCO_DE  ---     1.023      R2C14B.A0 to     R2C14B.FCO FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000     R2C14B.FCO to     R2C14C.FCI FreqDiv20Bit_inst/n29
-FCITOFCO_D  ---     0.162     R2C14C.FCI to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOFCO_D  ---     0.162     R2C16A.FCI to     R2C16A.FCO FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000     R2C16A.FCO to     R2C16B.FCI FreqDiv20Bit_inst/n36
-FCITOF0_DE  ---     0.585     R2C16B.FCI to      R2C16B.F0 FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000      R2C16B.F0 to     R2C16B.DI0 FreqDiv20Bit_inst/n88 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9B.CLK to       R4C9B.Q0 FreqDiv20Bit_inst/SLICE_9 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9B.Q0 to       R4C9B.A0 FreqDiv20Bit_inst/n19
+C0TOFCO_DE  ---     1.023       R4C9B.A0 to      R4C9B.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI FreqDiv20Bit_inst/n29
+FCITOFCO_D  ---     0.162      R4C9C.FCI to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162     R4C11A.FCI to     R4C11A.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000     R4C11A.FCO to     R4C11B.FCI FreqDiv20Bit_inst/n36
+FCITOF0_DE  ---     0.585     R4C11B.FCI to      R4C11B.F0 FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000      R4C11B.F0 to     R4C11B.DI0 FreqDiv20Bit_inst/n88 (to INTERNAL_OSC)
                   --------
                     3.850   (83.0% logic, 17.0% route), 10 logic levels.
 
@@ -558,14 +558,14 @@ ROUTE         1     0.000      R2C16B.F0 to     R2C16B.DI0 FreqDiv20Bit_inst/n88
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -574,8 +574,8 @@ Passed: The following path meets requirements by 476.829ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i2  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i18  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i2  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i18  (to INTERNAL_OSC +)
 
    Delay:               3.774ns  (82.6% logic, 17.4% route), 10 logic levels.
 
@@ -591,26 +591,26 @@ Passed: The following path meets requirements by 476.829ns
       Data path FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14B.CLK to      R2C14B.Q1 FreqDiv20Bit_inst/SLICE_9 (from PIN11_c)
-ROUTE         1     0.656      R2C14B.Q1 to      R2C14B.A1 FreqDiv20Bit_inst/n18
-C1TOFCO_DE  ---     0.889      R2C14B.A1 to     R2C14B.FCO FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000     R2C14B.FCO to     R2C14C.FCI FreqDiv20Bit_inst/n29
-FCITOFCO_D  ---     0.162     R2C14C.FCI to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOFCO_D  ---     0.162     R2C16A.FCI to     R2C16A.FCO FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000     R2C16A.FCO to     R2C16B.FCI FreqDiv20Bit_inst/n36
-FCITOF1_DE  ---     0.643     R2C16B.FCI to      R2C16B.F1 FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000      R2C16B.F1 to     R2C16B.DI1 FreqDiv20Bit_inst/n87 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9B.CLK to       R4C9B.Q1 FreqDiv20Bit_inst/SLICE_9 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9B.Q1 to       R4C9B.A1 FreqDiv20Bit_inst/n18
+C1TOFCO_DE  ---     0.889       R4C9B.A1 to      R4C9B.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI FreqDiv20Bit_inst/n29
+FCITOFCO_D  ---     0.162      R4C9C.FCI to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOFCO_D  ---     0.162     R4C11A.FCI to     R4C11A.FCO FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000     R4C11A.FCO to     R4C11B.FCI FreqDiv20Bit_inst/n36
+FCITOF1_DE  ---     0.643     R4C11B.FCI to      R4C11B.F1 FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000      R4C11B.F1 to     R4C11B.DI1 FreqDiv20Bit_inst/n87 (to INTERNAL_OSC)
                   --------
                     3.774   (82.6% logic, 17.4% route), 10 logic levels.
 
@@ -619,14 +619,14 @@ ROUTE         1     0.000      R2C16B.F1 to     R2C16B.DI1 FreqDiv20Bit_inst/n87
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16B.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11B.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -635,8 +635,8 @@ Passed: The following path meets requirements by 476.829ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i16  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i0  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i16  (to INTERNAL_OSC +)
 
    Delay:               3.774ns  (82.6% logic, 17.4% route), 10 logic levels.
 
@@ -652,26 +652,26 @@ Passed: The following path meets requirements by 476.829ns
       Data path FreqDiv20Bit_inst/SLICE_10 to FreqDiv20Bit_inst/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R2C14A.CLK to      R2C14A.Q1 FreqDiv20Bit_inst/SLICE_10 (from PIN11_c)
-ROUTE         1     0.656      R2C14A.Q1 to      R2C14A.A1 FreqDiv20Bit_inst/n20
-C1TOFCO_DE  ---     0.889      R2C14A.A1 to     R2C14A.FCO FreqDiv20Bit_inst/SLICE_10
-ROUTE         1     0.000     R2C14A.FCO to     R2C14B.FCI FreqDiv20Bit_inst/n28
-FCITOFCO_D  ---     0.162     R2C14B.FCI to     R2C14B.FCO FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000     R2C14B.FCO to     R2C14C.FCI FreqDiv20Bit_inst/n29
-FCITOFCO_D  ---     0.162     R2C14C.FCI to     R2C14C.FCO FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000     R2C14C.FCO to     R2C14D.FCI FreqDiv20Bit_inst/n30
-FCITOFCO_D  ---     0.162     R2C14D.FCI to     R2C14D.FCO FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000     R2C14D.FCO to     R2C15A.FCI FreqDiv20Bit_inst/n31
-FCITOFCO_D  ---     0.162     R2C15A.FCI to     R2C15A.FCO FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000     R2C15A.FCO to     R2C15B.FCI FreqDiv20Bit_inst/n32
-FCITOFCO_D  ---     0.162     R2C15B.FCI to     R2C15B.FCO FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000     R2C15B.FCO to     R2C15C.FCI FreqDiv20Bit_inst/n33
-FCITOFCO_D  ---     0.162     R2C15C.FCI to     R2C15C.FCO FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000     R2C15C.FCO to     R2C15D.FCI FreqDiv20Bit_inst/n34
-FCITOFCO_D  ---     0.162     R2C15D.FCI to     R2C15D.FCO FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000     R2C15D.FCO to     R2C16A.FCI FreqDiv20Bit_inst/n35
-FCITOF1_DE  ---     0.643     R2C16A.FCI to      R2C16A.F1 FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000      R2C16A.F1 to     R2C16A.DI1 FreqDiv20Bit_inst/n89 (to PIN11_c)
+REG_DEL     ---     0.452      R4C9A.CLK to       R4C9A.Q1 FreqDiv20Bit_inst/SLICE_10 (from INTERNAL_OSC)
+ROUTE         1     0.656       R4C9A.Q1 to       R4C9A.A1 FreqDiv20Bit_inst/n20
+C1TOFCO_DE  ---     0.889       R4C9A.A1 to      R4C9A.FCO FreqDiv20Bit_inst/SLICE_10
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI FreqDiv20Bit_inst/n28
+FCITOFCO_D  ---     0.162      R4C9B.FCI to      R4C9B.FCO FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI FreqDiv20Bit_inst/n29
+FCITOFCO_D  ---     0.162      R4C9C.FCI to      R4C9C.FCO FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI FreqDiv20Bit_inst/n30
+FCITOFCO_D  ---     0.162      R4C9D.FCI to      R4C9D.FCO FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000      R4C9D.FCO to     R4C10A.FCI FreqDiv20Bit_inst/n31
+FCITOFCO_D  ---     0.162     R4C10A.FCI to     R4C10A.FCO FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000     R4C10A.FCO to     R4C10B.FCI FreqDiv20Bit_inst/n32
+FCITOFCO_D  ---     0.162     R4C10B.FCI to     R4C10B.FCO FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000     R4C10B.FCO to     R4C10C.FCI FreqDiv20Bit_inst/n33
+FCITOFCO_D  ---     0.162     R4C10C.FCI to     R4C10C.FCO FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000     R4C10C.FCO to     R4C10D.FCI FreqDiv20Bit_inst/n34
+FCITOFCO_D  ---     0.162     R4C10D.FCI to     R4C10D.FCO FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000     R4C10D.FCO to     R4C11A.FCI FreqDiv20Bit_inst/n35
+FCITOF1_DE  ---     0.643     R4C11A.FCI to      R4C11A.F1 FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000      R4C11A.F1 to     R4C11A.DI1 FreqDiv20Bit_inst/n89 (to INTERNAL_OSC)
                   --------
                     3.774   (82.6% logic, 17.4% route), 10 logic levels.
 
@@ -680,14 +680,14 @@ ROUTE         1     0.000      R2C16A.F1 to     R2C16A.DI1 FreqDiv20Bit_inst/n89
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_10:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C14A.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to      R4C9A.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     3.541        OSC.OSC to     R2C16A.CLK PIN11_c
+ROUTE        11     3.541        OSC.OSC to     R4C11A.CLK INTERNAL_OSC
                   --------
                     3.541   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -717,7 +717,8 @@ Report:  400.000MHz is the maximum frequency for this preference.
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "PIN11_c" 2.080000 MHz ;  |    2.080 MHz|  237.756 MHz|  12  
+FREQUENCY NET "INTERNAL_OSC" 2.080000   |             |             |
+MHz ;                                   |    2.080 MHz|  237.756 MHz|  12  
                                         |             |             |
 FREQUENCY 20.000000 MHz ;               |   20.000 MHz|  400.000 MHz|   0  
                                         |             |             |
@@ -732,8 +733,8 @@ All preferences were met.
 
 Found 1 clocks:
 
-Clock Domain: PIN11_c   Source: OSCH_inst.OSC   Loads: 12
-   Covered under: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 11
+   Covered under: FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz ;
 
 
 <A name="ptwr_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
@@ -746,7 +747,7 @@ Constraints cover 210 paths, 1 nets, and 74 connections (87.06% coverage)
 
 --------------------------------------------------------------------------------
 <A name="Par_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
-Sat Aug 31 21:22:38 2024
+Thu Nov 14 19:46:26 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -765,7 +766,7 @@ Report level:    verbose report, limited to 10 items per preference
 
 <A name="ptwr_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<LI><A href='#par_twr_pref_1_0' Target='right'>FREQUENCY NET "PIN11_c" 2.080000 MHz (0 errors)</A></LI>            210 items scored, 0 timing errors detected.
+<LI><A href='#par_twr_pref_1_0' Target='right'>FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz (0 errors)</A></LI>            210 items scored, 0 timing errors detected.
 
 <LI><A href='#par_twr_pref_1_1' Target='right'>FREQUENCY 20.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
 
@@ -787,7 +788,7 @@ VCCIO Voltage:
 
 
 ================================================================================
-<A name="par_twr_pref_1_0"></A>Preference: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+<A name="par_twr_pref_1_0"></A>Preference: FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz ;
             210 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -796,8 +797,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i14  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i14  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i14  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i14  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -813,10 +814,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_3 to FreqDiv20Bit_inst/SLICE_3:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C15D.CLK to      R2C15D.Q1 FreqDiv20Bit_inst/SLICE_3 (from PIN11_c)
-ROUTE         1     0.130      R2C15D.Q1 to      R2C15D.A1 FreqDiv20Bit_inst/n6
-CTOF_DEL    ---     0.101      R2C15D.A1 to      R2C15D.F1 FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000      R2C15D.F1 to     R2C15D.DI1 FreqDiv20Bit_inst/n91 (to PIN11_c)
+REG_DEL     ---     0.133     R4C10D.CLK to      R4C10D.Q1 FreqDiv20Bit_inst/SLICE_3 (from INTERNAL_OSC)
+ROUTE         1     0.130      R4C10D.Q1 to      R4C10D.A1 FreqDiv20Bit_inst/n6
+CTOF_DEL    ---     0.101      R4C10D.A1 to      R4C10D.F1 FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000      R4C10D.F1 to     R4C10D.DI1 FreqDiv20Bit_inst/n91 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -825,14 +826,14 @@ ROUTE         1     0.000      R2C15D.F1 to     R2C15D.DI1 FreqDiv20Bit_inst/n91
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_3:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15D.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10D.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_3:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15D.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10D.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -841,8 +842,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i11  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i11  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i11  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i11  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -858,10 +859,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_4 to FreqDiv20Bit_inst/SLICE_4:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C15C.CLK to      R2C15C.Q0 FreqDiv20Bit_inst/SLICE_4 (from PIN11_c)
-ROUTE         1     0.130      R2C15C.Q0 to      R2C15C.A0 FreqDiv20Bit_inst/n9
-CTOF_DEL    ---     0.101      R2C15C.A0 to      R2C15C.F0 FreqDiv20Bit_inst/SLICE_4
-ROUTE         1     0.000      R2C15C.F0 to     R2C15C.DI0 FreqDiv20Bit_inst/n94 (to PIN11_c)
+REG_DEL     ---     0.133     R4C10C.CLK to      R4C10C.Q0 FreqDiv20Bit_inst/SLICE_4 (from INTERNAL_OSC)
+ROUTE         1     0.130      R4C10C.Q0 to      R4C10C.A0 FreqDiv20Bit_inst/n9
+CTOF_DEL    ---     0.101      R4C10C.A0 to      R4C10C.F0 FreqDiv20Bit_inst/SLICE_4
+ROUTE         1     0.000      R4C10C.F0 to     R4C10C.DI0 FreqDiv20Bit_inst/n94 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -870,14 +871,14 @@ ROUTE         1     0.000      R2C15C.F0 to     R2C15C.DI0 FreqDiv20Bit_inst/n94
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_4:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15C.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10C.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_4:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15C.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10C.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -886,8 +887,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i7  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i7  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i7  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i7  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -903,10 +904,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_6 to FreqDiv20Bit_inst/SLICE_6:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C15A.CLK to      R2C15A.Q0 FreqDiv20Bit_inst/SLICE_6 (from PIN11_c)
-ROUTE         1     0.130      R2C15A.Q0 to      R2C15A.A0 FreqDiv20Bit_inst/n13
-CTOF_DEL    ---     0.101      R2C15A.A0 to      R2C15A.F0 FreqDiv20Bit_inst/SLICE_6
-ROUTE         1     0.000      R2C15A.F0 to     R2C15A.DI0 FreqDiv20Bit_inst/n98 (to PIN11_c)
+REG_DEL     ---     0.133     R4C10A.CLK to      R4C10A.Q0 FreqDiv20Bit_inst/SLICE_6 (from INTERNAL_OSC)
+ROUTE         1     0.130      R4C10A.Q0 to      R4C10A.A0 FreqDiv20Bit_inst/n13
+CTOF_DEL    ---     0.101      R4C10A.A0 to      R4C10A.F0 FreqDiv20Bit_inst/SLICE_6
+ROUTE         1     0.000      R4C10A.F0 to     R4C10A.DI0 FreqDiv20Bit_inst/n98 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -915,14 +916,14 @@ ROUTE         1     0.000      R2C15A.F0 to     R2C15A.DI0 FreqDiv20Bit_inst/n98
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_6:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15A.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10A.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_6:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15A.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10A.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -931,8 +932,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i3  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i3  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i3  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i3  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -948,10 +949,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_8 to FreqDiv20Bit_inst/SLICE_8:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C14C.CLK to      R2C14C.Q0 FreqDiv20Bit_inst/SLICE_8 (from PIN11_c)
-ROUTE         1     0.130      R2C14C.Q0 to      R2C14C.A0 FreqDiv20Bit_inst/n17
-CTOF_DEL    ---     0.101      R2C14C.A0 to      R2C14C.F0 FreqDiv20Bit_inst/SLICE_8
-ROUTE         1     0.000      R2C14C.F0 to     R2C14C.DI0 FreqDiv20Bit_inst/n102 (to PIN11_c)
+REG_DEL     ---     0.133      R4C9C.CLK to       R4C9C.Q0 FreqDiv20Bit_inst/SLICE_8 (from INTERNAL_OSC)
+ROUTE         1     0.130       R4C9C.Q0 to       R4C9C.A0 FreqDiv20Bit_inst/n17
+CTOF_DEL    ---     0.101       R4C9C.A0 to       R4C9C.F0 FreqDiv20Bit_inst/SLICE_8
+ROUTE         1     0.000       R4C9C.F0 to      R4C9C.DI0 FreqDiv20Bit_inst/n102 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -960,14 +961,14 @@ ROUTE         1     0.000      R2C14C.F0 to     R2C14C.DI0 FreqDiv20Bit_inst/n10
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_8:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C14C.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to      R4C9C.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_8:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C14C.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to      R4C9C.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -976,8 +977,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i2  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i2  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i2  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i2  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -993,10 +994,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_9 to FreqDiv20Bit_inst/SLICE_9:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C14B.CLK to      R2C14B.Q1 FreqDiv20Bit_inst/SLICE_9 (from PIN11_c)
-ROUTE         1     0.130      R2C14B.Q1 to      R2C14B.A1 FreqDiv20Bit_inst/n18
-CTOF_DEL    ---     0.101      R2C14B.A1 to      R2C14B.F1 FreqDiv20Bit_inst/SLICE_9
-ROUTE         1     0.000      R2C14B.F1 to     R2C14B.DI1 FreqDiv20Bit_inst/n103 (to PIN11_c)
+REG_DEL     ---     0.133      R4C9B.CLK to       R4C9B.Q1 FreqDiv20Bit_inst/SLICE_9 (from INTERNAL_OSC)
+ROUTE         1     0.130       R4C9B.Q1 to       R4C9B.A1 FreqDiv20Bit_inst/n18
+CTOF_DEL    ---     0.101       R4C9B.A1 to       R4C9B.F1 FreqDiv20Bit_inst/SLICE_9
+ROUTE         1     0.000       R4C9B.F1 to      R4C9B.DI1 FreqDiv20Bit_inst/n103 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1005,14 +1006,14 @@ ROUTE         1     0.000      R2C14B.F1 to     R2C14B.DI1 FreqDiv20Bit_inst/n10
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C14B.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to      R4C9B.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_9:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C14B.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to      R4C9B.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1021,8 +1022,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i15  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i15  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i15  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i15  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1038,10 +1039,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_2 to FreqDiv20Bit_inst/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C16A.CLK to      R2C16A.Q0 FreqDiv20Bit_inst/SLICE_2 (from PIN11_c)
-ROUTE         1     0.130      R2C16A.Q0 to      R2C16A.A0 FreqDiv20Bit_inst/n5
-CTOF_DEL    ---     0.101      R2C16A.A0 to      R2C16A.F0 FreqDiv20Bit_inst/SLICE_2
-ROUTE         1     0.000      R2C16A.F0 to     R2C16A.DI0 FreqDiv20Bit_inst/n90 (to PIN11_c)
+REG_DEL     ---     0.133     R4C11A.CLK to      R4C11A.Q0 FreqDiv20Bit_inst/SLICE_2 (from INTERNAL_OSC)
+ROUTE         1     0.130      R4C11A.Q0 to      R4C11A.A0 FreqDiv20Bit_inst/n5
+CTOF_DEL    ---     0.101      R4C11A.A0 to      R4C11A.F0 FreqDiv20Bit_inst/SLICE_2
+ROUTE         1     0.000      R4C11A.F0 to     R4C11A.DI0 FreqDiv20Bit_inst/n90 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1050,14 +1051,14 @@ ROUTE         1     0.000      R2C16A.F0 to     R2C16A.DI0 FreqDiv20Bit_inst/n90
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C16A.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C11A.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_2:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C16A.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C11A.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1066,8 +1067,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i13  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i13  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i13  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i13  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1083,10 +1084,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_3 to FreqDiv20Bit_inst/SLICE_3:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C15D.CLK to      R2C15D.Q0 FreqDiv20Bit_inst/SLICE_3 (from PIN11_c)
-ROUTE         1     0.130      R2C15D.Q0 to      R2C15D.A0 FreqDiv20Bit_inst/n7
-CTOF_DEL    ---     0.101      R2C15D.A0 to      R2C15D.F0 FreqDiv20Bit_inst/SLICE_3
-ROUTE         1     0.000      R2C15D.F0 to     R2C15D.DI0 FreqDiv20Bit_inst/n92 (to PIN11_c)
+REG_DEL     ---     0.133     R4C10D.CLK to      R4C10D.Q0 FreqDiv20Bit_inst/SLICE_3 (from INTERNAL_OSC)
+ROUTE         1     0.130      R4C10D.Q0 to      R4C10D.A0 FreqDiv20Bit_inst/n7
+CTOF_DEL    ---     0.101      R4C10D.A0 to      R4C10D.F0 FreqDiv20Bit_inst/SLICE_3
+ROUTE         1     0.000      R4C10D.F0 to     R4C10D.DI0 FreqDiv20Bit_inst/n92 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1095,14 +1096,14 @@ ROUTE         1     0.000      R2C15D.F0 to     R2C15D.DI0 FreqDiv20Bit_inst/n92
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_3:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15D.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10D.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_3:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15D.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10D.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1111,8 +1112,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i9  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i9  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i9  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i9  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1128,10 +1129,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_5 to FreqDiv20Bit_inst/SLICE_5:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C15B.CLK to      R2C15B.Q0 FreqDiv20Bit_inst/SLICE_5 (from PIN11_c)
-ROUTE         1     0.130      R2C15B.Q0 to      R2C15B.A0 FreqDiv20Bit_inst/n11
-CTOF_DEL    ---     0.101      R2C15B.A0 to      R2C15B.F0 FreqDiv20Bit_inst/SLICE_5
-ROUTE         1     0.000      R2C15B.F0 to     R2C15B.DI0 FreqDiv20Bit_inst/n96 (to PIN11_c)
+REG_DEL     ---     0.133     R4C10B.CLK to      R4C10B.Q0 FreqDiv20Bit_inst/SLICE_5 (from INTERNAL_OSC)
+ROUTE         1     0.130      R4C10B.Q0 to      R4C10B.A0 FreqDiv20Bit_inst/n11
+CTOF_DEL    ---     0.101      R4C10B.A0 to      R4C10B.F0 FreqDiv20Bit_inst/SLICE_5
+ROUTE         1     0.000      R4C10B.F0 to     R4C10B.DI0 FreqDiv20Bit_inst/n96 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1140,14 +1141,14 @@ ROUTE         1     0.000      R2C15B.F0 to     R2C15B.DI0 FreqDiv20Bit_inst/n96
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_5:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15B.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10B.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_5:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C15B.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C10B.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1156,8 +1157,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i17  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i17  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i17  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i17  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1173,10 +1174,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_1 to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C16B.CLK to      R2C16B.Q0 FreqDiv20Bit_inst/SLICE_1 (from PIN11_c)
-ROUTE         1     0.130      R2C16B.Q0 to      R2C16B.A0 FreqDiv20Bit_inst/n3
-CTOF_DEL    ---     0.101      R2C16B.A0 to      R2C16B.F0 FreqDiv20Bit_inst/SLICE_1
-ROUTE         1     0.000      R2C16B.F0 to     R2C16B.DI0 FreqDiv20Bit_inst/n88 (to PIN11_c)
+REG_DEL     ---     0.133     R4C11B.CLK to      R4C11B.Q0 FreqDiv20Bit_inst/SLICE_1 (from INTERNAL_OSC)
+ROUTE         1     0.130      R4C11B.Q0 to      R4C11B.A0 FreqDiv20Bit_inst/n3
+CTOF_DEL    ---     0.101      R4C11B.A0 to      R4C11B.F0 FreqDiv20Bit_inst/SLICE_1
+ROUTE         1     0.000      R4C11B.F0 to     R4C11B.DI0 FreqDiv20Bit_inst/n88 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1185,14 +1186,14 @@ ROUTE         1     0.000      R2C16B.F0 to     R2C16B.DI0 FreqDiv20Bit_inst/n88
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C16B.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C11B.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C16B.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to     R4C11B.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1201,8 +1202,8 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i5  (from PIN11_c +)
-   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i5  (to PIN11_c +)
+   Source:         FF         Q              FreqDiv20Bit_inst/count_8__i5  (from INTERNAL_OSC +)
+   Destination:    FF         Data in        FreqDiv20Bit_inst/count_8__i5  (to INTERNAL_OSC +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1218,10 +1219,10 @@ Passed: The following path meets requirements by 0.377ns
       Data path FreqDiv20Bit_inst/SLICE_7 to FreqDiv20Bit_inst/SLICE_7:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C14D.CLK to      R2C14D.Q0 FreqDiv20Bit_inst/SLICE_7 (from PIN11_c)
-ROUTE         1     0.130      R2C14D.Q0 to      R2C14D.A0 FreqDiv20Bit_inst/n15
-CTOF_DEL    ---     0.101      R2C14D.A0 to      R2C14D.F0 FreqDiv20Bit_inst/SLICE_7
-ROUTE         1     0.000      R2C14D.F0 to     R2C14D.DI0 FreqDiv20Bit_inst/n100 (to PIN11_c)
+REG_DEL     ---     0.133      R4C9D.CLK to       R4C9D.Q0 FreqDiv20Bit_inst/SLICE_7 (from INTERNAL_OSC)
+ROUTE         1     0.130       R4C9D.Q0 to       R4C9D.A0 FreqDiv20Bit_inst/n15
+CTOF_DEL    ---     0.101       R4C9D.A0 to       R4C9D.F0 FreqDiv20Bit_inst/SLICE_7
+ROUTE         1     0.000       R4C9D.F0 to      R4C9D.DI0 FreqDiv20Bit_inst/n100 (to INTERNAL_OSC)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
@@ -1230,14 +1231,14 @@ ROUTE         1     0.000      R2C14D.F0 to     R2C14D.DI0 FreqDiv20Bit_inst/n10
       Source Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_7:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C14D.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to      R4C9D.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path OSCH_inst to FreqDiv20Bit_inst/SLICE_7:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        12     1.216        OSC.OSC to     R2C14D.CLK PIN11_c
+ROUTE        11     1.216        OSC.OSC to      R4C9D.CLK INTERNAL_OSC
                   --------
                     1.216   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1253,7 +1254,8 @@ ROUTE        12     1.216        OSC.OSC to     R2C14D.CLK PIN11_c
 Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "PIN11_c" 2.080000 MHz ;  |     0.000 ns|     0.377 ns|   2  
+FREQUENCY NET "INTERNAL_OSC" 2.080000   |             |             |
+MHz ;                                   |     0.000 ns|     0.377 ns|   2  
                                         |             |             |
 FREQUENCY 20.000000 MHz ;               |            -|            -|   0  
                                         |             |             |
@@ -1268,8 +1270,8 @@ All preferences were met.
 
 Found 1 clocks:
 
-Clock Domain: PIN11_c   Source: OSCH_inst.OSC   Loads: 12
-   Covered under: FREQUENCY NET "PIN11_c" 2.080000 MHz ;
+Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 11
+   Covered under: FREQUENCY NET "INTERNAL_OSC" 2.080000 MHz ;
 
 
 <A name="ptwr_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>

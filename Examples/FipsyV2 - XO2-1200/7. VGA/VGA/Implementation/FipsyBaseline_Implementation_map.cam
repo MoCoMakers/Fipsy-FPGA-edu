@@ -1,0 +1,110 @@
+[ START MERGED ]
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+Clk_25MHz_inst/counter_272_add_4_1/S0
+Clk_25MHz_inst/counter_272_add_4_1/CI
+Clk_25MHz_inst/counter_272_add_4_7/CO
+vga_inst/unary_minus_181_add_3_11/S1
+vga_inst/unary_minus_181_add_3_11/CO
+vga_inst/sub_15_add_2_1/S0
+vga_inst/sub_15_add_2_1/CI
+vga_inst/sub_15_add_2_11/S1
+vga_inst/sub_15_add_2_11/CO
+vga_inst/sub_20_add_2_1/S0
+vga_inst/sub_20_add_2_1/CI
+vga_inst/sub_20_add_2_11/S1
+vga_inst/sub_20_add_2_11/CO
+vga_inst/sub_27_add_2_1/S0
+vga_inst/sub_27_add_2_1/CI
+vga_inst/sub_27_add_2_11/S1
+vga_inst/sub_27_add_2_11/CO
+vga_inst/paddle_right_y_9__I_0_171_add_2_1/S0
+vga_inst/paddle_right_y_9__I_0_171_add_2_1/CI
+vga_inst/paddle_right_y_9__I_0_171_add_2_11/S1
+vga_inst/paddle_right_y_9__I_0_171_add_2_11/CO
+vga_inst/sub_71_add_2_1/S0
+vga_inst/sub_71_add_2_1/CI
+vga_inst/row_273_add_4_1/S0
+vga_inst/row_273_add_4_1/CI
+vga_inst/add_66_10/CO
+vga_inst/add_271_11/CO
+vga_inst/add_1609_1/S1
+vga_inst/add_1609_1/S0
+vga_inst/add_1609_1/CI
+vga_inst/add_67_10/CO
+vga_inst/add_186_1/S0
+vga_inst/add_186_1/CI
+vga_inst/add_185_11/S1
+vga_inst/add_185_11/CO
+vga_inst/add_268_1/S1
+vga_inst/add_268_1/S0
+vga_inst/add_268_1/CI
+vga_inst/sub_71_add_2_11/S1
+vga_inst/sub_71_add_2_11/CO
+vga_inst/sub_88_add_2_1/S0
+vga_inst/sub_88_add_2_1/CI
+vga_inst/sub_88_add_2_11/S1
+vga_inst/sub_88_add_2_11/CO
+vga_inst/add_1606_1/S0
+vga_inst/add_1606_1/CI
+vga_inst/add_1606_9/CO
+vga_inst/add_1608_1/S0
+vga_inst/add_1608_1/CI
+vga_inst/add_1608_9/CO
+vga_inst/add_1607_1/S0
+vga_inst/add_1607_1/CI
+vga_inst/add_1607_9/CO
+vga_inst/row_273_add_4_11/S1
+vga_inst/row_273_add_4_11/CO
+vga_inst/led_count_274_add_4_25/S1
+vga_inst/led_count_274_add_4_25/CO
+vga_inst/add_185_1/S0
+vga_inst/add_185_1/CI
+vga_inst/add_268_11/CO
+vga_inst/unary_minus_180_add_3_1/S0
+vga_inst/unary_minus_180_add_3_1/CI
+vga_inst/add_67_2/S0
+vga_inst/add_67_2/CI
+vga_inst/add_1609_11/S1
+vga_inst/add_1609_11/CO
+vga_inst/add_66_2/S0
+vga_inst/add_66_2/CI
+vga_inst/add_271_1/S1
+vga_inst/add_271_1/S0
+vga_inst/add_271_1/CI
+vga_inst/unary_minus_180_add_3_11/S1
+vga_inst/unary_minus_180_add_3_11/CO
+vga_inst/led_count_274_add_4_1/S0
+vga_inst/led_count_274_add_4_1/CI
+vga_inst/column_275_add_4_1/S0
+vga_inst/column_275_add_4_1/CI
+vga_inst/add_186_11/S1
+vga_inst/add_186_11/CO
+vga_inst/column_275_add_4_11/S1
+vga_inst/column_275_add_4_11/CO
+vga_inst/unary_minus_181_add_3_1/S0
+vga_inst/unary_minus_181_add_3_1/CI
+[ END CLIPPED ]
+[ START OSC ]
+INTERNAL_OSC 38.00
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.13.0.56.2 -- WARNING: Map write only section -- Sun Dec 22 12:11:14 2024
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "PIN10" SITE "14" ;
+LOCATE COMP "PIN9" SITE "13" ;
+LOCATE COMP "PIN8" SITE "12" ;
+LOCATE COMP "PIN7" SITE "11" ;
+LOCATE COMP "LEDn" SITE "25" ;
+LOCATE COMP "PIN14" SITE "21" ;
+LOCATE COMP "PIN17" SITE "27" ;
+LOCATE COMP "PIN18" SITE "28" ;
+LOCATE COMP "PIN19" SITE "8" ;
+LOCATE COMP "PIN20" SITE "23" ;
+FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

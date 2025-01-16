@@ -2,8 +2,8 @@
 -- VHDL netlist produced by program ldbanno, Version Diamond (64-bit) 3.13.0.56.2
 
 -- ldbanno -n VHDL -o FipsyBaseline_Implementation_mapvho.vho -w -neg -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/promote.xml FipsyBaseline_Implementation_map.ncd 
--- Netlist created on Sat Aug 31 21:22:33 2024
--- Netlist written on Sat Aug 31 21:22:35 2024
+-- Netlist created on Thu Nov 14 19:46:21 2024
+-- Netlist written on Thu Nov 14 19:46:22 2024
 -- Design is for device LCMXO2-1200HC
 -- Design is for package QFN32
 -- Design is for performance grade 4
@@ -3385,7 +3385,7 @@
       port map (A=>GNDI, B=>GNDI, C=>GNDI, D=>GNDI, Z=>F1_out);
     DRIVEGND: gnd
       port map (PWR0=>GNDI);
-    PIN20_I_0_1_lut: lut40003
+    PIN11_I_0_1_lut: lut40003
       port map (A=>A0_ipd, B=>GNDI, C=>GNDI, D=>GNDI, Z=>F0_out);
 
     --  INPUT PATH DELAYs
@@ -4532,10 +4532,10 @@
   end Fipsy_Top;
 
   architecture Structure of Fipsy_Top is
-    signal PIN20_c_19: Std_logic;
+    signal PIN20_c: Std_logic;
     signal FreqDiv20Bit_inst_n86: Std_logic;
     signal PIN10_c: Std_logic;
-    signal PIN11_c: Std_logic;
+    signal INTERNAL_OSC: Std_logic;
     signal FreqDiv20Bit_inst_n37: Std_logic;
     signal FreqDiv20Bit_inst_n2: Std_logic;
     signal FreqDiv20Bit_inst_n3: Std_logic;
@@ -4698,78 +4698,78 @@
     end component;
   begin
     FreqDiv20Bit_inst_SLICE_0I: FreqDiv20Bit_inst_SLICE_0
-      port map (A0=>PIN20_c_19, DI0=>FreqDiv20Bit_inst_n86, LSR=>PIN10_c, 
-                CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n37, 
-                F0=>FreqDiv20Bit_inst_n86, Q0=>PIN20_c_19);
+      port map (A0=>PIN20_c, DI0=>FreqDiv20Bit_inst_n86, LSR=>PIN10_c, 
+                CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n37, 
+                F0=>FreqDiv20Bit_inst_n86, Q0=>PIN20_c);
     FreqDiv20Bit_inst_SLICE_1I: FreqDiv20Bit_inst_SLICE_1
       port map (A1=>FreqDiv20Bit_inst_n2, A0=>FreqDiv20Bit_inst_n3, 
                 DI1=>FreqDiv20Bit_inst_n87, DI0=>FreqDiv20Bit_inst_n88, 
-                LSR=>PIN10_c, CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n36, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n36, 
                 F0=>FreqDiv20Bit_inst_n88, Q0=>FreqDiv20Bit_inst_n3, 
                 F1=>FreqDiv20Bit_inst_n87, Q1=>FreqDiv20Bit_inst_n2, 
                 FCO=>FreqDiv20Bit_inst_n37);
     FreqDiv20Bit_inst_SLICE_2I: FreqDiv20Bit_inst_SLICE_2
       port map (A1=>FreqDiv20Bit_inst_n4, A0=>FreqDiv20Bit_inst_n5, 
                 DI1=>FreqDiv20Bit_inst_n89, DI0=>FreqDiv20Bit_inst_n90, 
-                LSR=>PIN10_c, CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n35, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n35, 
                 F0=>FreqDiv20Bit_inst_n90, Q0=>FreqDiv20Bit_inst_n5, 
                 F1=>FreqDiv20Bit_inst_n89, Q1=>FreqDiv20Bit_inst_n4, 
                 FCO=>FreqDiv20Bit_inst_n36);
     FreqDiv20Bit_inst_SLICE_3I: FreqDiv20Bit_inst_SLICE_3
       port map (A1=>FreqDiv20Bit_inst_n6, A0=>FreqDiv20Bit_inst_n7, 
                 DI1=>FreqDiv20Bit_inst_n91, DI0=>FreqDiv20Bit_inst_n92, 
-                LSR=>PIN10_c, CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n34, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n34, 
                 F0=>FreqDiv20Bit_inst_n92, Q0=>FreqDiv20Bit_inst_n7, 
                 F1=>FreqDiv20Bit_inst_n91, Q1=>FreqDiv20Bit_inst_n6, 
                 FCO=>FreqDiv20Bit_inst_n35);
     FreqDiv20Bit_inst_SLICE_4I: FreqDiv20Bit_inst_SLICE_4
       port map (A1=>FreqDiv20Bit_inst_n8, A0=>FreqDiv20Bit_inst_n9, 
                 DI1=>FreqDiv20Bit_inst_n93, DI0=>FreqDiv20Bit_inst_n94, 
-                LSR=>PIN10_c, CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n33, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n33, 
                 F0=>FreqDiv20Bit_inst_n94, Q0=>FreqDiv20Bit_inst_n9, 
                 F1=>FreqDiv20Bit_inst_n93, Q1=>FreqDiv20Bit_inst_n8, 
                 FCO=>FreqDiv20Bit_inst_n34);
     FreqDiv20Bit_inst_SLICE_5I: FreqDiv20Bit_inst_SLICE_5
       port map (A1=>FreqDiv20Bit_inst_n10, A0=>FreqDiv20Bit_inst_n11, 
                 DI1=>FreqDiv20Bit_inst_n95, DI0=>FreqDiv20Bit_inst_n96, 
-                LSR=>PIN10_c, CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n32, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n32, 
                 F0=>FreqDiv20Bit_inst_n96, Q0=>FreqDiv20Bit_inst_n11, 
                 F1=>FreqDiv20Bit_inst_n95, Q1=>FreqDiv20Bit_inst_n10, 
                 FCO=>FreqDiv20Bit_inst_n33);
     FreqDiv20Bit_inst_SLICE_6I: FreqDiv20Bit_inst_SLICE_6
       port map (A1=>FreqDiv20Bit_inst_n12, A0=>FreqDiv20Bit_inst_n13, 
                 DI1=>FreqDiv20Bit_inst_n97, DI0=>FreqDiv20Bit_inst_n98, 
-                LSR=>PIN10_c, CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n31, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n31, 
                 F0=>FreqDiv20Bit_inst_n98, Q0=>FreqDiv20Bit_inst_n13, 
                 F1=>FreqDiv20Bit_inst_n97, Q1=>FreqDiv20Bit_inst_n12, 
                 FCO=>FreqDiv20Bit_inst_n32);
     FreqDiv20Bit_inst_SLICE_7I: FreqDiv20Bit_inst_SLICE_7
       port map (A1=>FreqDiv20Bit_inst_n14, A0=>FreqDiv20Bit_inst_n15, 
                 DI1=>FreqDiv20Bit_inst_n99, DI0=>FreqDiv20Bit_inst_n100, 
-                LSR=>PIN10_c, CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n30, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n30, 
                 F0=>FreqDiv20Bit_inst_n100, Q0=>FreqDiv20Bit_inst_n15, 
                 F1=>FreqDiv20Bit_inst_n99, Q1=>FreqDiv20Bit_inst_n14, 
                 FCO=>FreqDiv20Bit_inst_n31);
     FreqDiv20Bit_inst_SLICE_8I: FreqDiv20Bit_inst_SLICE_8
       port map (A1=>FreqDiv20Bit_inst_n16, A0=>FreqDiv20Bit_inst_n17, 
                 DI1=>FreqDiv20Bit_inst_n101, DI0=>FreqDiv20Bit_inst_n102, 
-                LSR=>PIN10_c, CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n29, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n29, 
                 F0=>FreqDiv20Bit_inst_n102, Q0=>FreqDiv20Bit_inst_n17, 
                 F1=>FreqDiv20Bit_inst_n101, Q1=>FreqDiv20Bit_inst_n16, 
                 FCO=>FreqDiv20Bit_inst_n30);
     FreqDiv20Bit_inst_SLICE_9I: FreqDiv20Bit_inst_SLICE_9
       port map (A1=>FreqDiv20Bit_inst_n18, A0=>FreqDiv20Bit_inst_n19, 
                 DI1=>FreqDiv20Bit_inst_n103, DI0=>FreqDiv20Bit_inst_n104, 
-                LSR=>PIN10_c, CLK=>PIN11_c, FCI=>FreqDiv20Bit_inst_n28, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, FCI=>FreqDiv20Bit_inst_n28, 
                 F0=>FreqDiv20Bit_inst_n104, Q0=>FreqDiv20Bit_inst_n19, 
                 F1=>FreqDiv20Bit_inst_n103, Q1=>FreqDiv20Bit_inst_n18, 
                 FCO=>FreqDiv20Bit_inst_n29);
     FreqDiv20Bit_inst_SLICE_10I: FreqDiv20Bit_inst_SLICE_10
       port map (A1=>FreqDiv20Bit_inst_n20, DI1=>FreqDiv20Bit_inst_n105, 
-                LSR=>PIN10_c, CLK=>PIN11_c, F1=>FreqDiv20Bit_inst_n105, 
+                LSR=>PIN10_c, CLK=>INTERNAL_OSC, F1=>FreqDiv20Bit_inst_n105, 
                 Q1=>FreqDiv20Bit_inst_n20, FCO=>FreqDiv20Bit_inst_n28);
     SLICE_11I: SLICE_11
-      port map (A0=>PIN20_c_19, F0=>LEDn_c, F1=>GND_net);
+      port map (A0=>PIN20_c, F0=>LEDn_c, F1=>GND_net);
     PIN8I: PIN8B
       port map (PADDO=>GND_net, PIN8S=>PIN8);
     PIN7I: PIN7B
@@ -4777,7 +4777,7 @@
     PIN9I: PIN9B
       port map (PADDO=>GND_net, PIN9S=>PIN9);
     PIN11I: PIN11B
-      port map (PADDO=>PIN11_c, PIN11S=>PIN11);
+      port map (PADDO=>PIN20_c, PIN11S=>PIN11);
     PIN12I: PIN12B
       port map (PADDO=>GND_net, PIN12S=>PIN12);
     PIN13I: PIN13B
@@ -4791,13 +4791,13 @@
     PIN19I: PIN19B
       port map (PADDO=>GND_net, PIN19S=>PIN19);
     PIN20I: PIN20B
-      port map (PADDO=>PIN20_c_19, PIN20S=>PIN20);
+      port map (PADDO=>PIN20_c, PIN20S=>PIN20);
     LEDnI: LEDnB
       port map (PADDO=>LEDn_c, LEDnS=>LEDn);
     PIN10I: PIN10B
       port map (PADDI=>PIN10_c, PIN10S=>PIN10);
     OSCH_instI: OSCH_inst
-      port map (OSC=>PIN11_c);
+      port map (OSC=>INTERNAL_OSC);
     VHI_INST: VHI
       port map (Z=>VCCI);
     PUR_INST: PUR

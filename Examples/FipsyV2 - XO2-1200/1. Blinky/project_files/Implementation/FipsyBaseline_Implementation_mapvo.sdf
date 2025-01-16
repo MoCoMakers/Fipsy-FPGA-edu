@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "Fipsy_Top")
-  (DATE "Sat Aug 31 21:22:34 2024")
+  (DATE "Thu Nov 14 19:46:22 2024")
   (VENDOR "Lattice")
   (PROGRAM "ldbanno")
   (VERSION "Diamond (64-bit) 3.13.0.56.2")
@@ -451,6 +451,7 @@
         (INTERCONNECT FreqDiv20Bit_inst\/SLICE_0/Q0 FreqDiv20Bit_inst\/SLICE_0/A0 (0:0:0)
           (0:0:0))
         (INTERCONNECT FreqDiv20Bit_inst\/SLICE_0/Q0 SLICE_11/A0 (0:0:0)(0:0:0))
+        (INTERCONNECT FreqDiv20Bit_inst\/SLICE_0/Q0 PIN11_I/PADDO (0:0:0)(0:0:0))
         (INTERCONNECT FreqDiv20Bit_inst\/SLICE_0/Q0 PIN20_I/PADDO (0:0:0)(0:0:0))
         (INTERCONNECT FreqDiv20Bit_inst\/SLICE_0/F0 FreqDiv20Bit_inst\/SLICE_0/DI0 (0:0:0)
           (0:0:0))
@@ -476,7 +477,6 @@
         (INTERCONNECT OSCH_inst/OSC FreqDiv20Bit_inst\/SLICE_8/CLK (0:0:0)(0:0:0))
         (INTERCONNECT OSCH_inst/OSC FreqDiv20Bit_inst\/SLICE_9/CLK (0:0:0)(0:0:0))
         (INTERCONNECT OSCH_inst/OSC FreqDiv20Bit_inst\/SLICE_10/CLK (0:0:0)(0:0:0))
-        (INTERCONNECT OSCH_inst/OSC PIN11_I/PADDO (0:0:0)(0:0:0))
         (INTERCONNECT FreqDiv20Bit_inst\/SLICE_1/FCO FreqDiv20Bit_inst\/SLICE_0/FCI 
           (0:0:0)(0:0:0))
         (INTERCONNECT FreqDiv20Bit_inst\/SLICE_1/Q1 FreqDiv20Bit_inst\/SLICE_1/A1 (0:0:0)

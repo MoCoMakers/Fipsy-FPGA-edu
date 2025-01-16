@@ -12,7 +12,7 @@ Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Aug 31 21:22:35 2024
+Thu Nov 14 19:46:23 2024
 
 C:/Program Files/Lattice/diamond/3.13/ispfpga\bin\nt64\par -f
 FipsyBaseline_Implementation.p2t FipsyBaseline_Implementation_map.ncd
@@ -36,7 +36,7 @@ par done!
 Note: user must run &apos;Trace&apos; for timing closure signoff.
 
 Lattice Place and Route Report for Design &quot;FipsyBaseline_Implementation_map.ncd&quot;
-Sat Aug 31 21:22:35 2024
+Thu Nov 14 19:46:23 2024
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -79,7 +79,7 @@ Pin Constraint Summary:
    13 out of 13 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    PIN11_c (driver: OSCH_inst, clk load #: 11)
+    INTERNAL_OSC (driver: OSCH_inst, clk load #: 11)
 
 
 The following 1 signal is selected to use the secondary clock routing resources:
@@ -92,13 +92,13 @@ Starting Placer Phase 0.
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-..................
-Placer score = 2888.
+....................
+Placer score = 4045.
 Finished Placer Phase 1.  REAL time: 2 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  2888
+Placer score =  4045
 Finished Placer Phase 2.  REAL time: 2 secs 
 
 
@@ -113,7 +113,7 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Global Clocks:
-  PRIMARY &quot;PIN11_c&quot; from OSC on comp &quot;OSCH_inst&quot; on site &quot;OSC&quot;, clk load = 11
+  PRIMARY &quot;INTERNAL_OSC&quot; from OSC on comp &quot;OSCH_inst&quot; on site &quot;OSC&quot;, clk load = 11
   SECONDARY &quot;PIN10_c&quot; from comp &quot;PIN10&quot; on PIO site &quot;14 (PB11B)&quot;, clk load = 0, ce load = 0, sr load = 11
 
   PRIMARY  : 1 out of 8 (12%)
@@ -148,9 +148,9 @@ Dumping design to file FipsyBaseline_Implementation.dir/5_1.ncd.
 0 connections routed; 85 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 3 secs 
+Completed router resource preassignment. Real time: 2 secs 
 
-Start NBR router at 21:22:38 08/31/24
+Start NBR router at 19:46:25 11/14/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -165,29 +165,29 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 21:22:38 08/31/24
+Start NBR special constraint process at 19:46:25 11/14/24
 
-Start NBR section for initial routing at 21:22:38 08/31/24
+Start NBR section for initial routing at 19:46:25 11/14/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 2 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 21:22:38 08/31/24
+Start NBR section for normal routing at 19:46:25 11/14/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 2 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 21:22:38 08/31/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 19:46:25 11/14/24
 
-Start NBR section for re-routing at 21:22:38 08/31/24
+Start NBR section for re-routing at 19:46:25 11/14/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 476.563ns/0.000ns; real time: 2 secs 
 
-Start NBR section for post-routing at 21:22:38 08/31/24
+Start NBR section for post-routing at 19:46:25 11/14/24
 
 End NBR router with 0 unrouted connection
 

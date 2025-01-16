@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Aug 31 21:22:33 2024
+Thu Nov 14 19:46:20 2024
 
 
 Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/1. Blinky/project_files/promote.xml 
@@ -146,14 +146,14 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : PIN11_c, loads : 21
+  Net : INTERNAL_OSC, loads : 20
 Clock Enable Nets
 Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : PIN10_c, loads : 20
-  Net : FreqDiv20Bit_inst/PIN20_c_19, loads : 2
+  Net : FreqDiv20Bit_inst/PIN20_c, loads : 3
   Net : LEDn_c, loads : 1
   Net : FreqDiv20Bit_inst/n86, loads : 1
   Net : FreqDiv20Bit_inst/n20, loads : 1
@@ -171,7 +171,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets PIN11_c]                 |  200.000 MHz|  181.028 MHz|    12 *
+clk0 [get_nets INTERNAL_OSC]            |  200.000 MHz|  181.028 MHz|    12 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -179,10 +179,10 @@ clk0 [get_nets PIN11_c]                 |  200.000 MHz|  181.028 MHz|    12 *
 1 constraints not met.
 
 
-Peak Memory Usage: 51.551  MB
+Peak Memory Usage: 51.758  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.125  secs
+Elapsed CPU time for LSE flow : 0.094  secs
 --------------------------------------------------------------
 
 

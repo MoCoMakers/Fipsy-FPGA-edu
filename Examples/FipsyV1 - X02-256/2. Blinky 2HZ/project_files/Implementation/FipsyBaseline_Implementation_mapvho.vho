@@ -2,8 +2,8 @@
 -- VHDL netlist produced by program ldbanno, Version Diamond (64-bit) 3.13.0.56.2
 
 -- ldbanno -n VHDL -o FipsyBaseline_Implementation_mapvho.vho -w -neg -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files/promote.xml FipsyBaseline_Implementation_map.ncd 
--- Netlist created on Tue Aug 20 23:02:02 2024
--- Netlist written on Tue Aug 20 23:02:04 2024
+-- Netlist created on Wed Oct 30 20:46:47 2024
+-- Netlist written on Wed Oct 30 20:46:50 2024
 -- Design is for device LCMXO2-256HC
 -- Design is for package QFN32
 -- Design is for performance grade 4

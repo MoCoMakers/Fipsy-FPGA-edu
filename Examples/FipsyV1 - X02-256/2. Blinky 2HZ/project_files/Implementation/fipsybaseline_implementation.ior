@@ -29,7 +29,7 @@ Performance Hardware Data Status:   Final          Version 34.4.
 // Package: QFN32
 // ncd File: fipsybaseline_implementation.ncd
 // Version: Diamond (64-bit) 3.13.0.56.2
-// Written on Tue Aug 20 23:02:07 2024
+// Written on Wed Oct 30 20:46:55 2024
 // M: Minimum Performance Grade
 // iotiming FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV1 - X02-256/2. Blinky 2HZ/project_files/promote.xml
 

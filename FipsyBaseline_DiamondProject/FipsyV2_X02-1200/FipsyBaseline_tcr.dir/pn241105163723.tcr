@@ -1,0 +1,9 @@
+#Start recording tcl command: 11/5/2024 16:36:32
+#Project Location: C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV2_X02-1200; Project name: FipsyBaseline
+C:/Users/enact/Projects/screen-pong/stage-03/verilog
+FipsyBaseline
+#Start recording tcl command: 11/5/2024 16:37:23
+#Project Location: C:/Users/enact/Projects/screen-pong/stage-03/verilog; Project name: FipsyBaseline
+prj_project open "C:/Users/enact/Projects/Fipsy-FPGA-edu/FipsyBaseline_DiamondProject/FipsyV2_X02-1200/FipsyBaseline.ldf"
+prj_project saveas -name "FipsyBaseline" -dir "C:/Users/enact/Projects/screen-pong/stage-03/verilog"
+#Stop recording: 11/5/2024 16:37:23
