@@ -6,29 +6,33 @@
 -->
 </STYLE>
 </HEAD>
-<PRE><A name="Bgn"></A>BITGEN: Bitstream Generator Diamond (64-bit) 3.9.1.119
+<PRE><A name="Bgn"></A>BITGEN: Bitstream Generator Diamond (64-bit) 3.13.0.56.2
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Aug 12 22:50:52 2024
 
-Command: bitgen -g RamCfg:Reset -path D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files -w -jedec -gui -msgset D:/Programs/Hubic/Maker/Business/FPGA/Education/fipsy-fpga-edu/Examples/4. Send a Character/project_files/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
+
+Command: bitgen -g RamCfg:Reset -path C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/4. Send a Character/project_files -w -jedec -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/4. Send a Character/project_files/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
 
 Loading design for application Bitgen from file FipsyBaseline_Implementation.ncd.
 Design name: MakeFPGA_Top
 NCD version: 3.3
 Vendor:      LATTICE
-Device:      LCMXO2-256HC
+Device:      LCMXO2-1200HC
 Package:     QFN32
 Performance: 4
-Loading device for application Bitgen from file 'xo2c256.nph' in environment: D:/Programs/LatticeDiamond/diamond/3.9_x64/ispfpga.
-Package Status:                     Final          Version 1.41.
+Loading device for application Bitgen from file 'xo2c1200.nph' in environment: C:/Program Files/Lattice/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
 Performance Hardware Data Status:   Final          Version 34.4.
 
 Running DRC.
 DRC detected 0 errors and 0 warnings.
 Reading Preference File from FipsyBaseline_Implementation.prf.
+INFO -  SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###
+INFO -  SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK
 
 <A name="bgn_ps"></A>
 <B><U><big>Preference Summary:</big></U></B>
@@ -76,9 +80,28 @@ Reading Preference File from FipsyBaseline_Implementation.prf.
 
 Creating bit map...
  
-Bitstream Status: Final           Version 1.94.
+Bitstream Status: Final           Version 1.95.
  
 Saving bit stream in "FipsyBaseline_Implementation.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        511 Pages (128*511 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  511 Pages (Page 0 to Page 510).
+Initialized UFM Pages:                     0 Page.
+ 
+=========
+Padding summary
+=========
+Padded 291200 bits for this design
+
+
+Total CPU Time: 1 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 253 MB
 
 
 

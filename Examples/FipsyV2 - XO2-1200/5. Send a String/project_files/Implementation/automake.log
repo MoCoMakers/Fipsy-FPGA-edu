@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Aug 12 22:52:30 2024
+Thu Jan 23 19:22:40 2025
 
 
 Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/5. Send a String/project_files/promote.xml 
@@ -227,10 +227,10 @@ clk0 [get_nets PIN11_c]                 |  200.000 MHz|   75.517 MHz|     4 *
 1 constraints not met.
 
 
-Peak Memory Usage: 55.379  MB
+Peak Memory Usage: 55.191  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.188  secs
+Elapsed CPU time for LSE flow : 0.219  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-1200HC -t QFN32 -s 4 -oc Commercial   "FipsyBaseline_Implementation.ngd" -o "FipsyBaseline_Implementation_map.ncd" -pr "FipsyBaseline_Implementation.prf" -mp "FipsyBaseline_Implementation.mrp" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/5. Send a String/project_files/Implementation/FipsyBaseline_Implementation.lpf" -lpf "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/5. Send a String/project_files/FipsyBaseline.lpf"  -c 0           
@@ -370,7 +370,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Mon Aug 12 22:52:32 2024
+Thu Jan 23 19:22:41 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -414,7 +414,7 @@ Constraints cover 773 paths, 1 nets, and 453 connections (97.63% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Mon Aug 12 22:52:32 2024
+Thu Jan 23 19:22:41 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -500,7 +500,7 @@ Writing SDF timing to file FipsyBaseline_Implementation_mapvo.sdf
     <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 40 MB
+Peak Memory Usage: 41 MB
 
 ldbanno "FipsyBaseline_Implementation_map.ncd" -n VHDL -o "FipsyBaseline_Implementation_mapvho.vho" -w -neg
 ldbanno: version Diamond (64-bit) 3.13.0.56.2
@@ -540,7 +540,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "FipsyBaseline_Implementation_map.ncd"
-Mon Aug 12 22:52:33 2024
+Thu Jan 23 19:22:43 2025
 
 PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/5. Send a String/project_files/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.dir/5_1.ncd FipsyBaseline_Implementation.prf
@@ -656,7 +656,7 @@ Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 2 secs 
 
-Start NBR router at 22:52:35 08/12/24
+Start NBR router at 19:22:45 01/23/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -671,32 +671,32 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 22:52:35 08/12/24
+Start NBR special constraint process at 19:22:46 01/23/25
 
-Start NBR section for initial routing at 22:52:35 08/12/24
+Start NBR section for initial routing at 19:22:46 01/23/25
 Level 4, iteration 1
 6(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 3 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:52:35 08/12/24
+Start NBR section for normal routing at 19:22:46 01/23/25
 Level 4, iteration 1
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 3 secs 
 Level 4, iteration 2
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 3 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 22:52:35 08/12/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 19:22:46 01/23/25
 
-Start NBR section for re-routing at 22:52:35 08/12/24
+Start NBR section for re-routing at 19:22:46 01/23/25
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 3 secs 
 
-Start NBR section for post-routing at 22:52:35 08/12/24
+Start NBR section for post-routing at 19:22:46 01/23/25
 
 End NBR router with 0 unrouted connection
 
@@ -769,7 +769,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Mon Aug 12 22:52:36 2024
+Thu Jan 23 19:22:46 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -813,7 +813,7 @@ Constraints cover 773 paths, 1 nets, and 453 connections (97.63% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Mon Aug 12 22:52:36 2024
+Thu Jan 23 19:22:46 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1038,5 +1038,5 @@ Padded 289024 bits for this design
 
 
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 3 secs 
 Peak Memory Usage: 253 MB

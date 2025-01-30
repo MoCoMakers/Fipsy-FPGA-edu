@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Aug 12 22:52:30 2024
+Thu Jan 23 19:22:40 2025
 
 
 Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/5. Send a String/project_files/promote.xml 
@@ -214,8 +214,8 @@ clk0 [get_nets PIN11_c]                 |  200.000 MHz|   75.517 MHz|     4 *
 1 constraints not met.
 
 
-Peak Memory Usage: 55.379  MB
+Peak Memory Usage: 55.191  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.188  secs
+Elapsed CPU time for LSE flow : 0.219  secs
 --------------------------------------------------------------

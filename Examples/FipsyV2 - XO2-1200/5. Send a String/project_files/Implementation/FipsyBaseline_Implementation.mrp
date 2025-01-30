@@ -18,7 +18,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-1200HCQFN32
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
-Mapped on:  08/12/24  22:52:31
+Mapped on:  01/23/25  19:22:40
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  MakeFPGA_Top                                  Date:  08/12/24  22:52:31
+Design:  MakeFPGA_Top                                  Date:  01/23/25  19:22:40
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  MakeFPGA_Top                                  Date:  08/12/24  22:52:31
+Design:  MakeFPGA_Top                                  Date:  01/23/25  19:22:40
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -198,7 +198,7 @@ OSC 1:                                     Pin/Node Value
 
 
 
-Design:  MakeFPGA_Top                                  Date:  08/12/24  22:52:31
+Design:  MakeFPGA_Top                                  Date:  01/23/25  19:22:40
 
 ASIC Components
 ---------------

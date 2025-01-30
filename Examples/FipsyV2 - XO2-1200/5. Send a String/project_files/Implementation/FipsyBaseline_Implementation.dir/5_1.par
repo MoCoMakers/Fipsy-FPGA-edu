@@ -1,6 +1,6 @@
 
 Lattice Place and Route Report for Design "FipsyBaseline_Implementation_map.ncd"
-Mon Aug 12 22:52:33 2024
+Thu Jan 23 19:22:43 2025
 
 PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/5. Send a String/project_files/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 FipsyBaseline_Implementation_map.ncd FipsyBaseline_Implementation.dir/5_1.ncd FipsyBaseline_Implementation.prf
@@ -116,7 +116,7 @@ Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 2 secs 
 
-Start NBR router at 22:52:35 08/12/24
+Start NBR router at 19:22:45 01/23/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -131,32 +131,32 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 22:52:35 08/12/24
+Start NBR special constraint process at 19:22:46 01/23/25
 
-Start NBR section for initial routing at 22:52:35 08/12/24
+Start NBR section for initial routing at 19:22:46 01/23/25
 Level 4, iteration 1
 6(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 3 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:52:35 08/12/24
+Start NBR section for normal routing at 19:22:46 01/23/25
 Level 4, iteration 1
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 3 secs 
 Level 4, iteration 2
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 3 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 22:52:35 08/12/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 19:22:46 01/23/25
 
-Start NBR section for re-routing at 22:52:35 08/12/24
+Start NBR section for re-routing at 19:22:46 01/23/25
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 71.748ns/0.000ns; real time: 3 secs 
 
-Start NBR section for post-routing at 22:52:35 08/12/24
+Start NBR section for post-routing at 19:22:46 01/23/25
 
 End NBR router with 0 unrouted connection
 

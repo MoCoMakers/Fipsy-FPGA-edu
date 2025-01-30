@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Aug 12 22:52:37 2024
+Thu Jan 23 19:22:47 2025
 
 
 Command: bitgen -g RamCfg:Reset -path C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/5. Send a String/project_files -w -jedec -gui -msgset C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/5. Send a String/project_files/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
@@ -90,5 +90,5 @@ Padded 289024 bits for this design
 
 
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 3 secs 
 Peak Memory Usage: 253 MB

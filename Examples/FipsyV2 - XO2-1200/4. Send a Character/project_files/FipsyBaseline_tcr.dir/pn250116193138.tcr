@@ -1,0 +1,5 @@
+#Start recording tcl command: 1/16/2025 19:30:57
+#Project Location: C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/4. Send a Character/project_files; Project name: FipsyBaseline
+prj_project open "C:/Users/enact/Projects/Fipsy-FPGA-edu/Examples/FipsyV2 - XO2-1200/4. Send a Character/project_files/FipsyBaseline.ldf"
+prj_project close
+#Stop recording: 1/16/2025 19:31:38
