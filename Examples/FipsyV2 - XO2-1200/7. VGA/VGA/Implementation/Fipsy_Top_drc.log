@@ -10,7 +10,7 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    407 blocks expanded
+    391 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FipsyBaseline_Implementation.ngd.

@@ -34,7 +34,7 @@
 -p "C:/Users/enact/Projects/VGA"
 -ver "C:/Users/enact/Projects/VGA/Source/Fipsy_Top.v"
 "C:/Users/enact/Projects/VGA/VGA.v"
-"C:/Users/enact/Projects/VGA/clock_divider.v"
+"C:/Users/enact/Projects/VGA/pll.v"
 -top Fipsy_Top
 
 

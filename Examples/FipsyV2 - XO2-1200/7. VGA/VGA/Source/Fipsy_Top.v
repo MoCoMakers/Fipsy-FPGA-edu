@@ -43,13 +43,13 @@ This version is the baseline, implementing only code to blink the on-board LED.
 */
 
 module Fipsy_Top(
-  PIN7, PIN8, PIN9, PIN10, 
+  PIN7, PIN8, PIN9, PIN10, PIN11, 
   PIN20, PIN19, PIN18, PIN17,PIN14,
   LEDn
  );
  
 input PIN7, PIN8, PIN9, PIN10;
-output PIN20, PIN19, PIN18, PIN17, PIN14, LEDn;
+output PIN20, PIN19, PIN18, PIN17, PIN14, LEDn, PIN11;
 
 // At this level, all named signals are wires
 wire PIN7, PIN8, PIN9, PIN19, PIN20, PIN19, PIN18, PIN17, PIN14, LEDn;
@@ -76,7 +76,7 @@ wire INTERNAL_OSC;
 // in logic or for aspects of configuration.  The frequency can be set in the tool or at
 // this level with a parameter.  
 // IMPORTANT - This oscillator has very poor accuracy - do not depend on it for critical timing.  
-defparam OSCH_inst.NOM_FREQ = "38";   // Must be one of the allowed frequencies (2.08MHz default)
+defparam OSCH_inst.NOM_FREQ = "133";   // Must be one of the allowed frequencies (2.08MHz default)
 OSCH OSCH_inst( .STDBY(1'b0),           // Enable input, 0=Enabled, 1=Disabled (also disabled if Bandgap=OFF)
                 .OSC(INTERNAL_OSC),     // Set the oscillator output to appear on the wire defined above 
                 .SEDSTDBY()             // This output is not required for normal use
@@ -132,10 +132,13 @@ OSCH OSCH_inst( .STDBY(1'b0),           // Enable input, 0=Enabled, 1=Disabled (
 
 wire clk;
 
-ClockDivider Clk_25MHz_inst (
-	.INTERNAL_OSC(INTERNAL_OSC),
-	.clk_out_25mhz(clk)
-);
+pll Clk_25MHz_inst (.CLKI(INTERNAL_OSC), .CLKOP(clk));
+//ClockDivider Clk_25MHz_inst (
+//	.INTERNAL_OSC(INTERNAL_OSC),
+//	.clk_out_25mhz(clk)
+//);
+
+assign PIN11 = clk;
 
 /*
 VGA Port Pins:
@@ -160,13 +163,16 @@ PIN8 - input Player 1 #2 (i_Switch_2)
 PIN9 - input Player 2 #1 (i_Switch_3)
 PIN10 -input Player 2 #2 (i_Switch_4)
 
-PIN20 - o_VGA_HSync
-PIN19 - o_VGA_VSync
-PIN18 - o_VGA_Red_0
-PIN17 - o_VGA_Grn_0
+Note that 1K Ohm Resistors are used as pull-down resistors on ground, to make the button
+toggle effectively between high and low voltage.
+
+PIN20 - o_VGA_HSync (VGA: 13)
+PIN19 - o_VGA_VSync (VGA: 14)
+PIN18 - o_VGA_Red_0 (VGA: 1)
+PIN17 - o_VGA_Grn_0 (VGA: 2)
 PIN16 - GND
 PIN15 - +3.3V - Unused
-PIN14 - o_VGA_Blu_0
+PIN14 - o_VGA_Blu_0 (VGA: 3)
 
 Clock for VGA should be 25.175 MHz standard, but we use 25MHz clock (1% error seems to be OK)
 */

@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Sun Dec 22 12:11:21 2024
+Thu Jan 23 19:13:40 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -23,7 +23,7 @@ Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui -msgset C:/Users/enact/Projects/VGA/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
 Design file:     fipsybaseline_implementation.ncd
 Preference file: fipsybaseline_implementation.prf
 Device,speed:    LCMXO2-1200HC,4
@@ -43,1256 +43,666 @@ VCCIO Voltage:
                    3.300 V (Bank 0, defined by PAR)
                    3.300 V (Bank 1, defined by PAR)
                    3.300 V (Bank 2, defined by PAR)
-                   3.300 V (Bank 3)
+                   3.300 V (Bank 3, defined by PAR)
 
 
 
 ================================================================================
-Preference: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;
-            3261 items scored, 2224 timing errors detected.
+Preference: FREQUENCY NET "INTERNAL_OSC" 133.000000 MHz ;
+            0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 17.857ns (weighted slack = -148.710ns)
+================================================================================
+Preference: FREQUENCY NET "PIN11_c" 24.937500 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 22.290ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/ball_y_i0  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_y_i0  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i6  (to PIN11_c +)
+                   FF                        vga_inst/ball_dx_i5
 
-   Delay:              16.307ns  (39.1% logic, 60.9% route), 11 logic levels.
+   Delay:              17.528ns  (36.3% logic, 63.7% route), 11 logic levels.
 
  Constraint Details:
 
-     16.307ns physical path delay vga_inst/SLICE_142 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.857ns
+     17.528ns physical path delay vga_inst/SLICE_138 to vga_inst/SLICE_64 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.290ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_142 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_138 to vga_inst/SLICE_64:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R5C14A.CLK to      R5C14A.Q0 vga_inst/SLICE_142 (from clk)
-ROUTE         6     1.842      R5C14A.Q0 to      R4C20A.A1 vga_inst/ball_y_0
-C1TOFCO_DE  ---     0.889      R4C20A.A1 to     R4C20A.FCO vga_inst/SLICE_67
-ROUTE         1     0.000     R4C20A.FCO to     R4C20B.FCI vga_inst/n2087
-FCITOF0_DE  ---     0.585     R4C20B.FCI to      R4C20B.F0 vga_inst/SLICE_66
-ROUTE         2     1.429      R4C20B.F0 to      R3C20A.B1 vga_inst/n664
-C1TOFCO_DE  ---     0.889      R3C20A.B1 to     R3C20A.FCO vga_inst/SLICE_51
-ROUTE         1     0.000     R3C20A.FCO to     R3C20B.FCI vga_inst/n2102
-FCITOF0_DE  ---     0.585     R3C20B.FCI to      R3C20B.F0 vga_inst/SLICE_49
-ROUTE         1     1.023      R3C20B.F0 to      R3C21D.B1 vga_inst/n392
-CTOF_DEL    ---     0.495      R3C21D.B1 to      R3C21D.F1 vga_inst/SLICE_181
-ROUTE         1     0.436      R3C21D.F1 to      R3C21D.C0 vga_inst/n6_adj_345
-CTOF_DEL    ---     0.495      R3C21D.C0 to      R3C21D.F0 vga_inst/SLICE_181
-ROUTE         1     0.626      R3C21D.F0 to      R3C21B.D0 vga_inst/n7_adj_339
-CTOF_DEL    ---     0.495      R3C21B.D0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452      R7C7C.CLK to       R7C7C.Q0 vga_inst/SLICE_138 (from PIN11_c)
+ROUTE         6     1.554       R7C7C.Q0 to      R9C13A.B1 vga_inst/ball_y_0
+C1TOFCO_DE  ---     0.889      R9C13A.B1 to     R9C13A.FCO vga_inst/SLICE_89
+ROUTE         1     0.000     R9C13A.FCO to     R9C13B.FCI vga_inst/n1912
+FCITOF0_DE  ---     0.585     R9C13B.FCI to      R9C13B.F0 vga_inst/SLICE_88
+ROUTE         2     1.030      R9C13B.F0 to      R9C15A.B1 vga_inst/n477
+C1TOFCO_DE  ---     0.889      R9C15A.B1 to     R9C15A.FCO vga_inst/SLICE_40
+ROUTE         1     0.000     R9C15A.FCO to     R9C15B.FCI vga_inst/n1927
+FCITOF0_DE  ---     0.585     R9C15B.FCI to      R9C15B.F0 vga_inst/SLICE_39
+ROUTE         1     1.023      R9C15B.F0 to      R9C16C.B1 vga_inst/n311
+CTOF_DEL    ---     0.495      R9C16C.B1 to      R9C16C.F1 vga_inst/SLICE_186
+ROUTE         1     0.436      R9C16C.F1 to      R9C16C.C0 vga_inst/n5_adj_319
+CTOF_DEL    ---     0.495      R9C16C.C0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15D.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   16.307   (39.1% logic, 60.9% route), 11 logic levels.
+                   17.528   (36.3% logic, 63.7% route), 11 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_142:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_138:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R5C14A.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to      R7C7C.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_64:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15D.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 17.619ns (weighted slack = -146.728ns)
+Passed: The following path meets requirements by 22.290ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/ball_y_i0  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_y_i0  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i2  (to PIN11_c +)
+                   FF                        vga_inst/ball_dx_i1
 
-   Delay:              16.069ns  (40.6% logic, 59.4% route), 12 logic levels.
+   Delay:              17.528ns  (36.3% logic, 63.7% route), 11 logic levels.
 
  Constraint Details:
 
-     16.069ns physical path delay vga_inst/SLICE_142 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.619ns
+     17.528ns physical path delay vga_inst/SLICE_138 to vga_inst/SLICE_83 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.290ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_142 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_138 to vga_inst/SLICE_83:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R5C14A.CLK to      R5C14A.Q0 vga_inst/SLICE_142 (from clk)
-ROUTE         6     1.842      R5C14A.Q0 to      R4C20A.A1 vga_inst/ball_y_0
-C1TOFCO_DE  ---     0.889      R4C20A.A1 to     R4C20A.FCO vga_inst/SLICE_67
-ROUTE         1     0.000     R4C20A.FCO to     R4C20B.FCI vga_inst/n2087
-FCITOF0_DE  ---     0.585     R4C20B.FCI to      R4C20B.F0 vga_inst/SLICE_66
-ROUTE         2     1.429      R4C20B.F0 to      R3C20A.B1 vga_inst/n664
-C1TOFCO_DE  ---     0.889      R3C20A.B1 to     R3C20A.FCO vga_inst/SLICE_51
-ROUTE         1     0.000     R3C20A.FCO to     R3C20B.FCI vga_inst/n2102
-FCITOFCO_D  ---     0.162     R3C20B.FCI to     R3C20B.FCO vga_inst/SLICE_49
-ROUTE         1     0.000     R3C20B.FCO to     R3C20C.FCI vga_inst/n2103
-FCITOF0_DE  ---     0.585     R3C20C.FCI to      R3C20C.F0 vga_inst/SLICE_48
-ROUTE         1     0.623      R3C20C.F0 to      R3C21D.D1 vga_inst/n390
-CTOF_DEL    ---     0.495      R3C21D.D1 to      R3C21D.F1 vga_inst/SLICE_181
-ROUTE         1     0.436      R3C21D.F1 to      R3C21D.C0 vga_inst/n6_adj_345
-CTOF_DEL    ---     0.495      R3C21D.C0 to      R3C21D.F0 vga_inst/SLICE_181
-ROUTE         1     0.626      R3C21D.F0 to      R3C21B.D0 vga_inst/n7_adj_339
-CTOF_DEL    ---     0.495      R3C21B.D0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452      R7C7C.CLK to       R7C7C.Q0 vga_inst/SLICE_138 (from PIN11_c)
+ROUTE         6     1.554       R7C7C.Q0 to      R9C13A.B1 vga_inst/ball_y_0
+C1TOFCO_DE  ---     0.889      R9C13A.B1 to     R9C13A.FCO vga_inst/SLICE_89
+ROUTE         1     0.000     R9C13A.FCO to     R9C13B.FCI vga_inst/n1912
+FCITOF0_DE  ---     0.585     R9C13B.FCI to      R9C13B.F0 vga_inst/SLICE_88
+ROUTE         2     1.030      R9C13B.F0 to      R9C15A.B1 vga_inst/n477
+C1TOFCO_DE  ---     0.889      R9C15A.B1 to     R9C15A.FCO vga_inst/SLICE_40
+ROUTE         1     0.000     R9C15A.FCO to     R9C15B.FCI vga_inst/n1927
+FCITOF0_DE  ---     0.585     R9C15B.FCI to      R9C15B.F0 vga_inst/SLICE_39
+ROUTE         1     1.023      R9C15B.F0 to      R9C16C.B1 vga_inst/n311
+CTOF_DEL    ---     0.495      R9C16C.B1 to      R9C16C.F1 vga_inst/SLICE_186
+ROUTE         1     0.436      R9C16C.F1 to      R9C16C.C0 vga_inst/n5_adj_319
+CTOF_DEL    ---     0.495      R9C16C.C0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15B.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   16.069   (40.6% logic, 59.4% route), 12 logic levels.
+                   17.528   (36.3% logic, 63.7% route), 11 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_142:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_138:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R5C14A.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to      R7C7C.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_83:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15B.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 17.612ns (weighted slack = -146.670ns)
+Passed: The following path meets requirements by 22.290ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/ball_y_i0  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_y_i0  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i0  (to PIN11_c +)
 
-   Delay:              16.062ns  (40.9% logic, 59.1% route), 11 logic levels.
+   Delay:              17.528ns  (36.3% logic, 63.7% route), 11 logic levels.
 
  Constraint Details:
 
-     16.062ns physical path delay vga_inst/SLICE_142 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.612ns
+     17.528ns physical path delay vga_inst/SLICE_138 to vga_inst/SLICE_84 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.290ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_142 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_138 to vga_inst/SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R5C14A.CLK to      R5C14A.Q0 vga_inst/SLICE_142 (from clk)
-ROUTE         6     1.842      R5C14A.Q0 to      R4C20A.A1 vga_inst/ball_y_0
-C1TOFCO_DE  ---     0.889      R4C20A.A1 to     R4C20A.FCO vga_inst/SLICE_67
-ROUTE         1     0.000     R4C20A.FCO to     R4C20B.FCI vga_inst/n2087
-FCITOF1_DE  ---     0.643     R4C20B.FCI to      R4C20B.F1 vga_inst/SLICE_66
-ROUTE         2     1.392      R4C20B.F1 to      R3C20B.A0 vga_inst/n663
-C0TOFCO_DE  ---     1.023      R3C20B.A0 to     R3C20B.FCO vga_inst/SLICE_49
-ROUTE         1     0.000     R3C20B.FCO to     R3C20C.FCI vga_inst/n2103
-FCITOF0_DE  ---     0.585     R3C20C.FCI to      R3C20C.F0 vga_inst/SLICE_48
-ROUTE         1     0.623      R3C20C.F0 to      R3C21D.D1 vga_inst/n390
-CTOF_DEL    ---     0.495      R3C21D.D1 to      R3C21D.F1 vga_inst/SLICE_181
-ROUTE         1     0.436      R3C21D.F1 to      R3C21D.C0 vga_inst/n6_adj_345
-CTOF_DEL    ---     0.495      R3C21D.C0 to      R3C21D.F0 vga_inst/SLICE_181
-ROUTE         1     0.626      R3C21D.F0 to      R3C21B.D0 vga_inst/n7_adj_339
-CTOF_DEL    ---     0.495      R3C21B.D0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452      R7C7C.CLK to       R7C7C.Q0 vga_inst/SLICE_138 (from PIN11_c)
+ROUTE         6     1.554       R7C7C.Q0 to      R9C13A.B1 vga_inst/ball_y_0
+C1TOFCO_DE  ---     0.889      R9C13A.B1 to     R9C13A.FCO vga_inst/SLICE_89
+ROUTE         1     0.000     R9C13A.FCO to     R9C13B.FCI vga_inst/n1912
+FCITOF0_DE  ---     0.585     R9C13B.FCI to      R9C13B.F0 vga_inst/SLICE_88
+ROUTE         2     1.030      R9C13B.F0 to      R9C15A.B1 vga_inst/n477
+C1TOFCO_DE  ---     0.889      R9C15A.B1 to     R9C15A.FCO vga_inst/SLICE_40
+ROUTE         1     0.000     R9C15A.FCO to     R9C15B.FCI vga_inst/n1927
+FCITOF0_DE  ---     0.585     R9C15B.FCI to      R9C15B.F0 vga_inst/SLICE_39
+ROUTE         1     1.023      R9C15B.F0 to      R9C16C.B1 vga_inst/n311
+CTOF_DEL    ---     0.495      R9C16C.B1 to      R9C16C.F1 vga_inst/SLICE_186
+ROUTE         1     0.436      R9C16C.F1 to      R9C16C.C0 vga_inst/n5_adj_319
+CTOF_DEL    ---     0.495      R9C16C.C0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15A.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   16.062   (40.9% logic, 59.1% route), 11 logic levels.
+                   17.528   (36.3% logic, 63.7% route), 11 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_142:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_138:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R5C14A.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to      R7C7C.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15A.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 17.449ns (weighted slack = -145.313ns)
+Passed: The following path meets requirements by 22.290ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/paddle_left_y_i0  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_y_i0  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i4  (to PIN11_c +)
+                   FF                        vga_inst/ball_dx_i3
 
-   Delay:              15.899ns  (40.1% logic, 59.9% route), 11 logic levels.
+   Delay:              17.528ns  (36.3% logic, 63.7% route), 11 logic levels.
 
  Constraint Details:
 
-     15.899ns physical path delay vga_inst/SLICE_50 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.449ns
+     17.528ns physical path delay vga_inst/SLICE_138 to vga_inst/SLICE_68 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.290ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_50 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_138 to vga_inst/SLICE_68:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R5C20B.CLK to      R5C20B.Q0 vga_inst/SLICE_50 (from clk)
-ROUTE         4     1.434      R5C20B.Q0 to      R4C20A.B1 vga_inst/paddle_left_y_0
-C1TOFCO_DE  ---     0.889      R4C20A.B1 to     R4C20A.FCO vga_inst/SLICE_67
-ROUTE         1     0.000     R4C20A.FCO to     R4C20B.FCI vga_inst/n2087
-FCITOF0_DE  ---     0.585     R4C20B.FCI to      R4C20B.F0 vga_inst/SLICE_66
-ROUTE         2     1.429      R4C20B.F0 to      R3C20A.B1 vga_inst/n664
-C1TOFCO_DE  ---     0.889      R3C20A.B1 to     R3C20A.FCO vga_inst/SLICE_51
-ROUTE         1     0.000     R3C20A.FCO to     R3C20B.FCI vga_inst/n2102
-FCITOF0_DE  ---     0.585     R3C20B.FCI to      R3C20B.F0 vga_inst/SLICE_49
-ROUTE         1     1.023      R3C20B.F0 to      R3C21D.B1 vga_inst/n392
-CTOF_DEL    ---     0.495      R3C21D.B1 to      R3C21D.F1 vga_inst/SLICE_181
-ROUTE         1     0.436      R3C21D.F1 to      R3C21D.C0 vga_inst/n6_adj_345
-CTOF_DEL    ---     0.495      R3C21D.C0 to      R3C21D.F0 vga_inst/SLICE_181
-ROUTE         1     0.626      R3C21D.F0 to      R3C21B.D0 vga_inst/n7_adj_339
-CTOF_DEL    ---     0.495      R3C21B.D0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452      R7C7C.CLK to       R7C7C.Q0 vga_inst/SLICE_138 (from PIN11_c)
+ROUTE         6     1.554       R7C7C.Q0 to      R9C13A.B1 vga_inst/ball_y_0
+C1TOFCO_DE  ---     0.889      R9C13A.B1 to     R9C13A.FCO vga_inst/SLICE_89
+ROUTE         1     0.000     R9C13A.FCO to     R9C13B.FCI vga_inst/n1912
+FCITOF0_DE  ---     0.585     R9C13B.FCI to      R9C13B.F0 vga_inst/SLICE_88
+ROUTE         2     1.030      R9C13B.F0 to      R9C15A.B1 vga_inst/n477
+C1TOFCO_DE  ---     0.889      R9C15A.B1 to     R9C15A.FCO vga_inst/SLICE_40
+ROUTE         1     0.000     R9C15A.FCO to     R9C15B.FCI vga_inst/n1927
+FCITOF0_DE  ---     0.585     R9C15B.FCI to      R9C15B.F0 vga_inst/SLICE_39
+ROUTE         1     1.023      R9C15B.F0 to      R9C16C.B1 vga_inst/n311
+CTOF_DEL    ---     0.495      R9C16C.B1 to      R9C16C.F1 vga_inst/SLICE_186
+ROUTE         1     0.436      R9C16C.F1 to      R9C16C.C0 vga_inst/n5_adj_319
+CTOF_DEL    ---     0.495      R9C16C.C0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15C.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   15.899   (40.1% logic, 59.9% route), 11 logic levels.
+                   17.528   (36.3% logic, 63.7% route), 11 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_50:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_138:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R5C20B.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to      R7C7C.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_68:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15C.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 17.358ns (weighted slack = -144.555ns)
+Passed: The following path meets requirements by 22.335ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/ball_y_i4  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_y_i4  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i6  (to PIN11_c +)
+                   FF                        vga_inst/ball_dx_i5
 
-   Delay:              15.808ns  (37.5% logic, 62.5% route), 10 logic levels.
+   Delay:              17.483ns  (34.7% logic, 65.3% route), 10 logic levels.
 
  Constraint Details:
 
-     15.808ns physical path delay vga_inst/SLICE_144 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.358ns
+     17.483ns physical path delay vga_inst/SLICE_140 to vga_inst/SLICE_64 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.335ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_144 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_140 to vga_inst/SLICE_64:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R4C15C.CLK to      R4C15C.Q1 vga_inst/SLICE_144 (from clk)
-ROUTE         5     2.242      R4C15C.Q1 to      R4C20C.A1 vga_inst/ball_y_4
-C1TOFCO_DE  ---     0.889      R4C20C.A1 to     R4C20C.FCO vga_inst/SLICE_65
-ROUTE         1     0.000     R4C20C.FCO to     R4C20D.FCI vga_inst/n2089
-FCITOF0_DE  ---     0.585     R4C20D.FCI to      R4C20D.F0 vga_inst/SLICE_64
-ROUTE         2     1.392      R4C20D.F0 to      R3C20C.A1 vga_inst/n660
-C1TOFCO_DE  ---     0.889      R3C20C.A1 to     R3C20C.FCO vga_inst/SLICE_48
-ROUTE         1     0.000     R3C20C.FCO to     R3C20D.FCI vga_inst/n2104
-FCITOF1_DE  ---     0.643     R3C20D.FCI to      R3C20D.F1 vga_inst/SLICE_47
-ROUTE         1     0.656      R3C20D.F1 to      R3C21B.A1 vga_inst/n15_adj_322
-CTOF_DEL    ---     0.495      R3C21B.A1 to      R3C21B.F1 vga_inst/SLICE_178
-ROUTE         1     1.004      R3C21B.F1 to      R3C21B.B0 vga_inst/n8_adj_340
-CTOF_DEL    ---     0.495      R3C21B.B0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452      R9C7C.CLK to       R9C7C.Q1 vga_inst/SLICE_140 (from PIN11_c)
+ROUTE         5     2.218       R9C7C.Q1 to      R9C13C.A1 vga_inst/ball_y_4
+C1TOFCO_DE  ---     0.889      R9C13C.A1 to     R9C13C.FCO vga_inst/SLICE_87
+ROUTE         1     0.000     R9C13C.FCO to     R9C13D.FCI vga_inst/n1914
+FCITOF1_DE  ---     0.643     R9C13D.FCI to      R9C13D.F1 vga_inst/SLICE_85
+ROUTE         2     1.427      R9C13D.F1 to      R9C15D.B0 vga_inst/n472
+C0TOFCO_DE  ---     1.023      R9C15D.B0 to     R9C15D.FCO vga_inst/SLICE_31
+ROUTE         1     0.000     R9C15D.FCO to     R9C16A.FCI vga_inst/n1930
+FCITOF0_DE  ---     0.585     R9C16A.FCI to      R9C16A.F0 vga_inst/SLICE_21
+ROUTE         1     0.656      R9C16A.F0 to      R9C16C.A0 vga_inst/n17
+CTOF_DEL    ---     0.495      R9C16C.A0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15D.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   15.808   (37.5% logic, 62.5% route), 10 logic levels.
+                   17.483   (34.7% logic, 65.3% route), 10 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_144:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_140:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C15C.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to      R9C7C.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_64:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15D.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 17.319ns (weighted slack = -144.230ns)
+Passed: The following path meets requirements by 22.335ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/ball_y_i0  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_y_i4  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i2  (to PIN11_c +)
+                   FF                        vga_inst/ball_dx_i1
 
-   Delay:              15.769ns  (39.7% logic, 60.3% route), 12 logic levels.
+   Delay:              17.483ns  (34.7% logic, 65.3% route), 10 logic levels.
 
  Constraint Details:
 
-     15.769ns physical path delay vga_inst/SLICE_142 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.319ns
+     17.483ns physical path delay vga_inst/SLICE_140 to vga_inst/SLICE_83 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.335ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_142 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_140 to vga_inst/SLICE_83:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R5C14A.CLK to      R5C14A.Q0 vga_inst/SLICE_142 (from clk)
-ROUTE         6     1.842      R5C14A.Q0 to      R4C20A.A1 vga_inst/ball_y_0
-C1TOFCO_DE  ---     0.889      R4C20A.A1 to     R4C20A.FCO vga_inst/SLICE_67
-ROUTE         1     0.000     R4C20A.FCO to     R4C20B.FCI vga_inst/n2087
-FCITOF0_DE  ---     0.585     R4C20B.FCI to      R4C20B.F0 vga_inst/SLICE_66
-ROUTE         2     1.429      R4C20B.F0 to      R3C20A.B1 vga_inst/n664
-C1TOFCO_DE  ---     0.889      R3C20A.B1 to     R3C20A.FCO vga_inst/SLICE_51
-ROUTE         1     0.000     R3C20A.FCO to     R3C20B.FCI vga_inst/n2102
-FCITOFCO_D  ---     0.162     R3C20B.FCI to     R3C20B.FCO vga_inst/SLICE_49
-ROUTE         1     0.000     R3C20B.FCO to     R3C20C.FCI vga_inst/n2103
-FCITOFCO_D  ---     0.162     R3C20C.FCI to     R3C20C.FCO vga_inst/SLICE_48
-ROUTE         1     0.000     R3C20C.FCO to     R3C20D.FCI vga_inst/n2104
-FCITOF1_DE  ---     0.643     R3C20D.FCI to      R3C20D.F1 vga_inst/SLICE_47
-ROUTE         1     0.656      R3C20D.F1 to      R3C21B.A1 vga_inst/n15_adj_322
-CTOF_DEL    ---     0.495      R3C21B.A1 to      R3C21B.F1 vga_inst/SLICE_178
-ROUTE         1     1.004      R3C21B.F1 to      R3C21B.B0 vga_inst/n8_adj_340
-CTOF_DEL    ---     0.495      R3C21B.B0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452      R9C7C.CLK to       R9C7C.Q1 vga_inst/SLICE_140 (from PIN11_c)
+ROUTE         5     2.218       R9C7C.Q1 to      R9C13C.A1 vga_inst/ball_y_4
+C1TOFCO_DE  ---     0.889      R9C13C.A1 to     R9C13C.FCO vga_inst/SLICE_87
+ROUTE         1     0.000     R9C13C.FCO to     R9C13D.FCI vga_inst/n1914
+FCITOF1_DE  ---     0.643     R9C13D.FCI to      R9C13D.F1 vga_inst/SLICE_85
+ROUTE         2     1.427      R9C13D.F1 to      R9C15D.B0 vga_inst/n472
+C0TOFCO_DE  ---     1.023      R9C15D.B0 to     R9C15D.FCO vga_inst/SLICE_31
+ROUTE         1     0.000     R9C15D.FCO to     R9C16A.FCI vga_inst/n1930
+FCITOF0_DE  ---     0.585     R9C16A.FCI to      R9C16A.F0 vga_inst/SLICE_21
+ROUTE         1     0.656      R9C16A.F0 to      R9C16C.A0 vga_inst/n17
+CTOF_DEL    ---     0.495      R9C16C.A0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15B.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   15.769   (39.7% logic, 60.3% route), 12 logic levels.
+                   17.483   (34.7% logic, 65.3% route), 10 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_142:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_140:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R5C14A.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to      R9C7C.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_83:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15B.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 17.312ns (weighted slack = -144.172ns)
+Passed: The following path meets requirements by 22.335ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/ball_y_i0  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_y_i4  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i0  (to PIN11_c +)
 
-   Delay:              15.762ns  (39.9% logic, 60.1% route), 11 logic levels.
+   Delay:              17.483ns  (34.7% logic, 65.3% route), 10 logic levels.
 
  Constraint Details:
 
-     15.762ns physical path delay vga_inst/SLICE_142 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.312ns
+     17.483ns physical path delay vga_inst/SLICE_140 to vga_inst/SLICE_84 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.335ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_142 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_140 to vga_inst/SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R5C14A.CLK to      R5C14A.Q0 vga_inst/SLICE_142 (from clk)
-ROUTE         6     1.842      R5C14A.Q0 to      R4C20A.A1 vga_inst/ball_y_0
-C1TOFCO_DE  ---     0.889      R4C20A.A1 to     R4C20A.FCO vga_inst/SLICE_67
-ROUTE         1     0.000     R4C20A.FCO to     R4C20B.FCI vga_inst/n2087
-FCITOF1_DE  ---     0.643     R4C20B.FCI to      R4C20B.F1 vga_inst/SLICE_66
-ROUTE         2     1.392      R4C20B.F1 to      R3C20B.A0 vga_inst/n663
-C0TOFCO_DE  ---     1.023      R3C20B.A0 to     R3C20B.FCO vga_inst/SLICE_49
-ROUTE         1     0.000     R3C20B.FCO to     R3C20C.FCI vga_inst/n2103
-FCITOFCO_D  ---     0.162     R3C20C.FCI to     R3C20C.FCO vga_inst/SLICE_48
-ROUTE         1     0.000     R3C20C.FCO to     R3C20D.FCI vga_inst/n2104
-FCITOF1_DE  ---     0.643     R3C20D.FCI to      R3C20D.F1 vga_inst/SLICE_47
-ROUTE         1     0.656      R3C20D.F1 to      R3C21B.A1 vga_inst/n15_adj_322
-CTOF_DEL    ---     0.495      R3C21B.A1 to      R3C21B.F1 vga_inst/SLICE_178
-ROUTE         1     1.004      R3C21B.F1 to      R3C21B.B0 vga_inst/n8_adj_340
-CTOF_DEL    ---     0.495      R3C21B.B0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452      R9C7C.CLK to       R9C7C.Q1 vga_inst/SLICE_140 (from PIN11_c)
+ROUTE         5     2.218       R9C7C.Q1 to      R9C13C.A1 vga_inst/ball_y_4
+C1TOFCO_DE  ---     0.889      R9C13C.A1 to     R9C13C.FCO vga_inst/SLICE_87
+ROUTE         1     0.000     R9C13C.FCO to     R9C13D.FCI vga_inst/n1914
+FCITOF1_DE  ---     0.643     R9C13D.FCI to      R9C13D.F1 vga_inst/SLICE_85
+ROUTE         2     1.427      R9C13D.F1 to      R9C15D.B0 vga_inst/n472
+C0TOFCO_DE  ---     1.023      R9C15D.B0 to     R9C15D.FCO vga_inst/SLICE_31
+ROUTE         1     0.000     R9C15D.FCO to     R9C16A.FCI vga_inst/n1930
+FCITOF0_DE  ---     0.585     R9C16A.FCI to      R9C16A.F0 vga_inst/SLICE_21
+ROUTE         1     0.656      R9C16A.F0 to      R9C16C.A0 vga_inst/n17
+CTOF_DEL    ---     0.495      R9C16C.A0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15A.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   15.762   (39.9% logic, 60.1% route), 11 logic levels.
+                   17.483   (34.7% logic, 65.3% route), 10 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_142:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_140:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R5C14A.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to      R9C7C.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15A.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 17.289ns (weighted slack = -143.980ns)
+Passed: The following path meets requirements by 22.335ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/ball_y_i4  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_y_i4  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i4  (to PIN11_c +)
+                   FF                        vga_inst/ball_dx_i3
 
-   Delay:              15.739ns  (37.3% logic, 62.7% route), 10 logic levels.
+   Delay:              17.483ns  (34.7% logic, 65.3% route), 10 logic levels.
 
  Constraint Details:
 
-     15.739ns physical path delay vga_inst/SLICE_144 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.289ns
+     17.483ns physical path delay vga_inst/SLICE_140 to vga_inst/SLICE_68 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.335ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_144 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_140 to vga_inst/SLICE_68:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R4C15C.CLK to      R4C15C.Q1 vga_inst/SLICE_144 (from clk)
-ROUTE         5     2.242      R4C15C.Q1 to      R4C20C.A1 vga_inst/ball_y_4
-C1TOFCO_DE  ---     0.889      R4C20C.A1 to     R4C20C.FCO vga_inst/SLICE_65
-ROUTE         1     0.000     R4C20C.FCO to     R4C20D.FCI vga_inst/n2089
-FCITOF0_DE  ---     0.585     R4C20D.FCI to      R4C20D.F0 vga_inst/SLICE_64
-ROUTE         2     1.392      R4C20D.F0 to      R3C20C.A1 vga_inst/n660
-C1TOFCO_DE  ---     0.889      R3C20C.A1 to     R3C20C.FCO vga_inst/SLICE_48
-ROUTE         1     0.000     R3C20C.FCO to     R3C20D.FCI vga_inst/n2104
-FCITOF0_DE  ---     0.585     R3C20D.FCI to      R3C20D.F0 vga_inst/SLICE_47
-ROUTE         1     0.645      R3C20D.F0 to      R3C21B.D1 vga_inst/n13_adj_321
-CTOF_DEL    ---     0.495      R3C21B.D1 to      R3C21B.F1 vga_inst/SLICE_178
-ROUTE         1     1.004      R3C21B.F1 to      R3C21B.B0 vga_inst/n8_adj_340
-CTOF_DEL    ---     0.495      R3C21B.B0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452      R9C7C.CLK to       R9C7C.Q1 vga_inst/SLICE_140 (from PIN11_c)
+ROUTE         5     2.218       R9C7C.Q1 to      R9C13C.A1 vga_inst/ball_y_4
+C1TOFCO_DE  ---     0.889      R9C13C.A1 to     R9C13C.FCO vga_inst/SLICE_87
+ROUTE         1     0.000     R9C13C.FCO to     R9C13D.FCI vga_inst/n1914
+FCITOF1_DE  ---     0.643     R9C13D.FCI to      R9C13D.F1 vga_inst/SLICE_85
+ROUTE         2     1.427      R9C13D.F1 to      R9C15D.B0 vga_inst/n472
+C0TOFCO_DE  ---     1.023      R9C15D.B0 to     R9C15D.FCO vga_inst/SLICE_31
+ROUTE         1     0.000     R9C15D.FCO to     R9C16A.FCI vga_inst/n1930
+FCITOF0_DE  ---     0.585     R9C16A.FCI to      R9C16A.F0 vga_inst/SLICE_21
+ROUTE         1     0.656      R9C16A.F0 to      R9C16C.A0 vga_inst/n17
+CTOF_DEL    ---     0.495      R9C16C.A0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15C.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   15.739   (37.3% logic, 62.7% route), 10 logic levels.
+                   17.483   (34.7% logic, 65.3% route), 10 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_144:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_140:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C15C.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to      R9C7C.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_68:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15C.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 17.282ns (weighted slack = -143.922ns)
+Passed: The following path meets requirements by 22.353ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/ball_y_i0  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/paddle_right_y_i5  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i6  (to PIN11_c +)
+                   FF                        vga_inst/ball_dx_i5
 
-   Delay:              15.732ns  (39.8% logic, 60.2% route), 12 logic levels.
+   Delay:              17.465ns  (34.4% logic, 65.6% route), 10 logic levels.
 
  Constraint Details:
 
-     15.732ns physical path delay vga_inst/SLICE_142 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.282ns
+     17.465ns physical path delay vga_inst/SLICE_81 to vga_inst/SLICE_64 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.353ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_142 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_81 to vga_inst/SLICE_64:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R5C14A.CLK to      R5C14A.Q0 vga_inst/SLICE_142 (from clk)
-ROUTE         6     1.842      R5C14A.Q0 to      R4C20A.A1 vga_inst/ball_y_0
-C1TOFCO_DE  ---     0.889      R4C20A.A1 to     R4C20A.FCO vga_inst/SLICE_67
-ROUTE         1     0.000     R4C20A.FCO to     R4C20B.FCI vga_inst/n2087
-FCITOFCO_D  ---     0.162     R4C20B.FCI to     R4C20B.FCO vga_inst/SLICE_66
-ROUTE         1     0.000     R4C20B.FCO to     R4C20C.FCI vga_inst/n2088
-FCITOFCO_D  ---     0.162     R4C20C.FCI to     R4C20C.FCO vga_inst/SLICE_65
-ROUTE         1     0.000     R4C20C.FCO to     R4C20D.FCI vga_inst/n2089
-FCITOF0_DE  ---     0.585     R4C20D.FCI to      R4C20D.F0 vga_inst/SLICE_64
-ROUTE         2     1.392      R4C20D.F0 to      R3C20C.A1 vga_inst/n660
-C1TOFCO_DE  ---     0.889      R3C20C.A1 to     R3C20C.FCO vga_inst/SLICE_48
-ROUTE         1     0.000     R3C20C.FCO to     R3C20D.FCI vga_inst/n2104
-FCITOF1_DE  ---     0.643     R3C20D.FCI to      R3C20D.F1 vga_inst/SLICE_47
-ROUTE         1     0.656      R3C20D.F1 to      R3C21B.A1 vga_inst/n15_adj_322
-CTOF_DEL    ---     0.495      R3C21B.A1 to      R3C21B.F1 vga_inst/SLICE_178
-ROUTE         1     1.004      R3C21B.F1 to      R3C21B.B0 vga_inst/n8_adj_340
-CTOF_DEL    ---     0.495      R3C21B.B0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452    R10C12D.CLK to     R10C12D.Q1 vga_inst/SLICE_81 (from PIN11_c)
+ROUTE         5     2.256     R10C12D.Q1 to      R9C13D.A0 vga_inst/paddle_right_y_5
+C0TOFCO_DE  ---     1.023      R9C13D.A0 to     R9C13D.FCO vga_inst/SLICE_85
+ROUTE         1     0.000     R9C13D.FCO to     R9C14A.FCI vga_inst/n1915
+FCITOF0_DE  ---     0.585     R9C14A.FCI to      R9C14A.F0 vga_inst/SLICE_73
+ROUTE         2     1.429      R9C14A.F0 to      R9C15D.B1 vga_inst/n471
+C1TOFCO_DE  ---     0.889      R9C15D.B1 to     R9C15D.FCO vga_inst/SLICE_31
+ROUTE         1     0.000     R9C15D.FCO to     R9C16A.FCI vga_inst/n1930
+FCITOF0_DE  ---     0.585     R9C16A.FCI to      R9C16A.F0 vga_inst/SLICE_21
+ROUTE         1     0.656      R9C16A.F0 to      R9C16C.A0 vga_inst/n17
+CTOF_DEL    ---     0.495      R9C16C.A0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15D.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   15.732   (39.8% logic, 60.2% route), 12 logic levels.
+                   17.465   (34.4% logic, 65.6% route), 10 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_142:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_81:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R5C14A.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to    R10C12D.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_64:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15D.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 17.250ns (weighted slack = -143.655ns)
+Passed: The following path meets requirements by 22.353ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/ball_y_i0  (from clk +)
-   Destination:    FF         Data in        vga_inst/game_state__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/paddle_right_y_i5  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i2  (to PIN11_c +)
+                   FF                        vga_inst/ball_dx_i1
 
-   Delay:              15.700ns  (39.5% logic, 60.5% route), 12 logic levels.
+   Delay:              17.465ns  (34.4% logic, 65.6% route), 10 logic levels.
 
  Constraint Details:
 
-     15.700ns physical path delay vga_inst/SLICE_142 to vga_inst/SLICE_149 exceeds
-      (delay constraint based on source clock period of 20.000ns and destination clock period of 26.316ns)
-      3.160ns delay constraint less
-      4.428ns skew and
-      0.282ns CE_SET requirement (totaling -1.550ns) by 17.250ns
+     17.465ns physical path delay vga_inst/SLICE_81 to vga_inst/SLICE_83 meets
+     40.100ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 39.818ns) by 22.353ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_142 to vga_inst/SLICE_149:
+      Data path vga_inst/SLICE_81 to vga_inst/SLICE_83:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R5C14A.CLK to      R5C14A.Q0 vga_inst/SLICE_142 (from clk)
-ROUTE         6     1.842      R5C14A.Q0 to      R4C20A.A1 vga_inst/ball_y_0
-C1TOFCO_DE  ---     0.889      R4C20A.A1 to     R4C20A.FCO vga_inst/SLICE_67
-ROUTE         1     0.000     R4C20A.FCO to     R4C20B.FCI vga_inst/n2087
-FCITOF0_DE  ---     0.585     R4C20B.FCI to      R4C20B.F0 vga_inst/SLICE_66
-ROUTE         2     1.429      R4C20B.F0 to      R3C20A.B1 vga_inst/n664
-C1TOFCO_DE  ---     0.889      R3C20A.B1 to     R3C20A.FCO vga_inst/SLICE_51
-ROUTE         1     0.000     R3C20A.FCO to     R3C20B.FCI vga_inst/n2102
-FCITOFCO_D  ---     0.162     R3C20B.FCI to     R3C20B.FCO vga_inst/SLICE_49
-ROUTE         1     0.000     R3C20B.FCO to     R3C20C.FCI vga_inst/n2103
-FCITOFCO_D  ---     0.162     R3C20C.FCI to     R3C20C.FCO vga_inst/SLICE_48
-ROUTE         1     0.000     R3C20C.FCO to     R3C20D.FCI vga_inst/n2104
-FCITOF0_DE  ---     0.585     R3C20D.FCI to      R3C20D.F0 vga_inst/SLICE_47
-ROUTE         1     0.645      R3C20D.F0 to      R3C21B.D1 vga_inst/n13_adj_321
-CTOF_DEL    ---     0.495      R3C21B.D1 to      R3C21B.F1 vga_inst/SLICE_178
-ROUTE         1     1.004      R3C21B.F1 to      R3C21B.B0 vga_inst/n8_adj_340
-CTOF_DEL    ---     0.495      R3C21B.B0 to      R3C21B.F0 vga_inst/SLICE_178
-ROUTE         1     1.476      R3C21B.F0 to      R7C20D.D0 vga_inst/n2152
-CTOF_DEL    ---     0.495      R7C20D.D0 to      R7C20D.F0 vga_inst/SLICE_173
-ROUTE         4     1.153      R7C20D.F0 to      R5C18C.D1 vga_inst/n1729
-CTOF_DEL    ---     0.495      R5C18C.D1 to      R5C18C.F1 vga_inst/SLICE_149
-ROUTE         2     0.967      R5C18C.F1 to      R5C21C.D1 n2258
-CTOF_DEL    ---     0.495      R5C21C.D1 to      R5C21C.F1 SLICE_162
-ROUTE         1     0.985      R5C21C.F1 to      R5C18C.CE INTERNAL_OSC_enable_43 (to INTERNAL_OSC)
+REG_DEL     ---     0.452    R10C12D.CLK to     R10C12D.Q1 vga_inst/SLICE_81 (from PIN11_c)
+ROUTE         5     2.256     R10C12D.Q1 to      R9C13D.A0 vga_inst/paddle_right_y_5
+C0TOFCO_DE  ---     1.023      R9C13D.A0 to     R9C13D.FCO vga_inst/SLICE_85
+ROUTE         1     0.000     R9C13D.FCO to     R9C14A.FCI vga_inst/n1915
+FCITOF0_DE  ---     0.585     R9C14A.FCI to      R9C14A.F0 vga_inst/SLICE_73
+ROUTE         2     1.429      R9C14A.F0 to      R9C15D.B1 vga_inst/n471
+C1TOFCO_DE  ---     0.889      R9C15D.B1 to     R9C15D.FCO vga_inst/SLICE_31
+ROUTE         1     0.000     R9C15D.FCO to     R9C16A.FCI vga_inst/n1930
+FCITOF0_DE  ---     0.585     R9C16A.FCI to      R9C16A.F0 vga_inst/SLICE_21
+ROUTE         1     0.656      R9C16A.F0 to      R9C16C.A0 vga_inst/n17
+CTOF_DEL    ---     0.495      R9C16C.A0 to      R9C16C.F0 vga_inst/SLICE_186
+ROUTE         1     0.315      R9C16C.F0 to      R9C16B.D0 vga_inst/n7_adj_317
+CTOF_DEL    ---     0.495      R9C16B.D0 to      R9C16B.F0 vga_inst/SLICE_185
+ROUTE         1     1.023      R9C16B.F0 to      R9C14C.B0 vga_inst/n1972
+CTOF_DEL    ---     0.495      R9C14C.B0 to      R9C14C.F0 vga_inst/SLICE_182
+ROUTE         9     1.612      R9C14C.F0 to      R5C15A.C1 vga_inst/n1565
+CTOF_DEL    ---     0.495      R5C15A.C1 to      R5C15A.F1 vga_inst/SLICE_135
+ROUTE         2     1.590      R5C15A.F1 to       R5C9C.C0 vga_inst/n2380
+CTOF_DEL    ---     0.495       R5C9C.C0 to       R5C9C.F0 vga_inst/SLICE_172
+ROUTE         8     2.575       R5C9C.F0 to      R2C15B.CE vga_inst/PIN11_c_enable_13 (to PIN11_c)
                   --------
-                   15.700   (39.5% logic, 60.5% route), 12 logic levels.
+                   17.465   (34.4% logic, 65.6% route), 10 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_142:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_81:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R5C14A.CLK clk
+ROUTE        66     1.652     LPLL.CLKOP to    R10C12D.CLK PIN11_c
                   --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_149:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_83:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
+ROUTE        66     1.652     LPLL.CLKOP to     R2C15B.CLK PIN11_c
                   --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.652   (0.0% logic, 100.0% route), 0 logic levels.
 
-Warning:   5.713MHz is the maximum frequency for this preference.
+Report:   56.148MHz is the maximum frequency for this preference.
 
 
 ================================================================================
 Preference: FREQUENCY 50.000000 MHz ;
-            4096 items scored, 2838 timing errors detected.
+            0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 4.514ns (weighted slack = -85.817ns)
+Passed:  The following path meets requirements by 17.500ns
+         The internal maximum frequency of the following component is 400.000 MHz
 
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+ Logical Details:  Cell type  Pin name       Component name
 
-   Source:         FF         Q              vga_inst/led_count_274__i16  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i9  (to clk +)
+   Destination:    SLICE      CLK            vga_inst/SLICE_145
 
-   Delay:               9.828ns  (36.7% logic, 63.3% route), 6 logic levels.
+   Delay:               2.500ns -- based on Minimum Pulse Width
 
- Constraint Details:
-
-      9.828ns physical path delay vga_inst/SLICE_39 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.514ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_39 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C18A.CLK to      R3C18A.Q1 vga_inst/SLICE_39 (from INTERNAL_OSC)
-ROUTE         2     1.343      R3C18A.Q1 to      R3C15B.B0 vga_inst/led_count_16
-CTOF_DEL    ---     0.495      R3C15B.B0 to      R3C15B.F0 vga_inst/SLICE_153
-ROUTE         1     0.436      R3C15B.F0 to      R3C15B.C1 vga_inst/n29
-CTOF_DEL    ---     0.495      R3C15B.C1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.939      R5C21C.F0 to      R4C13A.A0 n2543
-C0TOFCO_DE  ---     1.023      R4C13A.A0 to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF1_DE  ---     0.643     R4C13B.FCI to      R4C13B.F1 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F1 to     R4C13B.DI1 vga_inst/paddle_right_y_9_N_145_9 (to clk)
-                  --------
-                    9.828   (36.7% logic, 63.3% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_39:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C18A.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 4.456ns (weighted slack = -84.715ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/led_count_274__i16  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i8  (to clk +)
-
-   Delay:               9.770ns  (36.3% logic, 63.7% route), 6 logic levels.
-
- Constraint Details:
-
-      9.770ns physical path delay vga_inst/SLICE_39 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.456ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_39 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C18A.CLK to      R3C18A.Q1 vga_inst/SLICE_39 (from INTERNAL_OSC)
-ROUTE         2     1.343      R3C18A.Q1 to      R3C15B.B0 vga_inst/led_count_16
-CTOF_DEL    ---     0.495      R3C15B.B0 to      R3C15B.F0 vga_inst/SLICE_153
-ROUTE         1     0.436      R3C15B.F0 to      R3C15B.C1 vga_inst/n29
-CTOF_DEL    ---     0.495      R3C15B.C1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.939      R5C21C.F0 to      R4C13A.A0 n2543
-C0TOFCO_DE  ---     1.023      R4C13A.A0 to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF0_DE  ---     0.585     R4C13B.FCI to      R4C13B.F0 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F0 to     R4C13B.DI0 vga_inst/paddle_right_y_9_N_145_8 (to clk)
-                  --------
-                    9.770   (36.3% logic, 63.7% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_39:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C18A.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 4.444ns (weighted slack = -84.487ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/led_count_274__i8  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i9  (to clk +)
-
-   Delay:               9.758ns  (36.9% logic, 63.1% route), 6 logic levels.
-
- Constraint Details:
-
-      9.758ns physical path delay vga_inst/SLICE_91 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.444ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_91 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C17A.CLK to      R3C17A.Q1 vga_inst/SLICE_91 (from INTERNAL_OSC)
-ROUTE         2     1.086      R3C17A.Q1 to      R3C14C.C1 vga_inst/led_count_8
-CTOF_DEL    ---     0.495      R3C14C.C1 to      R3C14C.F1 vga_inst/SLICE_145
-ROUTE         1     0.623      R3C14C.F1 to      R3C15B.D1 vga_inst/n26
-CTOF_DEL    ---     0.495      R3C15B.D1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.939      R5C21C.F0 to      R4C13A.A0 n2543
-C0TOFCO_DE  ---     1.023      R4C13A.A0 to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF1_DE  ---     0.643     R4C13B.FCI to      R4C13B.F1 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F1 to     R4C13B.DI1 vga_inst/paddle_right_y_9_N_145_9 (to clk)
-                  --------
-                    9.758   (36.9% logic, 63.1% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_91:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C17A.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 4.389ns (weighted slack = -83.441ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/led_count_274__i16  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i9  (to clk +)
-
-   Delay:               9.703ns  (40.5% logic, 59.5% route), 8 logic levels.
-
- Constraint Details:
-
-      9.703ns physical path delay vga_inst/SLICE_39 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.389ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_39 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C18A.CLK to      R3C18A.Q1 vga_inst/SLICE_39 (from INTERNAL_OSC)
-ROUTE         2     1.343      R3C18A.Q1 to      R3C15B.B0 vga_inst/led_count_16
-CTOF_DEL    ---     0.495      R3C15B.B0 to      R3C15B.F0 vga_inst/SLICE_153
-ROUTE         1     0.436      R3C15B.F0 to      R3C15B.C1 vga_inst/n29
-CTOF_DEL    ---     0.495      R3C15B.C1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.490      R5C21C.F0 to      R4C12C.A0 n2543
-C0TOFCO_DE  ---     1.023      R4C12C.A0 to     R4C12C.FCO vga_inst/SLICE_8
-ROUTE         1     0.000     R4C12C.FCO to     R4C12D.FCI vga_inst/n2022
-FCITOFCO_D  ---     0.162     R4C12D.FCI to     R4C12D.FCO vga_inst/SLICE_92
-ROUTE         1     0.000     R4C12D.FCO to     R4C13A.FCI vga_inst/n2023
-FCITOFCO_D  ---     0.162     R4C13A.FCI to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF1_DE  ---     0.643     R4C13B.FCI to      R4C13B.F1 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F1 to     R4C13B.DI1 vga_inst/paddle_right_y_9_N_145_9 (to clk)
-                  --------
-                    9.703   (40.5% logic, 59.5% route), 8 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_39:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C18A.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 4.386ns (weighted slack = -83.384ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/led_count_274__i8  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i8  (to clk +)
-
-   Delay:               9.700ns  (36.5% logic, 63.5% route), 6 logic levels.
-
- Constraint Details:
-
-      9.700ns physical path delay vga_inst/SLICE_91 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.386ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_91 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C17A.CLK to      R3C17A.Q1 vga_inst/SLICE_91 (from INTERNAL_OSC)
-ROUTE         2     1.086      R3C17A.Q1 to      R3C14C.C1 vga_inst/led_count_8
-CTOF_DEL    ---     0.495      R3C14C.C1 to      R3C14C.F1 vga_inst/SLICE_145
-ROUTE         1     0.623      R3C14C.F1 to      R3C15B.D1 vga_inst/n26
-CTOF_DEL    ---     0.495      R3C15B.D1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.939      R5C21C.F0 to      R4C13A.A0 n2543
-C0TOFCO_DE  ---     1.023      R4C13A.A0 to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF0_DE  ---     0.585     R4C13B.FCI to      R4C13B.F0 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F0 to     R4C13B.DI0 vga_inst/paddle_right_y_9_N_145_8 (to clk)
-                  --------
-                    9.700   (36.5% logic, 63.5% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_91:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C17A.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 4.380ns (weighted slack = -83.270ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/led_count_274__i16  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i9  (to clk +)
-
-   Delay:               9.694ns  (35.8% logic, 64.2% route), 6 logic levels.
-
- Constraint Details:
-
-      9.694ns physical path delay vga_inst/SLICE_39 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.380ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_39 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C18A.CLK to      R3C18A.Q1 vga_inst/SLICE_39 (from INTERNAL_OSC)
-ROUTE         2     1.343      R3C18A.Q1 to      R3C15B.B0 vga_inst/led_count_16
-CTOF_DEL    ---     0.495      R3C15B.B0 to      R3C15B.F0 vga_inst/SLICE_153
-ROUTE         1     0.436      R3C15B.F0 to      R3C15B.C1 vga_inst/n29
-CTOF_DEL    ---     0.495      R3C15B.C1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.939      R5C21C.F0 to      R4C13A.A1 n2543
-C1TOFCO_DE  ---     0.889      R4C13A.A1 to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF1_DE  ---     0.643     R4C13B.FCI to      R4C13B.F1 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F1 to     R4C13B.DI1 vga_inst/paddle_right_y_9_N_145_9 (to clk)
-                  --------
-                    9.694   (35.8% logic, 64.2% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_39:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C18A.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 4.351ns (weighted slack = -82.719ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/led_count_274__i3  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i9  (to clk +)
-
-   Delay:               9.665ns  (37.3% logic, 62.7% route), 6 logic levels.
-
- Constraint Details:
-
-      9.665ns physical path delay vga_inst/SLICE_2 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.351ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_2 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C16C.CLK to      R3C16C.Q0 vga_inst/SLICE_2 (from INTERNAL_OSC)
-ROUTE         2     0.993      R3C16C.Q0 to      R3C14C.A1 vga_inst/led_count_3
-CTOF_DEL    ---     0.495      R3C14C.A1 to      R3C14C.F1 vga_inst/SLICE_145
-ROUTE         1     0.623      R3C14C.F1 to      R3C15B.D1 vga_inst/n26
-CTOF_DEL    ---     0.495      R3C15B.D1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.939      R5C21C.F0 to      R4C13A.A0 n2543
-C0TOFCO_DE  ---     1.023      R4C13A.A0 to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF1_DE  ---     0.643     R4C13B.FCI to      R4C13B.F1 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F1 to     R4C13B.DI1 vga_inst/paddle_right_y_9_N_145_9 (to clk)
-                  --------
-                    9.665   (37.3% logic, 62.7% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C16C.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 4.341ns (weighted slack = -82.529ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/led_count_274__i11  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i9  (to clk +)
-
-   Delay:               9.655ns  (37.3% logic, 62.7% route), 6 logic levels.
-
- Constraint Details:
-
-      9.655ns physical path delay vga_inst/SLICE_82 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.341ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_82 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C17C.CLK to      R3C17C.Q0 vga_inst/SLICE_82 (from INTERNAL_OSC)
-ROUTE         2     1.170      R3C17C.Q0 to      R3C15B.C0 vga_inst/led_count_11
-CTOF_DEL    ---     0.495      R3C15B.C0 to      R3C15B.F0 vga_inst/SLICE_153
-ROUTE         1     0.436      R3C15B.F0 to      R3C15B.C1 vga_inst/n29
-CTOF_DEL    ---     0.495      R3C15B.C1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.939      R5C21C.F0 to      R4C13A.A0 n2543
-C0TOFCO_DE  ---     1.023      R4C13A.A0 to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF1_DE  ---     0.643     R4C13B.FCI to      R4C13B.F1 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F1 to     R4C13B.DI1 vga_inst/paddle_right_y_9_N_145_9 (to clk)
-                  --------
-                    9.655   (37.3% logic, 62.7% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_82:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C17C.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 4.331ns (weighted slack = -82.338ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/led_count_274__i16  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i8  (to clk +)
-
-   Delay:               9.645ns  (40.1% logic, 59.9% route), 8 logic levels.
-
- Constraint Details:
-
-      9.645ns physical path delay vga_inst/SLICE_39 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.331ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_39 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C18A.CLK to      R3C18A.Q1 vga_inst/SLICE_39 (from INTERNAL_OSC)
-ROUTE         2     1.343      R3C18A.Q1 to      R3C15B.B0 vga_inst/led_count_16
-CTOF_DEL    ---     0.495      R3C15B.B0 to      R3C15B.F0 vga_inst/SLICE_153
-ROUTE         1     0.436      R3C15B.F0 to      R3C15B.C1 vga_inst/n29
-CTOF_DEL    ---     0.495      R3C15B.C1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.490      R5C21C.F0 to      R4C12C.A0 n2543
-C0TOFCO_DE  ---     1.023      R4C12C.A0 to     R4C12C.FCO vga_inst/SLICE_8
-ROUTE         1     0.000     R4C12C.FCO to     R4C12D.FCI vga_inst/n2022
-FCITOFCO_D  ---     0.162     R4C12D.FCI to     R4C12D.FCO vga_inst/SLICE_92
-ROUTE         1     0.000     R4C12D.FCO to     R4C13A.FCI vga_inst/n2023
-FCITOFCO_D  ---     0.162     R4C13A.FCI to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF0_DE  ---     0.585     R4C13B.FCI to      R4C13B.F0 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F0 to     R4C13B.DI0 vga_inst/paddle_right_y_9_N_145_8 (to clk)
-                  --------
-                    9.645   (40.1% logic, 59.9% route), 8 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_39:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C18A.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 4.323ns (weighted slack = -82.186ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/led_count_274__i4  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/paddle_right_y_i9  (to clk +)
-
-   Delay:               9.637ns  (37.4% logic, 62.6% route), 6 logic levels.
-
- Constraint Details:
-
-      9.637ns physical path delay vga_inst/SLICE_2 to vga_inst/SLICE_85 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-      1.052ns delay constraint less
-     -4.428ns skew and
-      0.166ns DIN_SET requirement (totaling 5.314ns) by 4.323ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_2 to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C16C.CLK to      R3C16C.Q1 vga_inst/SLICE_2 (from INTERNAL_OSC)
-ROUTE         2     0.965      R3C16C.Q1 to      R3C14C.D1 vga_inst/led_count_4
-CTOF_DEL    ---     0.495      R3C14C.D1 to      R3C14C.F1 vga_inst/SLICE_145
-ROUTE         1     0.623      R3C14C.F1 to      R3C15B.D1 vga_inst/n26
-CTOF_DEL    ---     0.495      R3C15B.D1 to      R3C15B.F1 vga_inst/SLICE_153
-ROUTE         2     1.507      R3C15B.F1 to      R5C21C.A0 vga_inst/n32
-CTOF_DEL    ---     0.495      R5C21C.A0 to      R5C21C.F0 SLICE_162
-ROUTE        25     2.939      R5C21C.F0 to      R4C13A.A0 n2543
-C0TOFCO_DE  ---     1.023      R4C13A.A0 to     R4C13A.FCO vga_inst/SLICE_89
-ROUTE         1     0.000     R4C13A.FCO to     R4C13B.FCI vga_inst/n2024
-FCITOF1_DE  ---     0.643     R4C13B.FCI to      R4C13B.F1 vga_inst/SLICE_85
-ROUTE         1     0.000      R4C13B.F1 to     R4C13B.DI1 vga_inst/paddle_right_y_9_N_145_9 (to clk)
-                  --------
-                    9.637   (37.4% logic, 62.6% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R3C16C.CLK INTERNAL_OSC
-                  --------
-                    3.541   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_85:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     3.541        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.452     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     3.976      R5C14C.Q0 to     R4C13B.CLK clk
-                  --------
-                    7.969   (5.7% logic, 94.3% route), 1 logic levels.
-
-Warning:   9.450MHz is the maximum frequency for this preference.
+Report:  400.000MHz is the maximum frequency for this preference.
 
 Report Summary
 --------------
@@ -1300,48 +710,17 @@ Report Summary
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "INTERNAL_OSC" 38.000000  |             |             |
-MHz ;                                   |   38.000 MHz|    5.713 MHz|  11 *
+FREQUENCY NET "INTERNAL_OSC" 133.000000 |             |             |
+MHz ;                                   |            -|            -|   0  
                                         |             |             |
-FREQUENCY 50.000000 MHz ;               |   50.000 MHz|    9.450 MHz|   6 *
+FREQUENCY NET "PIN11_c" 24.937500 MHz ; |   24.938 MHz|   56.148 MHz|  11  
+                                        |             |             |
+FREQUENCY 50.000000 MHz ;               |   50.000 MHz|  400.000 MHz|   0  
                                         |             |             |
 ----------------------------------------------------------------------------
 
 
-2 preferences(marked by "*" above) not met.
-
-----------------------------------------------------------------------------
-Critical Nets                           |   Loads|  Errors| % of total
-----------------------------------------------------------------------------
-n2543                                   |      25|    2260|     44.65%
-                                        |        |        |
-n2258                                   |       2|    2224|     43.94%
-                                        |        |        |
-vga_inst/n32                            |       2|    1510|     29.83%
-                                        |        |        |
-INTERNAL_OSC_enable_43                  |       1|    1112|     21.97%
-                                        |        |        |
-vga_inst/game_state_1_N_233_0           |       1|    1112|     21.97%
-                                        |        |        |
-vga_inst/n1723                          |       9|    1092|     21.57%
-                                        |        |        |
-vga_inst/n1729                          |       4|    1092|     21.57%
-                                        |        |        |
-vga_inst/n43_adj_354                    |       1|     876|     17.31%
-                                        |        |        |
-vga_inst/n2152                          |       1|     876|     17.31%
-                                        |        |        |
-vga_inst/n29                            |       1|     672|     13.28%
-                                        |        |        |
-vga_inst/n28                            |       2|     671|     13.26%
-                                        |        |        |
-vga_inst/ball_x_9__N_222                |      16|     573|     11.32%
-                                        |        |        |
-vga_inst/n2031                          |       1|     510|     10.08%
-                                        |        |        |
-vga_inst/n2022                          |       1|     510|     10.08%
-                                        |        |        |
-----------------------------------------------------------------------------
+All preferences were met.
 
 
 Clock Domains Analysis
@@ -1349,32 +728,24 @@ Clock Domains Analysis
 
 Found 2 clocks:
 
-Clock Domain: clk   Source: SLICE_134.Q0   Loads: 40
-   Covered under: FREQUENCY 50.000000 MHz ;
+Clock Domain: PIN11_c   Source: Clk_25MHz_inst/PLLInst_0.CLKOP   Loads: 66
+   Covered under: FREQUENCY NET "PIN11_c" 24.937500 MHz ;
 
-   Data transfers from:
-   Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC
-      Covered under: FREQUENCY 50.000000 MHz ;   Transfers: 38
-
-Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 31
-   Covered under: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;
-
-   Data transfers from:
-   Clock Domain: clk   Source: SLICE_134.Q0
-      Covered under: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;   Transfers: 40
+Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 1
+   No transfer within this clock domain is found
 
 
 Timing summary (Setup):
 ---------------
 
-Timing errors: 5062  Score: 370125112
-Cumulative negative slack: 370125112
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
 
-Constraints cover 26615 paths, 2 nets, and 1216 connections (99.51% coverage)
+Constraints cover 24023 paths, 2 nets, and 844 connections (72.88% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Sun Dec 22 12:11:22 2024
+Thu Jan 23 19:13:40 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1384,7 +755,7 @@ Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FipsyBaseline_Implementation.twr -gui -msgset C:/Users/enact/Projects/VGA/promote.xml FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf 
 Design file:     fipsybaseline_implementation.ncd
 Preference file: fipsybaseline_implementation.prf
 Device,speed:    LCMXO2-1200HC,m
@@ -1404,13 +775,19 @@ VCCIO Voltage:
                    3.300 V (Bank 0, defined by PAR)
                    3.300 V (Bank 1, defined by PAR)
                    3.300 V (Bank 2, defined by PAR)
-                   3.300 V (Bank 3)
+                   3.300 V (Bank 3, defined by PAR)
 
 
 
 ================================================================================
-Preference: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;
-            3261 items scored, 0 timing errors detected.
+Preference: FREQUENCY NET "INTERNAL_OSC" 133.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "PIN11_c" 24.937500 MHz ;
+            4096 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -1418,938 +795,456 @@ Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/led_count_274__i19  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/led_count_274__i19  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/led_count_235__i18  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/led_count_235__i18  (to PIN11_c +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
  Constraint Details:
 
-      0.364ns physical path delay vga_inst/SLICE_35 to vga_inst/SLICE_35 meets
+      0.364ns physical path delay vga_inst/SLICE_26 to vga_inst/SLICE_26 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.377ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_35 to vga_inst/SLICE_35:
+      Data path vga_inst/SLICE_26 to vga_inst/SLICE_26:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R3C18C.CLK to      R3C18C.Q0 vga_inst/SLICE_35 (from INTERNAL_OSC)
-ROUTE         1     0.130      R3C18C.Q0 to      R3C18C.A0 vga_inst/n5_adj_287
-CTOF_DEL    ---     0.101      R3C18C.A0 to      R3C18C.F0 vga_inst/SLICE_35
-ROUTE         1     0.000      R3C18C.F0 to     R3C18C.DI0 vga_inst/n106 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R5C13B.CLK to      R5C13B.Q1 vga_inst/SLICE_26 (from PIN11_c)
+ROUTE         1     0.130      R5C13B.Q1 to      R5C13B.A1 vga_inst/n6
+CTOF_DEL    ---     0.101      R5C13B.A1 to      R5C13B.F1 vga_inst/SLICE_26
+ROUTE         1     0.000      R5C13B.F1 to     R5C13B.DI1 vga_inst/n107 (to PIN11_c)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_35:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_26:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18C.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13B.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_35:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_26:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18C.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13B.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/led_count_274__i20  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/led_count_274__i20  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/led_count_235__i20  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/led_count_235__i20  (to PIN11_c +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
  Constraint Details:
 
-      0.364ns physical path delay vga_inst/SLICE_35 to vga_inst/SLICE_35 meets
+      0.364ns physical path delay vga_inst/SLICE_24 to vga_inst/SLICE_24 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.377ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_35 to vga_inst/SLICE_35:
+      Data path vga_inst/SLICE_24 to vga_inst/SLICE_24:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R3C18C.CLK to      R3C18C.Q1 vga_inst/SLICE_35 (from INTERNAL_OSC)
-ROUTE         1     0.130      R3C18C.Q1 to      R3C18C.A1 vga_inst/n4
-CTOF_DEL    ---     0.101      R3C18C.A1 to      R3C18C.F1 vga_inst/SLICE_35
-ROUTE         1     0.000      R3C18C.F1 to     R3C18C.DI1 vga_inst/n105 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R5C13C.CLK to      R5C13C.Q1 vga_inst/SLICE_24 (from PIN11_c)
+ROUTE         1     0.130      R5C13C.Q1 to      R5C13C.A1 vga_inst/n4
+CTOF_DEL    ---     0.101      R5C13C.A1 to      R5C13C.F1 vga_inst/SLICE_24
+ROUTE         1     0.000      R5C13C.F1 to     R5C13C.DI1 vga_inst/n105 (to PIN11_c)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_35:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_24:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18C.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13C.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_35:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_24:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18C.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13C.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/led_count_274__i18  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/led_count_274__i18  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/led_count_235__i19  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/led_count_235__i19  (to PIN11_c +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
  Constraint Details:
 
-      0.364ns physical path delay vga_inst/SLICE_38 to vga_inst/SLICE_38 meets
+      0.364ns physical path delay vga_inst/SLICE_24 to vga_inst/SLICE_24 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.377ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_38 to vga_inst/SLICE_38:
+      Data path vga_inst/SLICE_24 to vga_inst/SLICE_24:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R3C18B.CLK to      R3C18B.Q1 vga_inst/SLICE_38 (from INTERNAL_OSC)
-ROUTE         1     0.130      R3C18B.Q1 to      R3C18B.A1 vga_inst/n6_adj_288
-CTOF_DEL    ---     0.101      R3C18B.A1 to      R3C18B.F1 vga_inst/SLICE_38
-ROUTE         1     0.000      R3C18B.F1 to     R3C18B.DI1 vga_inst/n107 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R5C13C.CLK to      R5C13C.Q0 vga_inst/SLICE_24 (from PIN11_c)
+ROUTE         1     0.130      R5C13C.Q0 to      R5C13C.A0 vga_inst/n5_adj_274
+CTOF_DEL    ---     0.101      R5C13C.A0 to      R5C13C.F0 vga_inst/SLICE_24
+ROUTE         1     0.000      R5C13C.F0 to     R5C13C.DI0 vga_inst/n106 (to PIN11_c)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_38:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_24:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18B.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13C.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_38:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_24:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18B.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13C.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/led_count_274__i22  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/led_count_274__i22  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/led_count_235__i21  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/led_count_235__i21  (to PIN11_c +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
  Constraint Details:
 
-      0.364ns physical path delay vga_inst/SLICE_33 to vga_inst/SLICE_33 meets
+      0.364ns physical path delay vga_inst/SLICE_22 to vga_inst/SLICE_22 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.377ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_33 to vga_inst/SLICE_33:
+      Data path vga_inst/SLICE_22 to vga_inst/SLICE_22:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R3C18D.CLK to      R3C18D.Q1 vga_inst/SLICE_33 (from INTERNAL_OSC)
-ROUTE         1     0.130      R3C18D.Q1 to      R3C18D.A1 vga_inst/n2
-CTOF_DEL    ---     0.101      R3C18D.A1 to      R3C18D.F1 vga_inst/SLICE_33
-ROUTE         1     0.000      R3C18D.F1 to     R3C18D.DI1 vga_inst/n103 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R5C13D.CLK to      R5C13D.Q0 vga_inst/SLICE_22 (from PIN11_c)
+ROUTE         1     0.130      R5C13D.Q0 to      R5C13D.A0 vga_inst/n3
+CTOF_DEL    ---     0.101      R5C13D.A0 to      R5C13D.F0 vga_inst/SLICE_22
+ROUTE         1     0.000      R5C13D.F0 to     R5C13D.DI0 vga_inst/n104 (to PIN11_c)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_33:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_22:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18D.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13D.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_33:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_22:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18D.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13D.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/led_count_274__i21  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/led_count_274__i21  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/led_count_235__i17  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/led_count_235__i17  (to PIN11_c +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
  Constraint Details:
 
-      0.364ns physical path delay vga_inst/SLICE_33 to vga_inst/SLICE_33 meets
+      0.364ns physical path delay vga_inst/SLICE_26 to vga_inst/SLICE_26 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.377ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_33 to vga_inst/SLICE_33:
+      Data path vga_inst/SLICE_26 to vga_inst/SLICE_26:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R3C18D.CLK to      R3C18D.Q0 vga_inst/SLICE_33 (from INTERNAL_OSC)
-ROUTE         1     0.130      R3C18D.Q0 to      R3C18D.A0 vga_inst/n3
-CTOF_DEL    ---     0.101      R3C18D.A0 to      R3C18D.F0 vga_inst/SLICE_33
-ROUTE         1     0.000      R3C18D.F0 to     R3C18D.DI0 vga_inst/n104 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R5C13B.CLK to      R5C13B.Q0 vga_inst/SLICE_26 (from PIN11_c)
+ROUTE         1     0.130      R5C13B.Q0 to      R5C13B.A0 vga_inst/n7_adj_275
+CTOF_DEL    ---     0.101      R5C13B.A0 to      R5C13B.F0 vga_inst/SLICE_26
+ROUTE         1     0.000      R5C13B.F0 to     R5C13B.DI0 vga_inst/n108 (to PIN11_c)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_33:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_26:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18D.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13B.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_33:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_26:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18D.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13B.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.377ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/led_count_274__i17  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/led_count_274__i17  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/led_count_235__i22  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/led_count_235__i22  (to PIN11_c +)
 
    Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
 
  Constraint Details:
 
-      0.364ns physical path delay vga_inst/SLICE_38 to vga_inst/SLICE_38 meets
+      0.364ns physical path delay vga_inst/SLICE_22 to vga_inst/SLICE_22 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.377ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_38 to vga_inst/SLICE_38:
+      Data path vga_inst/SLICE_22 to vga_inst/SLICE_22:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R3C18B.CLK to      R3C18B.Q0 vga_inst/SLICE_38 (from INTERNAL_OSC)
-ROUTE         1     0.130      R3C18B.Q0 to      R3C18B.A0 vga_inst/n7_adj_289
-CTOF_DEL    ---     0.101      R3C18B.A0 to      R3C18B.F0 vga_inst/SLICE_38
-ROUTE         1     0.000      R3C18B.F0 to     R3C18B.DI0 vga_inst/n108 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R5C13D.CLK to      R5C13D.Q1 vga_inst/SLICE_22 (from PIN11_c)
+ROUTE         1     0.130      R5C13D.Q1 to      R5C13D.A1 vga_inst/n2
+CTOF_DEL    ---     0.101      R5C13D.A1 to      R5C13D.F1 vga_inst/SLICE_22
+ROUTE         1     0.000      R5C13D.F1 to     R5C13D.DI1 vga_inst/n103 (to PIN11_c)
                   --------
                     0.364   (64.3% logic, 35.7% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_38:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_22:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18B.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13D.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_38:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_22:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C18B.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R5C13D.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Clk_25MHz_inst/counter_272__i5  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        Clk_25MHz_inst/counter_272__i5  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_dy_i7  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dy_i7  (to PIN11_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay Clk_25MHz_inst/SLICE_128 to Clk_25MHz_inst/SLICE_128 meets
+      0.366ns physical path delay vga_inst/SLICE_60 to vga_inst/SLICE_60 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path Clk_25MHz_inst/SLICE_128 to Clk_25MHz_inst/SLICE_128:
+      Data path vga_inst/SLICE_60 to vga_inst/SLICE_60:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C12D.CLK to      R2C12D.Q0 Clk_25MHz_inst/SLICE_128 (from INTERNAL_OSC)
-ROUTE         2     0.132      R2C12D.Q0 to      R2C12D.A0 Clk_25MHz_inst/counter_5
-CTOF_DEL    ---     0.101      R2C12D.A0 to      R2C12D.F0 Clk_25MHz_inst/SLICE_128
-ROUTE         1     0.000      R2C12D.F0 to     R2C12D.DI0 Clk_25MHz_inst/n35 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R10C7A.CLK to      R10C7A.Q0 vga_inst/SLICE_60 (from PIN11_c)
+ROUTE         2     0.132      R10C7A.Q0 to      R10C7A.A0 vga_inst/ball_dy_7
+CTOF_DEL    ---     0.101      R10C7A.A0 to      R10C7A.F0 vga_inst/SLICE_60
+ROUTE         1     0.000      R10C7A.F0 to     R10C7A.DI0 vga_inst/n901 (to PIN11_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to Clk_25MHz_inst/SLICE_128:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_60:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R2C12D.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R10C7A.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to Clk_25MHz_inst/SLICE_128:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_60:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R2C12D.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R10C7A.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/led_count_274__i3  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/led_count_274__i3  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_dx_i5  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i5  (to PIN11_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay vga_inst/SLICE_2 to vga_inst/SLICE_2 meets
+      0.366ns physical path delay vga_inst/SLICE_64 to vga_inst/SLICE_64 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_2 to vga_inst/SLICE_2:
+      Data path vga_inst/SLICE_64 to vga_inst/SLICE_64:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R3C16C.CLK to      R3C16C.Q0 vga_inst/SLICE_2 (from INTERNAL_OSC)
-ROUTE         2     0.132      R3C16C.Q0 to      R3C16C.A0 vga_inst/led_count_3
-CTOF_DEL    ---     0.101      R3C16C.A0 to      R3C16C.F0 vga_inst/SLICE_2
-ROUTE         1     0.000      R3C16C.F0 to     R3C16C.DI0 vga_inst/n122 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R2C15D.CLK to      R2C15D.Q0 vga_inst/SLICE_64 (from PIN11_c)
+ROUTE         2     0.132      R2C15D.Q0 to      R2C15D.A0 vga_inst/ball_dx_5
+CTOF_DEL    ---     0.101      R2C15D.A0 to      R2C15D.F0 vga_inst/SLICE_64
+ROUTE         1     0.000      R2C15D.F0 to     R2C15D.DI0 vga_inst/n554 (to PIN11_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_2:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_64:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C16C.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R2C15D.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_2:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_64:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C16C.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R2C15D.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Clk_25MHz_inst/counter_272__i1  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        Clk_25MHz_inst/counter_272__i1  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_dx_i3  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i3  (to PIN11_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay Clk_25MHz_inst/SLICE_130 to Clk_25MHz_inst/SLICE_130 meets
+      0.366ns physical path delay vga_inst/SLICE_68 to vga_inst/SLICE_68 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path Clk_25MHz_inst/SLICE_130 to Clk_25MHz_inst/SLICE_130:
+      Data path vga_inst/SLICE_68 to vga_inst/SLICE_68:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C12B.CLK to      R2C12B.Q0 Clk_25MHz_inst/SLICE_130 (from INTERNAL_OSC)
-ROUTE         2     0.132      R2C12B.Q0 to      R2C12B.A0 Clk_25MHz_inst/counter_1
-CTOF_DEL    ---     0.101      R2C12B.A0 to      R2C12B.F0 Clk_25MHz_inst/SLICE_130
-ROUTE         1     0.000      R2C12B.F0 to     R2C12B.DI0 Clk_25MHz_inst/n39 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R2C15C.CLK to      R2C15C.Q0 vga_inst/SLICE_68 (from PIN11_c)
+ROUTE         2     0.132      R2C15C.Q0 to      R2C15C.A0 vga_inst/ball_dx_3
+CTOF_DEL    ---     0.101      R2C15C.A0 to      R2C15C.F0 vga_inst/SLICE_68
+ROUTE         1     0.000      R2C15C.F0 to     R2C15C.DI0 vga_inst/n556 (to PIN11_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to Clk_25MHz_inst/SLICE_130:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_68:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R2C12B.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R2C15C.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to Clk_25MHz_inst/SLICE_130:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_68:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R2C12B.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R2C15C.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              vga_inst/led_count_274__i13  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/led_count_274__i13  (to INTERNAL_OSC +)
+   Source:         FF         Q              vga_inst/ball_dx_i7  (from PIN11_c +)
+   Destination:    FF         Data in        vga_inst/ball_dx_i7  (to PIN11_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay vga_inst/SLICE_41 to vga_inst/SLICE_41 meets
+      0.366ns physical path delay vga_inst/SLICE_57 to vga_inst/SLICE_57 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path vga_inst/SLICE_41 to vga_inst/SLICE_41:
+      Data path vga_inst/SLICE_57 to vga_inst/SLICE_57:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R3C17D.CLK to      R3C17D.Q0 vga_inst/SLICE_41 (from INTERNAL_OSC)
-ROUTE         2     0.132      R3C17D.Q0 to      R3C17D.A0 vga_inst/led_count_13
-CTOF_DEL    ---     0.101      R3C17D.A0 to      R3C17D.F0 vga_inst/SLICE_41
-ROUTE         1     0.000      R3C17D.F0 to     R3C17D.DI0 vga_inst/n112_adj_292 (to INTERNAL_OSC)
+REG_DEL     ---     0.133     R2C16A.CLK to      R2C16A.Q0 vga_inst/SLICE_57 (from PIN11_c)
+ROUTE         2     0.132      R2C16A.Q0 to      R2C16A.A0 vga_inst/ball_dx_7
+CTOF_DEL    ---     0.101      R2C16A.A0 to      R2C16A.F0 vga_inst/SLICE_57
+ROUTE         1     0.000      R2C16A.F0 to     R2C16A.DI0 vga_inst/n552 (to PIN11_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path OSCH_inst to vga_inst/SLICE_41:
+      Source Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_57:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C17D.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R2C16A.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_41:
+      Destination Clock Path Clk_25MHz_inst/PLLInst_0 to vga_inst/SLICE_57:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R3C17D.CLK INTERNAL_OSC
+ROUTE        66     0.595     LPLL.CLKOP to     R2C16A.CLK PIN11_c
                   --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.595   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 ================================================================================
 Preference: FREQUENCY 50.000000 MHz ;
-            4096 items scored, 504 timing errors detected.
+            0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
-
-
-Error: The following path exceeds requirements by 1.134ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/column_275__i5  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/hsync_156  (to clk +)
-
-   Delay:               0.374ns  (62.6% logic, 37.4% route), 2 logic levels.
-
- Constraint Details:
-
-      0.374ns physical path delay vga_inst/SLICE_7 to vga_inst/SLICE_133 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 1.134ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_7 to vga_inst/SLICE_133:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R8C16D.CLK to      R8C16D.Q0 vga_inst/SLICE_7 (from INTERNAL_OSC)
-ROUTE         6     0.140      R8C16D.Q0 to      R8C15D.D0 vga_inst/column_5
-CTOF_DEL    ---     0.101      R8C15D.D0 to      R8C15D.F0 vga_inst/SLICE_133
-ROUTE         1     0.000      R8C15D.F0 to     R8C15D.DI0 vga_inst/o_VGA_HSync_N_275 (to clk)
-                  --------
-                    0.374   (62.6% logic, 37.4% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_7:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R8C16D.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_133:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R8C15D.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 1.131ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/game_state__i1  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/ball_x_i9  (to clk +)
-
-   Delay:               0.377ns  (62.1% logic, 37.9% route), 2 logic levels.
-
- Constraint Details:
-
-      0.377ns physical path delay vga_inst/SLICE_149 to vga_inst/SLICE_141 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 1.131ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_149 to vga_inst/SLICE_141:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R5C18C.CLK to      R5C18C.Q0 vga_inst/SLICE_149 (from INTERNAL_OSC)
-ROUTE        22     0.143      R5C18C.Q0 to      R4C18C.D0 vga_inst/game_state_0
-CTOF_DEL    ---     0.101      R4C18C.D0 to      R4C18C.F0 vga_inst/SLICE_141
-ROUTE         1     0.000      R4C18C.F0 to     R4C18C.DI0 vga_inst/n625 (to clk)
-                  --------
-                    0.377   (62.1% logic, 37.9% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_149:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_141:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R4C18C.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 1.046ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/row_273__i8  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/vsync_157  (to clk +)
-
-   Delay:               0.462ns  (50.6% logic, 49.4% route), 2 logic levels.
-
- Constraint Details:
-
-      0.462ns physical path delay vga_inst/SLICE_43 to vga_inst/SLICE_132 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 1.046ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_43 to vga_inst/SLICE_132:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R7C18A.CLK to      R7C18A.Q1 vga_inst/SLICE_43 (from INTERNAL_OSC)
-ROUTE         8     0.228      R7C18A.Q1 to      R7C19A.B0 vga_inst/row_8
-CTOF_DEL    ---     0.101      R7C19A.B0 to      R7C19A.F0 vga_inst/SLICE_132
-ROUTE         1     0.000      R7C19A.F0 to     R7C19A.DI0 vga_inst/o_VGA_VSync_N_279 (to clk)
-                  --------
-                    0.462   (50.6% logic, 49.4% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_43:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R7C18A.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_132:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R7C19A.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 1.042ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/game_state__i1  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/ball_y_i1  (to clk +)
-
-   Delay:               0.466ns  (50.2% logic, 49.8% route), 2 logic levels.
-
- Constraint Details:
-
-      0.466ns physical path delay vga_inst/SLICE_149 to vga_inst/SLICE_143 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 1.042ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_149 to vga_inst/SLICE_143:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R5C18C.CLK to      R5C18C.Q0 vga_inst/SLICE_149 (from INTERNAL_OSC)
-ROUTE        22     0.232      R5C18C.Q0 to      R4C18D.B0 vga_inst/game_state_0
-CTOF_DEL    ---     0.101      R4C18D.B0 to      R4C18D.F0 vga_inst/SLICE_143
-ROUTE         1     0.000      R4C18D.F0 to     R4C18D.DI0 vga_inst/n918 (to clk)
-                  --------
-                    0.466   (50.2% logic, 49.8% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_149:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_143:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R4C18D.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 1.042ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/game_state__i1  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/ball_y_i2  (to clk +)
-
-   Delay:               0.466ns  (50.2% logic, 49.8% route), 2 logic levels.
-
- Constraint Details:
-
-      0.466ns physical path delay vga_inst/SLICE_149 to vga_inst/SLICE_143 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 1.042ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_149 to vga_inst/SLICE_143:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R5C18C.CLK to      R5C18C.Q0 vga_inst/SLICE_149 (from INTERNAL_OSC)
-ROUTE        22     0.232      R5C18C.Q0 to      R4C18D.B1 vga_inst/game_state_0
-CTOF_DEL    ---     0.101      R4C18D.B1 to      R4C18D.F1 vga_inst/SLICE_143
-ROUTE         1     0.000      R4C18D.F1 to     R4C18D.DI1 vga_inst/n80 (to clk)
-                  --------
-                    0.466   (50.2% logic, 49.8% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_149:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_143:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R4C18D.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 1.041ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/game_state__i1  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/ball_y_i7  (to clk +)
-
-   Delay:               0.467ns  (50.1% logic, 49.9% route), 2 logic levels.
-
- Constraint Details:
-
-      0.467ns physical path delay vga_inst/SLICE_149 to vga_inst/SLICE_146 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 1.041ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_149 to vga_inst/SLICE_146:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R5C18C.CLK to      R5C18C.Q0 vga_inst/SLICE_149 (from INTERNAL_OSC)
-ROUTE        22     0.233      R5C18C.Q0 to      R4C19B.C1 vga_inst/game_state_0
-CTOF_DEL    ---     0.101      R4C19B.C1 to      R4C19B.F1 vga_inst/SLICE_146
-ROUTE         1     0.000      R4C19B.F1 to     R4C19B.DI1 vga_inst/n2264 (to clk)
-                  --------
-                    0.467   (50.1% logic, 49.9% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_149:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_146:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R4C19B.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 1.041ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/game_state__i1  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/ball_y_i6  (to clk +)
-
-   Delay:               0.467ns  (50.1% logic, 49.9% route), 2 logic levels.
-
- Constraint Details:
-
-      0.467ns physical path delay vga_inst/SLICE_149 to vga_inst/SLICE_146 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 1.041ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_149 to vga_inst/SLICE_146:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R5C18C.CLK to      R5C18C.Q0 vga_inst/SLICE_149 (from INTERNAL_OSC)
-ROUTE        22     0.233      R5C18C.Q0 to      R4C19B.C0 vga_inst/game_state_0
-CTOF_DEL    ---     0.101      R4C19B.C0 to      R4C19B.F0 vga_inst/SLICE_146
-ROUTE         1     0.000      R4C19B.F0 to     R4C19B.DI0 vga_inst/n2262 (to clk)
-                  --------
-                    0.467   (50.1% logic, 49.9% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_149:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_146:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R4C19B.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 0.979ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/row_273__i5  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/vsync_157  (to clk +)
-
-   Delay:               0.529ns  (63.3% logic, 36.7% route), 3 logic levels.
-
- Constraint Details:
-
-      0.529ns physical path delay vga_inst/SLICE_45 to vga_inst/SLICE_132 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 0.979ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_45 to vga_inst/SLICE_132:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R7C17D.CLK to      R7C17D.Q0 vga_inst/SLICE_45 (from INTERNAL_OSC)
-ROUTE         8     0.141      R7C17D.Q0 to      R7C19B.D1 vga_inst/row_5
-CTOF_DEL    ---     0.101      R7C19B.D1 to      R7C19B.F1 vga_inst/SLICE_166
-ROUTE         1     0.053      R7C19B.F1 to      R7C19A.D0 vga_inst/n2298
-CTOF_DEL    ---     0.101      R7C19A.D0 to      R7C19A.F0 vga_inst/SLICE_132
-ROUTE         1     0.000      R7C19A.F0 to     R7C19A.DI0 vga_inst/o_VGA_VSync_N_279 (to clk)
-                  --------
-                    0.529   (63.3% logic, 36.7% route), 3 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_45:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R7C17D.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_132:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R7C19A.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 0.955ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/game_state__i1  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/ball_y_i8  (to clk +)
-
-   Delay:               0.553ns  (42.3% logic, 57.7% route), 2 logic levels.
-
- Constraint Details:
-
-      0.553ns physical path delay vga_inst/SLICE_149 to vga_inst/SLICE_147 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 0.955ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_149 to vga_inst/SLICE_147:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R5C18C.CLK to      R5C18C.Q0 vga_inst/SLICE_149 (from INTERNAL_OSC)
-ROUTE        22     0.319      R5C18C.Q0 to      R4C17C.B0 vga_inst/game_state_0
-CTOF_DEL    ---     0.101      R4C17C.B0 to      R4C17C.F0 vga_inst/SLICE_147
-ROUTE         1     0.000      R4C17C.F0 to     R4C17C.DI0 vga_inst/n911 (to clk)
-                  --------
-                    0.553   (42.3% logic, 57.7% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_149:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_147:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R4C17C.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 0.944ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              vga_inst/game_state__i1  (from INTERNAL_OSC +)
-   Destination:    FF         Data in        vga_inst/ball_y_i0  (to clk +)
-
-   Delay:               0.564ns  (41.5% logic, 58.5% route), 2 logic levels.
-
- Constraint Details:
-
-      0.564ns physical path delay vga_inst/SLICE_149 to vga_inst/SLICE_142 exceeds
-      (delay constraint based on source clock period of 26.316ns and destination clock period of 20.000ns)
-     -0.013ns DIN_HLD and
-      0.000ns delay constraint less
-     -1.521ns skew requirement (totaling 1.508ns) by 0.944ns
-
- Physical Path Details:
-
-      Data path vga_inst/SLICE_149 to vga_inst/SLICE_142:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R5C18C.CLK to      R5C18C.Q0 vga_inst/SLICE_149 (from INTERNAL_OSC)
-ROUTE        22     0.330      R5C18C.Q0 to      R5C14A.C0 vga_inst/game_state_0
-CTOF_DEL    ---     0.101      R5C14A.C0 to      R5C14A.F0 vga_inst/SLICE_142
-ROUTE         1     0.000      R5C14A.F0 to     R5C14A.DI0 vga_inst/n466 (to clk)
-                  --------
-                    0.564   (41.5% logic, 58.5% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path OSCH_inst to vga_inst/SLICE_149:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C18C.CLK INTERNAL_OSC
-                  --------
-                    1.216   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path OSCH_inst to vga_inst/SLICE_142:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        31     1.216        OSC.OSC to     R5C14C.CLK INTERNAL_OSC
-REG_DEL     ---     0.154     R5C14C.CLK to      R5C14C.Q0 SLICE_134
-ROUTE        40     1.367      R5C14C.Q0 to     R5C14A.CLK clk
-                  --------
-                    2.737   (5.6% logic, 94.4% route), 1 logic levels.
 
 Report Summary
 --------------
@@ -2357,40 +1252,17 @@ Report Summary
 Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "INTERNAL_OSC" 38.000000  |             |             |
-MHz ;                                   |     0.000 ns|     0.377 ns|   2  
+FREQUENCY NET "INTERNAL_OSC" 133.000000 |             |             |
+MHz ;                                   |            -|            -|   0  
                                         |             |             |
-FREQUENCY 50.000000 MHz ;               |            -|            -|   2 *
+FREQUENCY NET "PIN11_c" 24.937500 MHz ; |     0.000 ns|     0.377 ns|   2  
+                                        |             |             |
+FREQUENCY 50.000000 MHz ;               |            -|            -|   0  
                                         |             |             |
 ----------------------------------------------------------------------------
 
 
-1 preference(marked by "*" above) not met.
-
-----------------------------------------------------------------------------
-Critical Nets                           |   Loads|  Errors| % of total
-----------------------------------------------------------------------------
-n2543                                   |      25|     303|     60.12%
-                                        |        |        |
-vga_inst/n20                            |       2|     165|     32.74%
-                                        |        |        |
-vga_inst/n32                            |       2|     154|     30.56%
-                                        |        |        |
-vga_inst/ball_x_9__N_222                |      16|     142|     28.17%
-                                        |        |        |
-vga_inst/led_count_7                    |       2|     102|     20.24%
-                                        |        |        |
-vga_inst/n28                            |       2|      72|     14.29%
-                                        |        |        |
-vga_inst/led_count_2                    |       2|      63|     12.50%
-                                        |        |        |
-vga_inst/n19_adj_300                    |       2|      54|     10.71%
-                                        |        |        |
-vga_inst/led_count_5                    |       2|      53|     10.52%
-                                        |        |        |
-vga_inst/n29                            |       1|      51|     10.12%
-                                        |        |        |
-----------------------------------------------------------------------------
+All preferences were met.
 
 
 Clock Domains Analysis
@@ -2398,37 +1270,29 @@ Clock Domains Analysis
 
 Found 2 clocks:
 
-Clock Domain: clk   Source: SLICE_134.Q0   Loads: 40
-   Covered under: FREQUENCY 50.000000 MHz ;
+Clock Domain: PIN11_c   Source: Clk_25MHz_inst/PLLInst_0.CLKOP   Loads: 66
+   Covered under: FREQUENCY NET "PIN11_c" 24.937500 MHz ;
 
-   Data transfers from:
-   Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC
-      Covered under: FREQUENCY 50.000000 MHz ;   Transfers: 38
-
-Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 31
-   Covered under: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;
-
-   Data transfers from:
-   Clock Domain: clk   Source: SLICE_134.Q0
-      Covered under: FREQUENCY NET "INTERNAL_OSC" 38.000000 MHz ;   Transfers: 40
+Clock Domain: INTERNAL_OSC   Source: OSCH_inst.OSC   Loads: 1
+   No transfer within this clock domain is found
 
 
 Timing summary (Hold):
 ---------------
 
-Timing errors: 504  Score: 91549
-Cumulative negative slack: 91549
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
 
-Constraints cover 26615 paths, 2 nets, and 1216 connections (99.51% coverage)
+Constraints cover 24023 paths, 2 nets, and 844 connections (72.88% coverage)
 
 
 
 Timing summary (Setup and Hold):
 ---------------
 
-Timing errors: 5062 (setup), 504 (hold)
-Score: 370125112 (setup), 91549 (hold)
-Cumulative negative slack: 370216661 (370125112+91549)
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------

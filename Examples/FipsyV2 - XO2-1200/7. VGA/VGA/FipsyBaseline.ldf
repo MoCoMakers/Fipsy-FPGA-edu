@@ -9,7 +9,16 @@
         <Source name="VGA.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="clock_divider.v" type="Verilog" type_short="Verilog">
+        <Source name="clock_divider.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="pll.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="pll_tmpl.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="pll.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="FipsyBaseline.lpf" type="Logic Preference" type_short="LPF">

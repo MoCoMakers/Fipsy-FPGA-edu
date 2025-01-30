@@ -1,49 +1,48 @@
 ----------------------------------------------------------------------
 Report for cell Fipsy_Top.TECH
-Register bits:  115 of 1346 (8.544%)
-I/O cells:      10
+Register bits:  107 of 1346 (7.949%)
+I/O cells:      11
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D       132          100.0
-                            FD1P3AX        45          100.0
+                              CCU2D       129          100.0
+                            EHXPLLJ         1          100.0
+                            FD1P3AX        21          100.0
                             FD1P3AY         4          100.0
-                            FD1P3IX        36          100.0
+                            FD1P3IX        26          100.0
                             FD1P3JX         2          100.0
-                            FD1S3AX        13          100.0
+                            FD1S3AX        36          100.0
                             FD1S3AY         8          100.0
-                            FD1S3IX         7          100.0
+                            FD1S3IX        10          100.0
                                 GSR         1          100.0
                                  IB         4          100.0
-                               LUT4       144          100.0
-                                 OB         6          100.0
+                               LUT4       137          100.0
+                                 OB         7          100.0
                                OSCH         1          100.0
                               PFUMX         1          100.0
 SUB MODULES
-                       ClockDivider         1
                                 VGA         1
-                              TOTAL       406
+                                pll         1
+                              TOTAL       390
 ----------------------------------------------------------------------
 Report for cell VGA.v1
 Instance Path : vga_inst
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D       128           97.0
-                            FD1P3AX        45          100.0
+                              CCU2D       129          100.0
+                            FD1P3AX        21          100.0
                             FD1P3AY         4          100.0
-                            FD1P3IX        36          100.0
+                            FD1P3IX        26          100.0
                             FD1P3JX         2          100.0
-                            FD1S3AX        12           92.3
+                            FD1S3AX        36          100.0
                             FD1S3AY         8          100.0
-                               LUT4       139           96.5
+                            FD1S3IX        10          100.0
+                               LUT4       137          100.0
                               PFUMX         1          100.0
-                              TOTAL       375
+                              TOTAL       374
 ----------------------------------------------------------------------
-Report for cell ClockDivider.v1
+Report for cell pll.v1
 Instance Path : Clk_25MHz_inst
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D         4            3.0
-                            FD1S3AX         1            7.7
-                            FD1S3IX         7          100.0
-                               LUT4         3            2.1
-                              TOTAL        15
+                            EHXPLLJ         1          100.0
+                              TOTAL         1

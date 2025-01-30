@@ -6,7 +6,7 @@ Performance Grade:      4
 PACKAGE:          QFN32
 Package Status:                     Final          Version 1.44
 
-Sun Dec 22 12:11:18 2024
+Thu Jan 23 19:13:38 2025
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -14,6 +14,7 @@ Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 | LEDn      | 25/0     | LVCMOS33_OUT | PT15D |           |           | DRIVE:24mA PULL:DOWN SLEW:SLOW       |
 | PIN10     | 14/2     | LVCMOS33_IN  | PB11B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| PIN11     | 5/3      | LVCMOS33_OUT | PL9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | PIN14     | 21/1     | LVCMOS33_OUT | PR5C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | PIN17     | 27/0     | LVCMOS33_OUT | PT12D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | PIN18     | 28/0     | LVCMOS33_OUT | PT12C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
@@ -46,7 +47,7 @@ Pinout by Pin Number:
 +----------+-----------------------+------------+---------------+-------+---------------+-----------+-----------+
 | 1/0      | Reserved: sysCONFIG   |            |               | PT10C | TDO           |           |           |
 | 4/3      |     unused, PULL:DOWN |            |               | PL9A  | PCLKT3_0      |           |           |
-| 5/3      |     unused, PULL:DOWN |            |               | PL9B  | PCLKC3_0      |           |           |
+| 5/3      | PIN11                 | LOCATED    | LVCMOS33_OUT  | PL9B  | PCLKC3_0      |           |           |
 | 8/2      | PIN19                 | LOCATED    | LVCMOS33_OUT  | PB4C  | CSSPIN        |           |           |
 | 9/2      | Reserved: sysCONFIG   |            | LVCMOS33_BIDI | PB6C  | MCLK/CCLK     |           |           |
 | 10/2     | Reserved: sysCONFIG   |            | LVCMOS33_BIDI | PB6D  | SO/SPISO      |           |           |
@@ -176,6 +177,7 @@ to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste):
 
 LOCATE  COMP  "LEDn"  SITE  "25";
 LOCATE  COMP  "PIN10"  SITE  "14";
+LOCATE  COMP  "PIN11"  SITE  "5";
 LOCATE  COMP  "PIN14"  SITE  "21";
 LOCATE  COMP  "PIN17"  SITE  "27";
 LOCATE  COMP  "PIN18"  SITE  "28";
@@ -185,6 +187,8 @@ LOCATE  COMP  "PIN7"  SITE  "11";
 LOCATE  COMP  "PIN8"  SITE  "12";
 LOCATE  COMP  "PIN9"  SITE  "13";
 
+#PLL
+LOCATE  COMP  "Clk_25MHz_inst/PLLInst_0"  SITE  "LPLL" ;
 
 
 
@@ -195,5 +199,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 22 12:11:18 2024
+Thu Jan 23 19:13:38 2025
 

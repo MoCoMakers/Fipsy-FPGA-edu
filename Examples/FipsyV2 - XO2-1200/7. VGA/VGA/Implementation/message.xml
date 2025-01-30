@@ -32,14 +32,6 @@
         <Message>
             <ID>1100679</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(14): Semantic error in &quot;LOCATE COMP &quot;PIN11&quot; SITE &quot;5&quot; ;&quot;: </Dynamic>
-            <Dynamic>PIN11</Dynamic>
-            <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
-            <Navigation>14</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
             <Dynamic>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(15): Semantic error in &quot;LOCATE COMP &quot;PIN12&quot; SITE &quot;4&quot; ;&quot;: </Dynamic>
             <Dynamic>PIN12</Dynamic>
             <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
@@ -52,14 +44,6 @@
             <Dynamic>PIN13</Dynamic>
             <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
             <Navigation>16</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(27): Semantic error in &quot;IOBUF PORT &quot;PIN11&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>PIN11</Dynamic>
-            <Navigation>C:/Users/enact/Projects/VGA/FipsyBaseline.lpf</Navigation>
-            <Navigation>27</Navigation>
         </Message>
         <Message>
             <ID>1100644</ID>
@@ -115,26 +99,33 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
-            <Dynamic>OSCH(NOM_FREQ=&quot;38&quot;)</Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;133&quot;)</Dynamic>
             <Navigation>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1793</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/enact/projects/vga/clock_divider.v(1): </Dynamic>
-            <Dynamic>ClockDivider</Dynamic>
-            <Navigation>c:/users/enact/projects/vga/clock_divider.v</Navigation>
-            <Navigation>1</Navigation>
+            <Dynamic>c:/users/enact/projects/vga/pll.v(8): </Dynamic>
+            <Dynamic>pll</Dynamic>
+            <Navigation>c:/users/enact/projects/vga/pll.v</Navigation>
+            <Navigation>8</Navigation>
         </Message>
         <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/enact/projects/vga/clock_divider.v(9): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>7</Dynamic>
-            <Navigation>c:/users/enact/projects/vga/clock_divider.v</Navigation>
-            <Navigation>9</Navigation>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
+            <Dynamic>EHXPLLJ(CLKI_DIV=16,CLKFB_DIV=3,CLKOP_DIV=21,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=20,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
+            <Navigation>C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1730</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -386,12 +377,20 @@
     </Task>
     <Task name="PAR">
         <Message>
-            <ID>61001101</ID>
+            <ID>61061045</ID>
             <Severity>Warning</Severity>
         </Message>
         <Message>
-            <ID>61061045</ID>
+            <ID>66011008</ID>
             <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=INTERNAL_OSC loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=INTERNAL_OSC loads=1 clock_loads=1</Dynamic>
         </Message>
     </Task>
     <Task name="Jedecgen">

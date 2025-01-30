@@ -14,10 +14,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 22 12:11:13 2024
+Thu Jan 23 19:12:16 2025
 
 
-Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui 
+Command Line:  synthesis -f FipsyBaseline_Implementation_lattice.synproj -gui -msgset C:/Users/enact/Projects/VGA/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -76,7 +76,7 @@ The -syn option is FALSE.
 -p C:/Users/enact/Projects/VGA (searchpath added)
 Verilog design file = C:/Users/enact/Projects/VGA/Source/Fipsy_Top.v
 Verilog design file = C:/Users/enact/Projects/VGA/VGA.v
-Verilog design file = C:/Users/enact/Projects/VGA/clock_divider.v
+Verilog design file = C:/Users/enact/Projects/VGA/pll.v
 NGD file = FipsyBaseline_Implementation.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -91,13 +91,14 @@ Analyzing Verilog file c:/users/enact/projects/vga/source/fipsy_top.v. VERI-1482
 WARNING - synthesis: c:/users/enact/projects/vga/source/fipsy_top.v(55): PIN19 is already declared. VERI-1116
 WARNING - synthesis: c:/users/enact/projects/vga/source/fipsy_top.v(55): second declaration of PIN19 ignored. VERI-1329
 Analyzing Verilog file c:/users/enact/projects/vga/vga.v. VERI-1482
-Analyzing Verilog file c:/users/enact/projects/vga/clock_divider.v. VERI-1482
+Analyzing Verilog file c:/users/enact/projects/vga/pll.v. VERI-1482
 Analyzing Verilog file C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): Fipsy_Top
 INFO - synthesis: c:/users/enact/projects/vga/source/fipsy_top.v(45): compiling module Fipsy_Top. VERI-1018
-INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="38"). VERI-1018
-INFO - synthesis: c:/users/enact/projects/vga/clock_divider.v(1): compiling module ClockDivider. VERI-1018
-WARNING - synthesis: c:/users/enact/projects/vga/clock_divider.v(9): expression size 32 truncated to fit in target size 7. VERI-1209
+INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="133"). VERI-1018
+INFO - synthesis: c:/users/enact/projects/vga/pll.v(8): compiling module pll. VERI-1018
+INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
+INFO - synthesis: C:/Program Files/Lattice/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKI_DIV=16,CLKFB_DIV=3,CLKOP_DIV=21,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=20,CLKOS_TRIM_POL="FALLING"). VERI-1018
 INFO - synthesis: c:/users/enact/projects/vga/vga.v(2): compiling module VGA. VERI-1018
 WARNING - synthesis: c:/users/enact/projects/vga/vga.v(89): expression size 32 truncated to fit in target size 3. VERI-1209
 WARNING - synthesis: c:/users/enact/projects/vga/vga.v(90): expression size 32 truncated to fit in target size 3. VERI-1209
@@ -156,19 +157,20 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file FipsyBaseline_Implementation.ngd.
 
 ################### Begin Area Report (Fipsy_Top)######################
-Number of register bits => 115 of 1346 (8 % )
-CCU2D => 132
-FD1P3AX => 45
+Number of register bits => 107 of 1346 (7 % )
+CCU2D => 129
+EHXPLLJ => 1
+FD1P3AX => 21
 FD1P3AY => 4
-FD1P3IX => 36
+FD1P3IX => 26
 FD1P3JX => 2
-FD1S3AX => 13
+FD1S3AX => 36
 FD1S3AY => 8
-FD1S3IX => 7
+FD1S3IX => 10
 GSR => 1
 IB => 4
-LUT4 => 144
-OB => 6
+LUT4 => 137
+OB => 7
 OSCH => 1
 PFUMX => 1
 ################### End Area Report ##################
@@ -180,31 +182,30 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : Clk_25MHz_inst/clk, loads : 64
-  Net : INTERNAL_OSC, loads : 53
+  Net : Clk_25MHz_inst/PIN11_c, loads : 109
+  Net : INTERNAL_OSC, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 8
-Top 8 highest fanout Clock Enables:
-  Net : vga_inst/ball_x_9__N_222, loads : 22
-  Net : vga_inst/INTERNAL_OSC_enable_45, loads : 21
-  Net : vga_inst/clk_enable_22, loads : 12
-  Net : vga_inst/clk_enable_13, loads : 12
-  Net : INTERNAL_OSC_enable_44, loads : 2
-  Net : vga_inst/clk_enable_2, loads : 1
-  Net : vga_inst/clk_enable_1, loads : 1
-  Net : INTERNAL_OSC_enable_43, loads : 1
+Number of Clock Enables: 7
+Top 7 highest fanout Clock Enables:
+  Net : vga_inst/ball_x_9__N_206, loads : 22
+  Net : vga_inst/PIN11_c_enable_33, loads : 21
+  Net : vga_inst/PIN11_c_enable_13, loads : 12
+  Net : vga_inst/PIN11_c_enable_22, loads : 12
+  Net : vga_inst/PIN11_c_enable_2, loads : 2
+  Net : vga_inst/PIN11_c_enable_23, loads : 1
+  Net : vga_inst/PIN11_c_enable_1, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : INTERNAL_OSC_enable_44, loads : 36
-  Net : vga_inst/n2543, loads : 24
-  Net : vga_inst/ball_x_9__N_222, loads : 22
+  Net : vga_inst/n2385, loads : 25
+  Net : vga_inst/ball_x_9__N_206, loads : 22
   Net : vga_inst/game_state_0, loads : 22
-  Net : vga_inst/INTERNAL_OSC_enable_45, loads : 21
-  Net : vga_inst/clk_enable_13, loads : 12
-  Net : vga_inst/clk_enable_22, loads : 12
-  Net : vga_inst/n1119, loads : 11
+  Net : vga_inst/PIN11_c_enable_33, loads : 21
+  Net : vga_inst/PIN11_c_enable_13, loads : 12
+  Net : vga_inst/PIN11_c_enable_22, loads : 12
   Net : vga_inst/n1047, loads : 11
-  Net : vga_inst/n1200, loads : 10
+  Net : vga_inst/n1119, loads : 11
+  Net : vga_inst/n1149, loads : 10
+  Net : vga_inst/n1565, loads : 9
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -214,18 +215,15 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets clk]                     |  200.000 MHz|   55.894 MHz|    12 *
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets INTERNAL_OSC]            |  200.000 MHz|   81.546 MHz|     6 *
+clk0 [get_nets PIN11_c]                 |  200.000 MHz|   56.453 MHz|    11 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-2 constraints not met.
+1 constraints not met.
 
 
-Peak Memory Usage: 63.160  MB
+Peak Memory Usage: 63.184  MB
 
 --------------------------------------------------------------
 Elapsed CPU time for LSE flow : 0.578  secs

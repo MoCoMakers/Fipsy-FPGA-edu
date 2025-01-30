@@ -3,30 +3,26 @@ Report for cell Fipsy_Top
    Instance path: Fipsy_Top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     204.00        100.0
-                                  LUT4	     144.00        100.0
-                                 IOBUF	         10        100.0
-                                PFUREG	        115        100.0
-                                RIPPLE	        132        100.0
+                                  SLIC	     198.00        100.0
+                                  LUT4	     137.00        100.0
+                                 IOBUF	         11        100.0
+                                PFUREG	        107        100.0
+                                RIPPLE	        129        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                   VGA	          1        96.7
-                          ClockDivider	          1         2.8
+                                   pll	          1         0.0
+                                   VGA	          1        100.0
 ---------------------------------------------------
 Report for cell VGA
    Instance path: Fipsy_Top/vga_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     197.33        96.7
-                                  LUT4	     139.00        96.5
-                                PFUREG	        107        93.0
-                                RIPPLE	        128        97.0
+                                  SLIC	     198.00        100.0
+                                  LUT4	     137.00        100.0
+                                PFUREG	        107        100.0
+                                RIPPLE	        129        100.0
 ---------------------------------------------------
-Report for cell ClockDivider
+Report for cell pll
    Instance path: Fipsy_Top/Clk_25MHz_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       5.67         2.8
-                                  LUT4	       3.00         2.1
-                                PFUREG	          8         7.0
-                                RIPPLE	          4         3.0

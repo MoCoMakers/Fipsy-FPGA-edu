@@ -17,28 +17,29 @@ Command line:   map -a MachXO2 -p LCMXO2-1200HC -t QFN32 -s 4 -oc Commercial
      FipsyBaseline_Implementation.ngd -o FipsyBaseline_Implementation_map.ncd
      -pr FipsyBaseline_Implementation.prf -mp FipsyBaseline_Implementation.mrp
      -lpf C:/Users/enact/Projects/VGA/Implementation/FipsyBaseline_Implementatio
-     n.lpf -lpf C:/Users/enact/Projects/VGA/FipsyBaseline.lpf -c 0 -gui 
+     n.lpf -lpf C:/Users/enact/Projects/VGA/FipsyBaseline.lpf -c 0 -gui -msgset
+     C:/Users/enact/Projects/VGA/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-1200HCQFN32
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
-Mapped on:  12/22/24  12:11:14
+Mapped on:  01/23/25  19:12:18
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    115 out of  1346 (9%)
-      PFU registers:          115 out of  1280 (9%)
+   Number of registers:    107 out of  1346 (8%)
+      PFU registers:          107 out of  1280 (8%)
       PIO registers:            0 out of    66 (0%)
-   Number of SLICEs:       204 out of   640 (32%)
-      SLICEs as Logic/ROM:    204 out of   640 (32%)
+   Number of SLICEs:       198 out of   640 (31%)
+      SLICEs as Logic/ROM:    198 out of   640 (31%)
       SLICEs as RAM:            0 out of   480 (0%)
-      SLICEs as Carry:        132 out of   640 (21%)
-   Number of LUT4s:        408 out of  1280 (32%)
-      Number used as logic LUTs:        144
+      SLICEs as Carry:        129 out of   640 (20%)
+   Number of LUT4s:        395 out of  1280 (31%)
+      Number used as logic LUTs:        137
       Number used as distributed RAM:     0
-      Number used as ripple logic:      264
+      Number used as ripple logic:      258
       Number used as shift registers:     0
-   Number of PIO sites used: 10 + 4(JTAG) out of 22 (64%)
+   Number of PIO sites used: 11 + 4(JTAG) out of 22 (68%)
    Number of block RAMs:  0 out of 7 (0%)
    Number of GSRs:        0 out of 1 (0%)
    EFB used :        No
@@ -53,7 +54,7 @@ Mapped on:  12/22/24  12:11:14
    Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
    Number of DCCA:  0 out of 8 (0%)
    Number of DCMA:  0 out of 2 (0%)
-   Number of PLLs:  0 out of 1 (0%)
+   Number of PLLs:  1 out of 1 (100%)
    Number of DQSDLLs:  0 out of 2 (0%)
    Number of CLKDIVC:  0 out of 4 (0%)
    Number of ECLKSYNCA:  0 out of 4 (0%)
@@ -64,44 +65,42 @@ Mapped on:  12/22/24  12:11:14
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  2
-     Net INTERNAL_OSC: 31 loads, 31 rising, 0 falling (Driver: OSCH_inst )
-     Net clk: 38 loads, 38 rising, 0 falling (Driver:
-     Clk_25MHz_inst/clk_out_25mhz_12 )
+     Net INTERNAL_OSC: 1 loads, 1 rising, 0 falling (Driver: OSCH_inst )
+     Net PIN11_c: 65 loads, 65 rising, 0 falling (Driver:
 
-   Number of Clock Enables:  8
-     Net INTERNAL_OSC_enable_44: 19 loads, 19 LSLICEs
-     Net vga_inst/ball_x_9__N_222: 14 loads, 14 LSLICEs
-     Net vga_inst/clk_enable_13: 6 loads, 6 LSLICEs
-     Net vga_inst/clk_enable_1: 1 loads, 1 LSLICEs
-     Net vga_inst/clk_enable_2: 1 loads, 1 LSLICEs
-     Net vga_inst/clk_enable_22: 6 loads, 6 LSLICEs
-     Net vga_inst/INTERNAL_OSC_enable_45: 6 loads, 6 LSLICEs
-     Net INTERNAL_OSC_enable_43: 1 loads, 1 LSLICEs
-   Number of LSRs:  7
-     Net vga_inst/n1179: 4 loads, 4 LSLICEs
-     Net vga_inst/clk_enable_13: 2 loads, 2 LSLICEs
-     Net vga_inst/clk_enable_22: 2 loads, 2 LSLICEs
-     Net vga_inst/INTERNAL_OSC_enable_45: 6 loads, 6 LSLICEs
-     Net vga_inst/n1200: 6 loads, 6 LSLICEs
-     Net vga_inst/n1295: 4 loads, 4 LSLICEs
-     Net n1173: 4 loads, 4 LSLICEs
+     Clk_25MHz_inst/PLLInst_0 )
+   Number of Clock Enables:  7
+     Net vga_inst/ball_x_9__N_206: 14 loads, 14 LSLICEs
+     Net vga_inst/PIN11_c_enable_13: 6 loads, 6 LSLICEs
+     Net vga_inst/PIN11_c_enable_22: 6 loads, 6 LSLICEs
+     Net vga_inst/PIN11_c_enable_33: 6 loads, 6 LSLICEs
+     Net vga_inst/PIN11_c_enable_1: 1 loads, 1 LSLICEs
+     Net vga_inst/PIN11_c_enable_2: 1 loads, 1 LSLICEs
+     Net vga_inst/PIN11_c_enable_23: 1 loads, 1 LSLICEs
+   Number of LSRs:  6
+     Net vga_inst/PIN11_c_enable_13: 2 loads, 2 LSLICEs
+     Net vga_inst/n1129: 4 loads, 4 LSLICEs
+     Net vga_inst/PIN11_c_enable_22: 2 loads, 2 LSLICEs
+     Net vga_inst/PIN11_c_enable_33: 6 loads, 6 LSLICEs
+     Net vga_inst/n1149: 6 loads, 6 LSLICEs
+     Net vga_inst/n1239: 4 loads, 4 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net n2543: 25 loads
+     Net vga_inst/n2385: 25 loads
      Net vga_inst/game_state_0: 22 loads
-     Net INTERNAL_OSC_enable_44: 21 loads
-     Net vga_inst/ball_x_9__N_222: 16 loads
-     Net vga_inst/INTERNAL_OSC_enable_45: 13 loads
+     Net vga_inst/ball_x_9__N_206: 16 loads
+     Net vga_inst/PIN11_c_enable_33: 13 loads
      Net vga_inst/n1047: 11 loads
      Net vga_inst/n1119: 11 loads
-     Net vga_inst/n1723: 9 loads
+     Net vga_inst/n1565: 9 loads
      Net vga_inst/ball_y_6: 8 loads
      Net vga_inst/ball_y_7: 8 loads
+     Net vga_inst/ball_y_8: 8 loads
 
 
 
 
-   Number of warnings:  6
+   Number of warnings:  4
    Number of errors:    0
      
 
@@ -110,23 +109,16 @@ Mapped on:  12/22/24  12:11:14
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(14): Semantic error
-     in "LOCATE COMP "PIN11" SITE "5" ;": COMP "PIN11" cannot be found in
-     design. This preference has been disabled.
 WARNING - map: C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(15): Semantic error
      in "LOCATE COMP "PIN12" SITE "4" ;": COMP "PIN12" cannot be found in
      design. This preference has been disabled.
 WARNING - map: C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(16): Semantic error
      in "LOCATE COMP "PIN13" SITE "20" ;": COMP "PIN13" cannot be found in
      design. This preference has been disabled.
-WARNING - map: C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(27): Semantic error
-     in "IOBUF PORT "PIN11" IO_TYPE=LVCMOS33 ;": Port "PIN11" does not exist in
-     the design. This preference has been disabled.
 WARNING - map: C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(28): Semantic error
      in "IOBUF PORT "PIN12" IO_TYPE=LVCMOS33 ;": Port "PIN12" does not exist in
      the design. This preference has been disabled.
 WARNING - map: C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(29): Semantic error
-
      in "IOBUF PORT "PIN13" IO_TYPE=LVCMOS33 ;": Port "PIN13" does not exist in
      the design. This preference has been disabled.
 
@@ -135,6 +127,7 @@ WARNING - map: C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(29): Semantic error
 <A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
 
 +---------------------+-----------+-----------+------------+
+
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
@@ -158,6 +151,8 @@ WARNING - map: C:/Users/enact/Projects/VGA/FipsyBaseline.lpf(29): Semantic error
 +---------------------+-----------+-----------+------------+
 | PIN20               | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| PIN11               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 
 
 
@@ -167,15 +162,15 @@ Block i5 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal Clk_25MHz_inst/counter_272_add_4_1/S0 undriven or does not drive anything
+Signal vga_inst/add_1450_11/S1 undriven or does not drive anything - clipped.
+Signal vga_inst/add_1450_11/CO undriven or does not drive anything - clipped.
+Signal vga_inst/unary_minus_153_add_3_1/S0 undriven or does not drive anything -
+     clipped.
+Signal vga_inst/unary_minus_153_add_3_1/CI undriven or does not drive anything -
+     clipped.
+Signal vga_inst/unary_minus_153_add_3_11/S1 undriven or does not drive anything
      - clipped.
-Signal Clk_25MHz_inst/counter_272_add_4_1/CI undriven or does not drive anything
-     - clipped.
-Signal Clk_25MHz_inst/counter_272_add_4_7/CO undriven or does not drive anything
-     - clipped.
-Signal vga_inst/unary_minus_181_add_3_11/S1 undriven or does not drive anything
-     - clipped.
-Signal vga_inst/unary_minus_181_add_3_11/CO undriven or does not drive anything
+Signal vga_inst/unary_minus_153_add_3_11/CO undriven or does not drive anything
      - clipped.
 Signal vga_inst/sub_15_add_2_1/S0 undriven or does not drive anything - clipped.
      
@@ -185,12 +180,12 @@ Signal vga_inst/sub_15_add_2_11/S1 undriven or does not drive anything -
      clipped.
 Signal vga_inst/sub_15_add_2_11/CO undriven or does not drive anything -
      clipped.
-
 Signal vga_inst/sub_20_add_2_1/S0 undriven or does not drive anything - clipped.
      
 Signal vga_inst/sub_20_add_2_1/CI undriven or does not drive anything - clipped.
      
 Signal vga_inst/sub_20_add_2_11/S1 undriven or does not drive anything -
+
      clipped.
 Signal vga_inst/sub_20_add_2_11/CO undriven or does not drive anything -
      clipped.
@@ -206,6 +201,11 @@ Signal vga_inst/paddle_right_y_9__I_0_171_add_2_1/S0 undriven or does not drive
      anything - clipped.
 Signal vga_inst/paddle_right_y_9__I_0_171_add_2_1/CI undriven or does not drive
      anything - clipped.
+Signal vga_inst/add_230_11/CO undriven or does not drive anything - clipped.
+Signal vga_inst/add_66_2/S0 undriven or does not drive anything - clipped.
+Signal vga_inst/add_66_2/CI undriven or does not drive anything - clipped.
+Signal vga_inst/add_185_11/S1 undriven or does not drive anything - clipped.
+Signal vga_inst/add_185_11/CO undriven or does not drive anything - clipped.
 Signal vga_inst/paddle_right_y_9__I_0_171_add_2_11/S1 undriven or does not drive
      anything - clipped.
 Signal vga_inst/paddle_right_y_9__I_0_171_add_2_11/CO undriven or does not drive
@@ -214,23 +214,15 @@ Signal vga_inst/sub_71_add_2_1/S0 undriven or does not drive anything - clipped.
      
 Signal vga_inst/sub_71_add_2_1/CI undriven or does not drive anything - clipped.
      
-Signal vga_inst/row_273_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal vga_inst/row_273_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal vga_inst/add_66_10/CO undriven or does not drive anything - clipped.
-Signal vga_inst/add_271_11/CO undriven or does not drive anything - clipped.
-Signal vga_inst/add_1609_1/S1 undriven or does not drive anything - clipped.
-Signal vga_inst/add_1609_1/S0 undriven or does not drive anything - clipped.
-Signal vga_inst/add_1609_1/CI undriven or does not drive anything - clipped.
+Signal vga_inst/add_185_1/S0 undriven or does not drive anything - clipped.
+Signal vga_inst/add_185_1/CI undriven or does not drive anything - clipped.
 Signal vga_inst/add_67_10/CO undriven or does not drive anything - clipped.
 Signal vga_inst/add_186_1/S0 undriven or does not drive anything - clipped.
 Signal vga_inst/add_186_1/CI undriven or does not drive anything - clipped.
-Signal vga_inst/add_185_11/S1 undriven or does not drive anything - clipped.
-Signal vga_inst/add_185_11/CO undriven or does not drive anything - clipped.
-Signal vga_inst/add_268_1/S1 undriven or does not drive anything - clipped.
-Signal vga_inst/add_268_1/S0 undriven or does not drive anything - clipped.
-Signal vga_inst/add_268_1/CI undriven or does not drive anything - clipped.
+Signal vga_inst/row_234_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal vga_inst/row_234_add_4_1/CI undriven or does not drive anything -
+     clipped.
 Signal vga_inst/sub_71_add_2_11/S1 undriven or does not drive anything -
      clipped.
 Signal vga_inst/sub_71_add_2_11/CO undriven or does not drive anything -
@@ -239,70 +231,150 @@ Signal vga_inst/sub_88_add_2_1/S0 undriven or does not drive anything - clipped.
      
 Signal vga_inst/sub_88_add_2_1/CI undriven or does not drive anything - clipped.
      
-Signal vga_inst/sub_88_add_2_11/S1 undriven or does not drive anything -
+Signal vga_inst/unary_minus_152_add_3_1/S0 undriven or does not drive anything -
      clipped.
-Signal vga_inst/sub_88_add_2_11/CO undriven or does not drive anything -
-
-     clipped.
-Signal vga_inst/add_1606_1/S0 undriven or does not drive anything - clipped.
-Signal vga_inst/add_1606_1/CI undriven or does not drive anything - clipped.
-Signal vga_inst/add_1606_9/CO undriven or does not drive anything - clipped.
-Signal vga_inst/add_1608_1/S0 undriven or does not drive anything - clipped.
-Signal vga_inst/add_1608_1/CI undriven or does not drive anything - clipped.
-Signal vga_inst/add_1608_9/CO undriven or does not drive anything - clipped.
-Signal vga_inst/add_1607_1/S0 undriven or does not drive anything - clipped.
-Signal vga_inst/add_1607_1/CI undriven or does not drive anything - clipped.
-Signal vga_inst/add_1607_9/CO undriven or does not drive anything - clipped.
-Signal vga_inst/row_273_add_4_11/S1 undriven or does not drive anything -
-     clipped.
-Signal vga_inst/row_273_add_4_11/CO undriven or does not drive anything -
-     clipped.
-Signal vga_inst/led_count_274_add_4_25/S1 undriven or does not drive anything -
-     clipped.
-Signal vga_inst/led_count_274_add_4_25/CO undriven or does not drive anything -
-     clipped.
-Signal vga_inst/add_185_1/S0 undriven or does not drive anything - clipped.
-Signal vga_inst/add_185_1/CI undriven or does not drive anything - clipped.
-Signal vga_inst/add_268_11/CO undriven or does not drive anything - clipped.
-Signal vga_inst/unary_minus_180_add_3_1/S0 undriven or does not drive anything -
-     clipped.
-Signal vga_inst/unary_minus_180_add_3_1/CI undriven or does not drive anything -
-     clipped.
-Signal vga_inst/add_67_2/S0 undriven or does not drive anything - clipped.
-Signal vga_inst/add_67_2/CI undriven or does not drive anything - clipped.
-Signal vga_inst/add_1609_11/S1 undriven or does not drive anything - clipped.
-Signal vga_inst/add_1609_11/CO undriven or does not drive anything - clipped.
-Signal vga_inst/add_66_2/S0 undriven or does not drive anything - clipped.
-Signal vga_inst/add_66_2/CI undriven or does not drive anything - clipped.
-Signal vga_inst/add_271_1/S1 undriven or does not drive anything - clipped.
-Signal vga_inst/add_271_1/S0 undriven or does not drive anything - clipped.
-Signal vga_inst/add_271_1/CI undriven or does not drive anything - clipped.
-Signal vga_inst/unary_minus_180_add_3_11/S1 undriven or does not drive anything
-     - clipped.
-Signal vga_inst/unary_minus_180_add_3_11/CO undriven or does not drive anything
-     - clipped.
-Signal vga_inst/led_count_274_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal vga_inst/led_count_274_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal vga_inst/column_275_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal vga_inst/column_275_add_4_1/CI undriven or does not drive anything -
+Signal vga_inst/unary_minus_152_add_3_1/CI undriven or does not drive anything -
      clipped.
 Signal vga_inst/add_186_11/S1 undriven or does not drive anything - clipped.
 Signal vga_inst/add_186_11/CO undriven or does not drive anything - clipped.
-Signal vga_inst/column_275_add_4_11/S1 undriven or does not drive anything -
+Signal vga_inst/add_233_11/CO undriven or does not drive anything - clipped.
+Signal vga_inst/sub_88_add_2_11/S1 undriven or does not drive anything -
      clipped.
-Signal vga_inst/column_275_add_4_11/CO undriven or does not drive anything -
-     clipped.
-Signal vga_inst/unary_minus_181_add_3_1/S0 undriven or does not drive anything -
-     clipped.
-Signal vga_inst/unary_minus_181_add_3_1/CI undriven or does not drive anything -
+Signal vga_inst/sub_88_add_2_11/CO undriven or does not drive anything -
      clipped.
 
+Signal vga_inst/add_1449_1/S0 undriven or does not drive anything - clipped.
+Signal vga_inst/add_1449_1/CI undriven or does not drive anything - clipped.
+Signal vga_inst/add_1451_11/S1 undriven or does not drive anything - clipped.
+Signal vga_inst/add_1451_11/CO undriven or does not drive anything - clipped.
+Signal vga_inst/add_66_10/CO undriven or does not drive anything - clipped.
+Signal vga_inst/add_1449_9/CO undriven or does not drive anything - clipped.
+Signal vga_inst/add_1448_1/S0 undriven or does not drive anything - clipped.
+Signal vga_inst/add_1448_1/CI undriven or does not drive anything - clipped.
+Signal vga_inst/add_67_2/S0 undriven or does not drive anything - clipped.
+Signal vga_inst/add_67_2/CI undriven or does not drive anything - clipped.
+Signal vga_inst/add_1451_1/S1 undriven or does not drive anything - clipped.
+Signal vga_inst/add_1451_1/S0 undriven or does not drive anything - clipped.
+Signal vga_inst/add_1451_1/CI undriven or does not drive anything - clipped.
+Signal vga_inst/row_234_add_4_11/S1 undriven or does not drive anything -
+     clipped.
+Signal vga_inst/row_234_add_4_11/CO undriven or does not drive anything -
+     clipped.
+Signal vga_inst/column_236_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal vga_inst/column_236_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal vga_inst/add_1448_9/CO undriven or does not drive anything - clipped.
+Signal vga_inst/column_236_add_4_11/S1 undriven or does not drive anything -
+     clipped.
+Signal vga_inst/column_236_add_4_11/CO undriven or does not drive anything -
+     clipped.
+Signal vga_inst/add_1450_1/S1 undriven or does not drive anything - clipped.
+Signal vga_inst/add_1450_1/S0 undriven or does not drive anything - clipped.
+Signal vga_inst/add_1450_1/CI undriven or does not drive anything - clipped.
+Signal vga_inst/led_count_235_add_4_25/S1 undriven or does not drive anything -
+     clipped.
+Signal vga_inst/led_count_235_add_4_25/CO undriven or does not drive anything -
+     clipped.
+Signal vga_inst/led_count_235_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal vga_inst/led_count_235_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal vga_inst/add_233_1/S1 undriven or does not drive anything - clipped.
+Signal vga_inst/add_233_1/S0 undriven or does not drive anything - clipped.
+Signal vga_inst/add_233_1/CI undriven or does not drive anything - clipped.
+Signal vga_inst/add_230_1/S1 undriven or does not drive anything - clipped.
+Signal vga_inst/add_230_1/S0 undriven or does not drive anything - clipped.
+Signal vga_inst/add_230_1/CI undriven or does not drive anything - clipped.
+Signal vga_inst/unary_minus_152_add_3_11/S1 undriven or does not drive anything
+     - clipped.
+Signal vga_inst/unary_minus_152_add_3_11/CO undriven or does not drive anything
+     - clipped.
 Block i1 was optimized away.
 
      
+
+
+
+<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                Clk_25MHz_inst/PLLInst_0
+
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             NODE     INTERNAL_OSC
+  Output Clock(P):                         PIN,NODE PIN11_c
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     PIN11_c
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      133.0000
+  Output Clock(P) Frequency (MHz):                  24.9375
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     16
+  CLKFB Divider:                                    3
+  CLKOP Divider:                                    21
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
 
 OSC Summary
 -----------
@@ -312,7 +384,7 @@ OSC 1:                                     Pin/Node Value
   OSC Type:                                         OSCH
   STDBY Input:                                      NONE
   OSC Output:                              NODE     INTERNAL_OSC
-  OSC Nominal Frequency (MHz):                      38.00
+  OSC Nominal Frequency (MHz):                      133.00
 
 
 
@@ -321,6 +393,8 @@ OSC 1:                                     Pin/Node Value
 
 Instance Name: OSCH_inst
          Type: OSCH
+Instance Name: Clk_25MHz_inst/PLLInst_0
+         Type: EHXPLLJ
 
 
 
@@ -331,21 +405,6 @@ Instance Name: OSCH_inst
    Total REAL Time: 0 secs  
    Peak Memory Usage: 42 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,8 +1,8 @@
 <top name = "Fipsy_Top"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
+    <clockitem name = "PIN11"  type = "net" />
     <clockitem name = "INTERNAL_OSC"  type = "net" />
-    <clockitem name = "clk"  type = "net" />
 </clocks>
 
 <!--
@@ -20,7 +20,7 @@
 <unit name = "Fipsy_Top">
 
     <!--
-        Top Level Pins: 10
+        Top Level Pins: 11
     -->
 
     <pins>
@@ -28,6 +28,7 @@
         <pitem  name = "PIN8"  direction = "in"  />
         <pitem  name = "PIN9"  direction = "in"  />
         <pitem  name = "PIN10"  direction = "in"  />
+        <pitem  name = "PIN11"  direction = "out"  />
         <pitem  name = "PIN20"  direction = "out"  />
         <pitem  name = "PIN19"  direction = "out"  />
         <pitem  name = "PIN18"  direction = "out"  />
@@ -37,20 +38,62 @@
     </pins>
 
     <!--
-        Instances in netlist: 139
+        Instances in netlist: 136
     -->
 
-    <instance  name = "Clk_25MHz_inst/clk_out_25mhz_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "Clk_25MHz_inst/PLLInst_0"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "CLKI"  direction = "in"  />
+        <pitem  name = "CLKOP"  direction = "out"  />
+        <pitem  name = "CLKFB"  direction = "in"  />
+        <pitem  name = "PHASESEL1"  direction = "in"  />
+        <pitem  name = "PHASESEL0"  direction = "in"  />
+        <pitem  name = "PHASEDIR"  direction = "in"  />
+        <pitem  name = "PHASESTEP"  direction = "in"  />
+        <pitem  name = "LOADREG"  direction = "in"  />
+        <pitem  name = "STDBY"  direction = "in"  />
+        <pitem  name = "PLLWAKESYNC"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "RESETM"  direction = "in"  />
+        <pitem  name = "RESETC"  direction = "in"  />
+        <pitem  name = "RESETD"  direction = "in"  />
+        <pitem  name = "ENCLKOP"  direction = "in"  />
+        <pitem  name = "ENCLKOS"  direction = "in"  />
+        <pitem  name = "ENCLKOS2"  direction = "in"  />
+        <pitem  name = "ENCLKOS3"  direction = "in"  />
+        <pitem  name = "PLLCLK"  direction = "in"  />
+        <pitem  name = "PLLRST"  direction = "in"  />
+        <pitem  name = "PLLSTB"  direction = "in"  />
+        <pitem  name = "PLLWE"  direction = "in"  />
+        <pitem  name = "PLLADDR4"  direction = "in"  />
+        <pitem  name = "PLLADDR3"  direction = "in"  />
+        <pitem  name = "PLLADDR2"  direction = "in"  />
+        <pitem  name = "PLLADDR1"  direction = "in"  />
+        <pitem  name = "PLLADDR0"  direction = "in"  />
+        <pitem  name = "PLLDATI7"  direction = "in"  />
+        <pitem  name = "PLLDATI6"  direction = "in"  />
+        <pitem  name = "PLLDATI5"  direction = "in"  />
+        <pitem  name = "PLLDATI4"  direction = "in"  />
+        <pitem  name = "PLLDATI3"  direction = "in"  />
+        <pitem  name = "PLLDATI2"  direction = "in"  />
+        <pitem  name = "PLLDATI1"  direction = "in"  />
+        <pitem  name = "PLLDATI0"  direction = "in"  />
         </pins>
 
         <nets>
-        <nitem  name = "clk"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_15"  />
-        <nitem  name = "Clk_25MHz_inst/clk_out_25mhz_N_16"  />
+        <nitem  name = "INTERNAL_OSC"  />
+        <nitem  name = "PIN11"  />
+        <nitem  name = "Clk_25MHz_inst/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Clk_25MHz_inst/scuba_vlo_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Clk_25MHz_inst/scuba_vlo"  />
         </nets>
     </instance>
 
@@ -63,301 +106,6 @@
         <nets>
         <nitem  name = "gnd"  />
         <nitem  name = "INTERNAL_OSC"  />
-        </nets>
-    </instance>
-
-    <instance  name = "Clk_25MHz_inst/add_3"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "cin"  direction = "in"  />
-        <pitem  name = "a[31]"  direction = "in"  />
-        <pitem  name = "a[30]"  direction = "in"  />
-        <pitem  name = "a[29]"  direction = "in"  />
-        <pitem  name = "a[28]"  direction = "in"  />
-        <pitem  name = "a[27]"  direction = "in"  />
-        <pitem  name = "a[26]"  direction = "in"  />
-        <pitem  name = "a[25]"  direction = "in"  />
-        <pitem  name = "a[24]"  direction = "in"  />
-        <pitem  name = "a[23]"  direction = "in"  />
-        <pitem  name = "a[22]"  direction = "in"  />
-        <pitem  name = "a[21]"  direction = "in"  />
-        <pitem  name = "a[20]"  direction = "in"  />
-        <pitem  name = "a[19]"  direction = "in"  />
-        <pitem  name = "a[18]"  direction = "in"  />
-        <pitem  name = "a[17]"  direction = "in"  />
-        <pitem  name = "a[16]"  direction = "in"  />
-        <pitem  name = "a[15]"  direction = "in"  />
-        <pitem  name = "a[14]"  direction = "in"  />
-        <pitem  name = "a[13]"  direction = "in"  />
-        <pitem  name = "a[12]"  direction = "in"  />
-        <pitem  name = "a[11]"  direction = "in"  />
-        <pitem  name = "a[10]"  direction = "in"  />
-        <pitem  name = "a[9]"  direction = "in"  />
-        <pitem  name = "a[8]"  direction = "in"  />
-        <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "b[31]"  direction = "in"  />
-        <pitem  name = "b[30]"  direction = "in"  />
-        <pitem  name = "b[29]"  direction = "in"  />
-        <pitem  name = "b[28]"  direction = "in"  />
-        <pitem  name = "b[27]"  direction = "in"  />
-        <pitem  name = "b[26]"  direction = "in"  />
-        <pitem  name = "b[25]"  direction = "in"  />
-        <pitem  name = "b[24]"  direction = "in"  />
-        <pitem  name = "b[23]"  direction = "in"  />
-        <pitem  name = "b[22]"  direction = "in"  />
-        <pitem  name = "b[21]"  direction = "in"  />
-        <pitem  name = "b[20]"  direction = "in"  />
-        <pitem  name = "b[19]"  direction = "in"  />
-        <pitem  name = "b[18]"  direction = "in"  />
-        <pitem  name = "b[17]"  direction = "in"  />
-        <pitem  name = "b[16]"  direction = "in"  />
-        <pitem  name = "b[15]"  direction = "in"  />
-        <pitem  name = "b[14]"  direction = "in"  />
-        <pitem  name = "b[13]"  direction = "in"  />
-        <pitem  name = "b[12]"  direction = "in"  />
-        <pitem  name = "b[11]"  direction = "in"  />
-        <pitem  name = "b[10]"  direction = "in"  />
-        <pitem  name = "b[9]"  direction = "in"  />
-        <pitem  name = "b[8]"  direction = "in"  />
-        <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o[6]"  direction = "out"  />
-        <pitem  name = "o[5]"  direction = "out"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "Clk_25MHz_inst/gnd"  />
-        <nitem  name = "Clk_25MHz_inst/pwr"  />
-        <nitem  name = "Clk_25MHz_inst/counter[6]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[5]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[4]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[3]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[2]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[1]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[0]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[6]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[5]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[4]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[3]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[2]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[1]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "Clk_25MHz_inst/counter_6__I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a[31]"  direction = "in"  />
-        <pitem  name = "a[30]"  direction = "in"  />
-        <pitem  name = "a[29]"  direction = "in"  />
-        <pitem  name = "a[28]"  direction = "in"  />
-        <pitem  name = "a[27]"  direction = "in"  />
-        <pitem  name = "a[26]"  direction = "in"  />
-        <pitem  name = "a[25]"  direction = "in"  />
-        <pitem  name = "a[24]"  direction = "in"  />
-        <pitem  name = "a[23]"  direction = "in"  />
-        <pitem  name = "a[22]"  direction = "in"  />
-        <pitem  name = "a[21]"  direction = "in"  />
-        <pitem  name = "a[20]"  direction = "in"  />
-        <pitem  name = "a[19]"  direction = "in"  />
-        <pitem  name = "a[18]"  direction = "in"  />
-        <pitem  name = "a[17]"  direction = "in"  />
-        <pitem  name = "a[16]"  direction = "in"  />
-        <pitem  name = "a[15]"  direction = "in"  />
-        <pitem  name = "a[14]"  direction = "in"  />
-        <pitem  name = "a[13]"  direction = "in"  />
-        <pitem  name = "a[12]"  direction = "in"  />
-        <pitem  name = "a[11]"  direction = "in"  />
-        <pitem  name = "a[10]"  direction = "in"  />
-        <pitem  name = "a[9]"  direction = "in"  />
-        <pitem  name = "a[8]"  direction = "in"  />
-        <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "b[31]"  direction = "in"  />
-        <pitem  name = "b[30]"  direction = "in"  />
-        <pitem  name = "b[29]"  direction = "in"  />
-        <pitem  name = "b[28]"  direction = "in"  />
-        <pitem  name = "b[27]"  direction = "in"  />
-        <pitem  name = "b[26]"  direction = "in"  />
-        <pitem  name = "b[25]"  direction = "in"  />
-        <pitem  name = "b[24]"  direction = "in"  />
-        <pitem  name = "b[23]"  direction = "in"  />
-        <pitem  name = "b[22]"  direction = "in"  />
-        <pitem  name = "b[21]"  direction = "in"  />
-        <pitem  name = "b[20]"  direction = "in"  />
-        <pitem  name = "b[19]"  direction = "in"  />
-        <pitem  name = "b[18]"  direction = "in"  />
-        <pitem  name = "b[17]"  direction = "in"  />
-        <pitem  name = "b[16]"  direction = "in"  />
-        <pitem  name = "b[15]"  direction = "in"  />
-        <pitem  name = "b[14]"  direction = "in"  />
-        <pitem  name = "b[13]"  direction = "in"  />
-        <pitem  name = "b[12]"  direction = "in"  />
-        <pitem  name = "b[11]"  direction = "in"  />
-        <pitem  name = "b[10]"  direction = "in"  />
-        <pitem  name = "b[9]"  direction = "in"  />
-        <pitem  name = "b[8]"  direction = "in"  />
-        <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "Clk_25MHz_inst/gnd"  />
-        <nitem  name = "Clk_25MHz_inst/pwr"  />
-        <nitem  name = "Clk_25MHz_inst/counter[6]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[5]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[4]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[3]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[2]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[1]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[0]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_15"  />
-        </nets>
-    </instance>
-
-    <instance  name = "Clk_25MHz_inst/counter_6__I_0_14"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "d1[6]"  direction = "in"  />
-        <pitem  name = "d1[5]"  direction = "in"  />
-        <pitem  name = "d1[4]"  direction = "in"  />
-        <pitem  name = "d1[3]"  direction = "in"  />
-        <pitem  name = "d1[2]"  direction = "in"  />
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "d0[6]"  direction = "in"  />
-        <pitem  name = "d0[5]"  direction = "in"  />
-        <pitem  name = "d0[4]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
-        <pitem  name = "d0[2]"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "o[6]"  direction = "out"  />
-        <pitem  name = "o[5]"  direction = "out"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "Clk_25MHz_inst/gnd"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[6]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[5]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[4]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[3]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[2]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[1]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_8[0]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_15"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[6]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[5]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[4]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[3]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[2]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[1]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "Clk_25MHz_inst/clk_out_25mhz_12"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        <pitem  name = "d"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "Clk_25MHz_inst/gnd"  />
-        <nitem  name = "INTERNAL_OSC"  />
-        <nitem  name = "clk"  />
-        <nitem  name = "Clk_25MHz_inst/clk_out_25mhz_N_16"  />
-        </nets>
-    </instance>
-
-    <instance  name = "Clk_25MHz_inst/counter"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "set[6]"  direction = "in"  />
-        <pitem  name = "set[5]"  direction = "in"  />
-        <pitem  name = "set[4]"  direction = "in"  />
-        <pitem  name = "set[3]"  direction = "in"  />
-        <pitem  name = "set[2]"  direction = "in"  />
-        <pitem  name = "set[1]"  direction = "in"  />
-        <pitem  name = "set[0]"  direction = "in"  />
-        <pitem  name = "reset[6]"  direction = "in"  />
-        <pitem  name = "reset[5]"  direction = "in"  />
-        <pitem  name = "reset[4]"  direction = "in"  />
-        <pitem  name = "reset[3]"  direction = "in"  />
-        <pitem  name = "reset[2]"  direction = "in"  />
-        <pitem  name = "reset[1]"  direction = "in"  />
-        <pitem  name = "reset[0]"  direction = "in"  />
-        <pitem  name = "clock"  direction = "in"  />
-        <pitem  name = "q[6]"  direction = "out"  />
-        <pitem  name = "q[5]"  direction = "out"  />
-        <pitem  name = "q[4]"  direction = "out"  />
-        <pitem  name = "q[3]"  direction = "out"  />
-        <pitem  name = "q[2]"  direction = "out"  />
-        <pitem  name = "q[1]"  direction = "out"  />
-        <pitem  name = "q[0]"  direction = "out"  />
-        <pitem  name = "d[6]"  direction = "in"  />
-        <pitem  name = "d[5]"  direction = "in"  />
-        <pitem  name = "d[4]"  direction = "in"  />
-        <pitem  name = "d[3]"  direction = "in"  />
-        <pitem  name = "d[2]"  direction = "in"  />
-        <pitem  name = "d[1]"  direction = "in"  />
-        <pitem  name = "d[0]"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "Clk_25MHz_inst/gnd"  />
-        <nitem  name = "INTERNAL_OSC"  />
-        <nitem  name = "Clk_25MHz_inst/counter[6]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[5]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[4]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[3]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[2]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[1]"  />
-        <nitem  name = "Clk_25MHz_inst/counter[0]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[6]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[5]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[4]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[3]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[2]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[1]"  />
-        <nitem  name = "Clk_25MHz_inst/counter_6__N_1[0]"  />
         </nets>
     </instance>
 
@@ -400,7 +148,7 @@
         <nitem  name = "vga_inst/column[2]"  />
         <nitem  name = "vga_inst/column[1]"  />
         <nitem  name = "vga_inst/column[0]"  />
-        <nitem  name = "vga_inst/o_VGA_Red_0_N_284"  />
+        <nitem  name = "vga_inst/o_VGA_Red_0_N_268"  />
         </nets>
     </instance>
 
@@ -443,7 +191,7 @@
         <nitem  name = "vga_inst/row[2]"  />
         <nitem  name = "vga_inst/row[1]"  />
         <nitem  name = "vga_inst/row[0]"  />
-        <nitem  name = "vga_inst/o_VGA_Red_0_N_285"  />
+        <nitem  name = "vga_inst/o_VGA_Red_0_N_269"  />
         </nets>
     </instance>
 
@@ -455,9 +203,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "vga_inst/o_VGA_Red_0_N_284"  />
-        <nitem  name = "vga_inst/o_VGA_Red_0_N_285"  />
-        <nitem  name = "vga_inst/o_VGA_Red_0_N_283"  />
+        <nitem  name = "vga_inst/o_VGA_Red_0_N_268"  />
+        <nitem  name = "vga_inst/o_VGA_Red_0_N_269"  />
+        <nitem  name = "vga_inst/o_VGA_Red_0_N_267"  />
         </nets>
     </instance>
 
@@ -541,7 +289,7 @@
         <nitem  name = "vga_inst/red[2]"  />
         <nitem  name = "vga_inst/red[1]"  />
         <nitem  name = "vga_inst/red[0]"  />
-        <nitem  name = "vga_inst/o_VGA_Red_0_N_283"  />
+        <nitem  name = "vga_inst/o_VGA_Red_0_N_267"  />
         </nets>
     </instance>
 
@@ -625,7 +373,7 @@
         <nitem  name = "vga_inst/green[2]"  />
         <nitem  name = "vga_inst/green[1]"  />
         <nitem  name = "vga_inst/green[0]"  />
-        <nitem  name = "vga_inst/o_VGA_Red_0_N_283"  />
+        <nitem  name = "vga_inst/o_VGA_Red_0_N_267"  />
         </nets>
     </instance>
 
@@ -709,7 +457,7 @@
         <nitem  name = "vga_inst/blue[2]"  />
         <nitem  name = "vga_inst/blue[1]"  />
         <nitem  name = "vga_inst/blue[0]"  />
-        <nitem  name = "vga_inst/o_VGA_Red_0_N_283"  />
+        <nitem  name = "vga_inst/o_VGA_Red_0_N_267"  />
         </nets>
     </instance>
 
@@ -1235,15 +983,15 @@
         <nitem  name = "vga_inst/gnd"  />
         <nitem  name = "vga_inst/pwr"  />
         <nitem  name = "vga_inst/n160"  />
-        <nitem  name = "vga_inst/red_2__N_157[8]"  />
-        <nitem  name = "vga_inst/red_2__N_157[7]"  />
-        <nitem  name = "vga_inst/red_2__N_157[6]"  />
-        <nitem  name = "vga_inst/red_2__N_157[5]"  />
-        <nitem  name = "vga_inst/red_2__N_157[4]"  />
-        <nitem  name = "vga_inst/red_2__N_157[3]"  />
-        <nitem  name = "vga_inst/red_2__N_157[2]"  />
-        <nitem  name = "vga_inst/red_2__N_157[1]"  />
-        <nitem  name = "vga_inst/red_2__N_157[0]"  />
+        <nitem  name = "vga_inst/red_2__N_141[8]"  />
+        <nitem  name = "vga_inst/red_2__N_141[7]"  />
+        <nitem  name = "vga_inst/red_2__N_141[6]"  />
+        <nitem  name = "vga_inst/red_2__N_141[5]"  />
+        <nitem  name = "vga_inst/red_2__N_141[4]"  />
+        <nitem  name = "vga_inst/red_2__N_141[3]"  />
+        <nitem  name = "vga_inst/red_2__N_141[2]"  />
+        <nitem  name = "vga_inst/red_2__N_141[1]"  />
+        <nitem  name = "vga_inst/red_2__N_141[0]"  />
         </nets>
     </instance>
 
@@ -1302,16 +1050,16 @@
         <nitem  name = "vga_inst/paddle_left_y[2]"  />
         <nitem  name = "vga_inst/paddle_left_y[1]"  />
         <nitem  name = "vga_inst/paddle_left_y[0]"  />
-        <nitem  name = "vga_inst/red_2__N_169[9]"  />
-        <nitem  name = "vga_inst/red_2__N_169[8]"  />
-        <nitem  name = "vga_inst/red_2__N_169[7]"  />
-        <nitem  name = "vga_inst/red_2__N_169[6]"  />
-        <nitem  name = "vga_inst/red_2__N_169[5]"  />
-        <nitem  name = "vga_inst/red_2__N_169[4]"  />
-        <nitem  name = "vga_inst/red_2__N_169[3]"  />
-        <nitem  name = "vga_inst/red_2__N_169[2]"  />
-        <nitem  name = "vga_inst/red_2__N_169[1]"  />
-        <nitem  name = "vga_inst/red_2__N_169[0]"  />
+        <nitem  name = "vga_inst/red_2__N_153[9]"  />
+        <nitem  name = "vga_inst/red_2__N_153[8]"  />
+        <nitem  name = "vga_inst/red_2__N_153[7]"  />
+        <nitem  name = "vga_inst/red_2__N_153[6]"  />
+        <nitem  name = "vga_inst/red_2__N_153[5]"  />
+        <nitem  name = "vga_inst/red_2__N_153[4]"  />
+        <nitem  name = "vga_inst/red_2__N_153[3]"  />
+        <nitem  name = "vga_inst/red_2__N_153[2]"  />
+        <nitem  name = "vga_inst/red_2__N_153[1]"  />
+        <nitem  name = "vga_inst/red_2__N_153[0]"  />
         </nets>
     </instance>
 
@@ -1344,17 +1092,17 @@
         <nets>
         <nitem  name = "vga_inst/gnd"  />
         <nitem  name = "vga_inst/pwr"  />
-        <nitem  name = "vga_inst/red_2__N_169[9]"  />
-        <nitem  name = "vga_inst/red_2__N_169[8]"  />
-        <nitem  name = "vga_inst/red_2__N_169[7]"  />
-        <nitem  name = "vga_inst/red_2__N_169[6]"  />
-        <nitem  name = "vga_inst/red_2__N_169[5]"  />
-        <nitem  name = "vga_inst/red_2__N_169[4]"  />
-        <nitem  name = "vga_inst/red_2__N_169[3]"  />
-        <nitem  name = "vga_inst/red_2__N_169[2]"  />
-        <nitem  name = "vga_inst/red_2__N_169[1]"  />
-        <nitem  name = "vga_inst/red_2__N_169[0]"  />
-        <nitem  name = "vga_inst/red_2__N_168"  />
+        <nitem  name = "vga_inst/red_2__N_153[9]"  />
+        <nitem  name = "vga_inst/red_2__N_153[8]"  />
+        <nitem  name = "vga_inst/red_2__N_153[7]"  />
+        <nitem  name = "vga_inst/red_2__N_153[6]"  />
+        <nitem  name = "vga_inst/red_2__N_153[5]"  />
+        <nitem  name = "vga_inst/red_2__N_153[4]"  />
+        <nitem  name = "vga_inst/red_2__N_153[3]"  />
+        <nitem  name = "vga_inst/red_2__N_153[2]"  />
+        <nitem  name = "vga_inst/red_2__N_153[1]"  />
+        <nitem  name = "vga_inst/red_2__N_153[0]"  />
+        <nitem  name = "vga_inst/red_2__N_152"  />
         </nets>
     </instance>
 
@@ -1413,16 +1161,16 @@
         <nitem  name = "vga_inst/paddle_left_y[2]"  />
         <nitem  name = "vga_inst/paddle_left_y[1]"  />
         <nitem  name = "vga_inst/paddle_left_y[0]"  />
-        <nitem  name = "vga_inst/red_2__N_180[9]"  />
-        <nitem  name = "vga_inst/red_2__N_180[8]"  />
-        <nitem  name = "vga_inst/red_2__N_180[7]"  />
-        <nitem  name = "vga_inst/red_2__N_180[6]"  />
-        <nitem  name = "vga_inst/red_2__N_180[5]"  />
-        <nitem  name = "vga_inst/red_2__N_180[4]"  />
-        <nitem  name = "vga_inst/red_2__N_180[3]"  />
-        <nitem  name = "vga_inst/red_2__N_180[2]"  />
-        <nitem  name = "vga_inst/red_2__N_180[1]"  />
-        <nitem  name = "vga_inst/red_2__N_180[0]"  />
+        <nitem  name = "vga_inst/red_2__N_164[9]"  />
+        <nitem  name = "vga_inst/red_2__N_164[8]"  />
+        <nitem  name = "vga_inst/red_2__N_164[7]"  />
+        <nitem  name = "vga_inst/red_2__N_164[6]"  />
+        <nitem  name = "vga_inst/red_2__N_164[5]"  />
+        <nitem  name = "vga_inst/red_2__N_164[4]"  />
+        <nitem  name = "vga_inst/red_2__N_164[3]"  />
+        <nitem  name = "vga_inst/red_2__N_164[2]"  />
+        <nitem  name = "vga_inst/red_2__N_164[1]"  />
+        <nitem  name = "vga_inst/red_2__N_164[0]"  />
         </nets>
     </instance>
 
@@ -1455,17 +1203,17 @@
         <nets>
         <nitem  name = "vga_inst/gnd"  />
         <nitem  name = "vga_inst/pwr"  />
-        <nitem  name = "vga_inst/red_2__N_180[9]"  />
-        <nitem  name = "vga_inst/red_2__N_180[8]"  />
-        <nitem  name = "vga_inst/red_2__N_180[7]"  />
-        <nitem  name = "vga_inst/red_2__N_180[6]"  />
-        <nitem  name = "vga_inst/red_2__N_180[5]"  />
-        <nitem  name = "vga_inst/red_2__N_180[4]"  />
-        <nitem  name = "vga_inst/red_2__N_180[3]"  />
-        <nitem  name = "vga_inst/red_2__N_180[2]"  />
-        <nitem  name = "vga_inst/red_2__N_180[1]"  />
-        <nitem  name = "vga_inst/red_2__N_180[0]"  />
-        <nitem  name = "vga_inst/red_2__N_179"  />
+        <nitem  name = "vga_inst/red_2__N_164[9]"  />
+        <nitem  name = "vga_inst/red_2__N_164[8]"  />
+        <nitem  name = "vga_inst/red_2__N_164[7]"  />
+        <nitem  name = "vga_inst/red_2__N_164[6]"  />
+        <nitem  name = "vga_inst/red_2__N_164[5]"  />
+        <nitem  name = "vga_inst/red_2__N_164[4]"  />
+        <nitem  name = "vga_inst/red_2__N_164[3]"  />
+        <nitem  name = "vga_inst/red_2__N_164[2]"  />
+        <nitem  name = "vga_inst/red_2__N_164[1]"  />
+        <nitem  name = "vga_inst/red_2__N_164[0]"  />
+        <nitem  name = "vga_inst/red_2__N_163"  />
         </nets>
     </instance>
 
@@ -1477,9 +1225,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "vga_inst/red_2__N_168"  />
-        <nitem  name = "vga_inst/red_2__N_179"  />
-        <nitem  name = "vga_inst/red_2__N_167"  />
+        <nitem  name = "vga_inst/red_2__N_152"  />
+        <nitem  name = "vga_inst/red_2__N_163"  />
+        <nitem  name = "vga_inst/red_2__N_151"  />
         </nets>
     </instance>
 
@@ -1522,7 +1270,7 @@
         <nitem  name = "vga_inst/column[2]"  />
         <nitem  name = "vga_inst/column[1]"  />
         <nitem  name = "vga_inst/column[0]"  />
-        <nitem  name = "vga_inst/red_2__N_190"  />
+        <nitem  name = "vga_inst/red_2__N_174"  />
         </nets>
     </instance>
 
@@ -1534,9 +1282,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "vga_inst/red_2__N_167"  />
-        <nitem  name = "vga_inst/red_2__N_190"  />
-        <nitem  name = "vga_inst/red_2__N_166"  />
+        <nitem  name = "vga_inst/red_2__N_151"  />
+        <nitem  name = "vga_inst/red_2__N_174"  />
+        <nitem  name = "vga_inst/red_2__N_150"  />
         </nets>
     </instance>
 
@@ -1575,25 +1323,25 @@
         <nets>
         <nitem  name = "vga_inst/gnd"  />
         <nitem  name = "vga_inst/pwr"  />
-        <nitem  name = "vga_inst/red_2__N_157[8]"  />
-        <nitem  name = "vga_inst/red_2__N_157[7]"  />
-        <nitem  name = "vga_inst/red_2__N_157[6]"  />
-        <nitem  name = "vga_inst/red_2__N_157[5]"  />
-        <nitem  name = "vga_inst/red_2__N_157[4]"  />
-        <nitem  name = "vga_inst/red_2__N_157[3]"  />
-        <nitem  name = "vga_inst/red_2__N_157[2]"  />
-        <nitem  name = "vga_inst/red_2__N_157[1]"  />
-        <nitem  name = "vga_inst/red_2__N_157[0]"  />
-        <nitem  name = "vga_inst/red_2__N_166"  />
-        <nitem  name = "vga_inst/red_2__N_61[8]"  />
-        <nitem  name = "vga_inst/red_2__N_61[7]"  />
-        <nitem  name = "vga_inst/red_2__N_61[6]"  />
-        <nitem  name = "vga_inst/red_2__N_61[5]"  />
-        <nitem  name = "vga_inst/red_2__N_61[4]"  />
-        <nitem  name = "vga_inst/red_2__N_61[3]"  />
-        <nitem  name = "vga_inst/red_2__N_61[2]"  />
-        <nitem  name = "vga_inst/red_2__N_61[1]"  />
-        <nitem  name = "vga_inst/red_2__N_61[0]"  />
+        <nitem  name = "vga_inst/red_2__N_141[8]"  />
+        <nitem  name = "vga_inst/red_2__N_141[7]"  />
+        <nitem  name = "vga_inst/red_2__N_141[6]"  />
+        <nitem  name = "vga_inst/red_2__N_141[5]"  />
+        <nitem  name = "vga_inst/red_2__N_141[4]"  />
+        <nitem  name = "vga_inst/red_2__N_141[3]"  />
+        <nitem  name = "vga_inst/red_2__N_141[2]"  />
+        <nitem  name = "vga_inst/red_2__N_141[1]"  />
+        <nitem  name = "vga_inst/red_2__N_141[0]"  />
+        <nitem  name = "vga_inst/red_2__N_150"  />
+        <nitem  name = "vga_inst/red_2__N_45[8]"  />
+        <nitem  name = "vga_inst/red_2__N_45[7]"  />
+        <nitem  name = "vga_inst/red_2__N_45[6]"  />
+        <nitem  name = "vga_inst/red_2__N_45[5]"  />
+        <nitem  name = "vga_inst/red_2__N_45[4]"  />
+        <nitem  name = "vga_inst/red_2__N_45[3]"  />
+        <nitem  name = "vga_inst/red_2__N_45[2]"  />
+        <nitem  name = "vga_inst/red_2__N_45[1]"  />
+        <nitem  name = "vga_inst/red_2__N_45[0]"  />
         </nets>
     </instance>
 
@@ -1652,16 +1400,16 @@
         <nitem  name = "vga_inst/paddle_right_y[2]"  />
         <nitem  name = "vga_inst/paddle_right_y[1]"  />
         <nitem  name = "vga_inst/paddle_right_y[0]"  />
-        <nitem  name = "vga_inst/red_2__N_73[9]"  />
-        <nitem  name = "vga_inst/red_2__N_73[8]"  />
-        <nitem  name = "vga_inst/red_2__N_73[7]"  />
-        <nitem  name = "vga_inst/red_2__N_73[6]"  />
-        <nitem  name = "vga_inst/red_2__N_73[5]"  />
-        <nitem  name = "vga_inst/red_2__N_73[4]"  />
-        <nitem  name = "vga_inst/red_2__N_73[3]"  />
-        <nitem  name = "vga_inst/red_2__N_73[2]"  />
-        <nitem  name = "vga_inst/red_2__N_73[1]"  />
-        <nitem  name = "vga_inst/red_2__N_73[0]"  />
+        <nitem  name = "vga_inst/red_2__N_57[9]"  />
+        <nitem  name = "vga_inst/red_2__N_57[8]"  />
+        <nitem  name = "vga_inst/red_2__N_57[7]"  />
+        <nitem  name = "vga_inst/red_2__N_57[6]"  />
+        <nitem  name = "vga_inst/red_2__N_57[5]"  />
+        <nitem  name = "vga_inst/red_2__N_57[4]"  />
+        <nitem  name = "vga_inst/red_2__N_57[3]"  />
+        <nitem  name = "vga_inst/red_2__N_57[2]"  />
+        <nitem  name = "vga_inst/red_2__N_57[1]"  />
+        <nitem  name = "vga_inst/red_2__N_57[0]"  />
         </nets>
     </instance>
 
@@ -1694,17 +1442,17 @@
         <nets>
         <nitem  name = "vga_inst/gnd"  />
         <nitem  name = "vga_inst/pwr"  />
-        <nitem  name = "vga_inst/red_2__N_73[9]"  />
-        <nitem  name = "vga_inst/red_2__N_73[8]"  />
-        <nitem  name = "vga_inst/red_2__N_73[7]"  />
-        <nitem  name = "vga_inst/red_2__N_73[6]"  />
-        <nitem  name = "vga_inst/red_2__N_73[5]"  />
-        <nitem  name = "vga_inst/red_2__N_73[4]"  />
-        <nitem  name = "vga_inst/red_2__N_73[3]"  />
-        <nitem  name = "vga_inst/red_2__N_73[2]"  />
-        <nitem  name = "vga_inst/red_2__N_73[1]"  />
-        <nitem  name = "vga_inst/red_2__N_73[0]"  />
-        <nitem  name = "vga_inst/red_2__N_72"  />
+        <nitem  name = "vga_inst/red_2__N_57[9]"  />
+        <nitem  name = "vga_inst/red_2__N_57[8]"  />
+        <nitem  name = "vga_inst/red_2__N_57[7]"  />
+        <nitem  name = "vga_inst/red_2__N_57[6]"  />
+        <nitem  name = "vga_inst/red_2__N_57[5]"  />
+        <nitem  name = "vga_inst/red_2__N_57[4]"  />
+        <nitem  name = "vga_inst/red_2__N_57[3]"  />
+        <nitem  name = "vga_inst/red_2__N_57[2]"  />
+        <nitem  name = "vga_inst/red_2__N_57[1]"  />
+        <nitem  name = "vga_inst/red_2__N_57[0]"  />
+        <nitem  name = "vga_inst/red_2__N_56"  />
         </nets>
     </instance>
 
@@ -1763,16 +1511,16 @@
         <nitem  name = "vga_inst/paddle_right_y[2]"  />
         <nitem  name = "vga_inst/paddle_right_y[1]"  />
         <nitem  name = "vga_inst/paddle_right_y[0]"  />
-        <nitem  name = "vga_inst/red_2__N_84[9]"  />
-        <nitem  name = "vga_inst/red_2__N_84[8]"  />
-        <nitem  name = "vga_inst/red_2__N_84[7]"  />
-        <nitem  name = "vga_inst/red_2__N_84[6]"  />
-        <nitem  name = "vga_inst/red_2__N_84[5]"  />
-        <nitem  name = "vga_inst/red_2__N_84[4]"  />
-        <nitem  name = "vga_inst/red_2__N_84[3]"  />
-        <nitem  name = "vga_inst/red_2__N_84[2]"  />
-        <nitem  name = "vga_inst/red_2__N_84[1]"  />
-        <nitem  name = "vga_inst/red_2__N_84[0]"  />
+        <nitem  name = "vga_inst/red_2__N_68[9]"  />
+        <nitem  name = "vga_inst/red_2__N_68[8]"  />
+        <nitem  name = "vga_inst/red_2__N_68[7]"  />
+        <nitem  name = "vga_inst/red_2__N_68[6]"  />
+        <nitem  name = "vga_inst/red_2__N_68[5]"  />
+        <nitem  name = "vga_inst/red_2__N_68[4]"  />
+        <nitem  name = "vga_inst/red_2__N_68[3]"  />
+        <nitem  name = "vga_inst/red_2__N_68[2]"  />
+        <nitem  name = "vga_inst/red_2__N_68[1]"  />
+        <nitem  name = "vga_inst/red_2__N_68[0]"  />
         </nets>
     </instance>
 
@@ -1805,17 +1553,17 @@
         <nets>
         <nitem  name = "vga_inst/gnd"  />
         <nitem  name = "vga_inst/pwr"  />
-        <nitem  name = "vga_inst/red_2__N_84[9]"  />
-        <nitem  name = "vga_inst/red_2__N_84[8]"  />
-        <nitem  name = "vga_inst/red_2__N_84[7]"  />
-        <nitem  name = "vga_inst/red_2__N_84[6]"  />
-        <nitem  name = "vga_inst/red_2__N_84[5]"  />
-        <nitem  name = "vga_inst/red_2__N_84[4]"  />
-        <nitem  name = "vga_inst/red_2__N_84[3]"  />
-        <nitem  name = "vga_inst/red_2__N_84[2]"  />
-        <nitem  name = "vga_inst/red_2__N_84[1]"  />
-        <nitem  name = "vga_inst/red_2__N_84[0]"  />
-        <nitem  name = "vga_inst/red_2__N_83"  />
+        <nitem  name = "vga_inst/red_2__N_68[9]"  />
+        <nitem  name = "vga_inst/red_2__N_68[8]"  />
+        <nitem  name = "vga_inst/red_2__N_68[7]"  />
+        <nitem  name = "vga_inst/red_2__N_68[6]"  />
+        <nitem  name = "vga_inst/red_2__N_68[5]"  />
+        <nitem  name = "vga_inst/red_2__N_68[4]"  />
+        <nitem  name = "vga_inst/red_2__N_68[3]"  />
+        <nitem  name = "vga_inst/red_2__N_68[2]"  />
+        <nitem  name = "vga_inst/red_2__N_68[1]"  />
+        <nitem  name = "vga_inst/red_2__N_68[0]"  />
+        <nitem  name = "vga_inst/red_2__N_67"  />
         </nets>
     </instance>
 
@@ -1827,9 +1575,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "vga_inst/red_2__N_72"  />
-        <nitem  name = "vga_inst/red_2__N_83"  />
-        <nitem  name = "vga_inst/red_2__N_71"  />
+        <nitem  name = "vga_inst/red_2__N_56"  />
+        <nitem  name = "vga_inst/red_2__N_67"  />
+        <nitem  name = "vga_inst/red_2__N_55"  />
         </nets>
     </instance>
 
@@ -1872,7 +1620,7 @@
         <nitem  name = "vga_inst/column[2]"  />
         <nitem  name = "vga_inst/column[1]"  />
         <nitem  name = "vga_inst/column[0]"  />
-        <nitem  name = "vga_inst/red_2__N_94"  />
+        <nitem  name = "vga_inst/red_2__N_78"  />
         </nets>
     </instance>
 
@@ -1884,9 +1632,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "vga_inst/red_2__N_71"  />
-        <nitem  name = "vga_inst/red_2__N_94"  />
-        <nitem  name = "vga_inst/red_2__N_70"  />
+        <nitem  name = "vga_inst/red_2__N_55"  />
+        <nitem  name = "vga_inst/red_2__N_78"  />
+        <nitem  name = "vga_inst/red_2__N_54"  />
         </nets>
     </instance>
 
@@ -1934,16 +1682,16 @@
         <nitem  name = "vga_inst/blue[2]"  />
         <nitem  name = "vga_inst/blue[1]"  />
         <nitem  name = "vga_inst/blue[0]"  />
-        <nitem  name = "vga_inst/red_2__N_61[8]"  />
-        <nitem  name = "vga_inst/red_2__N_61[7]"  />
-        <nitem  name = "vga_inst/red_2__N_61[6]"  />
-        <nitem  name = "vga_inst/red_2__N_61[5]"  />
-        <nitem  name = "vga_inst/red_2__N_61[4]"  />
-        <nitem  name = "vga_inst/red_2__N_61[3]"  />
-        <nitem  name = "vga_inst/red_2__N_61[2]"  />
-        <nitem  name = "vga_inst/red_2__N_61[1]"  />
-        <nitem  name = "vga_inst/red_2__N_61[0]"  />
-        <nitem  name = "vga_inst/red_2__N_70"  />
+        <nitem  name = "vga_inst/red_2__N_45[8]"  />
+        <nitem  name = "vga_inst/red_2__N_45[7]"  />
+        <nitem  name = "vga_inst/red_2__N_45[6]"  />
+        <nitem  name = "vga_inst/red_2__N_45[5]"  />
+        <nitem  name = "vga_inst/red_2__N_45[4]"  />
+        <nitem  name = "vga_inst/red_2__N_45[3]"  />
+        <nitem  name = "vga_inst/red_2__N_45[2]"  />
+        <nitem  name = "vga_inst/red_2__N_45[1]"  />
+        <nitem  name = "vga_inst/red_2__N_45[0]"  />
+        <nitem  name = "vga_inst/red_2__N_54"  />
         </nets>
     </instance>
 
@@ -2039,16 +1787,16 @@
         <nitem  name = "vga_inst/column[2]"  />
         <nitem  name = "vga_inst/column[1]"  />
         <nitem  name = "vga_inst/column[0]"  />
-        <nitem  name = "vga_inst/column_9__N_191[9]"  />
-        <nitem  name = "vga_inst/column_9__N_191[8]"  />
-        <nitem  name = "vga_inst/column_9__N_191[7]"  />
-        <nitem  name = "vga_inst/column_9__N_191[6]"  />
-        <nitem  name = "vga_inst/column_9__N_191[5]"  />
-        <nitem  name = "vga_inst/column_9__N_191[4]"  />
-        <nitem  name = "vga_inst/column_9__N_191[3]"  />
-        <nitem  name = "vga_inst/column_9__N_191[2]"  />
-        <nitem  name = "vga_inst/column_9__N_191[1]"  />
-        <nitem  name = "vga_inst/column_9__N_191[0]"  />
+        <nitem  name = "vga_inst/column_9__N_175[9]"  />
+        <nitem  name = "vga_inst/column_9__N_175[8]"  />
+        <nitem  name = "vga_inst/column_9__N_175[7]"  />
+        <nitem  name = "vga_inst/column_9__N_175[6]"  />
+        <nitem  name = "vga_inst/column_9__N_175[5]"  />
+        <nitem  name = "vga_inst/column_9__N_175[4]"  />
+        <nitem  name = "vga_inst/column_9__N_175[3]"  />
+        <nitem  name = "vga_inst/column_9__N_175[2]"  />
+        <nitem  name = "vga_inst/column_9__N_175[1]"  />
+        <nitem  name = "vga_inst/column_9__N_175[0]"  />
         </nets>
     </instance>
 
@@ -2134,7 +1882,7 @@
         <nitem  name = "vga_inst/column[2]"  />
         <nitem  name = "vga_inst/column[1]"  />
         <nitem  name = "vga_inst/column[0]"  />
-        <nitem  name = "vga_inst/column_9__N_201"  />
+        <nitem  name = "vga_inst/column_9__N_185"  />
         </nets>
     </instance>
 
@@ -2377,16 +2125,16 @@
         <nitem  name = "vga_inst/n312"  />
         <nitem  name = "vga_inst/n313"  />
         <nitem  name = "vga_inst/n314"  />
-        <nitem  name = "vga_inst/row_9__N_202[9]"  />
-        <nitem  name = "vga_inst/row_9__N_202[8]"  />
-        <nitem  name = "vga_inst/row_9__N_202[7]"  />
-        <nitem  name = "vga_inst/row_9__N_202[6]"  />
-        <nitem  name = "vga_inst/row_9__N_202[5]"  />
-        <nitem  name = "vga_inst/row_9__N_202[4]"  />
-        <nitem  name = "vga_inst/row_9__N_202[3]"  />
-        <nitem  name = "vga_inst/row_9__N_202[2]"  />
-        <nitem  name = "vga_inst/row_9__N_202[1]"  />
-        <nitem  name = "vga_inst/row_9__N_202[0]"  />
+        <nitem  name = "vga_inst/row_9__N_186[9]"  />
+        <nitem  name = "vga_inst/row_9__N_186[8]"  />
+        <nitem  name = "vga_inst/row_9__N_186[7]"  />
+        <nitem  name = "vga_inst/row_9__N_186[6]"  />
+        <nitem  name = "vga_inst/row_9__N_186[5]"  />
+        <nitem  name = "vga_inst/row_9__N_186[4]"  />
+        <nitem  name = "vga_inst/row_9__N_186[3]"  />
+        <nitem  name = "vga_inst/row_9__N_186[2]"  />
+        <nitem  name = "vga_inst/row_9__N_186[1]"  />
+        <nitem  name = "vga_inst/row_9__N_186[0]"  />
         </nets>
     </instance>
 
@@ -2427,27 +2175,27 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "vga_inst/column_9__N_191[9]"  />
-        <nitem  name = "vga_inst/column_9__N_191[8]"  />
-        <nitem  name = "vga_inst/column_9__N_191[7]"  />
-        <nitem  name = "vga_inst/column_9__N_191[6]"  />
-        <nitem  name = "vga_inst/column_9__N_191[5]"  />
-        <nitem  name = "vga_inst/column_9__N_191[4]"  />
-        <nitem  name = "vga_inst/column_9__N_191[3]"  />
-        <nitem  name = "vga_inst/column_9__N_191[2]"  />
-        <nitem  name = "vga_inst/column_9__N_191[1]"  />
-        <nitem  name = "vga_inst/column_9__N_191[0]"  />
-        <nitem  name = "vga_inst/column_9__N_201"  />
-        <nitem  name = "vga_inst/column_9__N_41[9]"  />
-        <nitem  name = "vga_inst/column_9__N_41[8]"  />
-        <nitem  name = "vga_inst/column_9__N_41[7]"  />
-        <nitem  name = "vga_inst/column_9__N_41[6]"  />
-        <nitem  name = "vga_inst/column_9__N_41[5]"  />
-        <nitem  name = "vga_inst/column_9__N_41[4]"  />
-        <nitem  name = "vga_inst/column_9__N_41[3]"  />
-        <nitem  name = "vga_inst/column_9__N_41[2]"  />
-        <nitem  name = "vga_inst/column_9__N_41[1]"  />
-        <nitem  name = "vga_inst/column_9__N_41[0]"  />
+        <nitem  name = "vga_inst/column_9__N_175[9]"  />
+        <nitem  name = "vga_inst/column_9__N_175[8]"  />
+        <nitem  name = "vga_inst/column_9__N_175[7]"  />
+        <nitem  name = "vga_inst/column_9__N_175[6]"  />
+        <nitem  name = "vga_inst/column_9__N_175[5]"  />
+        <nitem  name = "vga_inst/column_9__N_175[4]"  />
+        <nitem  name = "vga_inst/column_9__N_175[3]"  />
+        <nitem  name = "vga_inst/column_9__N_175[2]"  />
+        <nitem  name = "vga_inst/column_9__N_175[1]"  />
+        <nitem  name = "vga_inst/column_9__N_175[0]"  />
+        <nitem  name = "vga_inst/column_9__N_185"  />
+        <nitem  name = "vga_inst/column_9__N_25[9]"  />
+        <nitem  name = "vga_inst/column_9__N_25[8]"  />
+        <nitem  name = "vga_inst/column_9__N_25[7]"  />
+        <nitem  name = "vga_inst/column_9__N_25[6]"  />
+        <nitem  name = "vga_inst/column_9__N_25[5]"  />
+        <nitem  name = "vga_inst/column_9__N_25[4]"  />
+        <nitem  name = "vga_inst/column_9__N_25[3]"  />
+        <nitem  name = "vga_inst/column_9__N_25[2]"  />
+        <nitem  name = "vga_inst/column_9__N_25[1]"  />
+        <nitem  name = "vga_inst/column_9__N_25[0]"  />
         </nets>
     </instance>
 
@@ -2497,27 +2245,27 @@
         <nitem  name = "vga_inst/row[2]"  />
         <nitem  name = "vga_inst/row[1]"  />
         <nitem  name = "vga_inst/row[0]"  />
-        <nitem  name = "vga_inst/column_9__N_201"  />
-        <nitem  name = "vga_inst/row_9__N_202[9]"  />
-        <nitem  name = "vga_inst/row_9__N_202[8]"  />
-        <nitem  name = "vga_inst/row_9__N_202[7]"  />
-        <nitem  name = "vga_inst/row_9__N_202[6]"  />
-        <nitem  name = "vga_inst/row_9__N_202[5]"  />
-        <nitem  name = "vga_inst/row_9__N_202[4]"  />
-        <nitem  name = "vga_inst/row_9__N_202[3]"  />
-        <nitem  name = "vga_inst/row_9__N_202[2]"  />
-        <nitem  name = "vga_inst/row_9__N_202[1]"  />
-        <nitem  name = "vga_inst/row_9__N_202[0]"  />
-        <nitem  name = "vga_inst/row_9__N_51[9]"  />
-        <nitem  name = "vga_inst/row_9__N_51[8]"  />
-        <nitem  name = "vga_inst/row_9__N_51[7]"  />
-        <nitem  name = "vga_inst/row_9__N_51[6]"  />
-        <nitem  name = "vga_inst/row_9__N_51[5]"  />
-        <nitem  name = "vga_inst/row_9__N_51[4]"  />
-        <nitem  name = "vga_inst/row_9__N_51[3]"  />
-        <nitem  name = "vga_inst/row_9__N_51[2]"  />
-        <nitem  name = "vga_inst/row_9__N_51[1]"  />
-        <nitem  name = "vga_inst/row_9__N_51[0]"  />
+        <nitem  name = "vga_inst/column_9__N_185"  />
+        <nitem  name = "vga_inst/row_9__N_186[9]"  />
+        <nitem  name = "vga_inst/row_9__N_186[8]"  />
+        <nitem  name = "vga_inst/row_9__N_186[7]"  />
+        <nitem  name = "vga_inst/row_9__N_186[6]"  />
+        <nitem  name = "vga_inst/row_9__N_186[5]"  />
+        <nitem  name = "vga_inst/row_9__N_186[4]"  />
+        <nitem  name = "vga_inst/row_9__N_186[3]"  />
+        <nitem  name = "vga_inst/row_9__N_186[2]"  />
+        <nitem  name = "vga_inst/row_9__N_186[1]"  />
+        <nitem  name = "vga_inst/row_9__N_186[0]"  />
+        <nitem  name = "vga_inst/row_9__N_35[9]"  />
+        <nitem  name = "vga_inst/row_9__N_35[8]"  />
+        <nitem  name = "vga_inst/row_9__N_35[7]"  />
+        <nitem  name = "vga_inst/row_9__N_35[6]"  />
+        <nitem  name = "vga_inst/row_9__N_35[5]"  />
+        <nitem  name = "vga_inst/row_9__N_35[4]"  />
+        <nitem  name = "vga_inst/row_9__N_35[3]"  />
+        <nitem  name = "vga_inst/row_9__N_35[2]"  />
+        <nitem  name = "vga_inst/row_9__N_35[1]"  />
+        <nitem  name = "vga_inst/row_9__N_35[0]"  />
         </nets>
     </instance>
 
@@ -2559,7 +2307,7 @@
         <nitem  name = "vga_inst/column[2]"  />
         <nitem  name = "vga_inst/column[1]"  />
         <nitem  name = "vga_inst/column[0]"  />
-        <nitem  name = "vga_inst/o_VGA_HSync_N_277"  />
+        <nitem  name = "vga_inst/o_VGA_HSync_N_261"  />
         </nets>
     </instance>
 
@@ -2574,8 +2322,8 @@
         <nets>
         <nitem  name = "vga_inst/gnd"  />
         <nitem  name = "PIN20"  />
-        <nitem  name = "vga_inst/o_VGA_HSync_N_277"  />
-        <nitem  name = "vga_inst/o_VGA_HSync_N_276"  />
+        <nitem  name = "vga_inst/o_VGA_HSync_N_261"  />
+        <nitem  name = "vga_inst/o_VGA_HSync_N_260"  />
         </nets>
     </instance>
 
@@ -2617,7 +2365,7 @@
         <nitem  name = "vga_inst/column[2]"  />
         <nitem  name = "vga_inst/column[1]"  />
         <nitem  name = "vga_inst/column[0]"  />
-        <nitem  name = "vga_inst/o_VGA_HSync_N_278"  />
+        <nitem  name = "vga_inst/o_VGA_HSync_N_262"  />
         </nets>
     </instance>
 
@@ -2631,9 +2379,9 @@
 
         <nets>
         <nitem  name = "vga_inst/pwr"  />
-        <nitem  name = "vga_inst/o_VGA_HSync_N_276"  />
-        <nitem  name = "vga_inst/o_VGA_HSync_N_278"  />
-        <nitem  name = "vga_inst/o_VGA_HSync_N_275"  />
+        <nitem  name = "vga_inst/o_VGA_HSync_N_260"  />
+        <nitem  name = "vga_inst/o_VGA_HSync_N_262"  />
+        <nitem  name = "vga_inst/o_VGA_HSync_N_259"  />
         </nets>
     </instance>
 
@@ -2675,7 +2423,7 @@
         <nitem  name = "vga_inst/row[2]"  />
         <nitem  name = "vga_inst/row[1]"  />
         <nitem  name = "vga_inst/row[0]"  />
-        <nitem  name = "vga_inst/o_VGA_VSync_N_281"  />
+        <nitem  name = "vga_inst/o_VGA_VSync_N_265"  />
         </nets>
     </instance>
 
@@ -2690,8 +2438,8 @@
         <nets>
         <nitem  name = "vga_inst/gnd"  />
         <nitem  name = "n2"  />
-        <nitem  name = "vga_inst/o_VGA_VSync_N_281"  />
-        <nitem  name = "vga_inst/o_VGA_VSync_N_280"  />
+        <nitem  name = "vga_inst/o_VGA_VSync_N_265"  />
+        <nitem  name = "vga_inst/o_VGA_VSync_N_264"  />
         </nets>
     </instance>
 
@@ -2733,7 +2481,7 @@
         <nitem  name = "vga_inst/row[2]"  />
         <nitem  name = "vga_inst/row[1]"  />
         <nitem  name = "vga_inst/row[0]"  />
-        <nitem  name = "vga_inst/o_VGA_VSync_N_282"  />
+        <nitem  name = "vga_inst/o_VGA_VSync_N_266"  />
         </nets>
     </instance>
 
@@ -2747,9 +2495,9 @@
 
         <nets>
         <nitem  name = "vga_inst/pwr"  />
-        <nitem  name = "vga_inst/o_VGA_VSync_N_280"  />
-        <nitem  name = "vga_inst/o_VGA_VSync_N_282"  />
-        <nitem  name = "vga_inst/o_VGA_VSync_N_279"  />
+        <nitem  name = "vga_inst/o_VGA_VSync_N_264"  />
+        <nitem  name = "vga_inst/o_VGA_VSync_N_266"  />
+        <nitem  name = "vga_inst/o_VGA_VSync_N_263"  />
         </nets>
     </instance>
 
@@ -2873,30 +2621,30 @@
         <nitem  name = "vga_inst/led_count[2]"  />
         <nitem  name = "vga_inst/led_count[1]"  />
         <nitem  name = "vga_inst/led_count[0]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[23]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[22]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[21]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[20]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[19]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[18]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[17]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[16]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[15]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[14]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[13]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[12]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[11]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[10]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[9]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[8]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[7]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[6]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[5]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[4]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[3]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[2]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[1]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[0]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[23]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[22]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[21]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[20]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[19]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[18]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[17]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[16]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[15]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[14]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[13]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[12]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[11]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[10]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[9]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[8]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[7]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[6]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[5]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[4]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[3]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[2]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[1]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[0]"  />
         </nets>
     </instance>
 
@@ -2988,7 +2736,7 @@
         <nitem  name = "vga_inst/led_count[2]"  />
         <nitem  name = "vga_inst/led_count[1]"  />
         <nitem  name = "vga_inst/led_count[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_222"  />
+        <nitem  name = "vga_inst/ball_x_9__N_206"  />
         </nets>
     </instance>
 
@@ -4841,16 +4589,16 @@
         <nitem  name = "vga_inst/n789"  />
         <nitem  name = "vga_inst/n790"  />
         <nitem  name = "vga_inst/n791"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[9]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[8]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[7]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[6]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[5]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[4]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[3]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[2]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[1]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[9]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[8]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[7]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[6]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[5]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[4]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[3]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[2]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[1]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[0]"  />
         </nets>
     </instance>
 
@@ -4911,16 +4659,16 @@
         <nitem  name = "vga_inst/n800"  />
         <nitem  name = "vga_inst/n801"  />
         <nitem  name = "vga_inst/n802"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[9]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[8]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[7]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[6]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[5]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[4]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[3]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[2]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[1]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[0]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[9]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[8]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[7]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[6]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[5]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[4]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[3]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[2]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[1]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[0]"  />
         </nets>
     </instance>
 
@@ -4941,8 +4689,8 @@
         <nitem  name = "vga_inst/n654"  />
         <nitem  name = "vga_inst/n809"  />
         <nitem  name = "vga_inst/n810"  />
-        <nitem  name = "vga_inst/game_state_1__N_233[1]"  />
-        <nitem  name = "vga_inst/game_state_1__N_233[0]"  />
+        <nitem  name = "vga_inst/game_state_1__N_217[1]"  />
+        <nitem  name = "vga_inst/game_state_1__N_217[0]"  />
         </nets>
     </instance>
 
@@ -5496,16 +5244,16 @@
         <nitem  name = "vga_inst/n918"  />
         <nitem  name = "vga_inst/n919"  />
         <nitem  name = "vga_inst/n931"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[9]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[8]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[7]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[6]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[5]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[4]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[3]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[2]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[1]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[0]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[9]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[8]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[7]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[6]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[5]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[4]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[3]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[2]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[1]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[0]"  />
         </nets>
     </instance>
 
@@ -5566,16 +5314,16 @@
         <nitem  name = "vga_inst/n929"  />
         <nitem  name = "vga_inst/n930"  />
         <nitem  name = "vga_inst/n931"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[9]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[8]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[7]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[6]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[5]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[4]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[3]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[2]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[1]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[0]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[9]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[8]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[7]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[6]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[5]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[4]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[3]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[2]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[1]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[0]"  />
         </nets>
     </instance>
 
@@ -5987,16 +5735,16 @@
         <nitem  name = "vga_inst/n1079"  />
         <nitem  name = "vga_inst/n1080"  />
         <nitem  name = "vga_inst/n1081"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[9]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[8]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[7]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[6]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[5]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[4]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[3]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[2]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[1]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[0]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[9]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[8]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[7]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[6]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[5]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[4]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[3]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[2]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[1]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[0]"  />
         </nets>
     </instance>
 
@@ -6408,16 +6156,16 @@
         <nitem  name = "vga_inst/n1151"  />
         <nitem  name = "vga_inst/n1152"  />
         <nitem  name = "vga_inst/n1153"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[9]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[8]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[7]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[6]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[5]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[4]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[3]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[2]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[1]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[0]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[9]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[8]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[7]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[6]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[5]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[4]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[3]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[2]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[1]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[0]"  />
         </nets>
     </instance>
 
@@ -6467,27 +6215,27 @@
         <nitem  name = "vga_inst/ball_x[2]"  />
         <nitem  name = "vga_inst/ball_x[1]"  />
         <nitem  name = "vga_inst/ball_x[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_222"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[9]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[8]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[7]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[6]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[5]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[4]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[3]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[2]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[1]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_212[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[9]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[8]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[7]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[6]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[5]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[4]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[3]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[2]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[1]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_206"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[9]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[8]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[7]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[6]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[5]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[4]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[3]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[2]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[1]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_196[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[9]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[8]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[7]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[6]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[5]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[4]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[3]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[2]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[1]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[0]"  />
         </nets>
     </instance>
 
@@ -6537,27 +6285,27 @@
         <nitem  name = "vga_inst/ball_y[2]"  />
         <nitem  name = "vga_inst/ball_y[1]"  />
         <nitem  name = "vga_inst/ball_y[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_222"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[9]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[8]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[7]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[6]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[5]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[4]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[3]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[2]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[1]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_223[0]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[9]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[8]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[7]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[6]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[5]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[4]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[3]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[2]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[1]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_206"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[9]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[8]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[7]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[6]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[5]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[4]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[3]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[2]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[1]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_207[0]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[9]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[8]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[7]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[6]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[5]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[4]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[3]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[2]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[1]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[0]"  />
         </nets>
     </instance>
 
@@ -6575,11 +6323,11 @@
         <nets>
         <nitem  name = "vga_inst/game_state[1]"  />
         <nitem  name = "vga_inst/game_state[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_222"  />
-        <nitem  name = "vga_inst/game_state_1__N_233[1]"  />
-        <nitem  name = "vga_inst/game_state_1__N_233[0]"  />
-        <nitem  name = "vga_inst/game_state_1__N_155[1]"  />
-        <nitem  name = "vga_inst/game_state_1__N_155[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_206"  />
+        <nitem  name = "vga_inst/game_state_1__N_217[1]"  />
+        <nitem  name = "vga_inst/game_state_1__N_217[0]"  />
+        <nitem  name = "vga_inst/game_state_1__N_139[1]"  />
+        <nitem  name = "vga_inst/game_state_1__N_139[0]"  />
         </nets>
     </instance>
 
@@ -6629,27 +6377,27 @@
         <nitem  name = "vga_inst/ball_dx[2]"  />
         <nitem  name = "vga_inst/ball_dx[1]"  />
         <nitem  name = "vga_inst/ball_dx[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_222"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[9]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[8]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[7]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[6]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[5]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[4]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[3]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[2]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[1]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_235[0]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[9]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[8]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[7]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[6]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[5]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[4]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[3]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[2]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[1]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_206"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[9]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[8]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[7]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[6]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[5]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[4]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[3]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[2]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[1]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_219[0]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[9]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[8]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[7]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[6]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[5]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[4]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[3]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[2]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[1]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[0]"  />
         </nets>
     </instance>
 
@@ -6699,27 +6447,27 @@
         <nitem  name = "vga_inst/ball_dy[2]"  />
         <nitem  name = "vga_inst/ball_dy[1]"  />
         <nitem  name = "vga_inst/ball_dy[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_222"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[9]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[8]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[7]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[6]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[5]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[4]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[3]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[2]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[1]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_245[0]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[9]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[8]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[7]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[6]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[5]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[4]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[3]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[2]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[1]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_206"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[9]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[8]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[7]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[6]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[5]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[4]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[3]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[2]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[1]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_229[0]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[9]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[8]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[7]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[6]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[5]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[4]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[3]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[2]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[1]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[0]"  />
         </nets>
     </instance>
 
@@ -6769,27 +6517,27 @@
         <nitem  name = "vga_inst/paddle_left_y[2]"  />
         <nitem  name = "vga_inst/paddle_left_y[1]"  />
         <nitem  name = "vga_inst/paddle_left_y[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_222"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[9]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[8]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[7]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[6]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[5]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[4]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[3]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[2]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[1]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_255[0]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[9]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[8]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[7]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[6]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[5]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[4]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[3]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[2]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[1]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_206"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[9]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[8]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[7]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[6]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[5]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[4]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[3]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[2]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[1]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_239[0]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[9]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[8]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[7]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[6]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[5]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[4]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[3]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[2]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[1]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[0]"  />
         </nets>
     </instance>
 
@@ -6839,27 +6587,27 @@
         <nitem  name = "vga_inst/paddle_right_y[2]"  />
         <nitem  name = "vga_inst/paddle_right_y[1]"  />
         <nitem  name = "vga_inst/paddle_right_y[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_222"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[9]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[8]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[7]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[6]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[5]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[4]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[3]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[2]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[1]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_265[0]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[9]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[8]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[7]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[6]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[5]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[4]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[3]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[2]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[1]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_206"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[9]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[8]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[7]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[6]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[5]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[4]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[3]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[2]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[1]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_249[0]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[9]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[8]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[7]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[6]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[5]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[4]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[3]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[2]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[1]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[0]"  />
         </nets>
     </instance>
 
@@ -6910,7 +6658,7 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "vga_inst/row[9]"  />
         <nitem  name = "vga_inst/row[8]"  />
         <nitem  name = "vga_inst/row[7]"  />
@@ -6921,16 +6669,16 @@
         <nitem  name = "vga_inst/row[2]"  />
         <nitem  name = "vga_inst/row[1]"  />
         <nitem  name = "vga_inst/row[0]"  />
-        <nitem  name = "vga_inst/row_9__N_51[9]"  />
-        <nitem  name = "vga_inst/row_9__N_51[8]"  />
-        <nitem  name = "vga_inst/row_9__N_51[7]"  />
-        <nitem  name = "vga_inst/row_9__N_51[6]"  />
-        <nitem  name = "vga_inst/row_9__N_51[5]"  />
-        <nitem  name = "vga_inst/row_9__N_51[4]"  />
-        <nitem  name = "vga_inst/row_9__N_51[3]"  />
-        <nitem  name = "vga_inst/row_9__N_51[2]"  />
-        <nitem  name = "vga_inst/row_9__N_51[1]"  />
-        <nitem  name = "vga_inst/row_9__N_51[0]"  />
+        <nitem  name = "vga_inst/row_9__N_35[9]"  />
+        <nitem  name = "vga_inst/row_9__N_35[8]"  />
+        <nitem  name = "vga_inst/row_9__N_35[7]"  />
+        <nitem  name = "vga_inst/row_9__N_35[6]"  />
+        <nitem  name = "vga_inst/row_9__N_35[5]"  />
+        <nitem  name = "vga_inst/row_9__N_35[4]"  />
+        <nitem  name = "vga_inst/row_9__N_35[3]"  />
+        <nitem  name = "vga_inst/row_9__N_35[2]"  />
+        <nitem  name = "vga_inst/row_9__N_35[1]"  />
+        <nitem  name = "vga_inst/row_9__N_35[0]"  />
         </nets>
     </instance>
 
@@ -6945,9 +6693,9 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "PIN20"  />
-        <nitem  name = "vga_inst/o_VGA_HSync_N_275"  />
+        <nitem  name = "vga_inst/o_VGA_HSync_N_259"  />
         </nets>
     </instance>
 
@@ -6962,9 +6710,9 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "n2"  />
-        <nitem  name = "vga_inst/o_VGA_VSync_N_279"  />
+        <nitem  name = "vga_inst/o_VGA_VSync_N_263"  />
         </nets>
     </instance>
 
@@ -7071,7 +6819,7 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "LEDn"  />
         <nitem  name = "vga_inst/led_count[22]"  />
         <nitem  name = "vga_inst/led_count[21]"  />
@@ -7096,30 +6844,30 @@
         <nitem  name = "vga_inst/led_count[2]"  />
         <nitem  name = "vga_inst/led_count[1]"  />
         <nitem  name = "vga_inst/led_count[0]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[23]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[22]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[21]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[20]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[19]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[18]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[17]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[16]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[15]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[14]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[13]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[12]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[11]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[10]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[9]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[8]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[7]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[6]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[5]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[4]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[3]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[2]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[1]"  />
-        <nitem  name = "vga_inst/led_count_22__N_17[0]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[23]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[22]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[21]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[20]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[19]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[18]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[17]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[16]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[15]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[14]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[13]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[12]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[11]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[10]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[9]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[8]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[7]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[6]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[5]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[4]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[3]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[2]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[1]"  />
+        <nitem  name = "vga_inst/led_count_22__N_1[0]"  />
         </nets>
     </instance>
 
@@ -7170,7 +6918,7 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "vga_inst/ball_x[9]"  />
         <nitem  name = "vga_inst/ball_x[8]"  />
         <nitem  name = "vga_inst/ball_x[7]"  />
@@ -7181,16 +6929,16 @@
         <nitem  name = "vga_inst/ball_x[2]"  />
         <nitem  name = "vga_inst/ball_x[1]"  />
         <nitem  name = "vga_inst/ball_x[0]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[9]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[8]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[7]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[6]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[5]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[4]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[3]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[2]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[1]"  />
-        <nitem  name = "vga_inst/ball_x_9__N_95[0]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[9]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[8]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[7]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[6]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[5]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[4]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[3]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[2]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[1]"  />
+        <nitem  name = "vga_inst/ball_x_9__N_79[0]"  />
         </nets>
     </instance>
 
@@ -7241,7 +6989,7 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "vga_inst/ball_y[9]"  />
         <nitem  name = "vga_inst/ball_y[8]"  />
         <nitem  name = "vga_inst/ball_y[7]"  />
@@ -7252,16 +7000,16 @@
         <nitem  name = "vga_inst/ball_y[2]"  />
         <nitem  name = "vga_inst/ball_y[1]"  />
         <nitem  name = "vga_inst/ball_y[0]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[9]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[8]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[7]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[6]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[5]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[4]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[3]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[2]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[1]"  />
-        <nitem  name = "vga_inst/ball_y_9__N_105[0]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[9]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[8]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[7]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[6]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[5]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[4]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[3]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[2]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[1]"  />
+        <nitem  name = "vga_inst/ball_y_9__N_89[0]"  />
         </nets>
     </instance>
 
@@ -7280,11 +7028,11 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "vga_inst/game_state[1]"  />
         <nitem  name = "vga_inst/game_state[0]"  />
-        <nitem  name = "vga_inst/game_state_1__N_155[1]"  />
-        <nitem  name = "vga_inst/game_state_1__N_155[0]"  />
+        <nitem  name = "vga_inst/game_state_1__N_139[1]"  />
+        <nitem  name = "vga_inst/game_state_1__N_139[0]"  />
         </nets>
     </instance>
 
@@ -7335,7 +7083,7 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "vga_inst/ball_dx[9]"  />
         <nitem  name = "vga_inst/ball_dx[8]"  />
         <nitem  name = "vga_inst/ball_dx[7]"  />
@@ -7346,16 +7094,16 @@
         <nitem  name = "vga_inst/ball_dx[2]"  />
         <nitem  name = "vga_inst/ball_dx[1]"  />
         <nitem  name = "vga_inst/ball_dx[0]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[9]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[8]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[7]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[6]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[5]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[4]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[3]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[2]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[1]"  />
-        <nitem  name = "vga_inst/ball_dx_9__N_115[0]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[9]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[8]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[7]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[6]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[5]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[4]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[3]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[2]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[1]"  />
+        <nitem  name = "vga_inst/ball_dx_9__N_99[0]"  />
         </nets>
     </instance>
 
@@ -7406,7 +7154,7 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "vga_inst/ball_dy[9]"  />
         <nitem  name = "vga_inst/ball_dy[8]"  />
         <nitem  name = "vga_inst/ball_dy[7]"  />
@@ -7417,16 +7165,16 @@
         <nitem  name = "vga_inst/ball_dy[2]"  />
         <nitem  name = "vga_inst/ball_dy[1]"  />
         <nitem  name = "vga_inst/ball_dy[0]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[9]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[8]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[7]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[6]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[5]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[4]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[3]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[2]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[1]"  />
-        <nitem  name = "vga_inst/ball_dy_9__N_125[0]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[9]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[8]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[7]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[6]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[5]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[4]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[3]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[2]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[1]"  />
+        <nitem  name = "vga_inst/ball_dy_9__N_109[0]"  />
         </nets>
     </instance>
 
@@ -7477,7 +7225,7 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "vga_inst/paddle_left_y[9]"  />
         <nitem  name = "vga_inst/paddle_left_y[8]"  />
         <nitem  name = "vga_inst/paddle_left_y[7]"  />
@@ -7488,16 +7236,16 @@
         <nitem  name = "vga_inst/paddle_left_y[2]"  />
         <nitem  name = "vga_inst/paddle_left_y[1]"  />
         <nitem  name = "vga_inst/paddle_left_y[0]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[9]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[8]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[7]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[6]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[5]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[4]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[3]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[2]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[1]"  />
-        <nitem  name = "vga_inst/paddle_left_y_9__N_135[0]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[9]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[8]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[7]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[6]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[5]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[4]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[3]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[2]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[1]"  />
+        <nitem  name = "vga_inst/paddle_left_y_9__N_119[0]"  />
         </nets>
     </instance>
 
@@ -7548,7 +7296,7 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "vga_inst/paddle_right_y[9]"  />
         <nitem  name = "vga_inst/paddle_right_y[8]"  />
         <nitem  name = "vga_inst/paddle_right_y[7]"  />
@@ -7559,16 +7307,16 @@
         <nitem  name = "vga_inst/paddle_right_y[2]"  />
         <nitem  name = "vga_inst/paddle_right_y[1]"  />
         <nitem  name = "vga_inst/paddle_right_y[0]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[9]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[8]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[7]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[6]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[5]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[4]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[3]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[2]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[1]"  />
-        <nitem  name = "vga_inst/paddle_right_y_9__N_145[0]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[9]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[8]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[7]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[6]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[5]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[4]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[3]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[2]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[1]"  />
+        <nitem  name = "vga_inst/paddle_right_y_9__N_129[0]"  />
         </nets>
     </instance>
 
@@ -7619,7 +7367,7 @@
 
         <nets>
         <nitem  name = "vga_inst/gnd"  />
-        <nitem  name = "clk"  />
+        <nitem  name = "PIN11"  />
         <nitem  name = "vga_inst/column[9]"  />
         <nitem  name = "vga_inst/column[8]"  />
         <nitem  name = "vga_inst/column[7]"  />
@@ -7630,28 +7378,27 @@
         <nitem  name = "vga_inst/column[2]"  />
         <nitem  name = "vga_inst/column[1]"  />
         <nitem  name = "vga_inst/column[0]"  />
-        <nitem  name = "vga_inst/column_9__N_41[9]"  />
-        <nitem  name = "vga_inst/column_9__N_41[8]"  />
-        <nitem  name = "vga_inst/column_9__N_41[7]"  />
-        <nitem  name = "vga_inst/column_9__N_41[6]"  />
-        <nitem  name = "vga_inst/column_9__N_41[5]"  />
-        <nitem  name = "vga_inst/column_9__N_41[4]"  />
-        <nitem  name = "vga_inst/column_9__N_41[3]"  />
-        <nitem  name = "vga_inst/column_9__N_41[2]"  />
-        <nitem  name = "vga_inst/column_9__N_41[1]"  />
-        <nitem  name = "vga_inst/column_9__N_41[0]"  />
+        <nitem  name = "vga_inst/column_9__N_25[9]"  />
+        <nitem  name = "vga_inst/column_9__N_25[8]"  />
+        <nitem  name = "vga_inst/column_9__N_25[7]"  />
+        <nitem  name = "vga_inst/column_9__N_25[6]"  />
+        <nitem  name = "vga_inst/column_9__N_25[5]"  />
+        <nitem  name = "vga_inst/column_9__N_25[4]"  />
+        <nitem  name = "vga_inst/column_9__N_25[3]"  />
+        <nitem  name = "vga_inst/column_9__N_25[2]"  />
+        <nitem  name = "vga_inst/column_9__N_25[1]"  />
+        <nitem  name = "vga_inst/column_9__N_25[0]"  />
         </nets>
     </instance>
 
     <instance  name = "Clk_25MHz_inst"  />
+    <instance  name = "PLLInst_0"  />
     <instance  name = "vga_inst"  />
     <!--
-        REG instances in netlist: 14
+        REG instances in netlist: 12
     -->
 
     <regs>
-        <reg  name = "Clk_25MHz_inst/clk_out_25mhz_12"  />
-        <reg  name = "Clk_25MHz_inst/counter"  />
         <reg  name = "vga_inst/row"  />
         <reg  name = "vga_inst/hsync_156"  />
         <reg  name = "vga_inst/vsync_157"  />
@@ -7671,8 +7418,8 @@
     -->
 
     <views>
-        <view  name = "ClockDivider"  />
         <view  name = "VGA"  />
+        <view  name = "pll"  />
     </views>
 
 </unit>

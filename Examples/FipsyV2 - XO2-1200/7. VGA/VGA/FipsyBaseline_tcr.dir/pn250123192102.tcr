@@ -1,0 +1,8 @@
+#Start recording tcl command: 1/23/2025 17:54:47
+#Project Location: C:/Users/enact/Projects/VGA; Project name: FipsyBaseline
+prj_project open "C:/Users/enact/Projects/VGA/FipsyBaseline.ldf"
+prj_run Map -impl Implementation -task MapTrace
+prj_run Export -impl Implementation -task Jedecgen -forceOne
+prj_project save
+prj_project close
+#Stop recording: 1/23/2025 19:21:02

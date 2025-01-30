@@ -29,9 +29,9 @@ Performance Hardware Data Status:   Final          Version 34.4.
 // Package: QFN32
 // ncd File: fipsybaseline_implementation.ncd
 // Version: Diamond (64-bit) 3.13.0.56.2
-// Written on Sun Dec 22 12:11:22 2024
+// Written on Thu Jan 23 19:13:41 2025
 // M: Minimum Performance Grade
-// iotiming FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf -gui
+// iotiming FipsyBaseline_Implementation.ncd FipsyBaseline_Implementation.prf -gui -msgset C:/Users/enact/Projects/VGA/promote.xml
 
 I/O Timing Report (All units are in ns)
 
@@ -55,11 +55,14 @@ Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 
 Port  Internal_Clock
 --------------------------------------------------------
-PIN10 clk           
+PIN10 INTERNAL_OSC  
+PIN10 PIN11_c       
 PIN7  INTERNAL_OSC  
-PIN7  clk           
-PIN8  clk           
-PIN9  clk           
+PIN7  PIN11_c       
+PIN8  INTERNAL_OSC  
+PIN8  PIN11_c       
+PIN9  INTERNAL_OSC  
+PIN9  PIN11_c       
 
 
 // Internal_Clock to Output
@@ -67,11 +70,14 @@ PIN9  clk
 Port  Internal_Clock
 --------------------------------------------------------
 LEDn  INTERNAL_OSC  
+LEDn  PIN11_c       
 PIN14 INTERNAL_OSC  
-PIN14 clk           
+PIN14 PIN11_c       
 PIN17 INTERNAL_OSC  
-PIN17 clk           
+PIN17 PIN11_c       
 PIN18 INTERNAL_OSC  
-PIN18 clk           
-PIN19 clk           
-PIN20 clk           
+PIN18 PIN11_c       
+PIN19 INTERNAL_OSC  
+PIN19 PIN11_c       
+PIN20 INTERNAL_OSC  
+PIN20 PIN11_c       

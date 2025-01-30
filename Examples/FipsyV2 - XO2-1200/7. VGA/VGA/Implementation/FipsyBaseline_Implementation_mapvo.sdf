@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "Fipsy_Top")
-  (DATE "Sun Dec 22 12:11:15 2024")
+  (DATE "Thu Jan 16 19:27:46 2025")
   (VENDOR "Lattice")
   (PROGRAM "ldbanno")
   (VERSION "Diamond (64-bit) 3.13.0.56.2")
